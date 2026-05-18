@@ -1,0 +1,85 @@
+{
+  "iso": "AUS",
+  "currency": "AUD",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "PayPal",
+      "share_pct": 75.0,
+      "page": 36
+    },
+    {
+      "method": "BPAY",
+      "share_pct": 45.0,
+      "page": 36
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 37.0,
+      "page": 36
+    },
+    {
+      "method": "Afterpay",
+      "share_pct": 36.0,
+      "page": 36
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 32.0,
+      "page": 36
+    },
+    {
+      "method": "Zip Pay",
+      "share_pct": 16.0,
+      "page": 36
+    },
+    {
+      "method": "Samsung Pay",
+      "share_pct": 8.0,
+      "page": 36
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 6.0,
+      "page": 36
+    },
+    {
+      "method": "Laybuy",
+      "share_pct": 6.0,
+      "page": 36
+    },
+    {
+      "method": "Bpoint",
+      "share_pct": 5.0,
+      "page": 36
+    },
+    {
+      "method": "Latitude Pay",
+      "share_pct": 5.0,
+      "page": 36
+    },
+    {
+      "method": "POLi",
+      "share_pct": 4.0,
+      "page": 36
+    },
+    {
+      "method": "SecurePay",
+      "share_pct": 4.0,
+      "page": 36
+    },
+    {
+      "method": "Meta Pay (Facebook)",
+      "share_pct": 2.0,
+      "page": 36
+    },
+    {
+      "method": "Windcave",
+      "share_pct": 1.0,
+      "page": 36
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

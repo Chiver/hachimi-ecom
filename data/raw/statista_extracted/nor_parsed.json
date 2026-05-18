@@ -1,0 +1,66 @@
+{
+  "iso": "NOR",
+  "currency": "NOK",
+  "revenue_forecast": {
+    "value_local_b": 10.0,
+    "currency": "EUR",
+    "value_usd_b": 10.9,
+    "page": 5,
+    "quote": "os. According to Statista Digital Market Insights, e-commerce revenues are forecast to reach around 10 billion euros by 2030. Read more Note(s): N"
+  },
+  "top_stores": [
+    {
+      "name": "elkjop.no",
+      "value": 389.7,
+      "page": 11
+    },
+    {
+      "name": "komplett.no",
+      "value": 340.5,
+      "page": 11
+    },
+    {
+      "name": "apple.com",
+      "value": 293.2,
+      "page": 11
+    },
+    {
+      "name": "oda.com",
+      "value": 277.7,
+      "page": 11
+    },
+    {
+      "name": "ikea.com",
+      "value": 208.7,
+      "page": 11
+    },
+    {
+      "name": "zalando.no",
+      "value": 174.1,
+      "page": 11
+    },
+    {
+      "name": "hm.com",
+      "value": 133.8,
+      "page": 11
+    },
+    {
+      "name": "power.no",
+      "value": 123.9,
+      "page": 11
+    },
+    {
+      "name": "obsbygg.no",
+      "value": 98.2,
+      "page": 11
+    },
+    {
+      "name": "boozt.com",
+      "value": 88.9,
+      "page": 11
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

@@ -1,0 +1,142 @@
+{
+  "iso": "CHE",
+  "currency": "CHF",
+  "revenue_forecast": {
+    "value_local_b": 14.4,
+    "currency": "CHF",
+    "value_usd_b": 16.272,
+    "page": 4,
+    "quote": "Description: In 2023, the e-commerce revenue in Switzerland was around 14.4 billion Swiss francs. This was a slight increase c"
+  },
+  "top_stores": [
+    {
+      "name": "galaxus.ch",
+      "value": 2153.6,
+      "page": 18
+    },
+    {
+      "name": "digitec.ch",
+      "value": 1846.6,
+      "page": 18
+    },
+    {
+      "name": "zalando.ch",
+      "value": 1421.3,
+      "page": 18
+    },
+    {
+      "name": "amazon.de",
+      "value": 1214.1,
+      "page": 18
+    },
+    {
+      "name": "brack.ch",
+      "value": 753.2,
+      "page": 18
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 745.3,
+      "page": 18
+    },
+    {
+      "name": "mediamarkt.ch",
+      "value": 728.4,
+      "page": 18
+    },
+    {
+      "name": "temu.com",
+      "value": 641.5,
+      "page": 18
+    },
+    {
+      "name": "apple.com",
+      "value": 538.6,
+      "page": 18
+    },
+    {
+      "name": "coop.ch",
+      "value": 476.0,
+      "page": 18
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Credit card",
+      "share_pct": 75.0,
+      "page": 35
+    },
+    {
+      "method": "Invoice",
+      "share_pct": 71.0,
+      "page": 35
+    },
+    {
+      "method": "TWINT",
+      "share_pct": 52.0,
+      "page": 35
+    },
+    {
+      "method": "PayPal",
+      "share_pct": 29.0,
+      "page": 35
+    },
+    {
+      "method": "PostFinance debit card",
+      "share_pct": 28.0,
+      "page": 35
+    },
+    {
+      "method": "Prepayment",
+      "share_pct": 18.0,
+      "page": 35
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 7.0,
+      "page": 35
+    },
+    {
+      "method": "Revolut",
+      "share_pct": 3.0,
+      "page": 35
+    },
+    {
+      "method": "Google Wallet / Pay",
+      "share_pct": 2.0,
+      "page": 35
+    },
+    {
+      "method": "Samsung Pay",
+      "share_pct": 1.0,
+      "page": 35
+    },
+    {
+      "method": "Cryptocurrency",
+      "share_pct": 1.0,
+      "page": 35
+    },
+    {
+      "method": "TWINT (Switzerland only)",
+      "share_pct": 84.0,
+      "page": 36
+    },
+    {
+      "method": "Payment on account",
+      "share_pct": 72.0,
+      "page": 36
+    },
+    {
+      "method": "PostFinance debit card (CH only)",
+      "share_pct": 67.0,
+      "page": 36
+    },
+    {
+      "method": "Prepayment",
+      "share_pct": 56.0,
+      "page": 36
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-from: #0a0e27;
+  --color-bg-to: #1a1f3a;
+  --color-primary: #10b981;
+  --color-primary-fg: #ffffff;
+  --color-surface: #131a36;
+  --color-surface-2: #1c2447;
+  --color-border: #2a335a;
+  --color-muted: #7a86b8;
+  --color-text: #e5ebff;
+  --color-text-dim: #b4bce3;
+
+  --color-confidence-h: #10b981;
+  --color-confidence-m: #f59e0b;
+  --color-confidence-l: #9ca3af;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+html, body {
+  background: linear-gradient(180deg, var(--color-bg-from) 0%, var(--color-bg-to) 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-primary-fg);
+}
+
+/* Mapbox compat overrides */
+.mapboxgl-canvas-container, .mapboxgl-canvas {
+  outline: none !important;
+}
+.mapboxgl-popup-content {
+  background: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-md) !important;
+}
+.mapboxgl-popup-tip {
+  border-top-color: var(--color-surface) !important;
+  border-bottom-color: var(--color-surface) !important;
+}

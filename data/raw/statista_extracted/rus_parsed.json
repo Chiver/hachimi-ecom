@@ -1,0 +1,80 @@
+{
+  "iso": "RUS",
+  "currency": "RUB",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Cosmetics and perfumery",
+      "share_pct": 45.0,
+      "page": 46
+    },
+    {
+      "method": "Food and drinks",
+      "share_pct": 41.0,
+      "page": 46
+    },
+    {
+      "method": "Medicines and health goods",
+      "share_pct": 39.0,
+      "page": 46
+    },
+    {
+      "method": "Household and garden goods",
+      "share_pct": 38.0,
+      "page": 46
+    },
+    {
+      "method": "Small household appliances",
+      "share_pct": 31.0,
+      "page": 46
+    },
+    {
+      "method": "Pet goods",
+      "share_pct": 28.0,
+      "page": 46
+    },
+    {
+      "method": "Gifts and souvenirs",
+      "share_pct": 26.0,
+      "page": 46
+    },
+    {
+      "method": "Hobby and crafts",
+      "share_pct": 22.0,
+      "page": 46
+    },
+    {
+      "method": "Watches and jewelry",
+      "share_pct": 16.0,
+      "page": 46
+    },
+    {
+      "method": "Russian bank card",
+      "share_pct": 68.0,
+      "page": 52
+    },
+    {
+      "method": "Transfer to bank account details",
+      "share_pct": 6.0,
+      "page": 52
+    },
+    {
+      "method": "Cash",
+      "share_pct": 2.0,
+      "page": 52
+    },
+    {
+      "method": "Foreign bank card",
+      "share_pct": 2.0,
+      "page": 52
+    },
+    {
+      "method": "Hard to say",
+      "share_pct": 1.0,
+      "page": 52
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

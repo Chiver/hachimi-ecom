@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "iso": "IND",
+    "pdf_file": "study_id23773_e-commerce-in-india-statista-dossier.pdf",
+    "extracted_at": "2026-05-17",
+    "total_pages": 37,
+    "toc_pages": {
+      "ecommerce_revenue": [],
+      "top_online_stores": [],
+      "categories": [
+        23,
+        29
+      ],
+      "payments": [
+        7
+      ],
+      "forecast_users": [
+        23,
+        24
+      ],
+      "forecast_revenue": [
+        21,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "cross_border": [],
+      "online_buyers": [],
+      "mobile": []
+    }
+  },
+  "sections": {
+    "categories": [
+      {
+        "page": 23,
+        "text": "Description: The e-commerce average revenue per user was about 167.3 U.S. dollars in India. The average revenue is forecast to increase to over 221 U.S. dollars per user. Moreover, the food segment had the highest revenue per user in the e-commerce market.\nRead more\nNote(s): India; 2017 to 2030\nSource(s): Statista\nsrallod\n.S.U\nni\nresu\nrep\neunever\negarevA\nAverage retail e-commerce revenue per user in India from 2017 to 2030 (in\nU.S. dollars)\nRetail e-commerce ARPU in India 2017-2030\n225 221.14\n215\n208.59\n207.25\n205.45\n205\n200.33\n196.8\n194.8\n195\n184.58\n185\n179.74\n175.43\n175 172.16\n167.39\n162.79\n165 161.56\n155\n2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030\n22"
+      },
+      {
+        "page": 29,
+        "text": "Description: In financial year 2025, Meesho reported an operating revenue of over 93.9 billion Indian rupees. This was an increase compared to the previous year. Meesho is the fastest-growing online marketplace platform in India. Read more\nNote(s): India; FY 2022 to FY 2025\nSource(s): Meesho\nseepur\nnaidnI\nnoillib\nni\neuneveR\nOperating revenue of Meesho for financial year 2022 to 2025 (in billion\nIndian rupees)\nOperating revenue of Meesho FY 2022-2025\n100\n93.9\n90\n80 76.15\n70\n57.35\n60\n50\n40\n32.32\n30\n20\n10\n0\nFY 2022 FY 2023 FY 2024 FY 2025\n28"
+      }
+    ],
+    "payments": [
+      {
+        "page": 7,
+        "text": "Description: In 2025, the number of annual online shoppers in India was estimated to be approximately 280 million. This was a significant increase compared to the previous year. The number of shoppers is likely to increase to around 500 by 2030. Read more\nNote(s): India; 2022 to 2024\nSource(s): Bain & Company; Flipkart; Inc42\nsnoillim\nni\nsreppohs\nenilno\nlaunnA\nNumber of annual online shoppers in India from 2022 to 2024, with an\nestimate until 2030 (in millions)\nNumber of annual online shoppers India 2022-2030\n600\n500\n500\n450\n410\n400 375\n320\n300 280\n255\n225\n205\n200\n100\n0\n2022 2023 2024 2025 2026 2027 2028 2029 2030\n6"
+      }
+    ],
+    "forecast_users": [
+      {
+        "page": 23,
+        "text": "Description: The e-commerce average revenue per user was about 167.3 U.S. dollars in India. The average revenue is forecast to increase to over 221 U.S. dollars per user. Moreover, the food segment had the highest revenue per user in the e-commerce market.\nRead more\nNote(s): India; 2017 to 2030\nSource(s): Statista\nsrallod\n.S.U\nni\nresu\nrep\neunever\negarevA\nAverage retail e-commerce revenue per user in India from 2017 to 2030 (in\nU.S. dollars)\nRetail e-commerce ARPU in India 2017-2030\n225 221.14\n215\n208.59\n207.25\n205.45\n205\n200.33\n196.8\n194.8\n195\n184.58\n185\n179.74\n175.43\n175 172.16\n167.39\n162.79\n165 161.56\n155\n2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030\n22"
+      },
+      {
+        "page": 24,
+        "text": "Distribution of ecommerce retail sales across India in 2022, by category\nShare of ecommerce retail sales India 2022, by category\nShare of e-commerce retail sales\n0% 5% 10% 15% 20% 25% 30% 35% 40%\nHome, living, health and others\nConsumer electronics\nApparel and footwear\nFood and grocery\nJewelry and personal goods\nBeauty products\n23 Description: Home, living, health, and others comprised the highest share of 38 percent of e-commerce retail sales across India in 2022. This was followed by consumer electronics and apparel and footwear with a share of 26 percent and 17 percent, respectively.\nRead more\nNote(s): India; 2022\nSource(s): Credit Suisse; EY"
+      }
+    ],
+    "forecast_revenue": [
+      {
+        "page": 27,
+        "text": "Description: In the financial year 2025, Amazon India reported operating revenue of around 277 billion Indian rupees. This was a significant increase in comparison to the revenue of the financial year 2021. Amazon India is one of the largest e-commerce companies in\nIndia. Read more\nNote(s): India; FY 2021 to FY 2025\nSource(s): Amazon; CNBC TV18\nseepur\nnaidnI\nnoillib\nni\neuneveR\nRevenue from operations of Amazon India from financial year 2021 to 2025\n(in billion Indian rupees)\nRevenue from operations of Amazon India FY 2021-2025\n300\n277\n254.06\n250\n221.98\n214.62\n200\n162\n150\n100\n50\n0\nFY 2021 FY 2022 FY 2023 FY 2024 FY 2025\n26"
+      }
+    ]
+  }
+}

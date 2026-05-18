@@ -1,0 +1,95 @@
+{
+  "_meta": "Vision-based extraction from Statista PDFs (Claude reading PDF pages as images via Read tool)",
+  "extracted_at": "2026-05-17",
+  "_method": "Claude reads PDF page as image, identifies chart values directly from visual bars/labels",
+
+  "IDN": {
+    "pdf": "study_id60342_e-commerce-in-indonesia.pdf",
+    "gmv_total_usd_b_2024": 65.0,
+    "gmv_total_usd_b_2030_forecast": 150.0,
+    "gmv_source_page": 8,
+    "gmv_source_quote": "In 2024, e-commerce contributed the largest GMV of around 65 billion U.S. dollars to Indonesia's internet economy.",
+    "gmv_publisher": "Bain & Company; Google; Temasek Holdings",
+    "yoy_growth_pct": {"2024": 11.82, "2025": 18.38, "2026": 13.99, "2027": 9.08, "2028": 5.21, "2029": 3.18},
+    "growth_source_page": 11,
+    "growth_source_publisher": "Statista Market Insights",
+    "categories_usd_b_2024": {
+      "kitchen": 12.9,
+      "electronics": 9.55,
+      "apparel": 7.72,
+      "beauty": 4.17,
+      "garden": 3.31,
+      "toys": 2.9,
+      "home": 1.56,
+      "health": 1.29
+    },
+    "categories_source_page": 12,
+    "categories_source_publisher": "DataReportal; Meltwater; Statista Digital Market Insights; We Are Social",
+    "categories_note": "Food $10.8B + Beverages $2.1B 合并为 kitchen 类目。Tobacco/Physical media/Household essentials/Eyewear 未映射到我们 12 大类。Total consumer goods = $50.16B (服务+数字+B2C = total $65B)"
+  },
+
+  "JPN": {
+    "pdf": "study_id61326_e-commerce-in-japan.pdf",
+    "gmv_total_usd_b_2024": 175.0,
+    "gmv_total_local_2024": "¥26.12 trillion JPY",
+    "gmv_fx_rate": 0.0067,
+    "gmv_source_page": 19,
+    "gmv_source_quote": "In 2024, the value of the business-to-consumer (B2C) e-commerce market in Japan amounted to around 26.1 trillion Japanese yen. The market size grew steadily in the last decade.",
+    "gmv_publisher": "METI (Japan)",
+    "gmv_breakdown_by_sector_usd_b_2024": {
+      "physical_goods": 102.0,
+      "service": 55.0,
+      "digital": 18.0,
+      "_sector_page": 20,
+      "_sector_local": "Physical ¥15.22T / Service ¥8.23T / Digital ¥2.68T"
+    },
+    "ecom_share_of_retail_pct_2024": 9.78,
+    "ecom_share_source_page": 18,
+    "ecom_share_source_publisher": "METI (Japan)",
+    "_note": "Physical goods $102B 是与中国跨境卖家最相关的 TAM；total $175B 含旅游/数字服务"
+  },
+
+  "IND": {
+    "pdf": "study_id23773_e-commerce-in-india-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 125.0,
+    "gmv_total_usd_b_2025_forecast": 145.0,
+    "gmv_total_usd_b_2026_forecast": 163.0,
+    "gmv_total_usd_b_2030_forecast": 345.0,
+    "gmv_total_usd_b_2035_forecast": 550.0,
+    "gmv_source_page": 10,
+    "gmv_source_quote": "Owing to the increasing internet user base and favorable market conditions, India has a lot of potential in the e-commerce industry. Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024.",
+    "gmv_publisher": "India Brand Equity Foundation",
+    "redseer_gmv_2023_usd_b": 60.0,
+    "redseer_gmv_2023_source_page": 9,
+    "redseer_gmv_2023_publisher": "Business Today; Redseer",
+    "_note": "两个估算：IBEF $125B (含数字+服务) vs Redseer $60B (仅商品 GMV)。前者作为 ecommerce_market 字段，后者标记为 narrow GMV 备注。"
+  },
+
+  "USA": {
+    "pdf": "study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 1180.0,
+    "gmv_total_usd_b_2029_forecast": 1830.0,
+    "gmv_source_page": 4,
+    "gmv_source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024. Following a continuous upward trend, the revenue has risen by 754.29 billion U.S. dollars since 2017. Between 2024 and 2029, the revenue will rise by 655.91 billion U.S. dollars, continuing its consistent upward trajectory.",
+    "gmv_publisher": "Statista Market Insights",
+    "retail_ecom_2024_usd_b": 1170.0,
+    "retail_ecom_2024_source_page": 5,
+    "retail_ecom_2024_publisher": "St. Louis Fed; Statista; U.S. Census Bureau",
+    "quarterly_q4_2025_usd_b": 316.0,
+    "quarterly_source_page": 6,
+    "ecom_share_of_retail_pct_2025": 16.4,
+    "ecom_share_source_page": 8,
+    "categories_cagr_2017_2028": {
+      "kitchen": 24.8,
+      "beauty": 14.9,
+      "toys": 12.6,
+      "apparel": 11.6,
+      "home": 6.8,
+      "electronics": 6.4,
+      "_total": 14.2,
+      "_source_page": 7,
+      "_publisher": "Statista Market Insights",
+      "_quote": "The highest CAGR for the period of 2017 and 2028 was estimated to be in the food segment, amounting to almost 25 percent growth. Beauty, health, personal & household care is estimated to have over 14 percent CAGR."
+    }
+  }
+}

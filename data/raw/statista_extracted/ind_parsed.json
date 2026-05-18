@@ -1,0 +1,126 @@
+{
+  "iso": "IND",
+  "currency": "INR",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [
+    {
+      "label": "Smartphones",
+      "pct": 39.0,
+      "page": 12
+    },
+    {
+      "label": "Fashion apparel & accessories",
+      "pct": 29.0,
+      "page": 12
+    },
+    {
+      "label": "Electronics and appliances",
+      "pct": 27.0,
+      "page": 12
+    },
+    {
+      "label": "Food & FMCG",
+      "pct": 19.0,
+      "page": 12
+    },
+    {
+      "label": "Others",
+      "pct": 9.6,
+      "page": 12
+    },
+    {
+      "label": "Beauty and personal care",
+      "pct": 6.4,
+      "page": 12
+    },
+    {
+      "label": "Others",
+      "value_b": 9.6,
+      "page": 12
+    },
+    {
+      "label": "Beauty and personal care",
+      "value_b": 6.4,
+      "page": 12
+    }
+  ],
+  "payments": [
+    {
+      "method": "Google Pay",
+      "share_pct": 81.0,
+      "page": 8
+    },
+    {
+      "method": "PhonePe",
+      "share_pct": 67.0,
+      "page": 8
+    },
+    {
+      "method": "Paytm",
+      "share_pct": 66.0,
+      "page": 8
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 61.0,
+      "page": 8
+    },
+    {
+      "method": "BHIM",
+      "share_pct": 39.0,
+      "page": 8
+    },
+    {
+      "method": "PayPal",
+      "share_pct": 37.0,
+      "page": 8
+    },
+    {
+      "method": "MobiKwik",
+      "share_pct": 15.0,
+      "page": 8
+    },
+    {
+      "method": "RazorPay",
+      "share_pct": 15.0,
+      "page": 8
+    },
+    {
+      "method": "Cashfree Payments",
+      "share_pct": 7.0,
+      "page": 8
+    },
+    {
+      "method": "CCAvenue",
+      "share_pct": 7.0,
+      "page": 8
+    },
+    {
+      "method": "Airpay",
+      "share_pct": 5.0,
+      "page": 8
+    },
+    {
+      "method": "PayUMoney",
+      "share_pct": 5.0,
+      "page": 8
+    },
+    {
+      "method": "Citrus Pay",
+      "share_pct": 4.0,
+      "page": 8
+    },
+    {
+      "method": "DirecPay",
+      "share_pct": 4.0,
+      "page": 8
+    },
+    {
+      "method": "EPaisa",
+      "share_pct": 4.0,
+      "page": 8
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

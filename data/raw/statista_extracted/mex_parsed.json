@@ -1,0 +1,65 @@
+{
+  "iso": "MEX",
+  "currency": "MXN",
+  "revenue_forecast": {
+    "value_usd_b": 15.82,
+    "currency": "USD",
+    "page": 9,
+    "quote": "them, the segment Food achieves the relatively highest value throughout the entire period, reaching 15.82 billion U.S. dollars. Find other insights concerni"
+  },
+  "top_stores": [
+    {
+      "name": "amazon.com.mx",
+      "value": 12304.7,
+      "page": 12
+    },
+    {
+      "name": "mercadolibre.com.mx",
+      "value": 12202.0,
+      "page": 12
+    },
+    {
+      "name": "liverpool.com.mx",
+      "value": 2462.3,
+      "page": 12
+    },
+    {
+      "name": "walmart.com.mx",
+      "value": 2441.2,
+      "page": 12
+    },
+    {
+      "name": "coppel.com",
+      "value": 1794.0,
+      "page": 12
+    },
+    {
+      "name": "bodegaaurrera.com.mx",
+      "value": 1196.0,
+      "page": 12
+    },
+    {
+      "name": "homedepot.com.mx",
+      "value": 916.2,
+      "page": 12
+    },
+    {
+      "name": "apple.com",
+      "value": 877.2,
+      "page": 12
+    },
+    {
+      "name": "shein.com.mx",
+      "value": 782.0,
+      "page": 12
+    },
+    {
+      "name": "sams.com.mx",
+      "value": 532.6,
+      "page": 12
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1f3a"/>
+    </linearGradient>
+    <linearGradient id="scoreLow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="scoreHigh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="url(#bg)"/>
+
+  <!-- Top Nav -->
+  <rect x="0" y="0" width="1440" height="60" fill="#0a0e27" opacity="0.9"/>
+  <text x="32" y="38" fill="#fff" font-size="20" font-weight="700">Hachimi · 全球电商市场图谱</text>
+  <text x="280" y="38" fill="#94a3b8" font-size="14">v1.0 · 32 国 · 12 品类 · 最后更新 2026-05-17</text>
+
+  <g transform="translate(1100, 18)" font-size="13" fill="#cbd5e1">
+    <text x="0" y="14">地图</text>
+    <text x="60" y="14">国家对比</text>
+    <text x="150" y="14">政策时间轴</text>
+    <text x="260" y="14">Glossary</text>
+  </g>
+
+  <!-- Left Filter Panel -->
+  <rect x="0" y="60" width="240" height="840" fill="#0a0e27" opacity="0.6"/>
+  <text x="24" y="100" fill="#94a3b8" font-size="11" font-weight="600" letter-spacing="1.5">FILTERS</text>
+
+  <text x="24" y="130" fill="#fff" font-size="13" font-weight="600">大区</text>
+  <g transform="translate(24, 145)" font-size="12" fill="#cbd5e1">
+    <rect x="0" y="0" width="180" height="22" fill="#1e293b" rx="4"/>
+    <text x="10" y="15">✓ 全部 9 大区</text>
+  </g>
+
+  <text x="24" y="200" fill="#fff" font-size="13" font-weight="600">品类</text>
+  <g transform="translate(24, 215)" font-size="11" fill="#cbd5e1">
+    <rect x="0" y="0" width="85" height="24" fill="#2563eb" rx="12"/><text x="42.5" y="16" text-anchor="middle" fill="#fff">服装</text>
+    <rect x="92" y="0" width="85" height="24" fill="#1e293b" rx="12"/><text x="134.5" y="16" text-anchor="middle">美妆</text>
+    <rect x="0" y="32" width="85" height="24" fill="#1e293b" rx="12"/><text x="42.5" y="48" text-anchor="middle">3C</text>
+    <rect x="92" y="32" width="85" height="24" fill="#1e293b" rx="12"/><text x="134.5" y="48" text-anchor="middle">家居</text>
+    <rect x="0" y="64" width="85" height="24" fill="#1e293b" rx="12"/><text x="42.5" y="80" text-anchor="middle">母婴</text>
+    <rect x="92" y="64" width="85" height="24" fill="#1e293b" rx="12"/><text x="134.5" y="80" text-anchor="middle">宠物</text>
+  </g>
+
+  <text x="24" y="330" fill="#fff" font-size="13" font-weight="600">配色维度</text>
+  <g transform="translate(24, 345)" font-size="11" fill="#cbd5e1">
+    <circle cx="6" cy="14" r="5" fill="#10b981"/><text x="20" y="18">Hachimi 综合评分</text>
+    <circle cx="6" cy="40" r="5" fill="none" stroke="#475569"/><text x="20" y="44">市场吸引力</text>
+    <circle cx="6" cy="66" r="5" fill="none" stroke="#475569"/><text x="20" y="70">运营可行性</text>
+    <circle cx="6" cy="92" r="5" fill="none" stroke="#475569"/><text x="20" y="96">竞争烈度（反向）</text>
+    <circle cx="6" cy="118" r="5" fill="none" stroke="#475569"/><text x="20" y="122">AI 杠杆度</text>
+  </g>
+
+  <text x="24" y="510" fill="#fff" font-size="13" font-weight="600">数据置信度</text>
+  <g transform="translate(24, 525)" font-size="11">
+    <rect x="0" y="0" width="14" height="14" fill="#10b981" rx="2"/><text x="22" y="11" fill="#cbd5e1">H · 政府/官方</text>
+    <rect x="0" y="22" width="14" height="14" fill="#f59e0b" rx="2"/><text x="22" y="33" fill="#cbd5e1">M · 付费报告</text>
+    <rect x="0" y="44" width="14" height="14" fill="#64748b" rx="2"/><text x="22" y="55" fill="#cbd5e1">L · 爬虫/推算</text>
+  </g>
+
+  <!-- Main Map Area -->
+  <g transform="translate(260, 80)">
+    <text x="0" y="20" fill="#fff" font-size="18" font-weight="600">全球电商市场图谱 · Hachimi 综合评分</text>
+    <text x="0" y="42" fill="#94a3b8" font-size="12">悬浮国家查看摘要 · 点击进入详情页 · 颜色深浅 = 综合评分高低</text>
+
+    <!-- Simplified world map placeholder (real implementation = Mapbox + d3-geo) -->
+    <rect x="0" y="60" width="900" height="540" fill="#0f1729" rx="8" stroke="#1e293b"/>
+
+    <!-- Continents abstract shapes with example country dots -->
+    <!-- North America -->
+    <ellipse cx="180" cy="220" rx="120" ry="80" fill="#1e293b" stroke="#334155"/>
+    <text x="180" y="190" text-anchor="middle" fill="#64748b" font-size="11">NORTH AMERICA</text>
+    <circle cx="170" cy="220" r="14" fill="#10b981"/><text x="170" y="224" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">US</text>
+    <circle cx="200" cy="200" r="9" fill="#f59e0b"/><text x="200" y="203" text-anchor="middle" fill="#fff" font-size="8">CA</text>
+    <circle cx="155" cy="255" r="10" fill="#fbbf24"/><text x="155" y="258" text-anchor="middle" fill="#fff" font-size="8">MX</text>
+
+    <!-- Europe -->
+    <ellipse cx="500" cy="180" rx="100" ry="60" fill="#1e293b" stroke="#334155"/>
+    <text x="500" y="160" text-anchor="middle" fill="#64748b" font-size="11">EUROPE</text>
+    <circle cx="480" cy="175" r="11" fill="#84cc16"/><text x="480" y="178" text-anchor="middle" fill="#fff" font-size="8">DE</text>
+    <circle cx="450" cy="195" r="10" fill="#10b981"/><text x="450" y="198" text-anchor="middle" fill="#fff" font-size="8">UK</text>
+    <circle cx="510" cy="200" r="9" fill="#fbbf24"/><text x="510" y="203" text-anchor="middle" fill="#fff" font-size="8">FR</text>
+    <circle cx="540" cy="185" r="12" fill="#10b981" stroke="#fff" stroke-width="2"/><text x="540" y="188" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">PL</text>
+
+    <!-- MENA -->
+    <ellipse cx="580" cy="290" rx="80" ry="50" fill="#1e293b" stroke="#334155"/>
+    <text x="580" y="275" text-anchor="middle" fill="#64748b" font-size="11">MENA</text>
+    <circle cx="570" cy="295" r="9" fill="#fbbf24"/><text x="570" y="298" text-anchor="middle" fill="#fff" font-size="8">AE</text>
+    <circle cx="595" cy="310" r="8" fill="#f59e0b"/><text x="595" y="313" text-anchor="middle" fill="#fff" font-size="8">SA</text>
+
+    <!-- Asia -->
+    <ellipse cx="720" cy="220" rx="140" ry="80" fill="#1e293b" stroke="#334155"/>
+    <text x="720" y="195" text-anchor="middle" fill="#64748b" font-size="11">ASIA</text>
+    <circle cx="700" cy="220" r="13" fill="#10b981"/><text x="700" y="224" text-anchor="middle" fill="#fff" font-size="10">IN</text>
+    <circle cx="730" cy="200" r="11" fill="#84cc16"/><text x="730" y="203" text-anchor="middle" fill="#fff" font-size="8">JP</text>
+    <circle cx="755" cy="225" r="9" fill="#fbbf24"/><text x="755" y="228" text-anchor="middle" fill="#fff" font-size="8">KR</text>
+    <circle cx="710" cy="260" r="12" fill="#10b981"/><text x="710" y="264" text-anchor="middle" fill="#fff" font-size="9">ID</text>
+
+    <!-- Latin America -->
+    <ellipse cx="280" cy="430" rx="90" ry="80" fill="#1e293b" stroke="#334155"/>
+    <text x="280" y="395" text-anchor="middle" fill="#64748b" font-size="11">LATAM</text>
+    <circle cx="290" cy="430" r="13" fill="#84cc16"/><text x="290" y="434" text-anchor="middle" fill="#fff" font-size="9">BR</text>
+    <circle cx="265" cy="465" r="8" fill="#f59e0b"/><text x="265" y="468" text-anchor="middle" fill="#fff" font-size="8">AR</text>
+
+    <!-- Africa -->
+    <ellipse cx="520" cy="450" rx="80" ry="80" fill="#1e293b" stroke="#334155"/>
+    <text x="520" y="420" text-anchor="middle" fill="#64748b" font-size="11">AFRICA</text>
+    <circle cx="520" cy="490" r="9" fill="#f59e0b"/><text x="520" y="493" text-anchor="middle" fill="#fff" font-size="8">ZA</text>
+
+    <!-- Oceania -->
+    <ellipse cx="800" cy="470" rx="70" ry="50" fill="#1e293b" stroke="#334155"/>
+    <text x="800" y="455" text-anchor="middle" fill="#64748b" font-size="11">OCEANIA</text>
+    <circle cx="800" cy="480" r="10" fill="#fbbf24"/><text x="800" y="483" text-anchor="middle" fill="#fff" font-size="8">AU</text>
+
+    <!-- Color Legend Bar -->
+    <text x="0" y="640" fill="#94a3b8" font-size="11">Hachimi 综合评分</text>
+    <rect x="0" y="650" width="500" height="14" fill="url(#scoreHigh)" rx="2"/>
+    <text x="0" y="680" fill="#cbd5e1" font-size="10">0 · 暂不推荐</text>
+    <text x="250" y="680" text-anchor="middle" fill="#cbd5e1" font-size="10">50 · 可选</text>
+    <text x="500" y="680" text-anchor="end" fill="#cbd5e1" font-size="10">100 · 强烈推荐</text>
+  </g>
+
+  <!-- Right Hover Panel - 当鼠标悬浮波兰时显示 -->
+  <g transform="translate(1180, 80)">
+    <rect x="0" y="0" width="240" height="780" fill="#1e293b" rx="12" stroke="#334155"/>
+    <text x="20" y="35" fill="#fff" font-size="20" font-weight="700">🇵🇱 波兰 Poland</text>
+    <text x="20" y="56" fill="#94a3b8" font-size="11">东欧 / 欧盟 / 兹罗提 PLN</text>
+
+    <!-- Score Block -->
+    <rect x="20" y="74" width="200" height="68" fill="#0a0e27" rx="8"/>
+    <text x="34" y="98" fill="#94a3b8" font-size="11">Hachimi 综合评分</text>
+    <text x="34" y="128" fill="#10b981" font-size="32" font-weight="700">65</text>
+    <text x="90" y="128" fill="#94a3b8" font-size="12">/100</text>
+    <text x="190" y="98" text-anchor="end" fill="#10b981" font-size="11">↑ 推荐</text>
+
+    <!-- Key Indicators -->
+    <text x="20" y="170" fill="#94a3b8" font-size="11" font-weight="600">关键指标</text>
+
+    <g transform="translate(20, 185)" font-size="12" fill="#cbd5e1">
+      <text x="0" y="14">电商 GMV (2024)</text><text x="200" y="14" text-anchor="end" fill="#fff" font-weight="600">$33.9B</text>
+      <text x="0" y="38">CAGR 2025-2030</text><text x="200" y="38" text-anchor="end" fill="#10b981" font-weight="600">+4.6%</text>
+      <text x="0" y="62">人均电商支出</text><text x="200" y="62" text-anchor="end" fill="#fff" font-weight="600">$1,404</text>
+      <text x="0" y="86">在线买家</text><text x="200" y="86" text-anchor="end" fill="#fff" font-weight="600">24.1M</text>
+      <text x="0" y="110">跨境占比</text><text x="200" y="110" text-anchor="end" fill="#f59e0b" font-weight="600">41%</text>
+    </g>
+
+    <line x1="20" y1="310" x2="220" y2="310" stroke="#334155"/>
+
+    <text x="20" y="335" fill="#94a3b8" font-size="11" font-weight="600">Top 3 平台</text>
+    <g transform="translate(20, 350)" font-size="12">
+      <text x="0" y="14" fill="#cbd5e1">1. Allegro</text><text x="200" y="14" text-anchor="end" fill="#fff" font-weight="600">42.6%</text>
+      <text x="0" y="34" fill="#cbd5e1">2. Mediaexpert</text><text x="200" y="34" text-anchor="end" fill="#fff" font-weight="600">7.1%</text>
+      <text x="0" y="54" fill="#cbd5e1">3. AliExpress</text><text x="200" y="54" text-anchor="end" fill="#fff" font-weight="600">4.3%</text>
+    </g>
+
+    <line x1="20" y1="430" x2="220" y2="430" stroke="#334155"/>
+
+    <text x="20" y="455" fill="#94a3b8" font-size="11" font-weight="600">推荐入市</text>
+    <rect x="20" y="465" width="200" height="34" fill="#1e3a8a" rx="6"/>
+    <text x="34" y="488" fill="#fff" font-size="13" font-weight="600">FBA + Allegro 双平台</text>
+
+    <text x="20" y="525" fill="#94a3b8" font-size="11" font-weight="600">推荐品类</text>
+    <g transform="translate(20, 535)" font-size="11">
+      <rect x="0" y="0" width="60" height="22" fill="#065f46" rx="11"/><text x="30" y="15" text-anchor="middle" fill="#a7f3d0">服装</text>
+      <rect x="66" y="0" width="60" height="22" fill="#065f46" rx="11"/><text x="96" y="15" text-anchor="middle" fill="#a7f3d0">户外</text>
+      <rect x="132" y="0" width="60" height="22" fill="#065f46" rx="11"/><text x="162" y="15" text-anchor="middle" fill="#a7f3d0">宠物</text>
+      <rect x="0" y="28" width="60" height="22" fill="#065f46" rx="11"/><text x="30" y="43" text-anchor="middle" fill="#a7f3d0">园艺</text>
+    </g>
+
+    <line x1="20" y1="615" x2="220" y2="615" stroke="#334155"/>
+
+    <text x="20" y="640" fill="#94a3b8" font-size="11" font-weight="600">⚠️ 政策提醒</text>
+    <text x="20" y="660" fill="#fbbf24" font-size="11">GPSR 已生效 (2024.12.13)</text>
+    <text x="20" y="680" fill="#fbbf24" font-size="11">CBAM 即将生效 (2026.01.01)</text>
+
+    <rect x="20" y="710" width="200" height="40" fill="#2563eb" rx="6"/>
+    <text x="120" y="735" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">查看完整报告 →</text>
+  </g>
+</svg>

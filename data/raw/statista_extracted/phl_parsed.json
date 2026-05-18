@@ -1,0 +1,52 @@
+{
+  "iso": "PHL",
+  "currency": "PHP",
+  "revenue_forecast": null,
+  "top_stores": [
+    {
+      "name": "the 2nd quarter",
+      "value": 2025.0,
+      "page": 38
+    },
+    {
+      "name": "of January",
+      "value": 2023.0,
+      "page": 39
+    }
+  ],
+  "categories": [
+    {
+      "label": "Tobacco products",
+      "pct": 30.0,
+      "page": 17
+    }
+  ],
+  "payments": [
+    {
+      "method": "Other",
+      "share_pct": 6.0,
+      "page": 32
+    },
+    {
+      "method": "Cash-based payments",
+      "share_pct": 15.0,
+      "page": 32
+    },
+    {
+      "method": "Wallets",
+      "share_pct": 33.0,
+      "page": 32
+    },
+    {
+      "method": "Bank transfers",
+      "share_pct": 16.0,
+      "page": 32
+    },
+    {
+      "method": "Card-based payments",
+      "share_pct": 30.0,
+      "page": 32
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

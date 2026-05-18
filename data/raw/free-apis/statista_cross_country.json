@@ -1,0 +1,127 @@
+{
+  "_meta": "Cross-country master data extracted from Statista xlsx",
+  "countries": {
+    "India": {
+      "cagr_2025_2030_pct": 11.77,
+      "cross_border_share_pct": 26.26,
+      "domestic_share_pct": 73.74
+    },
+    "Japan": {
+      "cagr_2025_2030_pct": 9.67,
+      "cross_border_share_pct": 35.13,
+      "domestic_share_pct": 64.87
+    },
+    "Indonesia": {
+      "cagr_2025_2030_pct": 7.75,
+      "cross_border_share_pct": 23.27,
+      "domestic_share_pct": 76.73
+    },
+    "Turkey": {
+      "cagr_2025_2030_pct": 7.47
+    },
+    "China": {
+      "cagr_2025_2030_pct": 7.41,
+      "cross_border_share_pct": 0.14,
+      "domestic_share_pct": 99.86
+    },
+    "Mexico": {
+      "cagr_2025_2030_pct": 6.14,
+      "cross_border_share_pct": 19.87,
+      "domestic_share_pct": 80.13
+    },
+    "Spain": {
+      "cagr_2025_2030_pct": 5.9,
+      "cross_border_share_pct": 18.94,
+      "domestic_share_pct": 81.06
+    },
+    "United States": {
+      "cagr_2025_2030_pct": 5.59,
+      "cross_border_share_pct": 5.05,
+      "domestic_share_pct": 94.95
+    },
+    "Italy": {
+      "cagr_2025_2030_pct": 5.33,
+      "cross_border_share_pct": 21.6,
+      "domestic_share_pct": 78.4
+    },
+    "Thailand": {
+      "cagr_2025_2030_pct": 5.11
+    },
+    "Germany": {
+      "cagr_2025_2030_pct": 4.98,
+      "cross_border_share_pct": 32.13,
+      "domestic_share_pct": 67.87
+    },
+    "Canada": {
+      "cagr_2025_2030_pct": 4.9,
+      "cross_border_share_pct": 19.27,
+      "domestic_share_pct": 80.73
+    },
+    "Brazil": {
+      "cagr_2025_2030_pct": 4.85,
+      "cross_border_share_pct": 17.49,
+      "domestic_share_pct": 82.51
+    },
+    "Poland": {
+      "cagr_2025_2030_pct": 4.64
+    },
+    "South Korea": {
+      "cagr_2025_2030_pct": 4.54,
+      "cross_border_share_pct": 27.79,
+      "domestic_share_pct": 72.21
+    },
+    "Netherlands": {
+      "cagr_2025_2030_pct": 3.93,
+      "cross_border_share_pct": 25.74,
+      "domestic_share_pct": 74.26
+    },
+    "United Kingdom": {
+      "cagr_2025_2030_pct": 3.93,
+      "cross_border_share_pct": 18.99,
+      "domestic_share_pct": 81.01
+    },
+    "France": {
+      "cagr_2025_2030_pct": 3.76,
+      "cross_border_share_pct": 23.77,
+      "domestic_share_pct": 76.23
+    },
+    "Russia": {
+      "cagr_2025_2030_pct": 3.51,
+      "cross_border_share_pct": 13.87,
+      "domestic_share_pct": 86.13
+    },
+    "Australia": {
+      "cagr_2025_2030_pct": 3.39,
+      "cross_border_share_pct": 17.93,
+      "domestic_share_pct": 82.07
+    },
+    "Argentina": {
+      "cross_border_share_pct": 27.61,
+      "domestic_share_pct": 72.39
+    },
+    "Finland": {
+      "cross_border_share_pct": 26.43,
+      "domestic_share_pct": 73.57
+    },
+    "Austria": {
+      "cross_border_share_pct": 26.42,
+      "domestic_share_pct": 73.58
+    },
+    "Denmark": {
+      "cross_border_share_pct": 26.38,
+      "domestic_share_pct": 73.62
+    },
+    "Belgium": {
+      "cross_border_share_pct": 26.05,
+      "domestic_share_pct": 73.95
+    },
+    "Sweden": {
+      "cross_border_share_pct": 24.78,
+      "domestic_share_pct": 75.22
+    },
+    "Portugal": {
+      "cross_border_share_pct": 20.09,
+      "domestic_share_pct": 79.91
+    }
+  }
+}

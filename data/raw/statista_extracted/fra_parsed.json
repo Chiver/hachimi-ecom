@@ -1,0 +1,66 @@
+{
+  "iso": "FRA",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_local_b": 196.4,
+    "currency": "EUR",
+    "value_usd_b": 214.07600000000002,
+    "page": 6,
+    "quote": "Description: In 2025, e-commerce sales in France amounted to approximately 196.4 billion euros. The e-commerce revenue in Fr"
+  },
+  "top_stores": [
+    {
+      "name": "amazon.fr",
+      "value": 23706.3,
+      "page": 14
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 4745.4,
+      "page": 14
+    },
+    {
+      "name": "vinted.fr",
+      "value": 3435.7,
+      "page": 14
+    },
+    {
+      "name": "shein.com",
+      "value": 2828.3,
+      "page": 14
+    },
+    {
+      "name": "veepee.fr",
+      "value": 2613.4,
+      "page": 14
+    },
+    {
+      "name": "carrefour.fr",
+      "value": 2536.4,
+      "page": 14
+    },
+    {
+      "name": "temu.com",
+      "value": 2494.4,
+      "page": 14
+    },
+    {
+      "name": "cdiscount.com",
+      "value": 2291.4,
+      "page": 14
+    },
+    {
+      "name": "ebay.fr",
+      "value": 2191.2,
+      "page": 14
+    },
+    {
+      "name": "auchan.fr",
+      "value": 1984.4,
+      "page": 14
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

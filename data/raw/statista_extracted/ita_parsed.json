@@ -1,0 +1,142 @@
+{
+  "iso": "ITA",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_local_b": 80.6,
+    "currency": "EUR",
+    "value_usd_b": 87.854,
+    "page": 4,
+    "quote": "Description: In 2023, the revenue of the e-commerce sector in Italy hit nearly 80.6 billion euros, a significant increase from "
+  },
+  "top_stores": [
+    {
+      "name": "Leading e-commerce software in Italy",
+      "value": 2025.0,
+      "page": 15
+    },
+    {
+      "name": "Top online stores in Italy",
+      "value": 2025.0,
+      "page": 24
+    },
+    {
+      "name": "amazon.it",
+      "value": 27637.1,
+      "page": 24
+    },
+    {
+      "name": "shein.com",
+      "value": 5401.8,
+      "page": 24
+    },
+    {
+      "name": "ebay.it",
+      "value": 3562.8,
+      "page": 24
+    },
+    {
+      "name": "temu.com",
+      "value": 3328.4,
+      "page": 24
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 3039.0,
+      "page": 24
+    },
+    {
+      "name": "apple.com",
+      "value": 1391.2,
+      "page": 24
+    },
+    {
+      "name": "vinted.it",
+      "value": 1058.2,
+      "page": 24
+    },
+    {
+      "name": "zalando.it",
+      "value": 1054.2,
+      "page": 24
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "PayPal",
+      "share_pct": 86.0,
+      "page": 37
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 24.0,
+      "page": 37
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 16.0,
+      "page": 37
+    },
+    {
+      "method": "Satispay",
+      "share_pct": 15.0,
+      "page": 37
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 14.0,
+      "page": 37
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 14.0,
+      "page": 37
+    },
+    {
+      "method": "Mastercard Click to Pay (Masterpass)",
+      "share_pct": 13.0,
+      "page": 37
+    },
+    {
+      "method": "Scalapay",
+      "share_pct": 10.0,
+      "page": 37
+    },
+    {
+      "method": "Samsung Pay",
+      "share_pct": 4.0,
+      "page": 37
+    },
+    {
+      "method": "MyBank",
+      "share_pct": 3.0,
+      "page": 37
+    },
+    {
+      "method": "Skrill",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "Tinaba",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "TransferWise",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "XME Pay",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "Meta Pay (Facebook)",
+      "share_pct": 1.0,
+      "page": 37
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

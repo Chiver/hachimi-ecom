@@ -1,0 +1,151 @@
+{
+  "iso": "IDN",
+  "currency": "IDR",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [
+    {
+      "label": "Food",
+      "pct": 10.8,
+      "page": 13
+    },
+    {
+      "label": "Electronics",
+      "pct": 9.55,
+      "page": 13
+    },
+    {
+      "label": "Fashion",
+      "pct": 7.72,
+      "page": 13
+    },
+    {
+      "label": "Beauty & personal care",
+      "pct": 4.17,
+      "page": 13
+    },
+    {
+      "label": "DIY & hardware",
+      "pct": 3.31,
+      "page": 13
+    },
+    {
+      "label": "Toys & hobby",
+      "pct": 2.9,
+      "page": 13
+    },
+    {
+      "label": "Household essentials",
+      "pct": 2.37,
+      "page": 13
+    },
+    {
+      "label": "Beverages",
+      "pct": 2.1,
+      "page": 13
+    },
+    {
+      "label": "Tobacco products",
+      "pct": 1.9,
+      "page": 13
+    },
+    {
+      "label": "Furniture",
+      "pct": 1.56,
+      "page": 13
+    },
+    {
+      "label": "Over-the-counter pharmaceuticals",
+      "pct": 1.29,
+      "page": 13
+    },
+    {
+      "label": "Eye-wear",
+      "pct": 0.27,
+      "page": 13
+    },
+    {
+      "label": "Food",
+      "value_b": 10.8,
+      "page": 13
+    },
+    {
+      "label": "Electronics",
+      "value_b": 9.55,
+      "page": 13
+    },
+    {
+      "label": "Fashion",
+      "value_b": 7.72,
+      "page": 13
+    },
+    {
+      "label": "Beauty & personal care",
+      "value_b": 4.17,
+      "page": 13
+    },
+    {
+      "label": "DIY & hardware",
+      "value_b": 3.31,
+      "page": 13
+    },
+    {
+      "label": "Toys & hobby",
+      "value_b": 2.9,
+      "page": 13
+    },
+    {
+      "label": "Household essentials",
+      "value_b": 2.37,
+      "page": 13
+    },
+    {
+      "label": "Beverages",
+      "value_b": 2.1,
+      "page": 13
+    },
+    {
+      "label": "Tobacco products",
+      "value_b": 1.9,
+      "page": 13
+    },
+    {
+      "label": "Furniture",
+      "value_b": 1.56,
+      "page": 13
+    },
+    {
+      "label": "Eye-wear",
+      "value_b": 0.27,
+      "page": 13
+    }
+  ],
+  "payments": [
+    {
+      "method": "Digital wallet",
+      "share_pct": 42.0,
+      "page": 30
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 5.0,
+      "page": 30
+    },
+    {
+      "method": "Buy now pay later (BNPL)",
+      "share_pct": 3.0,
+      "page": 30
+    },
+    {
+      "method": "Debit card",
+      "share_pct": 2.0,
+      "page": 30
+    },
+    {
+      "method": "Prepaid card",
+      "share_pct": 1.0,
+      "page": 30
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

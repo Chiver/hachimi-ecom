@@ -1,0 +1,35 @@
+{
+  "iso": "ARE",
+  "currency": "AED",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Card",
+      "share_pct": 52.0,
+      "page": 20
+    },
+    {
+      "method": "E-wallets",
+      "share_pct": 24.0,
+      "page": 20
+    },
+    {
+      "method": "Bank transfer",
+      "share_pct": 11.0,
+      "page": 20
+    },
+    {
+      "method": "Cash",
+      "share_pct": 7.0,
+      "page": 20
+    },
+    {
+      "method": "Other",
+      "share_pct": 6.0,
+      "page": 20
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

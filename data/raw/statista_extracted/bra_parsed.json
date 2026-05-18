@@ -1,0 +1,102 @@
+{
+  "iso": "BRA",
+  "currency": "BRL",
+  "revenue_forecast": {
+    "value_local_b": 235.5,
+    "currency": "BRL",
+    "value_usd_b": 42.39,
+    "page": 8,
+    "quote": "Description: In 2025, e-commerce in Brazil generated around 235.5 billion Brazilian reals in revenue, marking a 15.3 pe"
+  },
+  "top_stores": [
+    {
+      "name": "mercadolivre.com.br",
+      "value": 201.41,
+      "page": 22
+    },
+    {
+      "name": "amazon.com.br",
+      "value": 152.38,
+      "page": 22
+    },
+    {
+      "name": "shopee.com.br",
+      "value": 139.96,
+      "page": 22
+    },
+    {
+      "name": "olx.com.br",
+      "value": 58.77,
+      "page": 22
+    },
+    {
+      "name": "Most popular online shops in Brazil",
+      "value": 2025.0,
+      "page": 24
+    }
+  ],
+  "categories": [
+    {
+      "label": "Household appliances",
+      "pct": 19.65,
+      "page": 15
+    },
+    {
+      "label": "Telephony & mobile phones",
+      "pct": 13.1,
+      "page": 15
+    },
+    {
+      "label": "Home furnishings & decoration",
+      "pct": 11.7,
+      "page": 15
+    },
+    {
+      "label": "Computers & IT",
+      "pct": 11.2,
+      "page": 15
+    },
+    {
+      "label": "Fashion & accessories",
+      "pct": 10.4,
+      "page": 15
+    },
+    {
+      "label": "Consumer electronics",
+      "pct": 10.4,
+      "page": 15
+    },
+    {
+      "label": "Health, cosmetics & perfumes",
+      "pct": 6.84,
+      "page": 15
+    },
+    {
+      "label": "Sports & leisure",
+      "pct": 4.75,
+      "page": 15
+    },
+    {
+      "label": "Food & beverages",
+      "pct": 4.5,
+      "page": 15
+    },
+    {
+      "label": "Games",
+      "pct": 2.1,
+      "page": 15
+    },
+    {
+      "label": "Culture",
+      "pct": 1.4,
+      "page": 15
+    },
+    {
+      "label": "Others",
+      "pct": 3.96,
+      "page": 15
+    }
+  ],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

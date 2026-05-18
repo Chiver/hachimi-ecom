@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "iso": "JPN",
+    "pdf_file": "study_id61326_e-commerce-in-japan.pdf",
+    "extracted_at": "2026-05-17",
+    "total_pages": 35,
+    "toc_pages": {
+      "ecommerce_revenue": [],
+      "top_online_stores": [
+        6
+      ],
+      "categories": [],
+      "payments": [],
+      "forecast_users": [
+        22,
+        25
+      ],
+      "forecast_revenue": [
+        29,
+        30
+      ],
+      "cross_border": [
+        5
+      ],
+      "online_buyers": [],
+      "mobile": [
+        21
+      ]
+    }
+  },
+  "sections": {
+    "top_online_stores": [
+      {
+        "page": 6,
+        "text": "Description: In fiscal year 2024, the cross-border e-commerce market in Japan with the United States and China was valued at around 441 billion Japanese yen. The two trade partners were the main markets for cross-border business-to-consumer (B2C) transactions\nfrom Japan. In contrast, the domestic B2C e-commerce market was valued at over 26 trillion yen. Read more\nNote(s): Japan; fiscal years 2016 to 2024; the Japanese fiscal year runs from April 1of the stated year to March 31 of the following year; products purchased from Chinese and U.S. online retailers only\nSource(s): METI (Japan)\nney\nesenapaJ\nnoillib\nni\nezis\ntekraM\nCross-border e-commerce market size in Japan with the United States and\nChina from fiscal year 2016 to 2024 (in billion Japanese yen)\nCross-border online retail market size in Japan FY 2016-2024\n500\n441\n450\n420.8\n395.4\n400 372.7\n341.6\n350\n317.5\n300 276.5\n257\n239.6\n250\n200\n150\n100\n50\n0\n2016 2017 2018 2019 2020 2021 2022 2023 2024\n5"
+      }
+    ],
+    "forecast_users": [
+      {
+        "page": 22,
+        "text": "Description: The mobile commerce market size in Japan stood at around 7.2 trillion Japanese yen as of 2024. It almost tripled over the last decade. The mobile commerce market consists of the three segments shopping, services, and transactions. Read more\nNote(s): Japan; 2015 to 2024\nSource(s): Mobile Content Forum\nney\nesenapaJ\nnoillirt\nni\nezis\ntekraM\nValue of the mobile e-commerce market in Japan from 2015 to 2024 (in\ntrillion Japanese yen)\nM-commerce market size in Japan 2015-2024\n8\n7.23\n7 6.65\n6 5.74\n4.98\n5\n4.55 4.49\n3.99\n4 3.62\n3.19\n2.86\n3\n2\n1\n0\n2015 2016 2017 2018 2019 2020 2021 2022 2023 2024\n21"
+      },
+      {
+        "page": 25,
+        "text": "Description: The consumer-to-consumer (C2C) e-commerce market in Japan was valued at around 2.5 trillion Japanese yen in 2024. The market, which includes both products and services offered by consumers online, expanded significantly in recent years, with online\nauctions and flea market platforms carrying the market growth. Read more\nNote(s): Japan; fiscal years 2016 to 2024; the Japanese fiscal year runs from April 1 of the stated year to March 31 of the following year; market size based on transaction value\nSource(s): METI (Japan)\nney\nesenapaJ\nnoillib\nni\nezis\ntekraM\nConsumer-to-consumer (C2C) e-commerce market size in Japan from fiscal\nyear 2016 to 2024 (in billion Japanese yen)\nOnline C2C market size in Japan FY 2016-2024\n3.0\n2.53\n2.48\n2.5 2.36\n2.21\n1.96\n2.0\n1.74\n1.59\n1.5\n1.12\n1.08\n1.0\n0.5\n0.0\n2016 2017 2018 2019 2020 2021 2022 2023 2024\n24"
+      }
+    ],
+    "forecast_revenue": [
+      {
+        "page": 30,
+        "text": "Description: In fiscal year 2023, the sales revenue of online retailer Amazon Japan amounted to around 3.7 trillion Japanese yen, reaching a decade-high. Amazon Japan G.K. is a leading online marketplace operator within the Japanese e-commerce market, next to\nRakuten Ichiba and Yahoo Shopping. Read more\nNote(s): Japan; fiscal years 2014 to 2023; the Japanese fiscal year runs from April 1 of the stated year to March 31 of the following year\nSource(s): Mitsui Fudosan\nney\nesenapaJ\nnoillib\nni\neunever\nselaS\nSales revenue of e-commerce retailer Amazon Japan G.K. from fiscal year\n2014 to 2023 (in billion Japanese yen)\nAmazon Japan's online retail sales revenue FY 2014-2023\n4,000\n3,652.8\n3,500\n3,205.1\n3,000\n2,533.2\n2,500\n2,184.8\n2,000\n1,744.4\n1,526.6\n1,500 1,355.5\n1,174.7\n999.9\n1,000 840\n500\n0\n2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\n29"
+      }
+    ],
+    "cross_border": [
+      {
+        "page": 5,
+        "text": "Description: In fiscal year 2023, the sales value of the e-commerce website designing service market in Japan amounted to around 213.4 billion Japanese yen. The market was forecast to increase steadily to almost 258 billion yen in fiscal 2027, boosted by businesses\nshifting to online distribution channels and the integration of AI services. Read more\nNote(s): Japan; fiscal year 2021 to 2023; the Japanese fiscal year starts on April 1 of the stated year and ends on March 31 of the following year; the market size is based on the sales of the businesses; *Forecast. Research targets were providers of [...] Read more\nSource(s): Yano Research\nney\nesenapaJ\nnoillib\nni\neulav\nselaS\nSales value of the e-commerce website designing service market in Japan from\nfiscal year 2011 to 2023 with forecasts until 2027 (in billion Japanese yen)\nE-commerce website designing service market size in Japan 2021-2027\n300\n257.9\n247.7\n250 237.7\n225.9\n213.4\n200.3\n200 184.8\n150\n100\n50\n0\n2021 2022 2023 2024* 2025* 2026* 2027*\n4"
+      }
+    ],
+    "mobile": [
+      {
+        "page": 21,
+        "text": "Description: In 2024, physical goods made up more than half of the business-to-consumer (B2C) e-commerce market value in Japan, carried mainly by non-durable and semi-durable goods. Digital goods like electronic media and online games reached an online\ncommerce market size of around 2.7 trillion yen. The segment was boosted by the digitalization of entertainment media. Read more\nNote(s): Japan; 2024\nSource(s): METI (Japan)\nney\nesenapaJ\nnoillirt\nni\nezis\ntekraM\nBusiness-to-consumer (B2C) e-commerce market size in Japan in 2024, by\nsector (in trillion Japanese yen)\nB2C online retail market size in Japan 2024, by sector\n16 15.22\n14\n12\n10\n8.23\n8\n6\n4\n2.68\n2\n0\nPhysical goods Service Digital\n20"
+      }
+    ]
+  }
+}

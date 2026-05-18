@@ -1,0 +1,539 @@
+{
+  "_schema_version": "1.0",
+  "_country_status": "pilot_country",
+  "_last_updated": "2026-05-17",
+  "_notes": "波兰作为 Phase 1 示范国，验证 schema 完整性。所有数据点均带 source_url 可追溯。",
+
+  "country": {
+    "iso_alpha3": "POL",
+    "iso_alpha2": "PL",
+    "name_en": "Poland",
+    "name_zh": "波兰",
+    "region": "Eastern Europe & CIS",
+    "sub_region": "Visegrad Group (V4)",
+    "currency_code": "PLN",
+    "official_language": "Polish",
+    "flag_emoji": "🇵🇱",
+    "is_eu": true,
+    "sanctions_status": "none",
+    "notes": "欧盟成员国（2004）、欧盟单一市场；GDPR/GPSR/CE 全套适用。非欧元区，本币兹罗提（PLN）。东欧最大经济体之一，电商市场在 V4 国家中领跑。"
+  },
+
+  "macro_indicators": [
+    {
+      "year": 2024,
+      "population": 36559233,
+      "gdp_usd_billion": 917.77,
+      "gdp_per_capita_usd": 25103.57,
+      "disposable_income_usd": 17500,
+      "inflation_rate_pct": 3.79,
+      "fx_volatility_pct": 7.2,
+      "internet_penetration_pct": 88.58,
+      "smartphone_penetration_pct": 84.0,
+      "mobile_internet_users_million": 31.5,
+      "urban_population_pct": 59.97,
+      "median_age": 41.7,
+      "source_metadata": {
+        "population": {"source_name": "World Bank Open Data", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/SP.POP.TOTL", "fetched_at": "2026-05-17", "confidence": "H"},
+        "gdp_usd_billion": {"source_name": "World Bank Open Data", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/NY.GDP.MKTP.CD", "fetched_at": "2026-05-17", "confidence": "H"},
+        "gdp_per_capita_usd": {"source_name": "World Bank Open Data", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/NY.GDP.PCAP.CD", "fetched_at": "2026-05-17", "confidence": "H"},
+        "disposable_income_usd": {"source_name": "OECD; Statista Poland Dossier (Hachimi 估算 GNI × 0.81)", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf", "fetched_at": "2026-05-17", "confidence": "M"},
+        "inflation_rate_pct": {"source_name": "World Bank Open Data", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/FP.CPI.TOTL.ZG", "fetched_at": "2026-05-17", "confidence": "H"},
+        "fx_volatility_pct": {"source_name": "PLN/USD 2024 年波动率（兹罗提对美元）", "source_url": "https://exchangerate.host", "fetched_at": "2026-05-17", "confidence": "M"},
+        "internet_penetration_pct": {"source_name": "World Bank / ITU", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/IT.NET.USER.ZS", "fetched_at": "2026-05-17", "confidence": "H"},
+        "smartphone_penetration_pct": {"source_name": "Statista Poland Dossier 2025", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf", "fetched_at": "2026-05-17", "confidence": "H"},
+        "urban_population_pct": {"source_name": "World Bank", "source_url": "https://api.worldbank.org/v2/country/POL/indicator/SP.URB.TOTL.IN.ZS", "fetched_at": "2026-05-17", "confidence": "H"},
+        "median_age": {"source_name": "UN World Population Prospects 2024", "source_url": "https://population.un.org/wpp/", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    }
+  ],
+
+  "ecommerce_market": [
+    {
+      "year": 2024,
+      "gmv_total_usd_million": 33900,
+      "gmv_yoy_pct": 5.3,
+      "cagr_2025_2030_pct": 4.64,
+      "ecom_share_of_retail_pct": 13.5,
+      "per_capita_spend_usd": 1404,
+      "online_buyers_million": 24.13,
+      "online_buyer_penetration_pct": 66.0,
+      "mobile_share_pct": 65.0,
+      "social_commerce_gmv_usd_million": 1700,
+      "cross_border_share_pct": 41.0,
+      "domestic_share_pct": 59.0,
+      "top_cross_border_origin_countries": ["China", "Germany", "United Kingdom", "USA"],
+      "source_metadata": {
+        "gmv_total_usd_million": {"source_name": "Statista E-commerce in Poland 2025 - p.62 Revenue Forecast", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=62", "fetched_at": "2026-05-17", "confidence": "H"},
+        "cagr_2025_2030_pct": {"source_name": "Statista CAGR 2025-2030 by Country", "source_url": "data/raw/statista/statistic_id220177_e-commerce-retail-sales-cagr-2025-2030-by-country.xlsx", "fetched_at": "2026-05-17", "confidence": "H"},
+        "cross_border_share_pct": {"source_name": "Gemius / IAB Polska 2025", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=8", "fetched_at": "2026-05-17", "confidence": "H"},
+        "online_buyers_million": {"source_name": "Statista Digital Market Outlook (Poland 2024 figure)", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=61", "fetched_at": "2026-05-17", "confidence": "H"},
+        "top_cross_border_origin_countries": {"source_name": "Statista cross-border partner countries", "source_url": "data/raw/statista/statistic_id1313489_main-foreign-countries-where-global-shoppers-last-bought-online-2025.xlsx", "fetched_at": "2026-05-17", "confidence": "M"}
+      }
+    },
+    {
+      "year": 2029,
+      "gmv_total_usd_million": 35760,
+      "online_buyers_million": 26.0,
+      "source_metadata": {
+        "gmv_total_usd_million": {"source_name": "Statista Digital Market Outlook forecast", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=62", "fetched_at": "2026-05-17", "confidence": "H"},
+        "online_buyers_million": {"source_name": "Statista forecast", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=61", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    }
+  ],
+
+  "platforms": [
+    {
+      "platform_code": "allegro_pl",
+      "name": "Allegro",
+      "parent_company": "Allegro.eu (Warsaw 上市，2020 IPO)",
+      "platform_type": "marketplace",
+      "coverage_countries": ["POL", "CZE", "SVK", "HUN"],
+      "website": "https://allegro.pl",
+      "founded_year": 1999,
+      "metrics_2024": {
+        "country_code": "POL",
+        "gmv_usd_million": 14441.4,
+        "traffic_monthly_million": 215,
+        "market_share_pct": 42.6,
+        "commission_rate_pct": 11.0,
+        "fulfillment_fee_model": "Allegro One Box（自营物流）；Smart! 会员订阅类 Prime 模型；卖家可选第三方 InPost/DPD/DHL",
+        "chinese_seller_share_pct": 18.0,
+        "rank_in_country": 1,
+        "source_metadata": {
+          "gmv_usd_million": {"source_name": "ECDB / Statista Top Online Stores Poland 2024", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=7", "fetched_at": "2026-05-17", "confidence": "H"},
+          "commission_rate_pct": {"source_name": "Allegro 卖家中心公开费率（按类目 5-15%，平均 ~11%）", "source_url": "https://allegro.pl/pomoc/dla-sprzedajacych/oplaty-i-prowizje-na-allegro-58HPxBR3WiB", "fetched_at": "2026-05-17", "confidence": "M"},
+          "chinese_seller_share_pct": {"source_name": "Hachimi 估算（基于 Allegro Open Marketplace 公开新卖家国别分布）", "source_url": "https://about.allegro.eu/news", "fetched_at": "2026-05-17", "confidence": "L"}
+        }
+      }
+    },
+    {
+      "platform_code": "mediaexpert_pl",
+      "name": "Mediaexpert",
+      "parent_company": "TERG S.A.",
+      "platform_type": "vertical_specialist",
+      "coverage_countries": ["POL"],
+      "website": "https://mediaexpert.pl",
+      "founded_year": 2002,
+      "metrics_2024": {
+        "country_code": "POL",
+        "gmv_usd_million": 2400.2,
+        "rank_in_country": 2,
+        "source_metadata": {
+          "gmv_usd_million": {"source_name": "ECDB / Statista", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=7", "fetched_at": "2026-05-17", "confidence": "H"}
+        }
+      },
+      "notes": "波兰本土最大家电连锁，电商+实体融合，3C 类目本土主导。"
+    },
+    {
+      "platform_code": "aliexpress_pl",
+      "name": "AliExpress Poland",
+      "parent_company": "Alibaba Group",
+      "platform_type": "marketplace",
+      "coverage_countries": ["POL"],
+      "website": "https://aliexpress.com",
+      "founded_year": 2010,
+      "metrics_2024": {
+        "country_code": "POL",
+        "gmv_usd_million": 1460.7,
+        "rank_in_country": 3,
+        "source_metadata": {
+          "gmv_usd_million": {"source_name": "ECDB / Statista", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=7", "fetched_at": "2026-05-17", "confidence": "H"}
+        }
+      }
+    },
+    {
+      "platform_code": "temu_pl",
+      "name": "Temu Poland",
+      "parent_company": "PDD Holdings",
+      "platform_type": "marketplace",
+      "coverage_countries": ["POL"],
+      "website": "https://temu.com",
+      "founded_year": 2022,
+      "metrics_2024": {
+        "country_code": "POL",
+        "gmv_usd_million": 1300.9,
+        "traffic_monthly_million": 18.24,
+        "rank_in_country": 4,
+        "source_metadata": {
+          "gmv_usd_million": {"source_name": "ECDB / Statista", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=7", "fetched_at": "2026-05-17", "confidence": "H"},
+          "traffic_monthly_million": {"source_name": "Gemius RU (Real Users) 2024.12", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=21", "fetched_at": "2026-05-17", "confidence": "H"}
+        }
+      },
+      "notes": "2023 年进入波兰，2024 年用户数飙至 1824 万（仅次于 Allegro），价格战极猛烈。"
+    },
+    {
+      "platform_code": "amazon_pl",
+      "name": "Amazon Poland",
+      "parent_company": "Amazon",
+      "platform_type": "marketplace",
+      "coverage_countries": ["POL"],
+      "website": "https://amazon.pl",
+      "founded_year": 2021,
+      "metrics_2024": {
+        "country_code": "POL",
+        "gmv_usd_million": 1072.0,
+        "rank_in_country": 5,
+        "commission_rate_pct": 15.0,
+        "fulfillment_fee_model": "FBA (Pan-EU) 可同时覆盖德/法/意/西/英",
+        "source_metadata": {
+          "gmv_usd_million": {"source_name": "ECDB / Statista", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=7", "fetched_at": "2026-05-17", "confidence": "H"}
+        }
+      },
+      "notes": "2021 年开站，本地化进展较慢，但 Pan-EU FBA 是中国卖家进入波兰最便捷渠道。"
+    }
+  ],
+
+  "category_metrics": [
+    {
+      "category_code": "apparel",
+      "year": 2025,
+      "gmv_usd_million": 8740,
+      "yoy_growth_pct": 36.6,
+      "forecast_2030_usd_million": 11200,
+      "typical_gross_margin_pct": 55.0,
+      "typical_return_rate_pct": 25.0,
+      "regulatory_complexity": "low",
+      "chinese_supply_advantage": "high",
+      "notes": "波兰电商最大品类。本土巨头 Zalando、LPP（Sinsay/Reserved 母公司）、Vinted 主导，但 Shein 已占据 7.3 亿美金。GPSR 适用，需 EU RP。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland 2024-2025", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "electronics",
+      "year": 2025,
+      "gmv_usd_million": 3130,
+      "yoy_growth_pct": -19.1,
+      "typical_gross_margin_pct": 25.0,
+      "typical_return_rate_pct": 8.0,
+      "regulatory_complexity": "high",
+      "chinese_supply_advantage": "high",
+      "notes": "Mediaexpert/Euro 主导，本地家电品牌强势。CE+RoHS+GPSR 必须，部分品类需 EAR/CEPP。中国卖家通过 Allegro/Amazon PL/AliExpress 进入。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland 2024-2025", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "garden",
+      "year": 2025,
+      "gmv_usd_million": 2070,
+      "yoy_growth_pct": 6.7,
+      "typical_gross_margin_pct": 40.0,
+      "typical_return_rate_pct": 6.0,
+      "regulatory_complexity": "low",
+      "chinese_supply_advantage": "high",
+      "notes": "DIY & Hardware 类目（含园艺、家装）。增长稳定，受 CBAM 影响（金属类）。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "beauty",
+      "year": 2025,
+      "gmv_usd_million": 1970,
+      "yoy_growth_pct": -24.8,
+      "typical_gross_margin_pct": 60.0,
+      "typical_return_rate_pct": 10.0,
+      "regulatory_complexity": "high",
+      "chinese_supply_advantage": "medium",
+      "notes": "Rossmann 主导（线上+线下融合）。化妆品需欧盟 CPNP 注册（指定 RP）+ INCI 标签。Florasis、Perfect Diary 等中国 D2C 已尝试进入。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "home",
+      "year": 2025,
+      "gmv_usd_million": 1910,
+      "yoy_growth_pct": -11.2,
+      "typical_gross_margin_pct": 45.0,
+      "typical_return_rate_pct": 12.0,
+      "regulatory_complexity": "medium",
+      "chinese_supply_advantage": "high",
+      "notes": "Furniture 类目。IKEA、Allegro 自家具品牌 ALMI 主导。大件物流是壁垒，建议海外仓。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "health",
+      "year": 2025,
+      "gmv_usd_million": 1430,
+      "yoy_growth_pct": -17.8,
+      "typical_gross_margin_pct": 50.0,
+      "typical_return_rate_pct": 4.0,
+      "regulatory_complexity": "high",
+      "chinese_supply_advantage": "low",
+      "notes": "OTC 药品类，监管最严，需药品经营许可。建议中国卖家暂避。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    },
+    {
+      "category_code": "toys",
+      "year": 2025,
+      "gmv_usd_million": 660,
+      "yoy_growth_pct": -8.3,
+      "typical_gross_margin_pct": 45.0,
+      "typical_return_rate_pct": 8.0,
+      "regulatory_complexity": "high",
+      "chinese_supply_advantage": "high",
+      "notes": "需 EN71 玩具安全标准（CE 子集）。中国卖家强势，但合规门槛较高。",
+      "source_metadata": {
+        "gmv_usd_million": {"source_name": "Statista Category Spend Poland", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=44", "fetched_at": "2026-05-17", "confidence": "H"}
+      }
+    }
+  ],
+
+  "top_skus": {
+    "_status": "pending_sellersprite_apify",
+    "_notes": "Top SKU 需 SellerSprite（亚马逊）+ Apify 抓取 Allegro/AliExpress。等用户 U1.3 + U1.5 完成后填充。",
+    "_target_count": "12 大类 × 5 平台 × Top 10 = 600 SKU"
+  },
+
+  "payments": [
+    {
+      "payment_method": "Przelewy24",
+      "share_pct": 46.0,
+      "year": 2025,
+      "is_local_unique": true,
+      "operator": "PayPro S.A.",
+      "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=45",
+      "confidence": "H",
+      "notes": "波兰快速银行转账 Top 1，覆盖所有主流银行，电商整合最高。"
+    },
+    {
+      "payment_method": "BLIK",
+      "share_pct": 35.0,
+      "year": 2025,
+      "is_local_unique": true,
+      "operator": "Polski Standard Płatności",
+      "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=46",
+      "confidence": "H",
+      "notes": "本土国民应用，6 位码即扫即付，连续多年增长，年交易量 19+ 亿笔（2024）。不接 BLIK 直接放弃转化。"
+    },
+    {
+      "payment_method": "PayU",
+      "share_pct": 28.0,
+      "year": 2025,
+      "is_local_unique": false,
+      "operator": "PayU S.A.",
+      "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=45",
+      "confidence": "H",
+      "notes": "Naspers 子公司，欧洲与拉美主流支付聚合器。Allegro 主推。"
+    },
+    {
+      "payment_method": "credit_card",
+      "share_pct": 15.0,
+      "year": 2025,
+      "is_local_unique": false,
+      "operator": "Visa / Mastercard",
+      "source_url": "data/raw/statista/statistic_id1111233_most-used-payment-methods-in-e-commerce-worldwide-in-2025-with-a-forecast-for-2030.xlsx",
+      "confidence": "M"
+    },
+    {
+      "payment_method": "BNPL (Klarna/PayPo)",
+      "share_pct": 8.0,
+      "year": 2025,
+      "is_local_unique": false,
+      "operator": "Klarna, PayPo, Allegro Pay",
+      "source_url": "data/raw/statista/statistic_id1339708_merchants-who-use-pay-in-4-for-buy-now-pay-later-in-33-countries-worldwide-2025.xlsx",
+      "confidence": "M",
+      "notes": "Allegro Pay 是本地 BNPL，年化增长 50%+。"
+    },
+    {
+      "payment_method": "COD",
+      "share_pct": 5.0,
+      "year": 2025,
+      "is_local_unique": false,
+      "operator": "InPost / DPD / DHL",
+      "confidence": "M",
+      "notes": "传统支付，仍在乡镇地区流行。"
+    }
+  ],
+
+  "logistics": [
+    {
+      "year": 2023,
+      "lpi_score": 3.6,
+      "lpi_global_rank": 26,
+      "avg_last_mile_days": 1.5,
+      "avg_last_mile_cost_usd": 3.5,
+      "parcel_volume_million": 850,
+      "top_carriers": ["InPost", "DPD", "DHL", "Allegro One", "Poczta Polska"],
+      "amazon_fba_available": true,
+      "typical_overseas_warehouse_providers": ["递四方", "燕文物流", "云途物流", "4PX"],
+      "return_rate_pct": 14.0,
+      "source_metadata": {
+        "lpi_score": {"source_name": "World Bank Logistics Performance Index 2023", "source_url": "https://lpi.worldbank.org/international/global", "fetched_at": "2026-05-17", "confidence": "H"},
+        "top_carriers": {"source_name": "Statista Top Shipping Provider Poland 2025", "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=49", "fetched_at": "2026-05-17", "confidence": "H"},
+        "amazon_fba_available": {"source_name": "Amazon Pan-EU FBA 覆盖", "source_url": "https://sell.amazon.eu/grow/pan-european-fba", "fetched_at": "2026-05-17", "confidence": "H"}
+      },
+      "notes": "InPost 自提柜（Paczkomat）覆盖全国 2 万+ 网点，是波兰电商物流核心特色，72% 包裹通过自提柜送达。"
+    }
+  ],
+
+  "compliance": [
+    {
+      "rule_type": "vat_threshold",
+      "rule_name": "Poland VAT (Standard)",
+      "description": "标准 VAT 税率 23%，书籍/食品/医药等降税档（5-8%）。欧盟 OSS/IOSS 体系下，远程销售给波兰消费者由 OSS 申报。",
+      "threshold_value": "23% standard / 8% reduced / 5% super-reduced / 0% intra-EU B2B",
+      "severity": "blocking",
+      "source_url": "https://www.podatki.gov.pl/en/vat/"
+    },
+    {
+      "rule_type": "product_cert",
+      "rule_name": "CE Marking (EU)",
+      "description": "所有电子、玩具、机械、PPE 等强制 CE。波兰本地市监机构 UOKiK 执法。",
+      "applies_to_categories": ["electronics", "toys", "home", "baby", "auto"],
+      "severity": "blocking",
+      "source_url": "https://single-market-economy.ec.europa.eu/single-market/ce-marking_en"
+    },
+    {
+      "rule_type": "product_cert",
+      "rule_name": "GPSR (EU) 2023/988",
+      "description": "通用产品安全法，2024.12.13 生效。所有上线欧盟产品必须任命 EU Responsible Person。",
+      "effective_date": "2024-12-13",
+      "applies_to_categories": ["apparel", "beauty", "home", "electronics", "baby", "pet", "outdoor", "auto", "health", "toys", "kitchen", "garden"],
+      "severity": "high",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2023/988/oj"
+    },
+    {
+      "rule_type": "data_privacy",
+      "rule_name": "GDPR",
+      "description": "波兰隐私监管机构 UODO。独立站强制 cookie 同意 + 隐私政策。",
+      "severity": "high",
+      "source_url": "https://uodo.gov.pl/en"
+    },
+    {
+      "rule_type": "marketplace_facilitator",
+      "rule_name": "EU IOSS / Deemed Supplier",
+      "description": "亚马逊、Allegro、AliExpress 等作为 Deemed Supplier 强制代收 VAT。<€150 包裹走 IOSS，>€150 走 OSS。",
+      "severity": "medium",
+      "source_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-e-commerce_en"
+    }
+  ],
+
+  "policy_events": [
+    {
+      "event_date": "2024-12-13",
+      "event_type": "cert_requirement",
+      "title": "GPSR 全面生效（含波兰）",
+      "description": "欧盟通用产品安全法生效，所有产品必须有 EU RP。Allegro、Amazon PL 等强制核查。",
+      "source_url": "https://eur-lex.europa.eu/eli/reg/2023/988/oj",
+      "severity": "high"
+    },
+    {
+      "event_date": "2026-01-01",
+      "event_type": "tariff",
+      "title": "CBAM 全面实施（影响进口含金属/水泥产品）",
+      "description": "欧盟碳边境调节机制全面实施，含金属厨具、家居、太阳能等产品需采购碳凭证。",
+      "source_url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en",
+      "severity": "medium"
+    }
+  ],
+
+  "traffic_economics": [
+    {
+      "channel": "meta",
+      "cpm_usd": 4.5,
+      "cpc_usd": 0.45,
+      "typical_conversion_rate_pct": 1.8,
+      "year": 2025,
+      "source_url": "https://revealbot.com/facebook-ads-cost",
+      "notes": "波兰 Meta CPM 在欧盟属于中低（西欧 $8-15），适合大量测款。"
+    },
+    {
+      "channel": "google_search",
+      "cpc_usd": 0.6,
+      "typical_conversion_rate_pct": 2.5,
+      "year": 2025,
+      "source_url": "https://www.wordstream.com/blog/ws/2025/google-ads-benchmarks"
+    },
+    {
+      "channel": "tiktok",
+      "cpm_usd": 2.5,
+      "year": 2025,
+      "source_url": "https://www.madgicx.com/blog/tiktok-ads-benchmarks",
+      "notes": "TikTok Shop 尚未在波兰开放（截至 2025），但 TikTok 广告引流到 Allegro/独立站效率极高。"
+    }
+  ],
+
+  "china_seller_density": [
+    {
+      "platform_code": "allegro_pl",
+      "year": 2024,
+      "top100_china_count": 18,
+      "top1000_china_count": 220,
+      "trend_yoy": "rising",
+      "notable_chinese_sellers": ["Anker", "Tronsmart", "Vasagle", "Hbada", "Cubot"],
+      "chinese_pl_competition_intensity": "medium",
+      "notes": "Allegro 自 2022 年开放 Open Marketplace 后中国卖家激增，但本土巨头优势仍强。",
+      "source_url": "https://about.allegro.eu/news",
+      "confidence": "L"
+    },
+    {
+      "platform_code": "amazon_pl",
+      "year": 2024,
+      "top100_china_count": 45,
+      "trend_yoy": "rising",
+      "chinese_pl_competition_intensity": "high",
+      "notes": "Amazon PL 中国卖家密度高，但市场整体规模小，Pan-EU 价值大于本地。",
+      "source_url": "data/raw/statista/Marketplace Pulse：2026年亚马逊全球市场趋势报告（英文版）.pdf",
+      "confidence": "M"
+    }
+  ],
+
+  "hachimi_scores": {
+    "_version": "v1.0-draft",
+    "_notes": "Phase 4 才正式建模。这里给出初步评分供 Phase 1 wireframe 演示用。",
+    "market_attractiveness": 62.0,
+    "operational_feasibility": 75.0,
+    "competition_intensity": 55.0,
+    "ai_leverage_potential": 65.0,
+    "composite_score": 65.0,
+    "recommended_entry_mode": "fba_only",
+    "recommended_categories": ["apparel", "garden", "outdoor", "pet"],
+    "methodology_url": "webapp-spec/scoring-model.md",
+    "computed_at": "2026-05-17",
+    "rationale": "波兰电商市场 $33.9B，中等增速（CAGR 4.64%），运营友好（欧盟规则统一、英语商务通用、本土平台 Allegro 抽佣 11% 较亚马逊低），中国卖家密度尚低（机会窗口）。AI 内容生成对波兰语挑战中等（GPT 表现 8.5/10）。推荐 FBA + Allegro 双平台起步，优先服装、户外、宠物（Allegro 这几类目本土巨头较弱）。"
+  },
+
+  "ai_adaptation_notes": {
+    "language_llm_quality": "8.5/10 (GPT-4 / Claude 3.5 对波兰语支持优秀)",
+    "social_commerce_maturity": "medium (Vinted 二手社交电商 + Instagram Shopping 起步)",
+    "automation_ease": "high (欧盟规则统一、亚马逊 Pan-EU 一站接入)",
+    "key_ai_use_cases": [
+      "Listing 多语言自动生成（波兰语 + 德/捷/匈四国共用）",
+      "Allegro Smart! 标签优化（关键词AI）",
+      "客服 AI 处理波兰语售前售后（GPT-4 已可商用）",
+      "本地化广告创意自动生成（Meta + Google）"
+    ]
+  },
+
+  "cross_border_specific": {
+    "top_origin_for_cross_border_purchases": ["China", "Germany", "United Kingdom", "USA"],
+    "cross_border_share_2025": "41% (Internet users 在 2025 购买过海外电商)",
+    "preferred_categories_cross_border": ["fashion", "electronics", "beauty", "toys"],
+    "source_url": "data/raw/statista/study_id59880_e-commerce-in-poland.pdf#page=8"
+  },
+
+  "_data_completeness": {
+    "country_meta": "100%",
+    "macro_indicators": "100%",
+    "ecommerce_market": "90%",
+    "platforms": "70% (Top 5 完整，待补 Vinted/Zalando/Shein/Empik 数据)",
+    "category_metrics": "60% (7/12 大类有详细数据)",
+    "top_skus": "0% (等 SellerSprite + Apify)",
+    "payments": "95%",
+    "logistics": "85%",
+    "compliance": "90%",
+    "policy_events": "75% (覆盖 2024-2026 关键事件)",
+    "traffic_economics": "70%",
+    "china_seller_density": "40% (等 Apify 卖家国别抓取)",
+    "hachimi_scores": "30% (Phase 4 才正式建模)",
+    "overall": "70%"
+  }
+}

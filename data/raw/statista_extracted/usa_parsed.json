@@ -1,0 +1,65 @@
+{
+  "iso": "USA",
+  "currency": "USD",
+  "revenue_forecast": {
+    "value_usd_b": 427.0,
+    "currency": "USD",
+    "page": 21,
+    "quote": "Amazon.com was the leading online store in the U.S. e-commerce market, with e-commerce net sales of 427 billion U.S. dollars in 2025, followed by walmart."
+  },
+  "top_stores": [
+    {
+      "name": "Most popular online shops in the U.S.",
+      "value": 2025.0,
+      "page": 20
+    },
+    {
+      "name": "Amazon",
+      "value": 429725.7,
+      "page": 22
+    },
+    {
+      "name": "walmart.com",
+      "value": 197335.0,
+      "page": 21
+    },
+    {
+      "name": "eBay",
+      "value": 32836.6,
+      "page": 22
+    },
+    {
+      "name": "shein.com",
+      "value": 24277.0,
+      "page": 21
+    },
+    {
+      "name": "target.com",
+      "value": 23875.0,
+      "page": 21
+    },
+    {
+      "name": "homedepot.com",
+      "value": 23449.0,
+      "page": 21
+    },
+    {
+      "name": "Temu",
+      "value": 22530.1,
+      "page": 22
+    },
+    {
+      "name": "apple.com",
+      "value": 22508.0,
+      "page": 21
+    },
+    {
+      "name": "samsclub.com",
+      "value": 15731.0,
+      "page": 21
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

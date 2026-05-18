@@ -1,0 +1,30 @@
+{
+  "iso": "MYS",
+  "currency": "MYR",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Digital wallet",
+      "share_pct": 26.0,
+      "page": 30
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 16.0,
+      "page": 30
+    },
+    {
+      "method": "Debit card",
+      "share_pct": 9.0,
+      "page": 30
+    },
+    {
+      "method": "Prepaid cards",
+      "share_pct": 2.0,
+      "page": 30
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

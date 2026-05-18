@@ -1,0 +1,148 @@
+{
+  "iso": "DEU",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_local_b": 92.4,
+    "currency": "EUR",
+    "value_usd_b": 100.71600000000001,
+    "page": 4,
+    "quote": "n B2C e-commerce sector generated around 88.8 billion euros in revenue. For 2025, forecasts predict 92.4 billion euros. As is evident in the timelin"
+  },
+  "top_stores": [
+    {
+      "name": "amazon.de",
+      "value": 12951.7,
+      "page": 17
+    },
+    {
+      "name": "zalando.de",
+      "value": 4416.5,
+      "page": 16
+    },
+    {
+      "name": "shein.com",
+      "value": 2739.8,
+      "page": 16
+    },
+    {
+      "name": "temu.com",
+      "value": 2611.4,
+      "page": 16
+    },
+    {
+      "name": "otto.de",
+      "value": 2195.9,
+      "page": 16
+    },
+    {
+      "name": "ebay.de",
+      "value": 1954.3,
+      "page": 16
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 1158.5,
+      "page": 16
+    },
+    {
+      "name": "bestsecret.com",
+      "value": 1049.8,
+      "page": 16
+    },
+    {
+      "name": "aboutyou.de",
+      "value": 836.0,
+      "page": 16
+    },
+    {
+      "name": "hm.com",
+      "value": 766.3,
+      "page": 16
+    }
+  ],
+  "categories": [
+    {
+      "label": "CHAPTER",
+      "pct": 3.0,
+      "page": 19
+    }
+  ],
+  "payments": [
+    {
+      "method": "Paypal",
+      "share_pct": 28.7,
+      "page": 36
+    },
+    {
+      "method": "Purchase on invoice",
+      "share_pct": 26.1,
+      "page": 36
+    },
+    {
+      "method": "Direct debit",
+      "share_pct": 14.4,
+      "page": 36
+    },
+    {
+      "method": "Credit cards",
+      "share_pct": 13.7,
+      "page": 36
+    },
+    {
+      "method": "Installment purchase/ financing",
+      "share_pct": 4.7,
+      "page": 36
+    },
+    {
+      "method": "Bank transfer/ advance payment",
+      "share_pct": 3.5,
+      "page": 36
+    },
+    {
+      "method": "Payment at pickup",
+      "share_pct": 3.5,
+      "page": 36
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 1.3,
+      "page": 36
+    },
+    {
+      "method": "Customer card",
+      "share_pct": 1.1,
+      "page": 36
+    },
+    {
+      "method": "Immediate bank transfer",
+      "share_pct": 0.9,
+      "page": 36
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 0.6,
+      "page": 36
+    },
+    {
+      "method": "Gift cards",
+      "share_pct": 0.6,
+      "page": 36
+    },
+    {
+      "method": "PayPal",
+      "share_pct": 46.0,
+      "page": 38
+    },
+    {
+      "method": "Other payment method",
+      "share_pct": 36.0,
+      "page": 38
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 9.0,
+      "page": 38
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

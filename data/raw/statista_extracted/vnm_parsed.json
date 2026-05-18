@@ -1,0 +1,242 @@
+{
+  "iso": "VNM",
+  "currency": "VND",
+  "revenue_forecast": {
+    "value_usd_b": 16.4,
+    "currency": "USD",
+    "page": 12,
+    "quote": " observed period was in 2018, reaching 30 percent. The revenue of the e-commerce sector amounted to 16.4 billion U.S. dollars in 2022. Read more Note(s): V"
+  },
+  "top_stores": [
+    {
+      "name": "Vietnam in the 3rd quarter of",
+      "value": 2024.0,
+      "page": 26
+    },
+    {
+      "name": "Home & lifestyle",
+      "value": 838.77,
+      "page": 31
+    },
+    {
+      "name": "Beauty",
+      "value": 801.59,
+      "page": 31
+    },
+    {
+      "name": "Technology",
+      "value": 705.41,
+      "page": 31
+    },
+    {
+      "name": "Fashion & accessories",
+      "value": 701.13,
+      "page": 31
+    },
+    {
+      "name": "Food & beverages",
+      "value": 657.85,
+      "page": 31
+    },
+    {
+      "name": "Household appliances",
+      "value": 636.88,
+      "page": 31
+    },
+    {
+      "name": "Mom & baby",
+      "value": 444.31,
+      "page": 31
+    },
+    {
+      "name": "Health",
+      "value": 312.47,
+      "page": 31
+    },
+    {
+      "name": "Travel & sports",
+      "value": 160.23,
+      "page": 31
+    }
+  ],
+  "categories": [
+    {
+      "label": "Fashion & accessories",
+      "pct": 14.48,
+      "page": 29
+    },
+    {
+      "label": "Beauty",
+      "pct": 8.79,
+      "page": 29
+    },
+    {
+      "label": "Home & lifestyle",
+      "pct": 7.98,
+      "page": 29
+    },
+    {
+      "label": "Technology",
+      "pct": 6.12,
+      "page": 29
+    },
+    {
+      "label": "Household appliances",
+      "pct": 4.47,
+      "page": 29
+    },
+    {
+      "label": "Food & beverages",
+      "pct": 2.51,
+      "page": 29
+    },
+    {
+      "label": "Mom & baby",
+      "pct": 2.99,
+      "page": 29
+    },
+    {
+      "label": "Health",
+      "pct": 2.97,
+      "page": 29
+    },
+    {
+      "label": "Office supplies",
+      "pct": 1.82,
+      "page": 29
+    },
+    {
+      "label": "Travel & sports",
+      "pct": 1.34,
+      "page": 29
+    },
+    {
+      "label": "Fashion & accessories",
+      "value_b": 14.48,
+      "page": 29
+    },
+    {
+      "label": "Beauty",
+      "value_b": 8.79,
+      "page": 29
+    },
+    {
+      "label": "Home & lifestyle",
+      "value_b": 7.98,
+      "page": 29
+    },
+    {
+      "label": "Technology",
+      "value_b": 6.12,
+      "page": 29
+    },
+    {
+      "label": "Household appliances",
+      "value_b": 4.47,
+      "page": 29
+    },
+    {
+      "label": "Food & beverages",
+      "value_b": 2.51,
+      "page": 29
+    },
+    {
+      "label": "Mom & baby",
+      "value_b": 2.99,
+      "page": 29
+    },
+    {
+      "label": "Health",
+      "value_b": 2.97,
+      "page": 29
+    },
+    {
+      "label": "Office supplies",
+      "value_b": 1.82,
+      "page": 29
+    },
+    {
+      "label": "Travel & sports",
+      "value_b": 1.34,
+      "page": 29
+    },
+    {
+      "label": "Fashion & accessories",
+      "pct": 8.08,
+      "page": 30
+    },
+    {
+      "label": "Beauty",
+      "pct": 3.03,
+      "page": 30
+    },
+    {
+      "label": "Home & lifestyle",
+      "pct": 1.28,
+      "page": 30
+    },
+    {
+      "label": "Food & beverages",
+      "pct": 1.06,
+      "page": 30
+    },
+    {
+      "label": "Health",
+      "pct": 0.85,
+      "page": 30
+    },
+    {
+      "label": "Technology",
+      "pct": 0.73,
+      "page": 30
+    },
+    {
+      "label": "Mom & baby",
+      "pct": 0.68,
+      "page": 30
+    },
+    {
+      "label": "Household appliances",
+      "pct": 0.65,
+      "page": 30
+    },
+    {
+      "label": "Travel & sports",
+      "pct": 0.48,
+      "page": 30
+    },
+    {
+      "label": "Office supplies",
+      "pct": 0.32,
+      "page": 30
+    }
+  ],
+  "payments": [
+    {
+      "method": "Cash on delivery",
+      "share_pct": 70.0,
+      "page": 44
+    },
+    {
+      "method": "Bank transfer",
+      "share_pct": 67.0,
+      "page": 44
+    },
+    {
+      "method": "E-wallet",
+      "share_pct": 35.0,
+      "page": 44
+    },
+    {
+      "method": "Domestic ATM cards",
+      "share_pct": 26.0,
+      "page": 44
+    },
+    {
+      "method": "Credit cards",
+      "share_pct": 19.0,
+      "page": 44
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

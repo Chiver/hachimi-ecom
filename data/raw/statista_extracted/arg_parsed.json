@@ -1,0 +1,60 @@
+{
+  "iso": "ARG",
+  "currency": "USD",
+  "revenue_forecast": null,
+  "top_stores": [
+    {
+      "name": "fravega.com",
+      "value": 220.8,
+      "page": 25
+    },
+    {
+      "name": "mercadolibre.com.ar",
+      "value": 200.0,
+      "page": 25
+    },
+    {
+      "name": "carrefour.com.ar",
+      "value": 182.1,
+      "page": 25
+    },
+    {
+      "name": "adidas.com.ar",
+      "value": 142.3,
+      "page": 25
+    },
+    {
+      "name": "apple.com",
+      "value": 137.3,
+      "page": 25
+    },
+    {
+      "name": "musimundo.com",
+      "value": 102.0,
+      "page": 25
+    },
+    {
+      "name": "easy.com.ar",
+      "value": 90.2,
+      "page": 25
+    },
+    {
+      "name": "cotodigital3.com.ar",
+      "value": 75.7,
+      "page": 25
+    },
+    {
+      "name": "sodimac.com.ar",
+      "value": 72.7,
+      "page": 25
+    },
+    {
+      "name": "farmacity.com",
+      "value": 64.0,
+      "page": 25
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

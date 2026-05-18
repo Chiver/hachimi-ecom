@@ -1,0 +1,126 @@
+{
+  "iso": "NLD",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_usd_b": 6.55,
+    "currency": "USD",
+    "page": 26,
+    "quote": "com is leading the e-commerce market in the Netherlands, with e-commerce net sales of approximately 6.55 billion U.S. dollars in 2025 generated in the Neth"
+  },
+  "top_stores": [
+    {
+      "name": "bol.com",
+      "value": 6553.3,
+      "page": 26
+    },
+    {
+      "name": "amazon.nl",
+      "value": 3736.4,
+      "page": 26
+    },
+    {
+      "name": "coolblue.nl",
+      "value": 1963.0,
+      "page": 26
+    },
+    {
+      "name": "ah.nl",
+      "value": 1944.1,
+      "page": 26
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 1822.1,
+      "page": 26
+    },
+    {
+      "name": "shein.com",
+      "value": 1626.9,
+      "page": 26
+    },
+    {
+      "name": "zalando.nl",
+      "value": 1414.8,
+      "page": 26
+    },
+    {
+      "name": "temu.com",
+      "value": 1337.6,
+      "page": 26
+    },
+    {
+      "name": "vinted.nl",
+      "value": 1068.3,
+      "page": 26
+    },
+    {
+      "name": "etos.nl",
+      "value": 957.9,
+      "page": 26
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "IDEAL",
+      "share_pct": 92.0,
+      "page": 34
+    },
+    {
+      "method": "Tikkie",
+      "share_pct": 58.0,
+      "page": 34
+    },
+    {
+      "method": "PayPal",
+      "share_pct": 56.0,
+      "page": 34
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 43.0,
+      "page": 34
+    },
+    {
+      "method": "AfterPay",
+      "share_pct": 26.0,
+      "page": 34
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 26.0,
+      "page": 34
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 21.0,
+      "page": 34
+    },
+    {
+      "method": "Mastercard Click to Pay (Masterpass)",
+      "share_pct": 8.0,
+      "page": 34
+    },
+    {
+      "method": "Billink",
+      "share_pct": 7.0,
+      "page": 34
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 6.0,
+      "page": 34
+    },
+    {
+      "method": "Meta Pay (Facebook)",
+      "share_pct": 1.0,
+      "page": 34
+    },
+    {
+      "method": "Other",
+      "share_pct": 2.0,
+      "page": 34
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

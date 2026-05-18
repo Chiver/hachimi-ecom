@@ -1,0 +1,126 @@
+{
+  "USA": {
+    "sections": 6,
+    "toc_matches": 15
+  },
+  "CAN": {
+    "sections": 5,
+    "toc_matches": 10
+  },
+  "MEX": {
+    "sections": 6,
+    "toc_matches": 17
+  },
+  "GBR": {
+    "sections": 6,
+    "toc_matches": 14
+  },
+  "DEU": {
+    "sections": 6,
+    "toc_matches": 28
+  },
+  "FRA": {
+    "sections": 5,
+    "toc_matches": 14
+  },
+  "ITA": {
+    "sections": 5,
+    "toc_matches": 22
+  },
+  "ESP": {
+    "sections": 7,
+    "toc_matches": 20
+  },
+  "NLD": {
+    "sections": 4,
+    "toc_matches": 9
+  },
+  "SWE": {
+    "sections": 6,
+    "toc_matches": 23
+  },
+  "NOR": {
+    "sections": 4,
+    "toc_matches": 10
+  },
+  "CHE": {
+    "sections": 6,
+    "toc_matches": 27
+  },
+  "ROU": {
+    "sections": 6,
+    "toc_matches": 21
+  },
+  "TUR": {
+    "sections": 4,
+    "toc_matches": 16
+  },
+  "RUS": {
+    "sections": 7,
+    "toc_matches": 27
+  },
+  "IDN": {
+    "sections": 5,
+    "toc_matches": 14
+  },
+  "THA": {
+    "sections": 3,
+    "toc_matches": 13
+  },
+  "VNM": {
+    "sections": 5,
+    "toc_matches": 22
+  },
+  "PHL": {
+    "sections": 3,
+    "toc_matches": 14
+  },
+  "MYS": {
+    "sections": 4,
+    "toc_matches": 9
+  },
+  "SGP": {
+    "sections": 4,
+    "toc_matches": 10
+  },
+  "IND": {
+    "sections": 4,
+    "toc_matches": 11
+  },
+  "JPN": {
+    "sections": 5,
+    "toc_matches": 7
+  },
+  "KOR": {
+    "sections": 3,
+    "toc_matches": 4
+  },
+  "AUS": {
+    "sections": 4,
+    "toc_matches": 17
+  },
+  "BRA": {
+    "sections": 6,
+    "toc_matches": 30
+  },
+  "CHL": {
+    "sections": 3,
+    "toc_matches": 11
+  },
+  "ARG": {
+    "sections": 4,
+    "toc_matches": 17
+  },
+  "SAU": {
+    "sections": 3,
+    "toc_matches": 5
+  },
+  "ARE": {
+    "sections": 5,
+    "toc_matches": 10
+  },
+  "ZAF": {
+    "sections": 5,
+    "toc_matches": 16
+  }
+}

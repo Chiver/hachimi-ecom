@@ -1,0 +1,111 @@
+{
+  "_meta": {
+    "iso": "CHE",
+    "pdf_file": "study_id172194_e-commerce-in-switzerland.pdf",
+    "extracted_at": "2026-05-17",
+    "total_pages": 41,
+    "toc_pages": {
+      "ecommerce_revenue": [
+        3,
+        4,
+        10,
+        23
+      ],
+      "top_online_stores": [
+        17
+      ],
+      "categories": [
+        8,
+        31,
+        39
+      ],
+      "payments": [
+        34,
+        35,
+        37
+      ],
+      "forecast_users": [
+        25,
+        26,
+        27
+      ],
+      "forecast_revenue": [
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        23
+      ],
+      "cross_border": [],
+      "online_buyers": [
+        25,
+        26,
+        27
+      ],
+      "mobile": []
+    }
+  },
+  "sections": {
+    "ecommerce_revenue": [
+      {
+        "page": 4,
+        "text": "Description: In 2023, the e-commerce revenue in Switzerland was around 14.4 billion Swiss francs. This was a slight increase compared to 2022. Revenues have been generally increasing over the timeline under review. Read more\nNote(s): Switzerland; 2008 to 2023; Total B2C market and purchases abroad.\nSource(s): Handelsverband.swiss\nscnarf\nssiwS\nnoillib\nni\neuneveR\nE-commerce revenue in Switzerland from 2008 to 2023 (in billion Swiss\nfrancs)\nE-commerce revenue in Switzerland 2008-2023\n16\n14.4 14.4\n14\n14\n13.1\n12\n10.3\n10 9.5\n8.6\n7.8\n8 7.2\n6.7\n6.3\n5.7\n6 5.3\n5.1\n4.9\n4.7\n4\n2\n0\n2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\n3"
+      }
+    ],
+    "categories": [
+      {
+        "page": 8,
+        "text": "Description: In 2024, around 17 percent of e-commerce sales in Switzerland were foreign purchases. This was a two percent increase on the previous year. Figures peaked in 2018 at 20 percent. Read more\nNote(s): Switzerland; January and February 2025 (for 2024)\nSource(s): GfK; Handelsverband.swiss; Swiss Post\nerahs\neuneveR\nShare of foreign purchases in online retail in Switzerland from 2011 to 2024\nShare of e-commerce foreign purchases in Switzerland 2011-2024\n25%\n20%\n20% 19% 19%\n17% 17%\n16%\n15% 15% 15%\n15% 14%\n13% 13%\n11%\n10%\n10%\n5%\n0%\n2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024\n7"
+      },
+      {
+        "page": 31,
+        "text": "How important are the following criteria when shopping online?\nMost important criteria for consumers when online shopping in Switzerland 2024\nShare of respondents\n0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%\nEasy payment process 89%\nFree delivery 75%\nCustomer service 72%\nFree returns 66%\nShop certification 63%\nSelection of shipping options 60%\nProduct reviews 59%\nRecommendations from friends 41%\n30 Description: In 2024, around 89 percent of online shoppers said that one of the most important criteria for them when shopping online was an easy payment process. For 72 percent, customer service carried a lot of weight. Read more\nNote(s): Switzerland; May 7 to 21, 2024\nSource(s): Hochschule für Wirtschaft Freiburg; Swiss Post"
+      },
+      {
+        "page": 39,
+        "text": "How important are the following factors with regard to packaging when\nmaking an online purchase?\nPreferred packaging when making an online purchase in Switzerland in 2024\nShare of respondents\n0% 10% 20% 30% 40% 50% 60% 70% 80%\nSize-optimized shipping through individual box sizes 72%\nUse of reusable packaging (e.g. shipping bags, boxes) 68%\nPackaging made from recycled material 60%\nShipping in original packaging 55%\n38 Description: In 2024, around 68 percent of people in Switzerland said that their preferred packaging for items they ordered online was something reusable. Over half of respondents said that they preferred shipping in original packaging. Read more\nNote(s): Switzerland; May 7 to 21, 2024; 7,620 respondents\nSource(s): Hochschule für Wirtschaft Zürich; Swiss Post"
+      }
+    ],
+    "payments": [
+      {
+        "page": 35,
+        "text": "Which payment method do you prefer when online shopping?\nPreferred payment methods for online shopping in Switzerland in 2023\nShare of respondents\n0% 10% 20% 30% 40% 50% 60% 70% 80%\nCredit card 75%\nInvoice 71%\nTWINT 52%\nPayPal 29%\nPostFinance debit card 28%\nPrepayment 18%\nSubsequent payment upon collection on site 16%\nApple Pay 7%\nRevolut 3%\nGoogle Wallet / Pay 2%\nSamsung Pay 1%\nCryptocurrency 1%\n34 Description: In 2023, around 75 percent of online shoppers in Switzerland said that their preferred payment method online was credit card. Almost 30 percent of people preferred PayPal. Read more\nNote(s): Switzerland; June 5 to 18, 2023; 9,687 respondents\nSource(s): Hochschule für Wirtschaft Zürich; Swiss Post"
+      },
+      {
+        "page": 37,
+        "text": "Most common online payments by type in Switzerland as of June 2025\nMost common online payments by type in Switzerland 2025\nShare of respondents\n0% 10% 20% 30% 40% 50% 60%\nCredit card 55%\nBy invoice 50%\nOnline payment services / digital wallets (e.g., PayPal) 44%\nDebit card 42%\nDirect debit 17%\nPrepaid cards / vouchers 17%\nAdvance payment 12%\nCash on delivery 6%\nI have not paid for online shopping 2%\nOther 4%\n36 Description: \"Credit card\" and \"By invoice\" are the top two answers among Swiss consumers in our survey on the subject of \"Most common online payments by type\". Read more\nNote(s): Switzerland; July 2024 to June 2025; 1512 respondents; 18-64 years\nSource(s): Statista Consumer Insights"
+      }
+    ],
+    "forecast_users": [
+      {
+        "page": 26,
+        "text": "Description: In 2023, 69 percent of the female population in Switzerland shopped online. This was a decrease compared to 2021, when the figure stood at 80 percent. The development is perhaps due to the increased levels of online shopping that took place during\nthe pandemic. Read more\nNote(s): Switzerland; 2010 to 2023; 15 years and older; People who shopped online in the last 12 months\nSource(s): Bundesamt für Statistik (Schweiz)\nnoitalupop\neht\nfo\nerahS\nShare of online shoppers in Switzerland from 2010 to 2023, by gender\nShare of online shoppers in Switzerland 2010-2023, by gender\nMale Female\n90%\n79% 80%\n80% 77%\n74% 73%\n70% 69% 69%\n70% 66%\n60% 55% 57%\n50%\n44%\n40%\n30%\n20%\n10%\n0%\n2010 2014 2017 2019 2021 2023\n25"
+      },
+      {
+        "page": 27,
+        "text": "Description: In 2023, around 82 percent of 25 to 34-year-olds shopped online in Switzerland. By comparison, only 45 percent of 65 to 74-year-olds made e-commerce purchases. Since 2014, the number of older people who shop online has increased. Read more\nNote(s): Switzerland; 2014 and 2023; 15 years and older; People who shopped online in the last 12 months\nSource(s): Bundesamt für Statistik (Schweiz)\nnoitalupop\neht\nfo\nerahS\nShare of online shoppers in Switzerland in 2014 and 2023, by age\nShare of online shoppers in Switzerland in 2014 and 2023, by age\n2014 2023\n100%\n90% 86%\n82% 82%\n80% 74% 74% 75% 76%\n70%\n70%\n63%\n60%\n52%\n50% 45%\n37%\n40% 35%\n30%\n20%\n10%\n10%\n0%\n15 to 24 years old 25 to 34 years old 35 to 44 years old 45 to 54 years old 55 to 64 years old 65 to 74 years old 75 years and older\n26"
+      }
+    ],
+    "forecast_revenue": [
+      {
+        "page": 4,
+        "text": "Description: In 2023, the e-commerce revenue in Switzerland was around 14.4 billion Swiss francs. This was a slight increase compared to 2022. Revenues have been generally increasing over the timeline under review. Read more\nNote(s): Switzerland; 2008 to 2023; Total B2C market and purchases abroad.\nSource(s): Handelsverband.swiss\nscnarf\nssiwS\nnoillib\nni\neuneveR\nE-commerce revenue in Switzerland from 2008 to 2023 (in billion Swiss\nfrancs)\nE-commerce revenue in Switzerland 2008-2023\n16\n14.4 14.4\n14\n14\n13.1\n12\n10.3\n10 9.5\n8.6\n7.8\n8 7.2\n6.7\n6.3\n5.7\n6 5.3\n5.1\n4.9\n4.7\n4\n2\n0\n2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023\n3"
+      }
+    ],
+    "online_buyers": [
+      {
+        "page": 26,
+        "text": "Description: In 2023, 69 percent of the female population in Switzerland shopped online. This was a decrease compared to 2021, when the figure stood at 80 percent. The development is perhaps due to the increased levels of online shopping that took place during\nthe pandemic. Read more\nNote(s): Switzerland; 2010 to 2023; 15 years and older; People who shopped online in the last 12 months\nSource(s): Bundesamt für Statistik (Schweiz)\nnoitalupop\neht\nfo\nerahS\nShare of online shoppers in Switzerland from 2010 to 2023, by gender\nShare of online shoppers in Switzerland 2010-2023, by gender\nMale Female\n90%\n79% 80%\n80% 77%\n74% 73%\n70% 69% 69%\n70% 66%\n60% 55% 57%\n50%\n44%\n40%\n30%\n20%\n10%\n0%\n2010 2014 2017 2019 2021 2023\n25"
+      },
+      {
+        "page": 27,
+        "text": "Description: In 2023, around 82 percent of 25 to 34-year-olds shopped online in Switzerland. By comparison, only 45 percent of 65 to 74-year-olds made e-commerce purchases. Since 2014, the number of older people who shop online has increased. Read more\nNote(s): Switzerland; 2014 and 2023; 15 years and older; People who shopped online in the last 12 months\nSource(s): Bundesamt für Statistik (Schweiz)\nnoitalupop\neht\nfo\nerahS\nShare of online shoppers in Switzerland in 2014 and 2023, by age\nShare of online shoppers in Switzerland in 2014 and 2023, by age\n2014 2023\n100%\n90% 86%\n82% 82%\n80% 74% 74% 75% 76%\n70%\n70%\n63%\n60%\n52%\n50% 45%\n37%\n40% 35%\n30%\n20%\n10%\n10%\n0%\n15 to 24 years old 25 to 34 years old 35 to 44 years old 45 to 54 years old 55 to 64 years old 65 to 74 years old 75 years and older\n26"
+      }
+    ]
+  }
+}

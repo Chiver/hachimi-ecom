@@ -1,0 +1,141 @@
+{
+  "iso": "CAN",
+  "currency": "CAD",
+  "revenue_forecast": {
+    "value_usd_b": 68.0,
+    "currency": "USD",
+    "page": 4,
+    "quote": "Description: In 2025, retail e-commerce in Canada was forecast to generate nearly 68 billion U.S. dollars in revenues. According to est"
+  },
+  "top_stores": [
+    {
+      "name": "Top ten online stores in Canada in",
+      "value": 2024.0,
+      "page": 12
+    },
+    {
+      "name": "amazon.ca",
+      "value": 33661.1,
+      "page": 12
+    },
+    {
+      "name": "walmart.ca",
+      "value": 12821.6,
+      "page": 12
+    },
+    {
+      "name": "homedepot.ca",
+      "value": 3013.4,
+      "page": 12
+    },
+    {
+      "name": "costco.ca",
+      "value": 2790.4,
+      "page": 12
+    },
+    {
+      "name": "temu.com",
+      "value": 2182.9,
+      "page": 12
+    },
+    {
+      "name": "apple.com",
+      "value": 2132.3,
+      "page": 12
+    },
+    {
+      "name": "ebay.ca",
+      "value": 2100.3,
+      "page": 12
+    },
+    {
+      "name": "shein.com",
+      "value": 1797.0,
+      "page": 12
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 1775.2,
+      "page": 12
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "PayPal",
+      "share_pct": 80.0,
+      "page": 33
+    },
+    {
+      "method": "Interac",
+      "share_pct": 53.0,
+      "page": 33
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 33.0,
+      "page": 33
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 28.0,
+      "page": 33
+    },
+    {
+      "method": "Mastercard Click to Pay (Masterpass)",
+      "share_pct": 13.0,
+      "page": 33
+    },
+    {
+      "method": "Afterpay",
+      "share_pct": 9.0,
+      "page": 33
+    },
+    {
+      "method": "Affirm",
+      "share_pct": 8.0,
+      "page": 33
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 8.0,
+      "page": 33
+    },
+    {
+      "method": "Square",
+      "share_pct": 5.0,
+      "page": 33
+    },
+    {
+      "method": "Sezzle",
+      "share_pct": 4.0,
+      "page": 33
+    },
+    {
+      "method": "Meta Pay (Facebook)",
+      "share_pct": 2.0,
+      "page": 33
+    },
+    {
+      "method": "Paybright",
+      "share_pct": 2.0,
+      "page": 33
+    },
+    {
+      "method": "Zip Pay",
+      "share_pct": 2.0,
+      "page": 33
+    },
+    {
+      "method": "Neteller",
+      "share_pct": 1.0,
+      "page": 33
+    },
+    {
+      "method": "Paysafecard",
+      "share_pct": 1.0,
+      "page": 33
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

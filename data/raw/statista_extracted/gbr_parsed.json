@@ -1,0 +1,141 @@
+{
+  "iso": "GBR",
+  "currency": "GBP",
+  "revenue_forecast": {
+    "value_usd_b": 159.31,
+    "currency": "USD",
+    "page": 4,
+    "quote": " According to this forecast, in 2030 the revenue will have increased for sixth consecutive years to 159.31 billion U.S. dollars. Read more Note(s): United Ki"
+  },
+  "top_stores": [
+    {
+      "name": "Top online stores in the UK",
+      "value": 2025.0,
+      "page": 16
+    },
+    {
+      "name": "amazon.co.uk",
+      "value": 78673.8,
+      "page": 16
+    },
+    {
+      "name": "ebay.co.uk",
+      "value": 11475.6,
+      "page": 16
+    },
+    {
+      "name": "tesco.com",
+      "value": 10163.3,
+      "page": 16
+    },
+    {
+      "name": "sainsburys.co.uk",
+      "value": 8303.3,
+      "page": 16
+    },
+    {
+      "name": "asda.com",
+      "value": 7373.1,
+      "page": 16
+    },
+    {
+      "name": "temu.com",
+      "value": 4918.2,
+      "page": 16
+    },
+    {
+      "name": "ocado.com",
+      "value": 4715.3,
+      "page": 16
+    },
+    {
+      "name": "argos.co.uk",
+      "value": 4371.7,
+      "page": 16
+    },
+    {
+      "name": "next.co.uk",
+      "value": 4075.7,
+      "page": 16
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Digital wallet",
+      "share_pct": 40.0,
+      "page": 38
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 23.0,
+      "page": 38
+    },
+    {
+      "method": "Debit card",
+      "share_pct": 22.0,
+      "page": 38
+    },
+    {
+      "method": "Account-to-account",
+      "share_pct": 6.0,
+      "page": 38
+    },
+    {
+      "method": "Prepaid card",
+      "share_pct": 1.0,
+      "page": 38
+    },
+    {
+      "method": "PayPal",
+      "share_pct": 82.0,
+      "page": 39
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 39.0,
+      "page": 39
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 32.0,
+      "page": 39
+    },
+    {
+      "method": "Visa Checkout",
+      "share_pct": 26.0,
+      "page": 39
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 22.0,
+      "page": 39
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 19.0,
+      "page": 39
+    },
+    {
+      "method": "Clearpay",
+      "share_pct": 13.0,
+      "page": 39
+    },
+    {
+      "method": "Mastercard Click to Pay (Masterpass)",
+      "share_pct": 12.0,
+      "page": 39
+    },
+    {
+      "method": "Skrill",
+      "share_pct": 3.0,
+      "page": 39
+    },
+    {
+      "method": "AstroPay",
+      "share_pct": 2.0,
+      "page": 39
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

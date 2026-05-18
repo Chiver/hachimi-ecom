@@ -1,0 +1,599 @@
+{
+  "ARE": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      20
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      6,
+      20
+    ]
+  },
+  "ARG": {
+    "ecom_revenue": [
+      2,
+      6,
+      10,
+      15,
+      25
+    ],
+    "top_stores": [
+      2,
+      25,
+      26
+    ],
+    "categories_breakdown": [],
+    "payment_methods": []
+  },
+  "AUS": {
+    "ecom_revenue": [],
+    "top_stores": [
+      4,
+      14
+    ],
+    "categories_breakdown": [
+      2,
+      6,
+      9
+    ],
+    "payment_methods": [
+      36,
+      38
+    ]
+  },
+  "BRA": {
+    "ecom_revenue": [
+      2,
+      3,
+      5,
+      8,
+      9,
+      39,
+      40,
+      41,
+      43,
+      44
+    ],
+    "top_stores": [
+      2,
+      16,
+      20,
+      22,
+      24
+    ],
+    "categories_breakdown": [
+      2,
+      13,
+      14,
+      15
+    ],
+    "payment_methods": [
+      2,
+      36
+    ]
+  },
+  "CAN": {
+    "ecom_revenue": [
+      2,
+      4,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "top_stores": [
+      12,
+      15,
+      18,
+      19
+    ],
+    "categories_breakdown": [
+      2,
+      6
+    ],
+    "payment_methods": [
+      33
+    ]
+  },
+  "CHE": {
+    "ecom_revenue": [
+      2,
+      4,
+      5,
+      18
+    ],
+    "top_stores": [
+      2,
+      18
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      35,
+      36,
+      38
+    ]
+  },
+  "CHL": {
+    "ecom_revenue": [
+      2,
+      5,
+      7,
+      9
+    ],
+    "top_stores": [
+      34
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      3,
+      43
+    ]
+  },
+  "DEU": {
+    "ecom_revenue": [
+      2,
+      4,
+      16,
+      24
+    ],
+    "top_stores": [
+      16,
+      17,
+      18
+    ],
+    "categories_breakdown": [
+      2,
+      19,
+      22
+    ],
+    "payment_methods": [
+      2,
+      36,
+      37,
+      38
+    ]
+  },
+  "ESP": {
+    "ecom_revenue": [
+      2,
+      12,
+      18
+    ],
+    "top_stores": [
+      2,
+      18,
+      19,
+      20
+    ],
+    "categories_breakdown": [
+      2,
+      12
+    ],
+    "payment_methods": [
+      2,
+      35,
+      36,
+      37
+    ]
+  },
+  "FRA": {
+    "ecom_revenue": [
+      2,
+      6,
+      8,
+      14
+    ],
+    "top_stores": [
+      2,
+      14,
+      18,
+      24
+    ],
+    "categories_breakdown": [
+      2,
+      8
+    ],
+    "payment_methods": []
+  },
+  "GBR": {
+    "ecom_revenue": [
+      2,
+      4,
+      5,
+      16,
+      19,
+      20
+    ],
+    "top_stores": [
+      2,
+      16,
+      38
+    ],
+    "categories_breakdown": [
+      2,
+      5
+    ],
+    "payment_methods": [
+      2,
+      38,
+      39
+    ]
+  },
+  "IDN": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      3,
+      21,
+      22,
+      27,
+      30,
+      42
+    ],
+    "categories_breakdown": [
+      2,
+      13
+    ],
+    "payment_methods": [
+      2,
+      28,
+      30,
+      31,
+      32
+    ]
+  },
+  "IND": {
+    "ecom_revenue": [],
+    "top_stores": [],
+    "categories_breakdown": [
+      2,
+      12
+    ],
+    "payment_methods": [
+      8
+    ]
+  },
+  "ITA": {
+    "ecom_revenue": [
+      2,
+      4,
+      5,
+      6,
+      19,
+      20,
+      24
+    ],
+    "top_stores": [
+      2,
+      15,
+      24,
+      25
+    ],
+    "categories_breakdown": [
+      2,
+      20
+    ],
+    "payment_methods": [
+      37
+    ]
+  },
+  "JPN": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      7
+    ],
+    "categories_breakdown": [],
+    "payment_methods": []
+  },
+  "KOR": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      11
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      14,
+      20
+    ]
+  },
+  "MEX": {
+    "ecom_revenue": [
+      2,
+      8,
+      9,
+      10
+    ],
+    "top_stores": [
+      2,
+      12,
+      19
+    ],
+    "categories_breakdown": [
+      2,
+      9,
+      27
+    ],
+    "payment_methods": [
+      2,
+      36
+    ]
+  },
+  "MYS": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      26,
+      30
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      30,
+      31,
+      32
+    ]
+  },
+  "NLD": {
+    "ecom_revenue": [
+      2,
+      10,
+      26
+    ],
+    "top_stores": [
+      2,
+      26,
+      27,
+      28,
+      32
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      34
+    ]
+  },
+  "NOR": {
+    "ecom_revenue": [
+      5,
+      11,
+      13,
+      14,
+      15,
+      16
+    ],
+    "top_stores": [
+      2,
+      11,
+      13,
+      14,
+      15,
+      16
+    ],
+    "categories_breakdown": [
+      2,
+      9
+    ],
+    "payment_methods": [
+      35
+    ]
+  },
+  "PHL": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      16,
+      26,
+      27,
+      38,
+      39
+    ],
+    "categories_breakdown": [
+      2,
+      17
+    ],
+    "payment_methods": [
+      2,
+      31,
+      32
+    ]
+  },
+  "ROU": {
+    "ecom_revenue": [
+      2,
+      5,
+      6
+    ],
+    "top_stores": [
+      49
+    ],
+    "categories_breakdown": [
+      2,
+      6,
+      13
+    ],
+    "payment_methods": []
+  },
+  "RUS": {
+    "ecom_revenue": [
+      2,
+      34
+    ],
+    "top_stores": [
+      3,
+      24,
+      50
+    ],
+    "categories_breakdown": [
+      2,
+      14,
+      15,
+      19,
+      20,
+      21
+    ],
+    "payment_methods": [
+      3,
+      46,
+      52
+    ]
+  },
+  "SAU": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      7
+    ],
+    "categories_breakdown": [],
+    "payment_methods": []
+  },
+  "SGP": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      3,
+      23,
+      29,
+      32,
+      41
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      32
+    ]
+  },
+  "SWE": {
+    "ecom_revenue": [
+      2,
+      5,
+      6,
+      8,
+      9,
+      14,
+      16,
+      17,
+      18
+    ],
+    "top_stores": [
+      2,
+      14,
+      16,
+      17,
+      18,
+      19,
+      36
+    ],
+    "categories_breakdown": [
+      2,
+      8
+    ],
+    "payment_methods": []
+  },
+  "THA": {
+    "ecom_revenue": [
+      12,
+      17
+    ],
+    "top_stores": [
+      17
+    ],
+    "categories_breakdown": [
+      2,
+      20
+    ],
+    "payment_methods": [
+      2,
+      28,
+      29
+    ]
+  },
+  "TUR": {
+    "ecom_revenue": [
+      30
+    ],
+    "top_stores": [
+      2,
+      30,
+      31,
+      49
+    ],
+    "categories_breakdown": [
+      2,
+      3,
+      9,
+      11,
+      12,
+      44,
+      48
+    ],
+    "payment_methods": [
+      2,
+      15,
+      20
+    ]
+  },
+  "USA": {
+    "ecom_revenue": [
+      21,
+      23,
+      24,
+      25
+    ],
+    "top_stores": [
+      2,
+      20,
+      21,
+      22,
+      25
+    ],
+    "categories_breakdown": [],
+    "payment_methods": []
+  },
+  "VNM": {
+    "ecom_revenue": [
+      12,
+      25
+    ],
+    "top_stores": [
+      2,
+      3,
+      26,
+      28,
+      31,
+      39,
+      42,
+      44
+    ],
+    "categories_breakdown": [
+      29,
+      30,
+      31
+    ],
+    "payment_methods": [
+      3,
+      44
+    ]
+  },
+  "ZAF": {
+    "ecom_revenue": [],
+    "top_stores": [
+      2,
+      8,
+      16,
+      21
+    ],
+    "categories_breakdown": [],
+    "payment_methods": [
+      2,
+      8,
+      36
+    ]
+  }
+}

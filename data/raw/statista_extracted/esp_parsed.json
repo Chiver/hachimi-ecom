@@ -1,0 +1,116 @@
+{
+  "iso": "ESP",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_usd_b": 13.4,
+    "currency": "USD",
+    "page": 18,
+    "quote": ".4 17 Description: Amazon.es is leading the Spanish e-commerce market, with e-commerce net sales of 13.4 billion U.S. dollars in 2025 generated in Spain, f"
+  },
+  "top_stores": [
+    {
+      "name": "amazon.es",
+      "value": 13440.5,
+      "page": 18
+    },
+    {
+      "name": "shein.com",
+      "value": 5137.6,
+      "page": 18
+    },
+    {
+      "name": "aliexpress.com",
+      "value": 4698.7,
+      "page": 18
+    },
+    {
+      "name": "temu.com",
+      "value": 2764.6,
+      "page": 18
+    },
+    {
+      "name": "elcorteingles.es",
+      "value": 1731.2,
+      "page": 18
+    },
+    {
+      "name": "carrefour.es",
+      "value": 1554.9,
+      "page": 18
+    },
+    {
+      "name": "mercadona.es",
+      "value": 1415.2,
+      "page": 18
+    },
+    {
+      "name": "miravia.es",
+      "value": 1361.3,
+      "page": 18
+    },
+    {
+      "name": "apple.com",
+      "value": 1036.2,
+      "page": 18
+    },
+    {
+      "name": "mediamarkt.es",
+      "value": 1034.4,
+      "page": 18
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "PayPal",
+      "share_pct": 83.0,
+      "page": 37
+    },
+    {
+      "method": "Bizum",
+      "share_pct": 69.0,
+      "page": 37
+    },
+    {
+      "method": "Google Pay",
+      "share_pct": 27.0,
+      "page": 37
+    },
+    {
+      "method": "Apple Pay",
+      "share_pct": 19.0,
+      "page": 37
+    },
+    {
+      "method": "Amazon Pay",
+      "share_pct": 12.0,
+      "page": 37
+    },
+    {
+      "method": "Mastercard Click to Pay (Masterpass)",
+      "share_pct": 10.0,
+      "page": 37
+    },
+    {
+      "method": "Klarna",
+      "share_pct": 9.0,
+      "page": 37
+    },
+    {
+      "method": "Paysafecard",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "Skrill",
+      "share_pct": 2.0,
+      "page": 37
+    },
+    {
+      "method": "Other",
+      "share_pct": 4.0,
+      "page": 37
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

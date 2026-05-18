@@ -1,0 +1,768 @@
+{
+  "_schema_version": "1.0",
+  "_last_updated": "2026-05-17",
+  "_notes": "决策知识库：支付方式、承运商、海外仓服务商的优缺点与合作方案。与 country JSON 解耦，由 Hachimi 团队维护。覆盖率不全时 UI 显示「信息待补」占位；填充更多条目即可。",
+
+  "payments": [
+    {
+      "id": "credit_card",
+      "display_name": "信用卡 (Visa / Mastercard)",
+      "category": "card",
+      "pros": [
+        "全球通用，PSP 集成最成熟（Stripe / Adyen / Checkout.com 等）",
+        "高客单 / 订阅类目首选，授权额度高",
+        "退款 / 退货流程标准化，争议处理有 Visa/MC 规则可循",
+        "数据真实可追溯，便于客群画像"
+      ],
+      "cons": [
+        "手续费 1.5-3.5%（跨境可达 4%+），是电商支付里最贵的一档",
+        "拒付（chargeback）风险高，被判 Friendly Fraud 卖家承担损失",
+        "新兴市场（LATAM / MENA / SEA）持卡率低，单独依赖会丢转化",
+        "跨境支付 FX 兑换有损耗，需配置 multi-currency 账户"
+      ],
+      "partnership": "通过 Stripe / Adyen / Checkout.com / PayPal 等 PSP 一站集成；月流水 $100K+ 可与 PSP 直接议费率"
+    },
+    {
+      "id": "BNPL",
+      "display_name": "BNPL 分期付款 (Klarna / Afterpay / Affirm / PayPo / Atome)",
+      "category": "bnpl",
+      "pros": [
+        "提升客单价 20-40%（关键提升类目：服装、3C、家居）",
+        "转化率提升 5-15%，尤其影响新客 / 年轻用户决策",
+        "风控由 BNPL 公司承担，卖家先收款无坏账风险",
+        "BNPL App 自带流量入口（Klarna 月活 1.5亿+）"
+      ],
+      "cons": [
+        "手续费 4-6%，明显高于信用卡",
+        "监管收紧：UK FCA 2024+ 加强；欧盟 Consumer Credit Directive 2026 落地",
+        "适合客单 $50-2000，超出范围 ROI 反而下降",
+        "退货时退款流程涉及三方对账，体验较卡支付差"
+      ],
+      "partnership": "Klarna：klarna.com/business 申请 EU/UK/US 商户号；Afterpay (Block 旗下)：澳/美/英；Atome：东南亚 (新加坡/印尼/泰国/菲律宾)；PayPo：波兰/捷克"
+    },
+    {
+      "id": "digital_wallet",
+      "display_name": "数字钱包 (Apple Pay / Google Pay / Samsung Pay)",
+      "category": "wallet",
+      "pros": [
+        "移动端转化率最高（iOS Apple Pay 用户 +25-40% 结账成功率）",
+        "一键支付，无需输入卡号，降低弃单",
+        "底层 tokenization，PCI-DSS 合规简化",
+        "Z 世代偏好（25 岁以下用户使用率超 60%）"
+      ],
+      "cons": [
+        "仍是卡支付的封装，最终费率与卡相同",
+        "iOS 强势市场（US / UK / SG / HK）效果显著，Android 优势市场效果一般",
+        "需打通 Stripe / Adyen / Braintree 等 PSP 才能启用",
+        "中国 Alipay / WeChat Pay 主要服务中国游客，本地用户覆盖有限"
+      ],
+      "partnership": "通过 Stripe / Adyen / Braintree 一键开启 Apple Pay & Google Pay；Samsung Pay 部分市场需单独申请"
+    },
+    {
+      "id": "COD",
+      "display_name": "货到付款 (Cash on Delivery)",
+      "category": "cod",
+      "pros": [
+        "新兴市场信任度最高（印度 / 印尼 / 菲律宾 / 阿联酋 30-50% 订单走 COD）",
+        "无需金融账户即可下单，覆盖未银行化人群",
+        "对比卡支付，新客转化率高 30-60%（EM 市场）"
+      ],
+      "cons": [
+        "拒收率 20-40%（部分国家 40%+），退货逆物流成本高",
+        "现金管理成本：物流商代收手续费 $1-3/单 + 7-14 天回款周期",
+        "卖家承担退货 + 包裹回程运费，毛利空间被吃掉",
+        "客单价偏低（消费者无承诺，倾向小额尝试）"
+      ],
+      "partnership": "由本地物流商（如印度 Delhivery / Ecom Express、印尼 J&T、菲律宾 LBC）默认提供；接 Shopify 需 App 启用"
+    },
+    {
+      "id": "bank_transfer",
+      "display_name": "银行转账 (含 SBP / FPS / FPX 等 instant payment)",
+      "category": "bank",
+      "pros": [
+        "手续费极低（0.1-0.5%），是所有方式里最便宜",
+        "央行推动的即时支付系统普及快（中国数字人民币、巴西 PIX、印度 UPI、欧盟 SEPA Instant 等）",
+        "无 chargeback 风险，卖家收款即终局",
+        "B2B 大额交易首选"
+      ],
+      "cons": [
+        "B2C 体验差（需输入账号 / 跳转银行 App），除非有 QR / 6 位码方案",
+        "跨境互联仍弱，多数本地化（PIX 只在巴西 / UPI 只在印度）",
+        "退款流程需商户后台触发，不像卡支付自动"
+      ],
+      "partnership": "通过本地 PSP 集成（Razorpay 印度 / dLocal 拉美 / Stripe 欧美）"
+    },
+    {
+      "id": "debit_card",
+      "display_name": "借记卡",
+      "category": "card",
+      "pros": [
+        "费率低于信用卡（0.5-1.5%）",
+        "覆盖未持信用卡群体（学生 / 新兴市场）",
+        "实时扣款，无信用风险"
+      ],
+      "cons": [
+        "余额不足拒付率高（5-10%）",
+        "客单价低于信用卡 30-50%",
+        "部分发卡行限制网络消费"
+      ],
+      "partnership": "与信用卡同 PSP；无需额外接入"
+    },
+    {
+      "id": "PayPal",
+      "display_name": "PayPal",
+      "category": "wallet",
+      "pros": [
+        "美/英/德/AU/CA 渗透极高（30-40% 跨境消费者首选）",
+        "Buyer Protection 提升新客信任度",
+        "Express Checkout 比卡支付转化率高 30%+",
+        "B2B 也广泛接受"
+      ],
+      "cons": [
+        "手续费 2.9% + $0.30；跨境 4.4%+",
+        "卖家资金易被冻结 (180 天 hold)，争议高发期需准备应对策略",
+        "巴西 / 中东 / 中国 / 印度等市场份额低",
+        "近年退款政策对卖家不利（Friendly Fraud 经常判卖家败诉）"
+      ],
+      "partnership": "paypal.com/business 注册商户号；中国卖家通过国付通 / 连连等聚合接入；月流水 $50K+ 申请 Premier 费率"
+    },
+    {
+      "id": "Klarna",
+      "display_name": "Klarna",
+      "category": "bnpl",
+      "pros": [
+        "北欧 / 德 / 英 / 美最大 BNPL（瑞典/挪威 50%+ 电商转化）",
+        "Pay in 4 / Pay in 30 / 12 月分期 多档灵活",
+        "Klarna App 月活 1.5亿+，自带购物入口",
+        "转化率提升 20-35%（服装类目尤其明显）"
+      ],
+      "cons": [
+        "手续费 3-5.99% + £0.20/笔",
+        "酒类 / 博彩 / 虚拟商品类目拒入",
+        "退货后退款流程慢（5-10 天），客服压力大",
+        "2024 起欧盟 / 英国监管要求 affordability check"
+      ],
+      "partnership": "klarna.com/business；与 Shopify / Magento / WooCommerce / Stripe 直接集成；月流水 €10K+ 可申请"
+    },
+    {
+      "id": "Apple_Pay",
+      "display_name": "Apple Pay",
+      "category": "wallet",
+      "pros": [
+        "iOS 强势市场 (US / UK / SG / JP / HK / AU) 移动转化率 +35-50%",
+        "Face ID / Touch ID 一键支付，弃单率最低",
+        "Safari Web 端结账丝滑",
+        "无需额外集成（通过 Stripe 等 PSP 一键启用）"
+      ],
+      "cons": [
+        "仅 iPhone 用户，安卓主导市场（IND / IDN / BRA）效果一般",
+        "底层仍是卡，费率与卡相同",
+        "高端 Apple 用户客群偏老白男，年轻 Android 用户覆盖差"
+      ],
+      "partnership": "通过 Stripe / Adyen / Braintree 一键开启；需 HTTPS + Apple Merchant ID 配置"
+    },
+    {
+      "id": "invoice_pay",
+      "display_name": "Invoice 后付款 (Rechnungskauf)",
+      "category": "bnpl",
+      "pros": [
+        "德国 / 瑞士 / 奥地利电商最受欢迎方式（DE 30%+ 订单）",
+        "用户先收货后付款，新客信任成本低",
+        "B2B 客户首选",
+        "客单价 / 转化率显著高于卡支付"
+      ],
+      "cons": [
+        "坏账风险由商户承担（除非接 Klarna / Billie 等 invoice BNPL）",
+        "回款周期 14-30 天，现金流压力大",
+        "需要本地 dunning（催收）流程",
+        "退货时退款 / 抵账复杂"
+      ],
+      "partnership": "Klarna Invoice / Billie (B2B) / Easycredit 等服务商；月流水 €20K+ 推荐"
+    },
+    {
+      "id": "crypto",
+      "display_name": "加密货币 (BTC / ETH / USDT)",
+      "category": "crypto",
+      "pros": [
+        "跨境零中介，无 FX / 拒付损失",
+        "高通胀国家（阿根廷 / 土耳其 / 俄罗斯 / 委内瑞拉）用户偏好稳定币 (USDT) 保值",
+        "客单价高（typical $200+）"
+      ],
+      "cons": [
+        "监管不明确：US SEC / 欧盟 MiCA / 中国全面禁止",
+        "退款几乎不可能（链上交易不可逆）",
+        "波动率高（除稳定币），需要即时换汇",
+        "主流商户和消费者仍排斥，多用于灰产 / 跨境绕道"
+      ],
+      "partnership": "BitPay / Coinbase Commerce / NOWPayments；中国卖家慎用，涉及合规风险"
+    },
+    {
+      "id": "UPI",
+      "display_name": "UPI (Unified Payments Interface, India)",
+      "category": "bank",
+      "pros": [
+        "印度 40%+ 电商支付，月交易量 100亿+",
+        "实时到账，手续费几乎为 0（政府补贴）",
+        "Razorpay / PhonePe / GooglePay India 一站整合",
+        "二维码支付 + 手机号支付双路径"
+      ],
+      "cons": [
+        "仅印度，跨境互联未成熟",
+        "笔均客单偏低（~₹500 / $6），高客单仍依赖卡 / NetBanking",
+        "Pay Out 限额 ₹1 lakh/天（B2B 不够用）"
+      ],
+      "partnership": "Razorpay / Cashfree / PhonePe Business；外资商户需印度本地实体或合作伙伴"
+    },
+    {
+      "id": "PIX",
+      "display_name": "PIX (Brazilian Instant Payment)",
+      "category": "bank",
+      "pros": [
+        "巴西央行系统（2020 推出），24×7 实时到账",
+        "电商支付 45%+，超过信用卡",
+        "B2C 商户费率 0.1-0.5%（vs 卡 4%+）",
+        "Shein / Temu / 阿里 1688 巴西站均深度集成"
+      ],
+      "cons": [
+        "仅巴西",
+        "退款需商户后台触发，无自动机制",
+        "需通过 PSP (Stripe Brazil / Mercado Pago / PagSeguro / dLocal) 接入"
+      ],
+      "partnership": "通过 Mercado Pago / dLocal / Stripe Brazil；月流水 R$ 50K+ 可议价"
+    },
+    {
+      "id": "BLIK",
+      "display_name": "BLIK (Polish Mobile Payment)",
+      "category": "mobile",
+      "pros": [
+        "波兰 #1 移动支付（35%+ 电商，2024 交易 19亿+ 笔）",
+        "6 位码即扫即付，与所有大银行 App 集成",
+        "Allegro Smart! 订单 65%+ 走 BLIK",
+        "费率极低（0.5-1%）"
+      ],
+      "cons": [
+        "仅波兰",
+        "跨境用户无法使用",
+        "需通过 PayU / Przelewy24 / Stripe Poland 集成"
+      ],
+      "partnership": "PayU / Przelewy24 / Stripe (2024+ 已支持) / Adyen；Allegro 卖家默认启用"
+    },
+    {
+      "id": "PayU",
+      "display_name": "PayU",
+      "category": "psp",
+      "pros": [
+        "波兰 / 罗马尼亚 / 印度 / 拉美主流 PSP（Naspers 子公司）",
+        "一个 SDK 集成 350+ 本地支付方式",
+        "Allegro 推荐 PSP",
+        "支持 BLIK / Przelewy24 / 信用卡 / BNPL"
+      ],
+      "cons": [
+        "费率 1.5-3.5%（比 Stripe 略高）",
+        "客服 / 文档质量参差",
+        "结算周期 D+2 至 D+7（依国家）"
+      ],
+      "partnership": "payu.com 注册商户；新卖家 KYC 7-14 天；月流水 PLN 50K+ 议费率"
+    },
+    {
+      "id": "Przelewy24",
+      "display_name": "Przelewy24",
+      "category": "bank",
+      "pros": [
+        "波兰 #1 银行转账（46% 电商）",
+        "整合 100+ 波兰银行 + BLIK + 信用卡",
+        "Allegro / Shopify / Magento 直接集成",
+        "费率 1.4% + PLN 0.35"
+      ],
+      "cons": [
+        "仅波兰",
+        "跨境用户无法使用",
+        "无 BNPL 选项（需配合 Klarna / PayPo）"
+      ],
+      "partnership": "przelewy24.pl 注册；2-5 日审批；适合波兰独立站"
+    },
+    {
+      "id": "Bizum",
+      "display_name": "Bizum",
+      "category": "mobile",
+      "pros": [
+        "西班牙 90%+ 银行支持，手机号即支付",
+        "电商渗透 ~15% 且快速上升",
+        "费率低 (0.5-1%)，无 chargeback"
+      ],
+      "cons": [
+        "仅西班牙",
+        "客单限额 €1,000",
+        "退款需联系银行（4-7 天）"
+      ],
+      "partnership": "通过 Redsys / Adyen / Stripe Spain；需西班牙商户号"
+    },
+    {
+      "id": "TWINT",
+      "display_name": "TWINT (Switzerland)",
+      "category": "mobile",
+      "pros": [
+        "瑞士国民支付，5M+ 用户（65% 智能机用户）",
+        "二维码 / 手机号支付",
+        "电商渗透 ~30% 且持续上升"
+      ],
+      "cons": [
+        "仅瑞士",
+        "费率 1.3-2.5%",
+        "需通过瑞士银行授权集成"
+      ],
+      "partnership": "Datatrans / Wallee / Stripe Switzerland"
+    },
+    {
+      "id": "Vipps",
+      "display_name": "Vipps (Norway)",
+      "category": "mobile",
+      "pros": [
+        "挪威 90% 智能机用户使用",
+        "二维码 / 手机号支付，与 BankID 集成",
+        "费率 1.99%，转化率高",
+        "与 MobilePay (DK/FI) 2023 年合并，跨北欧通用"
+      ],
+      "cons": [
+        "仅挪威 + 部分丹麦 / 芬兰",
+        "需当地商户账户",
+        "B2B 不适合"
+      ],
+      "partnership": "vipps.no/business；2-4 周开户"
+    },
+    {
+      "id": "Swish",
+      "display_name": "Swish (Sweden)",
+      "category": "mobile",
+      "pros": [
+        "瑞典 80%+ 用户，国民应用",
+        "实时银行转账，无中间方",
+        "费率极低（商户每笔 SEK 1.50）"
+      ],
+      "cons": [
+        "仅瑞典",
+        "需 BankID 集成",
+        "B2B 限额 SEK 150,000/天"
+      ],
+      "partnership": "通过 Klarna / Adyen / Nets；需瑞典商户号"
+    },
+    {
+      "id": "iDEAL",
+      "display_name": "iDEAL (Netherlands)",
+      "category": "bank",
+      "pros": [
+        "荷兰 #1 电商支付（60%+ 订单）",
+        "整合所有荷兰大银行",
+        "实时银行转账，无 chargeback",
+        "费率 €0.20-0.50/笔（最便宜）"
+      ],
+      "cons": [
+        "仅荷兰",
+        "需通过 PSP 集成（Mollie / Adyen / Stripe）",
+        "无国际化路径"
+      ],
+      "partnership": "Mollie（荷兰本地，最方便）/ Adyen / Stripe；商户审批 1-3 天"
+    },
+    {
+      "id": "boleto",
+      "display_name": "Boleto Bancário (Brazil)",
+      "category": "bank",
+      "pros": [
+        "巴西传统现金支付（10-15% 电商）",
+        "银行 / 便利店支付，覆盖无银行人群",
+        "客单价高（typical R$ 200+）"
+      ],
+      "cons": [
+        "收款延迟 2-3 天",
+        "弃单率 30%+（用户生成 boleto 后不付款）",
+        "PIX 渐替代，份额下滑"
+      ],
+      "partnership": "通过 Mercado Pago / dLocal / PagSeguro / EBANX"
+    },
+    {
+      "id": "OXXO_cash",
+      "display_name": "OXXO Pay (Mexico)",
+      "category": "cash",
+      "pros": [
+        "墨西哥 19,000+ 便利店覆盖，约 70% 无银行账户用户使用",
+        "下单后 24 小时内到 OXXO 现金付款",
+        "新兴市场入门首选"
+      ],
+      "cons": [
+        "收款延迟 24-72 小时",
+        "弃单率 35-45%",
+        "手续费 ~5-6%",
+        "仅墨西哥"
+      ],
+      "partnership": "通过 Conekta / dLocal / EBANX"
+    },
+    {
+      "id": "Mada",
+      "display_name": "Mada (Saudi Arabia)",
+      "category": "card",
+      "pros": [
+        "沙特国家卡支付，90%+ POS 接受",
+        "政府强制电商接受（>SAR 5,000 订单）",
+        "费率 0.5-1.5%（低于 Visa/MC）"
+      ],
+      "cons": [
+        "仅沙特",
+        "跨境用户不可用",
+        "需沙特本地 acquiring 银行"
+      ],
+      "partnership": "HyperPay / PayTabs / Checkout.com Saudi；需沙特本地实体"
+    },
+    {
+      "id": "STC_Pay",
+      "display_name": "STC Pay (Saudi)",
+      "category": "wallet",
+      "pros": [
+        "沙特最大 wallet（~10M 用户，30%+ 智能机用户）",
+        "与 Mada 集成",
+        "Saudi Telecom 背书，信任度高"
+      ],
+      "cons": [
+        "仅沙特（+ 部分阿联酋 / 巴林）",
+        "国际卖家需通过 STC Pay 商户合作伙伴",
+        "客单价限额"
+      ],
+      "partnership": "通过 HyperPay / PayTabs；direct API 需 STC 合作"
+    },
+    {
+      "id": "Mir card",
+      "display_name": "Mir Card (Russia)",
+      "category": "card",
+      "pros": [
+        "俄罗斯国家卡支付（2014 央行推出）",
+        "Visa / Mastercard 撤出后唯一选择",
+        "全俄商户接受率 95%+"
+      ],
+      "cons": [
+        "仅俄罗斯（部分 CIS 国家 + 中国 UnionPay 互通）",
+        "西方制裁背景下中国卖家入俄需特别合规审查",
+        "跨境支付需借助 UnionPay 或本地代收"
+      ],
+      "partnership": "通过 Yandex Kassa / CloudPayments；2022 制裁后渠道有限"
+    },
+    {
+      "id": "SBP_fast",
+      "display_name": "SBP (Russia Faster Payments)",
+      "category": "bank",
+      "pros": [
+        "俄央行系统，免费 / 极低费率",
+        "实时到账，二维码支付",
+        "商户接受率 80%+（持续上升）"
+      ],
+      "cons": [
+        "仅俄罗斯",
+        "西方 PSP 不集成（Stripe / Adyen 等不可用）",
+        "国际卖家需通过俄罗斯本地 PSP（Tinkoff / Sberbank）"
+      ],
+      "partnership": "通过 Tinkoff Acquiring / YooKassa；制裁限制大"
+    },
+    {
+      "id": "PromptPay_QR",
+      "display_name": "PromptPay QR (Thailand)",
+      "category": "bank",
+      "pros": [
+        "泰国央行系统，92% 智能机用户使用",
+        "二维码 / 手机号 / 公民 ID 支付",
+        "免费 / 极低费率",
+        "与新加坡 PayNow 跨境互通"
+      ],
+      "cons": [
+        "仅泰国（+ 部分新加坡）",
+        "国际商户需开本地银行账户",
+        "B2B 限额"
+      ],
+      "partnership": "通过 2C2P / Omise / Stripe Thailand"
+    },
+    {
+      "id": "PayNow_QR",
+      "display_name": "PayNow QR (Singapore)",
+      "category": "bank",
+      "pros": [
+        "新加坡国民支付，与所有银行 / wallet 集成",
+        "实时到账，免费",
+        "与泰国 PromptPay / 印度 UPI / 马来西亚 DuitNow 跨境互通"
+      ],
+      "cons": [
+        "仅新加坡 + 互通国家",
+        "需新加坡商户号"
+      ],
+      "partnership": "通过 Stripe Singapore / Adyen / 各大本地银行"
+    },
+    {
+      "id": "convenience_store_konbini",
+      "display_name": "コンビニ Konbini (Japan)",
+      "category": "cash",
+      "pros": [
+        "日本 ~20-30% 用户（含无卡 / 老年人）",
+        "24 小时便利店付款（7-Eleven / Lawson / Family Mart）",
+        "信任度高，弃单率低于 OXXO"
+      ],
+      "cons": [
+        "收款延迟 1-3 天",
+        "已被信用卡和 PayPay (40%+ wallet) 蚕食",
+        "仅日本",
+        "手续费 ~3-5%"
+      ],
+      "partnership": "通过 GMO Payment / Komoju / Stripe Japan"
+    },
+    {
+      "id": "Mercado Pago",
+      "display_name": "Mercado Pago (LATAM)",
+      "category": "psp",
+      "pros": [
+        "MercadoLibre 自家 PSP，巴西 / 阿根廷 / 智利 / 墨西哥 / 哥伦比亚强势",
+        "集成 PIX / boleto / OXXO / 信用卡 + 自有 wallet",
+        "MercadoLibre 卖家默认（订单内置）"
+      ],
+      "cons": [
+        "费率 4-5%（拉美 PSP 普遍偏高）",
+        "提现到中国账户 5-15 天 + 手续费",
+        "跨境只支持有限国家"
+      ],
+      "partnership": "mercadopago.com.* 注册；MercadoLibre 卖家自动可用"
+    },
+    {
+      "id": "ACH",
+      "display_name": "ACH (US Bank Transfer)",
+      "category": "bank",
+      "pros": [
+        "美国低费率（~$0.25/笔 或 0.8%）",
+        "B2B 大额支付主流",
+        "与所有 US 银行集成"
+      ],
+      "cons": [
+        "3-5 天到账，不适合零售",
+        "退款流程慢（最多 60 天 ACH return）",
+        "仅美国"
+      ],
+      "partnership": "通过 Stripe / Plaid / Dwolla；商户审批 5-10 天"
+    },
+    {
+      "id": "USDT_crypto",
+      "display_name": "USDT 稳定币",
+      "category": "crypto",
+      "pros": [
+        "高通胀国家（阿根廷 / 土耳其 / 委内瑞拉）用户避险刚需",
+        "跨境零中介，无 FX 损耗",
+        "用户群高客单（typical $300+）"
+      ],
+      "cons": [
+        "退款不可能（链上交易不可逆）",
+        "中国 / 美国 SEC 监管不友好",
+        "主流商户排斥，多用于灰产或绕道汇款",
+        "需配合即时换汇工具（USDT → USD）"
+      ],
+      "partnership": "BitPay / NOWPayments / Coinbase Commerce；中国卖家慎用"
+    }
+  ],
+
+  "carriers": [
+    {
+      "id": "InPost",
+      "display_name": "InPost",
+      "country_hq": "Poland",
+      "type": "last_mile",
+      "coverage": ["POL", "GBR", "ITA", "ESP", "FRA"],
+      "pros": [
+        "波兰 2 万 + 自提柜（Paczkomat）覆盖全国，72% 包裹通过自提柜送达",
+        "时效快：本地次日达，自提柜 1-2 天",
+        "成本低：~€2-3/件 last mile（远低于 DPD/DHL）",
+        "国民认知度极高，自提柜与社区生活深度绑定",
+        "Allegro Smart! 默认承运商，与平台 API 深度集成"
+      ],
+      "cons": [
+        "B2C 小件 / 中件为主，大件 / 重货不支持",
+        "波兰境外仍在扩张，UK / IT / ES 网点密度差异较大",
+        "旺季 (Q4) 自提柜爆仓，需提前签订配额",
+        "中国卖家直接签约门槛高，多通过 Allegro / Cainiao / 4PX 集成"
+      ],
+      "partnership": "1) 通过 Allegro Smart! 商户后台自动启用；2) inpost.pl/biznes 申请商业账户（需波兰公司或税号）；3) 中国卖家最常用：通过 Cainiao 海外仓或 4PX 头程派送到 InPost；4) 月单 5,000+ 可与 InPost 业务团队议价",
+      "website": "https://inpost.pl"
+    },
+    {
+      "id": "DPD",
+      "display_name": "DPD",
+      "country_hq": "France (La Poste 旗下)",
+      "type": "express_courier",
+      "coverage": ["DEU", "FRA", "POL", "GBR", "ITA", "ESP", "NLD", "BEL", "ROU"],
+      "pros": [
+        "全欧覆盖密集，200,000+ Pickup 点 + 上门派送",
+        "时效稳定：西欧本地 1-2 天，跨境 EU 内 2-4 天",
+        "Predict 服务提供 1 小时到货时间窗口，体验领先",
+        "与 Shopify / WooCommerce / Magento / Allegro API 集成成熟"
+      ],
+      "cons": [
+        "价格高于本土玩家：€4-8/件 last mile（InPost 的 2 倍）",
+        "退货流程繁琐，需另购 returns label",
+        "高峰期（Black Friday / 圣诞）配送延误率上升",
+        "中国卖家直接签约难度大，多通过 forwarder（Sendcloud / Easyship）"
+      ],
+      "partnership": "1) 各国 DPD 子公司直接签约（DPD UK / DPD Polska / DPD Deutschland），需当地公司或税号；2) 通过 Sendcloud / Easyship / Packlink 等第三方集成（适合中小卖家）；3) 通过 Cainiao 头程 + DPD last mile",
+      "website": "https://www.dpd.com"
+    },
+    {
+      "id": "DHL",
+      "display_name": "DHL",
+      "country_hq": "Germany",
+      "type": "global_express",
+      "coverage": ["GLOBAL"],
+      "pros": [
+        "全球网络（220+ 国家），跨境物流标杆",
+        "DHL eCommerce 子品牌专门做小包，跨境 7-10 天（含清关）",
+        "DHL Express 24-72 小时全球到货（高客单 / 紧急货）",
+        "MyDHL+ IT 系统强大，可视化跟踪 + API 自动化",
+        "与 China Post / SF / 顺丰 联合产品成熟（中国→全球）"
+      ],
+      "cons": [
+        "价格偏高：Express 服务 €15-30/件，普通 eCommerce €5-10/件",
+        "末端配送在某些国家分包（如波兰），体验不一致",
+        "中国卖家需注意申报价值，否则海关查验风险大",
+        "Express 与 eCommerce 是两个不同产品线，签约渠道不同"
+      ],
+      "partnership": "1) DHL eCommerce Asia（中国华南办公室）签约，主打跨境小包；2) DHL Express China 签约（高端 / 紧急）；3) 通过 forwarder 间接走 DHL（更灵活）；4) 月单量 500+ 可直接签约 Premier 费率",
+      "website": "https://www.dhl.com"
+    },
+    {
+      "id": "Allegro One",
+      "display_name": "Allegro One",
+      "country_hq": "Poland",
+      "type": "marketplace_logistics",
+      "coverage": ["POL"],
+      "pros": [
+        "Allegro 自营物流，与平台深度集成（订单 / 状态自动同步）",
+        "价格 Allegro 卖家最低：起价 PLN 8 (~€1.99)",
+        "Allegro Smart! 会员订单优先派送（类 Prime）",
+        "Allegro One Box 自提柜计划，目标 2026 年 5,000 网点",
+        "波兰本土，时效次日达"
+      ],
+      "cons": [
+        "仅服务 Allegro 平台订单，独立站 / 其他平台不可用",
+        "仅波兰境内",
+        "中国卖家需先入驻 Allegro Open Marketplace（自 2022 开放）"
+      ],
+      "partnership": "入驻 Allegro Smart! 商户后默认可用；Allegro 北京 / 深圳 / 杭州 BD 团队提供中国卖家落地支持（Allegro Open Marketplace）",
+      "website": "https://allegro.pl/onebox"
+    },
+    {
+      "id": "Poczta Polska",
+      "display_name": "Poczta Polska (波兰邮政)",
+      "country_hq": "Poland",
+      "type": "postal",
+      "coverage": ["POL"],
+      "pros": [
+        "全国覆盖最广，含偏远农村地区",
+        "价格最低：€1.5-2.5/件",
+        "与 China Post 国际邮政合作，小包业务成熟",
+        "信任度高（国营 / 历史悠久）"
+      ],
+      "cons": [
+        "时效慢：本地 2-5 天，无次日达",
+        "服务质量不稳定，丢件率高于 InPost",
+        "跟踪信息有限（部分线路无中间扫描）",
+        "卖家配送评分易被拉低（Allegro Smart! 不推荐使用）"
+      ],
+      "partnership": "1) 通过 EMS / China Post 合作伙伴（递四方 / 燕文）转交；2) B2C 卖家通常不优先；3) 仅作为低价补充渠道",
+      "website": "https://www.poczta-polska.pl"
+    }
+  ],
+
+  "warehouses": [
+    {
+      "id": "递四方",
+      "display_name": "递四方 (SF Express International)",
+      "parent": "顺丰控股 (SF Holding)",
+      "type": "cross_border_3pl",
+      "specialties": ["FBA 头程", "海外仓 + last mile", "亚马逊 SPN 认证"],
+      "coverage": ["US", "UK", "DE", "FR", "AU", "JP", "CA", "MX"],
+      "pros": [
+        "顺丰旗下，IT 系统 / 服务体系最完善",
+        "全球 35+ 海外仓，欧美 / 澳 / 日全覆盖",
+        "FBA 头程优势：航空 5-7 天，海运 25-35 天",
+        "亚马逊 SPN（Service Provider Network）官方认证",
+        "多语种客服（中 / 英 / 西），处理跨境争议高效",
+        "适合中大型卖家（月票量 1,000+）"
+      ],
+      "cons": [
+        "价格偏高：仓储 $0.5-0.8/件/月，比同行高 20-30%",
+        "起步规模门槛高（月票 1,000+）",
+        "退货处理慢（3-5 天入仓）",
+        "EU 仓主要在德 / 法 / 英，东欧 / 北欧不覆盖"
+      ],
+      "partnership": "sf-express.com/international 申请；中国跨境电商行业内有面对面 BD（深圳 / 杭州 / 义乌办公室）；适合月票量 1,000+ 的成熟卖家",
+      "website": "https://sf-international.com"
+    },
+    {
+      "id": "燕文物流",
+      "display_name": "燕文物流",
+      "parent": "燕文物流（独立）",
+      "type": "cross_border_3pl",
+      "specialties": ["国际邮政小包", "海外仓双轨", "多平台"],
+      "coverage": ["US", "UK", "DE", "FR", "PL", "RU", "AU"],
+      "pros": [
+        "主营国际邮政小包 + 海外仓双线",
+        "16+ 海外仓（US/UK/DE 等），覆盖性价比高",
+        "价格中等：仓储 $0.4-0.6/件/月",
+        "国内仓收货便利（深圳 / 义乌 / 广州 / 上海揽收）",
+        "做 Allegro / Shopify / eBay 等多平台",
+        "适合中小卖家（月票 500+ 起）"
+      ],
+      "cons": [
+        "IT 系统不如递四方 / 4PX 完善",
+        "偏远地区 last-mile 依赖第三方，时效波动大",
+        "旺季（Q4）发货延误 1-3 天",
+        "高客单 / 高价值货品建议另选"
+      ],
+      "partnership": "yw56.com.cn 注册；月票量 500+ 起；客户经理一对一对接；适合中小卖家成长期",
+      "website": "https://www.yw56.com.cn"
+    },
+    {
+      "id": "云途物流",
+      "display_name": "云途物流",
+      "parent": "云途（独立）",
+      "type": "cross_border_3pl",
+      "specialties": ["小包专线", "中小卖家", "渠道丰富"],
+      "coverage": ["GLOBAL"],
+      "pros": [
+        "性价比高，中小卖家 / SOHO 首选",
+        "全球邮政小包专家，50+ 线路可选（按时效 / 价格自配）",
+        "海外仓 + 直邮双轨",
+        "时效报告透明（每周更新）",
+        "起步门槛低（月票 100+ 可签）"
+      ],
+      "cons": [
+        "高端品牌不优选",
+        "海外仓数量少于递四方 / 4PX（仅 US/UK/DE）",
+        "退件处理收费较高",
+        "客服响应速度参差"
+      ],
+      "partnership": "yuntu56.com 申请；门槛低；适合 SOHO 卖家起步阶段",
+      "website": "https://www.yuntu56.com"
+    },
+    {
+      "id": "4PX",
+      "display_name": "4PX (递四方)",
+      "parent": "4PX Worldwide Express（与「递四方」是同名英文，但实为独立公司）",
+      "type": "cross_border_3pl",
+      "specialties": ["亚马逊 SPN", "FBA 头程", "AIDP 一站平台"],
+      "coverage": ["US", "EU (UK/DE/FR)", "AU", "JP"],
+      "pros": [
+        "亚马逊 SPN 官方合作（FBA 头程认证），亚马逊后台直接可见",
+        "主营美 / 欧 / 澳 FBA 头程，操作标准化",
+        "AIDP 一站平台（智能选线 + 报关 + 派送）",
+        "多渠道集成（A+H by Air, by Sea），灵活适应不同时效 / 价格"
+      ],
+      "cons": [
+        "主要做美 / 欧大件批量发货，不适合 SOHO 小卖家",
+        "起步门槛 1cbm（立方米）起",
+        "海外仓主要服务 FBM，FBA 客户需另选",
+        "中文客服为主，英文支持有限"
+      ],
+      "partnership": "4px.com 申请 SPN 服务；亚马逊后台直接可见 4PX 推荐；月 1cbm+ 可签约；适合 FBA 卖家",
+      "website": "https://www.4px.com"
+    }
+  ]
+}

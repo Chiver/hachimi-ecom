@@ -1,0 +1,35 @@
+{
+  "iso": "SGP",
+  "currency": "SGD",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Digital wallets",
+      "share_pct": 40.0,
+      "page": 32
+    },
+    {
+      "method": "Credit cards",
+      "share_pct": 34.0,
+      "page": 32
+    },
+    {
+      "method": "Debit cards",
+      "share_pct": 9.0,
+      "page": 32
+    },
+    {
+      "method": "Buy Now Pay Later (BNPL)",
+      "share_pct": 3.0,
+      "page": 32
+    },
+    {
+      "method": "Prepaid cards",
+      "share_pct": 1.0,
+      "page": 32
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

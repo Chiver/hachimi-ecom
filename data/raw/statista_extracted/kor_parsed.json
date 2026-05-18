@@ -1,0 +1,70 @@
+{
+  "iso": "KOR",
+  "currency": "KRW",
+  "revenue_forecast": null,
+  "top_stores": [],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Credit card",
+      "share_pct": 69.9,
+      "page": 14
+    },
+    {
+      "method": "Mobile easy payment",
+      "share_pct": 53.1,
+      "page": 14
+    },
+    {
+      "method": "Bank transfer",
+      "share_pct": 33.5,
+      "page": 14
+    },
+    {
+      "method": "Debit card",
+      "share_pct": 31.2,
+      "page": 14
+    },
+    {
+      "method": "Mileage and points",
+      "share_pct": 15.5,
+      "page": 14
+    },
+    {
+      "method": "Mobile carrier billing",
+      "share_pct": 13.8,
+      "page": 14
+    },
+    {
+      "method": "Prepaid card and gift certificate",
+      "share_pct": 9.0,
+      "page": 14
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 69.9,
+      "page": 20
+    },
+    {
+      "method": "Debit card",
+      "share_pct": 31.2,
+      "page": 20
+    },
+    {
+      "method": "Mileage and points",
+      "share_pct": 15.5,
+      "page": 20
+    },
+    {
+      "method": "Carrier billing",
+      "share_pct": 13.8,
+      "page": 20
+    },
+    {
+      "method": "Prepaid card and gift certificate",
+      "share_pct": 9.0,
+      "page": 20
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}

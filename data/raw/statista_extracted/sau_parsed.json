@@ -1,0 +1,25 @@
+{
+  "iso": "SAU",
+  "currency": "SAR",
+  "revenue_forecast": null,
+  "top_stores": [
+    {
+      "name": "trendyol.com",
+      "value": 101.1,
+      "page": 7
+    },
+    {
+      "name": "hepsiburada.com",
+      "value": 68.0,
+      "page": 7
+    },
+    {
+      "name": "amazon.com",
+      "value": 66.4,
+      "page": 7
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

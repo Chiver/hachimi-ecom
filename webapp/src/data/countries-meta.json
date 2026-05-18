@@ -1,0 +1,42 @@
+[
+  { "iso_alpha3": "USA", "iso_alpha2": "US", "name_en": "United States", "name_zh": "美国", "region": "North America", "currency_code": "USD", "official_language": "English", "flag_emoji": "🇺🇸", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "CAN", "iso_alpha2": "CA", "name_en": "Canada", "name_zh": "加拿大", "region": "North America", "currency_code": "CAD", "official_language": "English/French", "flag_emoji": "🇨🇦", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "MEX", "iso_alpha2": "MX", "name_en": "Mexico", "name_zh": "墨西哥", "region": "North America", "currency_code": "MXN", "official_language": "Spanish", "flag_emoji": "🇲🇽", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "GBR", "iso_alpha2": "GB", "name_en": "United Kingdom", "name_zh": "英国", "region": "Western Europe", "currency_code": "GBP", "official_language": "English", "flag_emoji": "🇬🇧", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "DEU", "iso_alpha2": "DE", "name_en": "Germany", "name_zh": "德国", "region": "Western Europe", "currency_code": "EUR", "official_language": "German", "flag_emoji": "🇩🇪", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "FRA", "iso_alpha2": "FR", "name_en": "France", "name_zh": "法国", "region": "Western Europe", "currency_code": "EUR", "official_language": "French", "flag_emoji": "🇫🇷", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "ITA", "iso_alpha2": "IT", "name_en": "Italy", "name_zh": "意大利", "region": "Western Europe", "currency_code": "EUR", "official_language": "Italian", "flag_emoji": "🇮🇹", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "ESP", "iso_alpha2": "ES", "name_en": "Spain", "name_zh": "西班牙", "region": "Western Europe", "currency_code": "EUR", "official_language": "Spanish", "flag_emoji": "🇪🇸", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "NLD", "iso_alpha2": "NL", "name_en": "Netherlands", "name_zh": "荷兰", "region": "Western Europe", "currency_code": "EUR", "official_language": "Dutch", "flag_emoji": "🇳🇱", "is_eu": true, "sanctions_status": "none" },
+
+  { "iso_alpha3": "SWE", "iso_alpha2": "SE", "name_en": "Sweden", "name_zh": "瑞典", "region": "Northern Europe", "currency_code": "SEK", "official_language": "Swedish", "flag_emoji": "🇸🇪", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "NOR", "iso_alpha2": "NO", "name_en": "Norway", "name_zh": "挪威", "region": "Northern Europe", "currency_code": "NOK", "official_language": "Norwegian", "flag_emoji": "🇳🇴", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "CHE", "iso_alpha2": "CH", "name_en": "Switzerland", "name_zh": "瑞士", "region": "Northern Europe", "currency_code": "CHF", "official_language": "German/French/Italian", "flag_emoji": "🇨🇭", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "POL", "iso_alpha2": "PL", "name_en": "Poland", "name_zh": "波兰", "region": "Eastern Europe & CIS", "sub_region": "Visegrad Group (V4)", "currency_code": "PLN", "official_language": "Polish", "flag_emoji": "🇵🇱", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "ROU", "iso_alpha2": "RO", "name_en": "Romania", "name_zh": "罗马尼亚", "region": "Eastern Europe & CIS", "currency_code": "RON", "official_language": "Romanian", "flag_emoji": "🇷🇴", "is_eu": true, "sanctions_status": "none" },
+  { "iso_alpha3": "TUR", "iso_alpha2": "TR", "name_en": "Turkey", "name_zh": "土耳其", "region": "Eastern Europe & CIS", "currency_code": "TRY", "official_language": "Turkish", "flag_emoji": "🇹🇷", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "RUS", "iso_alpha2": "RU", "name_en": "Russia", "name_zh": "俄罗斯", "region": "Eastern Europe & CIS", "currency_code": "RUB", "official_language": "Russian", "flag_emoji": "🇷🇺", "is_eu": false, "sanctions_status": "comprehensive" },
+
+  { "iso_alpha3": "IDN", "iso_alpha2": "ID", "name_en": "Indonesia", "name_zh": "印尼", "region": "Southeast Asia", "currency_code": "IDR", "official_language": "Indonesian", "flag_emoji": "🇮🇩", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "THA", "iso_alpha2": "TH", "name_en": "Thailand", "name_zh": "泰国", "region": "Southeast Asia", "currency_code": "THB", "official_language": "Thai", "flag_emoji": "🇹🇭", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "VNM", "iso_alpha2": "VN", "name_en": "Vietnam", "name_zh": "越南", "region": "Southeast Asia", "currency_code": "VND", "official_language": "Vietnamese", "flag_emoji": "🇻🇳", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "PHL", "iso_alpha2": "PH", "name_en": "Philippines", "name_zh": "菲律宾", "region": "Southeast Asia", "currency_code": "PHP", "official_language": "Filipino/English", "flag_emoji": "🇵🇭", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "MYS", "iso_alpha2": "MY", "name_en": "Malaysia", "name_zh": "马来西亚", "region": "Southeast Asia", "currency_code": "MYR", "official_language": "Malay", "flag_emoji": "🇲🇾", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "SGP", "iso_alpha2": "SG", "name_en": "Singapore", "name_zh": "新加坡", "region": "Southeast Asia", "currency_code": "SGD", "official_language": "English/Chinese/Malay/Tamil", "flag_emoji": "🇸🇬", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "IND", "iso_alpha2": "IN", "name_en": "India", "name_zh": "印度", "region": "South Asia", "currency_code": "INR", "official_language": "Hindi/English", "flag_emoji": "🇮🇳", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "JPN", "iso_alpha2": "JP", "name_en": "Japan", "name_zh": "日本", "region": "East Asia & Oceania", "currency_code": "JPY", "official_language": "Japanese", "flag_emoji": "🇯🇵", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "KOR", "iso_alpha2": "KR", "name_en": "South Korea", "name_zh": "韩国", "region": "East Asia & Oceania", "currency_code": "KRW", "official_language": "Korean", "flag_emoji": "🇰🇷", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "AUS", "iso_alpha2": "AU", "name_en": "Australia", "name_zh": "澳大利亚", "region": "East Asia & Oceania", "currency_code": "AUD", "official_language": "English", "flag_emoji": "🇦🇺", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "BRA", "iso_alpha2": "BR", "name_en": "Brazil", "name_zh": "巴西", "region": "Latin America", "currency_code": "BRL", "official_language": "Portuguese", "flag_emoji": "🇧🇷", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "CHL", "iso_alpha2": "CL", "name_en": "Chile", "name_zh": "智利", "region": "Latin America", "currency_code": "CLP", "official_language": "Spanish", "flag_emoji": "🇨🇱", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "ARG", "iso_alpha2": "AR", "name_en": "Argentina", "name_zh": "阿根廷", "region": "Latin America", "currency_code": "ARS", "official_language": "Spanish", "flag_emoji": "🇦🇷", "is_eu": false, "sanctions_status": "none" },
+
+  { "iso_alpha3": "SAU", "iso_alpha2": "SA", "name_en": "Saudi Arabia", "name_zh": "沙特阿拉伯", "region": "MENA & Africa", "currency_code": "SAR", "official_language": "Arabic", "flag_emoji": "🇸🇦", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "ARE", "iso_alpha2": "AE", "name_en": "United Arab Emirates", "name_zh": "阿联酋", "region": "MENA & Africa", "currency_code": "AED", "official_language": "Arabic", "flag_emoji": "🇦🇪", "is_eu": false, "sanctions_status": "none" },
+  { "iso_alpha3": "ZAF", "iso_alpha2": "ZA", "name_en": "South Africa", "name_zh": "南非", "region": "MENA & Africa", "currency_code": "ZAR", "official_language": "English/Zulu/Xhosa", "flag_emoji": "🇿🇦", "is_eu": false, "sanctions_status": "none" }
+]

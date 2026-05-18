@@ -1,0 +1,60 @@
+{
+  "iso": "TUR",
+  "currency": "TRY",
+  "revenue_forecast": null,
+  "top_stores": [
+    {
+      "name": "Top 10 online stores in Turkey",
+      "value": 2024.0,
+      "page": 30
+    },
+    {
+      "name": "trendyol.com",
+      "value": 4909.4,
+      "page": 30
+    },
+    {
+      "name": "hepsiburada.com",
+      "value": 1055.2,
+      "page": 30
+    },
+    {
+      "name": "migros.com.tr",
+      "value": 907.3,
+      "page": 30
+    },
+    {
+      "name": "amazon.com.tr",
+      "value": 572.8,
+      "page": 30
+    },
+    {
+      "name": "apple.com",
+      "value": 302.4,
+      "page": 30
+    },
+    {
+      "name": "teknosa.com",
+      "value": 233.6,
+      "page": 30
+    },
+    {
+      "name": "mediamarkt.com.tr",
+      "value": 212.2,
+      "page": 30
+    },
+    {
+      "name": "lcwaikiki.com",
+      "value": 163.1,
+      "page": 30
+    },
+    {
+      "name": "ciceksepeti.com",
+      "value": 139.1,
+      "page": 30
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

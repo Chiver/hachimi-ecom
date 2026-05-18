@@ -1,0 +1,20 @@
+{
+  "iso": "ROU",
+  "currency": "EUR",
+  "revenue_forecast": {
+    "value_usd_b": 3.78,
+    "currency": "USD",
+    "page": 6,
+    "quote": "9. Among them, the segment Fashion attains the highest value throughout the entire period, reaching 3.78 billion U.S. dollars. Find other insights concerni"
+  },
+  "top_stores": [
+    {
+      "name": "from 2020 to",
+      "value": 2024.0,
+      "page": 49
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

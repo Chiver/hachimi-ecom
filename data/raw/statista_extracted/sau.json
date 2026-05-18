@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "iso": "SAU",
+    "pdf_file": "study_id85861_e-commerce-in-saudi-arabia.pdf",
+    "extracted_at": "2026-05-17",
+    "total_pages": 30,
+    "toc_pages": {
+      "ecommerce_revenue": [
+        4
+      ],
+      "top_online_stores": [],
+      "categories": [],
+      "payments": [],
+      "forecast_users": [
+        3,
+        10,
+        25
+      ],
+      "forecast_revenue": [
+        9
+      ],
+      "cross_border": [],
+      "online_buyers": [],
+      "mobile": []
+    }
+  },
+  "sections": {
+    "ecommerce_revenue": [
+      {
+        "page": 4,
+        "text": "Share of online shoppers in 53 countries & territories worldwide, as of\nJanuary 2025\nOnline shoppers in selected countries worldwide 2025\nShare of respondents\n0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%\nUnited Kingdom 98%\nVietnam 98%\nIndia 98%\nIndonesia 98%\nSaudi Arabia 97%\nPoland 97%\nThailand 97%\nSingapore 97%\nBrazil 97%\nSouth Korea 97%\nUnited Arab Emirates 97%\nSwitzerland 97%\nNetherlands 96%\nSpain 96%\nTurkey 96%\n3 Description: Comparing the online shoppers in selected countries worldwide, the highest share can be found in the United Kingdom with 98 percent of consumers falling into this category. Vietnam follows in the second place, while Morocco ends up at the bottom of\nthe ranking. Read more\nNote(s): Worldwide; January to December 2024; from 449 to 10,046 respondents, per country; 18-64 years\nSource(s): Statista; Statista Consumer Insights"
+      }
+    ],
+    "forecast_users": [
+      {
+        "page": 10,
+        "text": "Description: The market size of the e-commerce industry in Saudi Arabia was expected to grow from 11 billion U.S. dollars in 2020, to reach 21 billion U.S. dollars by 2025 after the adjustments for the effect of the COVID-19 pandemic on e-commerce. From 2020 to\n2022, there was an expected additional six percent annual market growth due to COVID-19 in the Gulf Cooperation Council (GCC) region. Read more\nNote(s): Saudi Arabia, MENA; 2020 to 2025\nSource(s): Consultancy-me.com; Kearney\nsrallod\n.S.U\nnoillib\nni\nezis\ntekraM\nForecasted e-commerce market size post COVID-19 in Saudi Arabia from\n2020 to 2025 (in billion U.S. dollars)\nForecasted e-commerce market size post COVID-19 Saudi Arabia 2020-2025\n25\n21\n20 19\n16\n15 14\n13\n11\n10\n5\n0\n2020 2021 2022 2023 2024 2025\n9"
+      }
+    ],
+    "forecast_revenue": [
+      {
+        "page": 9,
+        "text": "Description: In 2023, retail sales in Saudi Arabia were estimated at 126.1 billion U.S. dollars. By 2028, the volume of retail sales in the country was forecast to increase to approximately 161.4 billion U.S. dollars. Read more\nNote(s): Saudi Arabia, MENA; 2023; * Estimate. ** Forecast. Read more\nSource(s): Alpen Capital; IMF; Kearney; WTTC\nsrallod\n.S.U\nnoillib\nni\nselaS\nRetail sales in Saudi Arabia in 2023, with forecasts to 2028 (in billion U.S.\ndollars)\nRetail sales Saudi Arabia 2023-2028\n180\n161.4\n160\n146.6\n140 133\n126.1\n120\n100\n80\n60\n40\n20\n0\n2023* 2024** 2026** 2028**\n8"
+      }
+    ]
+  }
+}

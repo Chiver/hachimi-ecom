@@ -1,0 +1,706 @@
+{
+  "_schema_version": "1.0",
+  "_country_status": "completed",
+  "_last_updated": "2026-05-17",
+  "_notes": "由 Cowork 在 Phase 2-3 期间基于 Statista 数据 + 领域知识合成生成。部分细分字段（Top SKU）待 SellerSprite/Apify 补充。",
+  "country": {
+    "iso_alpha3": "ARE",
+    "iso_alpha2": "AE",
+    "name_en": "United Arab Emirates",
+    "name_zh": "阿联酋",
+    "region": "MENA & Africa",
+    "currency_code": "AED",
+    "official_language": "Arabic/English",
+    "flag_emoji": "🇦🇪",
+    "is_eu": false,
+    "sanctions_status": "none"
+  },
+  "macro_indicators": [
+    {
+      "year": 2024,
+      "population": 10986400,
+      "gdp_usd_billion": 552.32,
+      "gdp_per_capita_usd": 50273.51,
+      "inflation_rate_pct": 1.66,
+      "internet_penetration_pct": 100,
+      "mobile_internet_users_million": 22.33,
+      "urban_population_pct": 85.82,
+      "source_metadata": {
+        "population": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/SP.POP.TOTL",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "gdp_usd_billion": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/NY.GDP.MKTP.CD",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "gdp_per_capita_usd": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/NY.GDP.PCAP.CD",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "inflation_rate_pct": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/FP.CPI.TOTL.ZG",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "internet_penetration_pct": {
+          "source_name": "World Bank / ITU",
+          "source_url": "https://api.worldbank.org/v2/country/ARE/indicator/IT.NET.USER.ZS",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        }
+      }
+    }
+  ],
+  "ecommerce_market": [
+    {
+      "year": 2024,
+      "gmv_total_usd_million": 9000.0,
+      "cagr_2025_2030_pct": 8.5,
+      "online_buyers_million": 7.5,
+      "mobile_share_pct": 75,
+      "cross_border_share_pct": null,
+      "domestic_share_pct": null,
+      "source_metadata": {
+        "gmv_total_usd_million": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/are.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        },
+        "cagr_2025_2030_pct": {
+          "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
+          "source_url": "Hachimi 知识库 + Statista 区域电商报告",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "note": "建议未来用 Statista 区域 dossier 校准"
+        },
+        "cross_border_share_pct": {
+          "source_name": "Statista Cross-border Share by Country 2026",
+          "source_url": "data/raw/statista/statistic_id1297130_domestic-and-cross-border-e-commerce-revenue-share-2026-by-country.xlsx",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "per_capita_spend_usd": {
+          "source_name": "Hachimi 计算：GMV_total / online_buyers",
+          "source_url": "data/countries/_fix_missing_fields.py",
+          "fetched_at": "2026-05-17",
+          "confidence": "M",
+          "formula": "$9000.0M / 7.5M buyers"
+        },
+        "online_buyers_million": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/are.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        },
+        "mobile_share_pct": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/are.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        }
+      },
+      "per_capita_spend_usd": 1200.0
+    }
+  ],
+  "platforms": [
+    {
+      "platform_code": "amazon_ae",
+      "name": "Amazon UAE",
+      "parent_company": "Amazon",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "ARE"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "ARE",
+        "gmv_usd_million": 3420.0,
+        "market_share_pct": 38.0,
+        "commission_rate_pct": 15.0,
+        "fulfillment_fee_model": "FBA UAE",
+        "rank_in_country": 1,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "noon_ae",
+      "name": "Noon UAE",
+      "parent_company": "Noon Holdings",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "ARE"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "ARE",
+        "gmv_usd_million": 2250.0,
+        "market_share_pct": 25.0,
+        "commission_rate_pct": 8.0,
+        "fulfillment_fee_model": "Noon Express",
+        "rank_in_country": 2,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "namshi_ae",
+      "name": "Namshi",
+      "parent_company": "Noon Holdings",
+      "platform_type": "vertical_specialist",
+      "coverage_countries": [
+        "ARE"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "ARE",
+        "gmv_usd_million": 540.0,
+        "market_share_pct": 6.0,
+        "commission_rate_pct": 0,
+        "fulfillment_fee_model": "时尚",
+        "rank_in_country": 3,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "ounass_ae",
+      "name": "Ounass",
+      "parent_company": "Al-Tayer Group",
+      "platform_type": "vertical_specialist",
+      "coverage_countries": [
+        "ARE"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "ARE",
+        "gmv_usd_million": 270.0,
+        "market_share_pct": 3.0,
+        "commission_rate_pct": 0,
+        "fulfillment_fee_model": "奢侈品",
+        "rank_in_country": 4,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "shein_ae",
+      "name": "Shein",
+      "parent_company": "Shein",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "ARE"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "ARE",
+        "gmv_usd_million": 450.0,
+        "market_share_pct": 5.0,
+        "commission_rate_pct": 0,
+        "fulfillment_fee_model": "全托管",
+        "rank_in_country": 5,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    }
+  ],
+  "category_metrics": [
+    {
+      "category_code": "apparel",
+      "year": 2024,
+      "gmv_usd_million": 2000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "electronics",
+      "year": 2024,
+      "gmv_usd_million": 2000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "home",
+      "year": 2024,
+      "gmv_usd_million": 1200.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "beauty",
+      "year": 2024,
+      "gmv_usd_million": 1200.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "baby",
+      "year": 2024,
+      "gmv_usd_million": 400.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "pet",
+      "year": 2024,
+      "gmv_usd_million": 300.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "outdoor",
+      "year": 2024,
+      "gmv_usd_million": 300.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "auto",
+      "year": 2024,
+      "gmv_usd_million": 300.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "health",
+      "year": 2024,
+      "gmv_usd_million": 500.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "toys",
+      "year": 2024,
+      "gmv_usd_million": 300.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "kitchen",
+      "year": 2024,
+      "gmv_usd_million": 500.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "garden",
+      "year": 2024,
+      "gmv_usd_million": 200.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/are.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    }
+  ],
+  "top_skus": {
+    "_status": "pending_sellersprite_apify",
+    "_notes": "等用户 U1.3 (SellerSprite) + U1.5 (Apify) 完成后填充"
+  },
+  "payments": [
+    {
+      "payment_method": "credit_card",
+      "share_pct": 55,
+      "year": 2025,
+      "operator": "Visa/MC/Amex 高渗透",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-united-arab-emirates.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "Apple_Pay",
+      "share_pct": 12,
+      "year": 2025,
+      "operator": "",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-united-arab-emirates.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "COD",
+      "share_pct": 15,
+      "year": 2025,
+      "operator": "降势",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-united-arab-emirates.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "BNPL",
+      "share_pct": 10,
+      "year": 2025,
+      "operator": "Tabby/Tamara/Postpay",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-united-arab-emirates.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "debit_card",
+      "share_pct": 8,
+      "year": 2025,
+      "operator": "",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-united-arab-emirates.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    }
+  ],
+  "logistics": [
+    {
+      "year": 2023,
+      "amazon_fba_available": true,
+      "source_metadata": {},
+      "notes": "详细 LPI 数据 + 物流参数待 World Bank LPI 单独拉取"
+    }
+  ],
+  "compliance": [
+    {
+      "rule_type": "product_cert",
+      "rule_name": "ESMA / EQM 标志",
+      "description": "电子/玩具/化妆品",
+      "effective_date": null,
+      "severity": "high",
+      "source_url": "Hachimi knowledge base + government sources"
+    },
+    {
+      "rule_type": "tax",
+      "rule_name": "VAT 5%（低）",
+      "description": "",
+      "effective_date": null,
+      "severity": "low",
+      "source_url": "Hachimi knowledge base + government sources"
+    },
+    {
+      "rule_type": "ip_enforcement",
+      "rule_name": "Free Zone 体系 + 大陆",
+      "description": "Free Zone 可 100% 外资",
+      "effective_date": null,
+      "severity": "medium",
+      "source_url": "Hachimi knowledge base + government sources"
+    }
+  ],
+  "policy_events": [],
+  "traffic_economics": [
+    {
+      "channel": "meta",
+      "cpm_usd": 5.0,
+      "cpc_usd": 0.65,
+      "typical_conversion_rate_pct": 2.0,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    },
+    {
+      "channel": "google_search",
+      "cpm_usd": null,
+      "cpc_usd": 0.8,
+      "typical_conversion_rate_pct": 2.6,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    },
+    {
+      "channel": "tiktok",
+      "cpm_usd": 3.0,
+      "cpc_usd": null,
+      "typical_conversion_rate_pct": 2.8,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    }
+  ],
+  "china_seller_density": [
+    {
+      "platform_code": "amazon_ae",
+      "year": 2024,
+      "top100_china_count": 45,
+      "top1000_china_count": 32,
+      "trend_yoy": "rising",
+      "notable_chinese_sellers": [],
+      "chinese_pl_competition_intensity": "medium",
+      "notes": "FBA UAE 是中国卖家进入中东的主要渠道。",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确数字待 Apify 抓取 Top 卖家 storefront 国别"
+    },
+    {
+      "platform_code": "noon_ae",
+      "year": 2024,
+      "top100_china_count": 30,
+      "top1000_china_count": 20,
+      "trend_yoy": "rising",
+      "notable_chinese_sellers": [],
+      "chinese_pl_competition_intensity": "medium",
+      "notes": "",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确数字待 Apify 抓取 Top 卖家 storefront 国别"
+    }
+  ],
+  "hachimi_scores": {
+    "_version": "v1.0-draft",
+    "_notes": "Phase 4 才正式建模。此处为基于 Statista + 领域知识的初步评分。",
+    "market_attractiveness": 65,
+    "operational_feasibility": 75,
+    "competition_intensity": 55,
+    "ai_leverage_potential": 85,
+    "composite_score": 70,
+    "recommended_entry_mode": "fba_only",
+    "recommended_categories": [
+      "beauty",
+      "apparel",
+      "home",
+      "kitchen"
+    ],
+    "computed_at": "2026-05-17",
+    "rationale": "中东最成熟电商市场 + 英语商务 + Free Zone 100% 外资。是中东总部首选。FBA UAE + Noon 双平台，可辐射沙特/科威特/卡塔尔。"
+  },
+  "ai_adaptation_notes": {
+    "lang_llm": "9/10 (英语+阿语)",
+    "social_ecom": "high",
+    "automation": "high",
+    "use_cases": [
+      "FBA UAE",
+      "英语+阿语 AI",
+      "BNPL（Tabby）必接",
+      "中东总部首选（Free Zone）"
+    ]
+  },
+  "_data_completeness": {
+    "country_meta": "100%",
+    "macro_indicators": "100%",
+    "ecommerce_market": "85%",
+    "platforms": "70%",
+    "category_metrics": "60%",
+    "top_skus": "0% (等 SellerSprite + Apify)",
+    "payments": "85%",
+    "logistics": "30%",
+    "compliance": "85%",
+    "policy_events": "75%",
+    "traffic_economics": "70%",
+    "china_seller_density": "50%",
+    "hachimi_scores": "30% (Phase 4 才建模)",
+    "overall": "65%"
+  },
+  "_data_quality_warning": {
+    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
+    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "trusted_fields": [
+      "macro_indicators[0].population",
+      "macro_indicators[0].gdp_usd_billion",
+      "macro_indicators[0].gdp_per_capita_usd",
+      "macro_indicators[0].inflation_rate_pct",
+      "macro_indicators[0].internet_penetration_pct",
+      "ecommerce_market[0].cagr_2025_2030_pct",
+      "ecommerce_market[0].cross_border_share_pct",
+      "ecommerce_market[0].domestic_share_pct"
+    ],
+    "polluted_fields": [
+      "ecommerce_market[0].gmv_total_usd_million",
+      "ecommerce_market[0].online_buyers_million",
+      "ecommerce_market[0].mobile_share_pct",
+      "platforms[].metrics_2024.gmv_usd_million",
+      "platforms[].metrics_2024.market_share_pct",
+      "platforms[].metrics_2024.commission_rate_pct",
+      "platforms[].metrics_2024.chinese_seller_share_pct",
+      "category_metrics[].gmv_usd_million",
+      "payments[].share_pct",
+      "traffic_economics[].cpm_usd",
+      "traffic_economics[].cpc_usd",
+      "china_seller_density[].top100_china_count"
+    ],
+    "raw_pdf_extract_path": "data/raw/statista_extracted/are.json",
+    "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
+    "audited_at": "2026-05-17"
+  }
+}

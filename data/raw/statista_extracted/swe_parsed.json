@@ -1,0 +1,141 @@
+{
+  "iso": "SWE",
+  "currency": "SEK",
+  "revenue_forecast": {
+    "value_usd_b": 2.98,
+    "currency": "USD",
+    "page": 14,
+    "quote": ".3 13 Description: Amazon.se is leading the Swedish e-commerce market, with e-commerce net sales of 2.98 billion U.S. dollars in 2025 generated in Sweden, "
+  },
+  "top_stores": [
+    {
+      "name": "Top 10 online stores in Sweden",
+      "value": 2025.0,
+      "page": 14
+    },
+    {
+      "name": "amazon.se",
+      "value": 2948.0,
+      "page": 14
+    },
+    {
+      "name": "elgiganten.se",
+      "value": 1208.5,
+      "page": 14
+    },
+    {
+      "name": "temu.com",
+      "value": 909.9,
+      "page": 14
+    },
+    {
+      "name": "apotea.se",
+      "value": 883.2,
+      "page": 14
+    },
+    {
+      "name": "zalando.se",
+      "value": 694.6,
+      "page": 14
+    },
+    {
+      "name": "shein.se",
+      "value": 679.5,
+      "page": 14
+    },
+    {
+      "name": "vinted.se",
+      "value": 673.5,
+      "page": 14
+    },
+    {
+      "name": "ikea.com",
+      "value": 662.4,
+      "page": 14
+    },
+    {
+      "name": "ica.se",
+      "value": 587.4,
+      "page": 14
+    }
+  ],
+  "categories": [
+    {
+      "label": "Home electronics",
+      "pct": 27.2,
+      "page": 8
+    },
+    {
+      "label": "Clothing and footwear",
+      "pct": 19.6,
+      "page": 8
+    },
+    {
+      "label": "Groceries",
+      "pct": 17.0,
+      "page": 8
+    },
+    {
+      "label": "Pharmaceuticals",
+      "pct": 14.7,
+      "page": 8
+    },
+    {
+      "label": "Home decor and furniture",
+      "pct": 7.9,
+      "page": 8
+    },
+    {
+      "label": "Building material",
+      "pct": 6.1,
+      "page": 8
+    },
+    {
+      "label": "Books and media",
+      "pct": 5.4,
+      "page": 8
+    },
+    {
+      "label": "Sports and recreation goods",
+      "pct": 5.2,
+      "page": 8
+    },
+    {
+      "label": "Home electronics",
+      "value_b": 27.2,
+      "page": 8
+    },
+    {
+      "label": "Clothing and footwear",
+      "value_b": 19.6,
+      "page": 8
+    },
+    {
+      "label": "Pharmaceuticals",
+      "value_b": 14.7,
+      "page": 8
+    },
+    {
+      "label": "Home decor and furniture",
+      "value_b": 7.9,
+      "page": 8
+    },
+    {
+      "label": "Building material",
+      "value_b": 6.1,
+      "page": 8
+    },
+    {
+      "label": "Books and media",
+      "value_b": 5.4,
+      "page": 8
+    },
+    {
+      "label": "Sports and recreation goods",
+      "value_b": 5.2,
+      "page": 8
+    }
+  ],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

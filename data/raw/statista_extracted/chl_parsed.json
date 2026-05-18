@@ -1,0 +1,25 @@
+{
+  "iso": "CHL",
+  "currency": "USD",
+  "revenue_forecast": {
+    "value_usd_b": 86.3,
+    "currency": "USD",
+    "page": 5,
+    "quote": "a Paraguay Cuba 4 Description: In 2026, e-commerce in Brazil was forecast to generate approximately 86.3 billion U.S. dollars in revenue, an increase from "
+  },
+  "top_stores": [
+    {
+      "name": "PedidosYa - delivery online",
+      "value": 1035.65,
+      "page": 34
+    },
+    {
+      "name": "Jumbo App - tu compra online",
+      "value": 708.57,
+      "page": 34
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

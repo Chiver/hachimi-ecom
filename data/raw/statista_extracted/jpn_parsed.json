@@ -1,0 +1,35 @@
+{
+  "iso": "JPN",
+  "currency": "JPY",
+  "revenue_forecast": null,
+  "top_stores": [
+    {
+      "name": "amazon.co.jp",
+      "value": 541.5,
+      "page": 7
+    },
+    {
+      "name": "rakuten.co.jp",
+      "value": 418.3,
+      "page": 7
+    },
+    {
+      "name": "mercari.com",
+      "value": 132.6,
+      "page": 7
+    },
+    {
+      "name": "shopping.yahoo.co.jp",
+      "value": 111.2,
+      "page": 7
+    },
+    {
+      "name": "kakaku.com",
+      "value": 64.3,
+      "page": 7
+    }
+  ],
+  "categories": [],
+  "payments": [],
+  "extracted_at": "2026-05-17"
+}

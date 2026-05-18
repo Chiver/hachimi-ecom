@@ -1,0 +1,729 @@
+{
+  "_schema_version": "1.0",
+  "_country_status": "completed",
+  "_last_updated": "2026-05-17",
+  "_notes": "由 Cowork 在 Phase 2-3 期间基于 Statista 数据 + 领域知识合成生成。部分细分字段（Top SKU）待 SellerSprite/Apify 补充。",
+  "country": {
+    "iso_alpha3": "JPN",
+    "iso_alpha2": "JP",
+    "name_en": "Japan",
+    "name_zh": "日本",
+    "region": "East Asia & Oceania",
+    "currency_code": "JPY",
+    "official_language": "Japanese",
+    "flag_emoji": "🇯🇵",
+    "is_eu": false,
+    "sanctions_status": "none"
+  },
+  "macro_indicators": [
+    {
+      "year": 2024,
+      "population": 123975371,
+      "gdp_usd_billion": 4027.6,
+      "gdp_per_capita_usd": 32487.08,
+      "inflation_rate_pct": 2.74,
+      "internet_penetration_pct": 85.54,
+      "mobile_internet_users_million": 221.21,
+      "urban_population_pct": 92.19,
+      "source_metadata": {
+        "population": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/JPN/indicator/SP.POP.TOTL",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "gdp_usd_billion": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/JPN/indicator/NY.GDP.MKTP.CD",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "gdp_per_capita_usd": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/JPN/indicator/NY.GDP.PCAP.CD",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "inflation_rate_pct": {
+          "source_name": "World Bank Open Data",
+          "source_url": "https://api.worldbank.org/v2/country/JPN/indicator/FP.CPI.TOTL.ZG",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "internet_penetration_pct": {
+          "source_name": "World Bank / ITU",
+          "source_url": "https://api.worldbank.org/v2/country/JPN/indicator/IT.NET.USER.ZS",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        }
+      }
+    }
+  ],
+  "ecommerce_market": [
+    {
+      "year": 2024,
+      "gmv_total_usd_million": 200000.0,
+      "cagr_2025_2030_pct": 9.67,
+      "online_buyers_million": 90,
+      "mobile_share_pct": 55,
+      "cross_border_share_pct": 35.13,
+      "domestic_share_pct": 64.87,
+      "source_metadata": {
+        "gmv_total_usd_million": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/jpn.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        },
+        "cagr_2025_2030_pct": {
+          "source_name": "Statista CAGR 2025-2030 by Country",
+          "source_url": "data/raw/statista/statistic_id220177_e-commerce-retail-sales-cagr-2025-2030-by-country.xlsx",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "cross_border_share_pct": {
+          "source_name": "Statista Cross-border Share by Country 2026",
+          "source_url": "data/raw/statista/statistic_id1297130_domestic-and-cross-border-e-commerce-revenue-share-2026-by-country.xlsx",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "per_capita_spend_usd": {
+          "source_name": "Hachimi 计算：GMV_total / online_buyers",
+          "source_url": "data/countries/_fix_missing_fields.py",
+          "fetched_at": "2026-05-17",
+          "confidence": "M",
+          "formula": "$200000.0M / 90M buyers"
+        },
+        "online_buyers_million": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/jpn.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        },
+        "mobile_share_pct": {
+          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
+          "source_url": "data/raw/statista_extracted/jpn.json",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "待人工校对 Statista 原文精确化"
+        }
+      },
+      "per_capita_spend_usd": 2222.0
+    }
+  ],
+  "platforms": [
+    {
+      "platform_code": "amazon_jp",
+      "name": "Amazon Japan",
+      "parent_company": "Amazon",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "JPN"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "JPN",
+        "gmv_usd_million": 60000.0,
+        "market_share_pct": 30.0,
+        "commission_rate_pct": 15.0,
+        "fulfillment_fee_model": "FBA Japan",
+        "rank_in_country": 1,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "rakuten_jp",
+      "name": "Rakuten Ichiba",
+      "parent_company": "Rakuten",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "JPN"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "JPN",
+        "gmv_usd_million": 50000.0,
+        "market_share_pct": 25.0,
+        "commission_rate_pct": 14.0,
+        "fulfillment_fee_model": "Rakuten Super Logistics",
+        "rank_in_country": 2,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "yahoo_shopping_jp",
+      "name": "Yahoo! Shopping (LY Corp)",
+      "parent_company": "LY Corp",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "JPN"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "JPN",
+        "gmv_usd_million": 16000.0,
+        "market_share_pct": 8.0,
+        "commission_rate_pct": 3.0,
+        "fulfillment_fee_model": "PayPay 物流",
+        "rank_in_country": 3,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "zozotown_jp",
+      "name": "ZOZOTOWN",
+      "parent_company": "ZOZO/Yahoo",
+      "platform_type": "vertical_specialist",
+      "coverage_countries": [
+        "JPN"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "JPN",
+        "gmv_usd_million": 8000.0,
+        "market_share_pct": 4.0,
+        "commission_rate_pct": 10.0,
+        "fulfillment_fee_model": "本地",
+        "rank_in_country": 4,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    },
+    {
+      "platform_code": "mercari_jp",
+      "name": "Mercari",
+      "parent_company": "Mercari",
+      "platform_type": "marketplace",
+      "coverage_countries": [
+        "JPN"
+      ],
+      "website": "",
+      "founded_year": null,
+      "metrics_2024": {
+        "country_code": "JPN",
+        "gmv_usd_million": 7000.0,
+        "market_share_pct": 3.5,
+        "commission_rate_pct": 10.0,
+        "fulfillment_fee_model": "C2C",
+        "rank_in_country": 5,
+        "source_metadata": {
+          "gmv_usd_million": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "market_share_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          },
+          "commission_rate_pct": {
+            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "fetched_at": "2026-05-17",
+            "confidence": "L",
+            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+          }
+        }
+      }
+    }
+  ],
+  "category_metrics": [
+    {
+      "category_code": "apparel",
+      "year": 2024,
+      "gmv_usd_million": 35000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "electronics",
+      "year": 2024,
+      "gmv_usd_million": 32000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "home",
+      "year": 2024,
+      "gmv_usd_million": 22000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "beauty",
+      "year": 2024,
+      "gmv_usd_million": 18000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "baby",
+      "year": 2024,
+      "gmv_usd_million": 6000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "pet",
+      "year": 2024,
+      "gmv_usd_million": 8000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "outdoor",
+      "year": 2024,
+      "gmv_usd_million": 10000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "auto",
+      "year": 2024,
+      "gmv_usd_million": 8000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "health",
+      "year": 2024,
+      "gmv_usd_million": 14000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "toys",
+      "year": 2024,
+      "gmv_usd_million": 6000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "kitchen",
+      "year": 2024,
+      "gmv_usd_million": 10000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    },
+    {
+      "category_code": "garden",
+      "year": 2024,
+      "gmv_usd_million": 7000,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
+          "source_url": "data/raw/statista_extracted/jpn.json (待人工解析)",
+          "fetched_at": "2026-05-17",
+          "confidence": "L",
+          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        }
+      }
+    }
+  ],
+  "top_skus": {
+    "_status": "pending_sellersprite_apify",
+    "_notes": "等用户 U1.3 (SellerSprite) + U1.5 (Apify) 完成后填充"
+  },
+  "payments": [
+    {
+      "payment_method": "credit_card",
+      "share_pct": 70,
+      "year": 2025,
+      "operator": "Visa/MC/JCB（JCB 是日本本地）",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-japan.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "convenience_store_konbini",
+      "share_pct": 12,
+      "year": 2025,
+      "operator": "便利店付款 (7-11/Lawson/FamilyMart)",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-japan.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "digital_wallet",
+      "share_pct": 10,
+      "year": 2025,
+      "operator": "PayPay 主导 + Rakuten Pay + d Pay",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-japan.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "bank_transfer",
+      "share_pct": 5,
+      "year": 2025,
+      "operator": "Pay-easy",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-japan.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    },
+    {
+      "payment_method": "COD",
+      "share_pct": 3,
+      "year": 2025,
+      "operator": "下降",
+      "is_local_unique": false,
+      "source_url": "data/raw/statista/study_id*_e-commerce-in-japan.pdf",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+    }
+  ],
+  "logistics": [
+    {
+      "year": 2023,
+      "amazon_fba_available": true,
+      "source_metadata": {},
+      "notes": "详细 LPI 数据 + 物流参数待 World Bank LPI 单独拉取"
+    }
+  ],
+  "compliance": [
+    {
+      "rule_type": "product_cert",
+      "rule_name": "PSE / PSC / 食品卫生法 / JIS",
+      "description": "电子/玩具/化妆品/食品分别强制",
+      "effective_date": null,
+      "severity": "blocking",
+      "source_url": "Hachimi knowledge base + government sources"
+    },
+    {
+      "rule_type": "tax",
+      "rule_name": "消费税 10%",
+      "description": "",
+      "effective_date": null,
+      "severity": "high",
+      "source_url": "Hachimi knowledge base + government sources"
+    },
+    {
+      "rule_type": "data_privacy",
+      "rule_name": "APPI Act",
+      "description": "",
+      "effective_date": null,
+      "severity": "medium",
+      "source_url": "Hachimi knowledge base + government sources"
+    },
+    {
+      "rule_type": "ip_enforcement",
+      "rule_name": "强 IP 保护",
+      "description": "商标维权高效",
+      "effective_date": null,
+      "severity": "medium",
+      "source_url": "Hachimi knowledge base + government sources"
+    }
+  ],
+  "policy_events": [
+    {
+      "event_date": "2024-10-01",
+      "event_type": "tax",
+      "title": "JCT (消费税) 数字平台代缴",
+      "description": "日本平台强制代缴 JCT",
+      "severity": "medium",
+      "source_url": "Hachimi knowledge base + government sources",
+      "countries_affected": [
+        "JPN"
+      ]
+    }
+  ],
+  "traffic_economics": [
+    {
+      "channel": "meta",
+      "cpm_usd": 8.0,
+      "cpc_usd": 1.2,
+      "typical_conversion_rate_pct": 1.8,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    },
+    {
+      "channel": "google_search",
+      "cpm_usd": null,
+      "cpc_usd": 1.35,
+      "typical_conversion_rate_pct": 2.5,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    },
+    {
+      "channel": "yahoo_search",
+      "cpm_usd": null,
+      "cpc_usd": 0.95,
+      "typical_conversion_rate_pct": 2.2,
+      "year": 2025,
+      "source_url": "Hachimi benchmark from public CPM data (Revealbot/WordStream)",
+      "warning": "Hachimi 基于行业 benchmark 估算（Revealbot/WordStream），实际值因品类/季节波动 ±30%"
+    }
+  ],
+  "china_seller_density": [
+    {
+      "platform_code": "amazon_jp",
+      "year": 2024,
+      "top100_china_count": 55,
+      "top1000_china_count": 38,
+      "trend_yoy": "stable",
+      "notable_chinese_sellers": [
+        "Anker",
+        "Tronsmart",
+        "Soundcore"
+      ],
+      "chinese_pl_competition_intensity": "high",
+      "notes": "日亚是中国卖家在亚太最大单一市场，但需 PSE 认证。",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确数字待 Apify 抓取 Top 卖家 storefront 国别"
+    },
+    {
+      "platform_code": "rakuten_jp",
+      "year": 2024,
+      "top100_china_count": 15,
+      "top1000_china_count": 8,
+      "trend_yoy": "stable",
+      "notable_chinese_sellers": [],
+      "chinese_pl_competition_intensity": "medium",
+      "notes": "Rakuten 中国卖家通过 Rakuten Global Market 入驻",
+      "confidence": "L",
+      "warning": "Hachimi 估算，精确数字待 Apify 抓取 Top 卖家 storefront 国别"
+    }
+  ],
+  "hachimi_scores": {
+    "_version": "v1.0-draft",
+    "_notes": "Phase 4 才正式建模。此处为基于 Statista + 领域知识的初步评分。",
+    "market_attractiveness": 92,
+    "operational_feasibility": 55,
+    "competition_intensity": 75,
+    "ai_leverage_potential": 78,
+    "composite_score": 73,
+    "recommended_entry_mode": "fba_only",
+    "recommended_categories": [
+      "beauty",
+      "home",
+      "kitchen",
+      "pet"
+    ],
+    "computed_at": "2026-05-17",
+    "rationale": "亚太第二大电商市场 $2000 亿，单 SKU 客单价高、复购强。但 PSE 认证 + 日语本地化 + 客服严格要求高。建议：FBA Japan + Rakuten 双平台，专注精品垂直品类，必备日本认证团队。"
+  },
+  "ai_adaptation_notes": {
+    "lang_llm": "9/10 (日语)",
+    "social_ecom": "low (LINE 商务 + Instagram)",
+    "automation": "high",
+    "use_cases": [
+      "FBA Japan 主力",
+      "日语 AI（GPT/Claude 优秀）",
+      "PSE 认证服务",
+      "Rakuten Ichiba"
+    ]
+  },
+  "_data_completeness": {
+    "country_meta": "100%",
+    "macro_indicators": "100%",
+    "ecommerce_market": "85%",
+    "platforms": "70%",
+    "category_metrics": "60%",
+    "top_skus": "0% (等 SellerSprite + Apify)",
+    "payments": "85%",
+    "logistics": "30%",
+    "compliance": "85%",
+    "policy_events": "75%",
+    "traffic_economics": "70%",
+    "china_seller_density": "50%",
+    "hachimi_scores": "30% (Phase 4 才建模)",
+    "overall": "65%"
+  },
+  "_data_quality_warning": {
+    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
+    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "trusted_fields": [
+      "macro_indicators[0].population",
+      "macro_indicators[0].gdp_usd_billion",
+      "macro_indicators[0].gdp_per_capita_usd",
+      "macro_indicators[0].inflation_rate_pct",
+      "macro_indicators[0].internet_penetration_pct",
+      "ecommerce_market[0].cagr_2025_2030_pct",
+      "ecommerce_market[0].cross_border_share_pct",
+      "ecommerce_market[0].domestic_share_pct"
+    ],
+    "polluted_fields": [
+      "ecommerce_market[0].gmv_total_usd_million",
+      "ecommerce_market[0].online_buyers_million",
+      "ecommerce_market[0].mobile_share_pct",
+      "platforms[].metrics_2024.gmv_usd_million",
+      "platforms[].metrics_2024.market_share_pct",
+      "platforms[].metrics_2024.commission_rate_pct",
+      "platforms[].metrics_2024.chinese_seller_share_pct",
+      "category_metrics[].gmv_usd_million",
+      "payments[].share_pct",
+      "traffic_economics[].cpm_usd",
+      "traffic_economics[].cpc_usd",
+      "china_seller_density[].top100_china_count"
+    ],
+    "raw_pdf_extract_path": "data/raw/statista_extracted/jpn.json",
+    "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
+    "audited_at": "2026-05-17"
+  }
+}

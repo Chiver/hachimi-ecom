@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "iso": "CHL",
+    "pdf_file": "study_id58456_e-commerce-in-chile.pdf",
+    "extracted_at": "2026-05-17",
+    "total_pages": 51,
+    "toc_pages": {
+      "ecommerce_revenue": [
+        23
+      ],
+      "top_online_stores": [],
+      "categories": [
+        31,
+        40
+      ],
+      "payments": [
+        42
+      ],
+      "forecast_users": [
+        43,
+        44
+      ],
+      "forecast_revenue": [
+        15,
+        23,
+        35,
+        37
+      ],
+      "cross_border": [
+        23
+      ],
+      "online_buyers": [],
+      "mobile": []
+    }
+  },
+  "sections": {
+    "categories": [
+      {
+        "page": 31,
+        "text": "Shopping websites with the highest organic traffic in Chile in January 2025 (in\nmillions)\nShopping websites with the highest organic traffic in Chile 2025\nNumber of visitors in millions\n0 2 4 6 8 10 12\nmercadolibre.cl 11\nfalabella.com 11\nparis.cl 4.4\nplay.google.com 2.8\nripley.cl 2.5\nwom.cl 2.4\nlider.cl 2\neasy.cl 1.8\njumbo.cl 1.3\nadidas.cl 1.3\n30 Description: During January 2025, mercadolibre.cl and falabella.com were the shopping websites with the highest organic traffic in Chile, with approximately 11 million visitors each. The website of the South American retailer paris.cl ranked third in organic traffic\nduring the same month in its country of origin. In 2024, clothing was the most purchased category online in Chile. Read more\nNote(s): Chile; January 2024\nSource(s): Ahrefs"
+      },
+      {
+        "page": 40,
+        "text": "Description: Participation during CyberDay and CyberMonday has seen an increase in Chile since 2020. In the 2024 edition held from June 3 to 5, CyberDay had 780 participating sites. Meanwhile, CyberMonday, held from September 30 to October 2, recorded 750\nparticipants in the same year. This is the first year that participation is higher on CyberDay than on Cyber ​​Monday. Read more\nNote(s): Chile; 2020 to 2024; includes companies and foundations\nSource(s): CCS\nsetis\nfo\nrebmuN\nNumber of sites participating to CyberDay and CyberMonday in Chile from\n2020 to 2024\nNumber of sites participating to CyberDay and CyberMonday in Chile 2020-2024\nCyberDay CyberMonday\n900\n795 799 797 800\n780\n800 749 750\n700 670\n601\n600 568\n500\n400\n300\n200\n100\n0\n2020 2021 2022 2023 2024\n39"
+      }
+    ],
+    "forecast_users": [
+      {
+        "page": 43,
+        "text": "Most important factors for consumers in Latin America to determine what\nonline payment method to use in 2024\nLeading factors in choosing online payment methods in 7 countries Latin America 2024\nSecurity / trust it’s safe Convenience / ease of use Payment methods offered The speed at which the\ntransaction is processed\nWorldwide 54% 48% 41% 34%\nLatin America 54% 48% 47% 44%\nArgentina 52% 51% 52% 42%\nBrazil 55% 42% 43% 41%\nChile 53% 50% 49% 47%\nColombia 53% 50% 49% 47%\nEcuador 53% 39% 44% 41%\nMexico 54% 52% 48% 48%\nPeru 55% 46% 44% 47%\n42 Description: More than five out of 10 Latin American respondents thought security and ease of use were the most important things when choosing how to pay online. This is according to a survey held in seven different countries in Latin America in 2024. Brazilian\nrespondents were more likely to prioritize costs and transactions fees than any other country in the region. Read more\nNote(s): Argentina, Brazil, Chile, Colombia, Ecuador, Central and South America, Mexico, Peru; May to June 2024; 6,500 respondents; 18 years and older; Consumers\nSource(s): Paysafe Group"
+      },
+      {
+        "page": 44,
+        "text": "Description: According to the Statista Global Consumer Survey conducted in Chile in 2024, 30 percent of those who bought something online in the past 12 months were aged between 30 and 39 years old. Only six percent of survey respondents who shopped online\nin the South American country during the previous 12 months were between 60 and 64 years old. Read more\nNote(s): Chile; 18 January 2024 to 15 March 2024; 969 respondents; 18-64 years; e-commerce users*; *Persons who had bought something online in the past 12 months in one of the following categories: bags &amp; accessories, books, movies, [...] Read more\nSource(s): Statista Consumer Insights\nstnednopser\nfo\nerahS\nE-commerce users in Chile 2024, by age\nOnline shoppers in Chile 2024, by age\n30%\n30%\n25%\n23%\n22%\n20%\n15%\n15%\n10%\n6%\n5% 4%\n0%\n18 - 19 years 20 - 29 years 30 - 39 years 40 - 49 years 50 - 59 years 60 - 64 years\n43"
+      }
+    ],
+    "forecast_revenue": [
+      {
+        "page": 15,
+        "text": "Description: In the third quarter of 2024, international stores accounted for more than a third (36 percent) of informal transactions in Chile, followed by social media (22 percent). Meanwhile, almost a quarter of formal online transactions in the South American\ncountry came from large stores. Read more\nNote(s): Chile, Central and South America; Q3 2024; 4,100 internet users*; 18-75 years; * Number of respondents in the 3rd quarter of 2024. The source does not specify the type of study conducted. Figures may be higher or lower than 100 [...] Read more\nSource(s): CNC (Chile); Kawésqar Lab\nsnoitcasnart\nfo\nerahS\nDistribution of formal and informal e-commerce transactions in Chile in the\n3rd quarter of 2024, by purchasing channel\nShare of e-commerce transactions in Chile 2024, by type and channel\nSpecialized stores Marketplaces Supermarkets & home stores Large stores International stores Social networks Another store D2C\n100% 11%%\n77%%\n1144%%\n90%\n1111%%\n80%\n1122%% 2222%%\n70%\n60%\n2233%%\n50%\n3366%%\n88%%\n40%\n30%\n2222%%\n20% 1177%%\n10%\n1166%%\n1111%%\n0%\nFormal transactions Informal transactions\n14"
+      }
+    ]
+  }
+}

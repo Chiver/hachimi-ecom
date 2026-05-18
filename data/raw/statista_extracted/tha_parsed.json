@@ -1,0 +1,91 @@
+{
+  "iso": "THA",
+  "currency": "THB",
+  "revenue_forecast": {
+    "value_usd_b": 771.0,
+    "currency": "USD",
+    "page": 17,
+    "quote": "ollars. Fashion products generated the highest revenue among product categories, with approximately 771 billion U.S. dollars. Read more Note(s): Thailand;"
+  },
+  "top_stores": [
+    {
+      "name": "Fashion",
+      "value": 770.89,
+      "page": 17
+    },
+    {
+      "name": "Food",
+      "value": 680.06,
+      "page": 17
+    },
+    {
+      "name": "DIY & Hardware Store",
+      "value": 493.77,
+      "page": 17
+    },
+    {
+      "name": "Electronics",
+      "value": 464.65,
+      "page": 17
+    },
+    {
+      "name": "Furniture",
+      "value": 283.31,
+      "page": 17
+    },
+    {
+      "name": "Beverages",
+      "value": 235.71,
+      "page": 17
+    },
+    {
+      "name": "Beauty & Personal Care",
+      "value": 227.26,
+      "page": 17
+    },
+    {
+      "name": "Tobacco Products",
+      "value": 171.33,
+      "page": 17
+    },
+    {
+      "name": "Household Essentials",
+      "value": 122.66,
+      "page": 17
+    },
+    {
+      "name": "Toys & Hobby",
+      "value": 115.79,
+      "page": 17
+    }
+  ],
+  "categories": [],
+  "payments": [
+    {
+      "method": "Digital wallet",
+      "share_pct": 30.0,
+      "page": 29
+    },
+    {
+      "method": "Credit card",
+      "share_pct": 11.0,
+      "page": 29
+    },
+    {
+      "method": "Debit and prepaid cards",
+      "share_pct": 6.0,
+      "page": 29
+    },
+    {
+      "method": "Buy now pay later/POS financing",
+      "share_pct": 1.0,
+      "page": 29
+    },
+    {
+      "method": "Crypto",
+      "share_pct": 1.0,
+      "page": 29
+    }
+  ],
+  "extracted_at": "2026-05-17"
+}
