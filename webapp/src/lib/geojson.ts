@@ -110,6 +110,67 @@ function cutGeometryAtAntimeridian(geom: Geometry): Geometry {
   return geom;
 }
 
+/** Absolute planar (shoelace) area of a ring — winding-agnostic. */
+function ringArea(ring: Position[]): number {
+  let a = 0;
+  for (let i = 0, n = ring.length; i < n - 1; i++) {
+    a += ring[i][0] * ring[i + 1][1] - ring[i + 1][0] * ring[i][1];
+  }
+  return Math.abs(a) / 2;
+}
+
+/** Planar centroid of a ring (shoelace). Falls back to the bbox centre. */
+function ringCentroid(ring: Position[]): [number, number] {
+  let x = 0;
+  let y = 0;
+  let a = 0;
+  for (let i = 0, n = ring.length; i < n - 1; i++) {
+    const cross = ring[i][0] * ring[i + 1][1] - ring[i + 1][0] * ring[i][1];
+    a += cross;
+    x += (ring[i][0] + ring[i + 1][0]) * cross;
+    y += (ring[i][1] + ring[i + 1][1]) * cross;
+  }
+  a *= 0.5;
+  if (Math.abs(a) < 1e-9) {
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    for (const p of ring) {
+      minX = Math.min(minX, p[0]); maxX = Math.max(maxX, p[0]);
+      minY = Math.min(minY, p[1]); maxY = Math.max(maxY, p[1]);
+    }
+    return [(minX + maxX) / 2, (minY + maxY) / 2];
+  }
+  return [x / (6 * a), y / (6 * a)];
+}
+
+/**
+ * One representative label point per country: the centroid of the country's
+ * single largest landmass. Using the largest polygon (not the whole geometry)
+ * keeps the label on the mainland and avoids one label per island for
+ * MultiPolygon countries (Canada's Arctic archipelago, USA's Alaska, etc.).
+ */
+export function largestLandmassCentroid(geom: Geometry): [number, number] | null {
+  const polygons: Position[][][] =
+    geom.type === "Polygon"
+      ? [geom.coordinates as Position[][]]
+      : geom.type === "MultiPolygon"
+        ? (geom.coordinates as Position[][][])
+        : [];
+  let best: Position[] | null = null;
+  let bestArea = -1;
+  for (const poly of polygons) {
+    const outer = poly[0];
+    if (!outer || outer.length < 4) continue;
+    const area = ringArea(outer);
+    if (area > bestArea) {
+      bestArea = area;
+      best = outer;
+    }
+  }
+  if (!best) return null;
+  const [lng, lat] = ringCentroid(best);
+  return Number.isFinite(lng) && Number.isFinite(lat) ? [lng, lat] : null;
+}
+
 export function topoToFeatureCollection(
   topo: Topology<Objects<{ name: string }>>,
 ): FeatureCollection<Geometry, CountryFeatureProps> {

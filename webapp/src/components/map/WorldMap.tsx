@@ -10,19 +10,33 @@ import Map, {
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useRouter } from "next/navigation";
 import type { FeatureCollection } from "geojson";
-import { topoToFeatureCollection, type CountryFeatureProps } from "@/lib/geojson";
+import {
+  largestLandmassCentroid,
+  topoToFeatureCollection,
+  type CountryFeatureProps,
+} from "@/lib/geojson";
 import type { CountryScoreSummary } from "@/lib/scores";
 import type { Country } from "@/types";
 import { HoverPanel } from "./HoverPanel";
 import { MetricFilter } from "./MetricFilter";
 import {
   computeDomain,
+  formatMetricLabel,
   getMetric,
   valueToColor,
   type MetricKey,
 } from "@/lib/metrics";
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";
+
+/**
+ * Hand-tuned label anchors for countries too small for their centroid to be
+ * readable — the value is nudged into open sea beside the country.
+ */
+const LABEL_POINT_OVERRIDES: Record<string, [number, number]> = {
+  SGP: [105.6, 0.6], // Singapore → SE into the sea, clear of Malaysia/Indonesia
+  ARE: [55.5, 23.0], // UAE → nudged off the Gulf coast
+};
 
 type Props = {
   countries: Country[];
@@ -76,6 +90,43 @@ export function WorldMap({ countries, scores }: Props) {
     match.push("#11172a"); // default: untracked countries
     return match;
   }, [countries, scores, metric, domain]);
+
+  // Per-country white value label for the active metric (Mapbox match-by-iso).
+  // Countries with no value for this metric get an empty label (no text).
+  const labelTextExpression = useMemo(() => {
+    type Expr = string | number | Expr[];
+    const pairs: Expr[] = [];
+    for (const c of countries) {
+      const summary = scores[c.iso_alpha3];
+      const v = summary ? metric.accessor(summary) : null;
+      if (v == null || !Number.isFinite(v)) continue;
+      pairs.push(c.iso_alpha3, formatMetricLabel(metric, v));
+    }
+    if (pairs.length === 0) return "";
+    return ["match", ["coalesce", ["get", "iso_a3"], ""], ...pairs, ""];
+  }, [countries, scores, metric]);
+
+  // One label anchor per tracked country (largest-landmass centroid), so each
+  // country gets a single value label. Tiny countries are nudged into open
+  // space beside them so the number doesn't disappear under the dot.
+  const labelPoints = useMemo<FeatureCollection | null>(() => {
+    if (!geojson) return null;
+    const features = [];
+    for (const c of countries) {
+      const iso = c.iso_alpha3;
+      const feat = geojson.features.find((f) => f.properties.iso_a3 === iso);
+      if (!feat) continue;
+      const anchor =
+        LABEL_POINT_OVERRIDES[iso] ?? largestLandmassCentroid(feat.geometry);
+      if (!anchor) continue;
+      features.push({
+        type: "Feature" as const,
+        geometry: { type: "Point" as const, coordinates: anchor },
+        properties: { iso_a3: iso },
+      });
+    }
+    return { type: "FeatureCollection", features };
+  }, [geojson, countries]);
 
   const hovered = hoveredIso ? scores[hoveredIso] ?? null : null;
   const hoveredCountry = hoveredIso
@@ -173,6 +224,43 @@ export function WorldMap({ countries, scores }: Props) {
               paint={{
                 "line-color": "#10b981",
                 "line-width": 1.6,
+              }}
+            />
+          </Source>
+        )}
+
+        {/* White value label for the active metric — one per country, anchored
+            on its largest landmass (see labelPoints). allow/ignore-placement
+            keep every tracked country labelled at any zoom. */}
+        {labelPoints && (
+          <Source id="country-labels" type="geojson" data={labelPoints}>
+            <Layer
+              id="country-label"
+              type="symbol"
+              layout={{
+                "symbol-placement": "point",
+                "text-field": labelTextExpression as unknown as string,
+                "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+                "text-size": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  1,
+                  9,
+                  3,
+                  12,
+                  5,
+                  16,
+                ] as unknown as number,
+                "text-allow-overlap": true,
+                "text-ignore-placement": true,
+                "text-padding": 0,
+              }}
+              paint={{
+                "text-color": "#ffffff",
+                "text-halo-color": "rgba(8,12,24,0.92)",
+                "text-halo-width": 1.3,
+                "text-halo-blur": 0.3,
               }}
             />
           </Source>

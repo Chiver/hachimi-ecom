@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import {
   METRICS,
   COMPOSITE_LEGEND_GRADIENT,
+  CPM_LEGEND_GRADIENT,
   type MetricDef,
   type MetricKey,
 } from "@/lib/metrics";
@@ -64,7 +65,9 @@ export function MetricFilter({ value, onChange, domain, metric }: Props) {
               background:
                 metric.key === "composite_score"
                   ? COMPOSITE_LEGEND_GRADIENT
-                  : "linear-gradient(90deg, rgb(35,46,68) 0%, rgb(16,185,129) 100%)",
+                  : metric.key === "meta_cpm_usd"
+                    ? CPM_LEGEND_GRADIENT
+                    : "linear-gradient(90deg, rgb(35,46,68) 0%, rgb(16,185,129) 100%)",
             }}
           />
           <span className="text-[10px] tabular-nums text-[var(--color-text-dim)]">
@@ -74,6 +77,11 @@ export function MetricFilter({ value, onChange, domain, metric }: Props) {
         {metric.log && (
           <div className="mt-1 text-[10px] text-[var(--color-text-dim)]">
             * 对数刻度（跨越多数量级）
+          </div>
+        )}
+        {metric.lowerIsBetter && (
+          <div className="mt-1 text-[10px] text-[var(--color-text-dim)]">
+            * 越低越好（流量成本越便宜）· 来源 Lebesgue &apos;26
           </div>
         )}
         <div className="mt-1.5 text-[10px] text-[var(--color-text-dim)]">

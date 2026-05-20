@@ -6,7 +6,8 @@ export type MetricKey =
   | "cagr_2025_2030_pct"
   | "per_capita_spend_usd"
   | "online_buyers_million"
-  | "cross_border_share_pct";
+  | "cross_border_share_pct"
+  | "meta_cpm_usd";
 
 export type MetricDef = {
   key: MetricKey;
@@ -15,12 +16,19 @@ export type MetricDef = {
   accessor: (s: CountryScoreSummary) => number | null | undefined;
   format: (v: number) => string;
   /**
+   * Compact formatter used for the white value label drawn on each country.
+   * Falls back to `format` when omitted.
+   */
+  labelFormat?: (v: number) => string;
+  /**
    * Optional fixed domain. If omitted, the map auto-scales by the
    * (min, max) of the metric across countries that have data.
    */
   fixedDomain?: [number, number];
   /** If true, scale is log10 (good for GMV which spans 3+ orders of magnitude). */
   log?: boolean;
+  /** If true, a lower value is better (e.g. CPM traffic cost). */
+  lowerIsBetter?: boolean;
 };
 
 export const METRICS: MetricDef[] = [
@@ -30,6 +38,7 @@ export const METRICS: MetricDef[] = [
     short: "评分",
     accessor: (s) => s.composite_score,
     format: (v) => `${v.toFixed(0)} / 100`,
+    labelFormat: (v) => `${v.toFixed(0)}`,
     fixedDomain: [0, 100],
   },
   {
@@ -47,6 +56,7 @@ export const METRICS: MetricDef[] = [
     short: "增速",
     accessor: (s) => s.cagr_2025_2030_pct,
     format: (v) => `${v.toFixed(1)}%`,
+    labelFormat: (v) => `${v.toFixed(0)}%`,
   },
   {
     key: "per_capita_spend_usd",
@@ -54,6 +64,8 @@ export const METRICS: MetricDef[] = [
     short: "人均支出",
     accessor: (s) => s.per_capita_spend_usd,
     format: (v) => `$${v.toLocaleString("en-US", { maximumFractionDigits: 0 })}`,
+    labelFormat: (v) =>
+      v >= 1000 ? `$${(v / 1000).toFixed(1)}k` : `$${v.toFixed(0)}`,
   },
   {
     key: "online_buyers_million",
@@ -61,6 +73,7 @@ export const METRICS: MetricDef[] = [
     short: "买家",
     accessor: (s) => s.online_buyers_million,
     format: (v) => `${v.toFixed(1)}M`,
+    labelFormat: (v) => `${v >= 10 ? v.toFixed(0) : v.toFixed(1)}M`,
   },
   {
     key: "cross_border_share_pct",
@@ -68,7 +81,17 @@ export const METRICS: MetricDef[] = [
     short: "跨境",
     accessor: (s) => s.cross_border_share_pct,
     format: (v) => `${v.toFixed(0)}%`,
+    labelFormat: (v) => `${v.toFixed(0)}%`,
     fixedDomain: [0, 100],
+  },
+  {
+    key: "meta_cpm_usd",
+    label: "Meta CPM 流量成本",
+    short: "CPM",
+    accessor: (s) => s.meta_cpm_lebesgue_usd,
+    format: (v) => `$${v.toFixed(2)}`,
+    labelFormat: (v) => `$${v.toFixed(1)}`,
+    lowerIsBetter: true,
   },
 ];
 
@@ -76,6 +99,11 @@ export function getMetric(key: MetricKey): MetricDef {
   const m = METRICS.find((m) => m.key === key);
   if (!m) throw new Error(`Unknown metric: ${key}`);
   return m;
+}
+
+/** Compact value drawn as a white label on each country (falls back to `format`). */
+export function formatMetricLabel(metric: MetricDef, v: number): string {
+  return (metric.labelFormat ?? metric.format)(v);
 }
 
 /** Compute the (min, max) for a metric across the given snapshots. */
@@ -130,8 +158,22 @@ function compositeScoreColor(score: number): string {
 }
 
 /**
+ * Cost ramp for "lower is better" metrics (Meta CPM): cheap traffic reads
+ * emerald, mid-priced amber, expensive red. `t` is the value's position in
+ * the domain (0 = cheapest, 1 = most expensive).
+ */
+function costColor(t: number): string {
+  const x = Math.max(0, Math.min(1, t));
+  if (x < 0.5) {
+    return lerpRgb([16, 185, 129], [245, 158, 11], x / 0.5); // emerald → amber
+  }
+  return lerpRgb([245, 158, 11], [220, 38, 38], (x - 0.5) / 0.5); // amber → red
+}
+
+/**
  * Map a metric's value to a color. For composite_score we use a 3-stop
  * red→amber→emerald ramp so a 35 score visibly differs from a 73 score.
+ * Meta CPM uses an inverted cost ramp (cheap = emerald, dear = red).
  * For all other metrics we keep the single-color (gray→emerald) ramp.
  * Missing values → muted gray-blue.
  */
@@ -145,6 +187,12 @@ export function valueToColor(
 
   if (metric.key === "composite_score") {
     return compositeScoreColor(value);
+  }
+
+  if (metric.key === "meta_cpm_usd") {
+    const [lo, hi] = domain;
+    const t = hi === lo ? 0.5 : (value - lo) / (hi - lo);
+    return costColor(t);
   }
 
   const [lo, hi] = domain;
@@ -165,3 +213,7 @@ export function valueToColor(
 /** Stops used by the bottom-left legend swatch for the composite score. */
 export const COMPOSITE_LEGEND_GRADIENT =
   "linear-gradient(90deg, rgb(220,38,38) 0%, rgb(245,158,11) 42%, rgb(132,204,22) 65%, rgb(16,185,129) 100%)";
+
+/** Legend swatch for Meta CPM: left = cheap (emerald), right = expensive (red). */
+export const CPM_LEGEND_GRADIENT =
+  "linear-gradient(90deg, rgb(16,185,129) 0%, rgb(245,158,11) 50%, rgb(220,38,38) 100%)";

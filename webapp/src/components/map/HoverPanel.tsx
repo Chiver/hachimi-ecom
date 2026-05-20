@@ -183,7 +183,13 @@ export function HoverPanel({ country, summary, activeMetric }: Props) {
             )}
 
           {summary?.meta_cpm_lebesgue_usd != null && (
-            <div className="mt-3 rounded-md border border-blue-400/30 bg-blue-500/5 p-2">
+            <div
+              className={cn(
+                "mt-3 rounded-md border border-blue-400/30 bg-blue-500/5 p-2 transition-colors",
+                activeMetric === "meta_cpm_usd" &&
+                  "ring-1 ring-inset ring-[var(--color-primary)]/60",
+              )}
+            >
               <div className="flex items-baseline justify-between text-[11px]">
                 <span className="text-[var(--color-text-dim)]">
                   Meta CPM
