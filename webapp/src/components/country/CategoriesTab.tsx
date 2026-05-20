@@ -3,6 +3,15 @@ import { SourceBadge, PendingBadge } from "@/components/SourceBadge";
 import { CATEGORY_CODES, CATEGORY_LABEL } from "@/lib/categories";
 import { cn, formatPct, formatUsdMillions } from "@/lib/utils";
 import { BenchmarkChart, type BenchmarkRow } from "./BenchmarkChart";
+import {
+  CategoryCrossCountryChart,
+  type CategoryCountryMatrix,
+} from "./CategoryCrossCountryChart";
+import {
+  getAvailableCountryIsos,
+  getCountryData,
+  getAllCountries,
+} from "@/lib/data";
 
 const COMPLEXITY_COLOR: Record<string, string> = {
   low: "text-emerald-300 bg-emerald-500/10 ring-emerald-400/30",
@@ -28,12 +37,38 @@ export function CategoriesTab({ data }: { data: CountryData }) {
       value: c.gmv_usd_million ?? 0,
     }));
 
+  // Build a cross-country category × country matrix for the comparison chart.
+  const allCountries = getAllCountries();
+  const matrix: CategoryCountryMatrix = {};
+  for (const code of CATEGORY_CODES) matrix[code] = [];
+  for (const iso of getAvailableCountryIsos()) {
+    const d = getCountryData(iso);
+    if (!d) continue;
+    const c = allCountries.find((c) => c.iso_alpha3 === iso);
+    const label = `${c?.flag_emoji ?? ""} ${c?.name_zh ?? iso}`;
+    for (const cm of d.category_metrics) {
+      if (cm.gmv_usd_million != null && cm.gmv_usd_million > 0) {
+        (matrix[cm.category_code] ?? (matrix[cm.category_code] = [])).push({
+          iso,
+          label,
+          gmv: cm.gmv_usd_million,
+        });
+      }
+    }
+  }
+
+  // Pick the largest-by-GMV category in the current country as the default
+  const initialCategory = [...data.category_metrics]
+    .filter((c) => c.gmv_usd_million != null)
+    .sort((a, b) => (b.gmv_usd_million ?? 0) - (a.gmv_usd_million ?? 0))[0]
+    ?.category_code;
+
   return (
     <div className="space-y-6">
       {gmvRows.length > 1 && (
         <section>
           <div className="mb-2 flex items-baseline justify-between">
-            <h3 className="text-base font-semibold">品类市场容量排名</h3>
+            <h3 className="text-base font-semibold">品类市场容量排名（本国内）</h3>
             <span className="text-[11px] text-[var(--color-text-dim)]">
               GMV · 高→低 · {gmvRows.length} / 12 大类有数据
             </span>
@@ -42,10 +77,15 @@ export function CategoriesTab({ data }: { data: CountryData }) {
             rows={gmvRows}
             title="品类 GMV (M USD)"
             format={{ millionsToBillions: true, decimals: 2 }}
-            height={Math.max(220, gmvRows.length * 32)}
           />
         </section>
       )}
+
+      <CategoryCrossCountryChart
+        currentIso={data.country.iso_alpha3}
+        initialCategory={initialCategory}
+        matrix={matrix}
+      />
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {CATEGORY_CODES.map((code) => {

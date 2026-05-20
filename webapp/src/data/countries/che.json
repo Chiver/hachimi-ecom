@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 14000.0,
+      "gmv_total_usd_million": 16272.0,
       "cagr_2025_2030_pct": 3.5,
       "online_buyers_million": 6.5,
       "mobile_share_pct": 45,
@@ -70,11 +70,14 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/che.json",
+          "source_name": "Statista E-commerce in CHE Dossier - page 4",
+          "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=4",
+          "source_quote": "Description: In 2023, the e-commerce revenue in Switzerland was around 14.4 billion Swiss francs. This was a slight increase c",
+          "currency_original": "CHF",
+          "value_original": 14.4,
+          "fx_rate_used": 1.13,
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -90,11 +93,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$16272.0M / 6.5M buyers",
+          "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=4",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$14000.0M / 6.5M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -111,7 +114,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 2154.0
+      "per_capita_spend_usd": 2503.0
     }
   ],
   "platforms": [
@@ -127,17 +130,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CHE",
-        "gmv_usd_million": 3100.0,
+        "gmv_usd_million": 2154.0,
         "market_share_pct": 22.0,
         "commission_rate_pct": 12.0,
         "fulfillment_fee_model": "本地",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CHE Dossier - page 18 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=18",
+            "source_quote": "galaxus.ch: 2153.6 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -166,17 +170,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CHE",
-        "gmv_usd_million": 1100.0,
+        "gmv_usd_million": 1421.0,
         "market_share_pct": 8.0,
         "commission_rate_pct": 5.0,
         "fulfillment_fee_model": "Zalando Fulfillment",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CHE Dossier - page 18 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=18",
+            "source_quote": "zalando.ch: 1421.3 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -283,17 +288,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CHE",
-        "gmv_usd_million": 560.0,
+        "gmv_usd_million": 753.0,
         "market_share_pct": 4.0,
         "commission_rate_pct": 0,
         "fulfillment_fee_model": "自营",
         "rank_in_country": 5,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CHE Dossier - page 18 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=18",
+            "source_quote": "brack.ch: 753.2 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -488,43 +494,47 @@
   "payments": [
     {
       "payment_method": "credit_card",
-      "share_pct": 40,
+      "share_pct": 75.0,
       "year": 2025,
       "operator": "Visa/MC",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-switzerland.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=35",
+      "confidence": "H",
+      "source_quote": "Credit card: 75.0%",
+      "source_name": "Statista E-commerce in CHE Dossier - page 35"
     },
     {
       "payment_method": "TWINT",
-      "share_pct": 25,
+      "share_pct": 52.0,
       "year": 2025,
       "operator": "瑞士本地国民支付",
       "is_local_unique": true,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-switzerland.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=35",
+      "confidence": "H",
+      "source_quote": "TWINT: 52.0%",
+      "source_name": "Statista E-commerce in CHE Dossier - page 35"
     },
     {
       "payment_method": "invoice_pay",
-      "share_pct": 18,
+      "share_pct": 71.0,
       "year": 2025,
       "operator": "PostFinance 发票后付",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-switzerland.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=35",
+      "confidence": "H",
+      "source_quote": "Invoice: 71.0%",
+      "source_name": "Statista E-commerce in CHE Dossier - page 35"
     },
     {
       "payment_method": "PayPal",
-      "share_pct": 10,
+      "share_pct": 29.0,
       "year": 2025,
       "operator": "",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-switzerland.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id172194_e-commerce-in-switzerland.pdf#page=35",
+      "confidence": "H",
+      "source_quote": "PayPal: 29.0%",
+      "source_name": "Statista E-commerce in CHE Dossier - page 35"
     },
     {
       "payment_method": "BNPL",
@@ -638,8 +648,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -666,6 +676,30 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/che.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 0,
+      "payment_shares": 4
+    }
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "非欧盟 + 跨境申报独立；高客单市场",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "VAT 8.1% 欧洲最低之一",
+        "description": "瑞士 VAT 8.1%（欧洲最低之一），跨境申报独立体系；非欧盟成员需单独流程。",
+        "impact_on_china_sellers": "低 VAT 优势 + 高消费力，适合高客单品类；但需单独清关流程。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "瑞士高客单市场（人均 $2,154 电商支出）。Digitec Galaxus + Amazon DE 跨境；TWINT 移动支付必接（瑞士 65% 用户使用）。",
+    "sources": []
   }
 }

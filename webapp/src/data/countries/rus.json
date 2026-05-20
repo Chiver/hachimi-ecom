@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 95000.0,
+      "gmv_total_usd_million": 123000.0,
       "cagr_2025_2030_pct": 3.51,
       "online_buyers_million": 80,
       "mobile_share_pct": 65,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 86.13,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/rus.json",
+          "source_name": "Statista E-commerce in RUS Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id63976_e-commerce-in-russia.pdf#page=4",
+          "source_quote": "In 2024, the e-commerce market size in Russia increased by 39 percent year-over-year, having exceeded 11 trillion Russian rubles. A steadily expanding market, Russian e-commerce experienced a particularly accelerated growth.",
+          "publisher": "Boxberry; Data Insight RU; GBS Broker; Logsis",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -681,7 +683,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -709,6 +711,57 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/rus.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "extreme",
+    "headline": "西方对中国第三方制裁实质性落地；中国卖家入俄汇款/履约渠道严重受限",
+    "factors": [
+      {
+        "type": "sanctions",
+        "title": "西方次级制裁压向中国金融机构",
+        "description": "2025 年 EU 启用新制裁标准，已制裁多家协助俄罗斯绕道的中国/吉尔吉斯/哈萨克斯坦银行。2026 年 2 家中国区域性银行被次级制裁后立即停止所有对俄结算（事后部分解除制裁）。",
+        "impact_on_china_sellers": "中国卖家收俄罗斯订单货款的合规渠道极少；CIPS 拒绝接入俄罗斯 SPFS 以避免次级制裁；多数 PSP（Stripe / Adyen / PayPal）不支持俄罗斯。",
+        "severity": "critical"
+      },
+      {
+        "type": "armed_conflict",
+        "title": "俄乌战争持续 / 国际制裁体系升级",
+        "description": "战争进入第 4 年，欧美制裁清单仍在扩张；俄罗斯卢布波动剧烈；Visa/Mastercard 等不可用，本国 Mir 卡和 SBP（央行快支付）成为唯一选择。",
+        "impact_on_china_sellers": "跨境支付高摩擦：必须通过 Yandex Kassa / Tinkoff / YooKassa 等本地 PSP，门槛极高。提现汇款回中国流程不透明。",
+        "severity": "critical"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "Wildberries / Ozon 平台主导但跨境门槛高",
+        "description": "Wildberries 和 Ozon 是俄本土两大平台；外资品牌大批撤出后留下大量市场份额，但本地公司注册 + VAT 是硬门槛。",
+        "impact_on_china_sellers": "建议通过俄当地代运营 / 注册当地公司，不要直邮模式。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "**强烈不建议中国卖家在 2026 年新进入俄罗斯市场。** 主要风险：（1）跨境支付几乎不可行，回款渠道随时被切断；（2）西方次级制裁随时可能扩展至更多中国金融机构，企业被'连坐'风险高；（3）合规边际成本极高。如已有俄罗斯业务：评估是否设立独立法律实体隔离风险；优先选 Mir 卡 / SBP 支付；与中国银行的国际业务部门保持沟通。",
+    "sources": [
+      {
+        "name": "CSIS · Sanctions, SWIFT, and China's Cross-Border Interbank Payments System",
+        "url": "https://www.csis.org/analysis/sanctions-swift-and-chinas-cross-border-interbank-payments-system",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "CEPA · Transatlantic Action: Sanctioning Third-Country Enablers of Russia's War Economy",
+        "url": "https://cepa.org/comprehensive-reports/transatlantic-action-sanctioning-third-country-enablers-of-russias-war-economy/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Atlantic Council · Russia Sanctions Database",
+        "url": "https://www.atlanticcouncil.org/blogs/econographics/russia-sanctions-database/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

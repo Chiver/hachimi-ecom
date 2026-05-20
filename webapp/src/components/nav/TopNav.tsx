@@ -1,8 +1,17 @@
 import Link from "next/link";
-import { Globe2, GitCompareArrows, CalendarClock, BookText } from "lucide-react";
+import {
+  Globe2,
+  GitCompareArrows,
+  CalendarClock,
+  BookText,
+  LayoutGrid,
+  Calculator,
+} from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/", label: "全球地图", icon: Globe2 },
+  { href: "/catalog", label: "品类图谱", icon: LayoutGrid },
+  { href: "/roi", label: "ROI 测算", icon: Calculator },
   { href: "/compare", label: "国家对比", icon: GitCompareArrows },
   { href: "/timeline", label: "政策时间轴", icon: CalendarClock },
   { href: "/glossary", label: "Glossary", icon: BookText },

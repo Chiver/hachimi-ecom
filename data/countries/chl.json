@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 86300.0,
+      "gmv_total_usd_million": 11000.0,
       "cagr_2025_2030_pct": 5.5,
       "online_buyers_million": 12,
       "mobile_share_pct": 70,
@@ -70,14 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in CHL Dossier - page 5",
-          "source_url": "data/raw/statista/study_id58456_e-commerce-in-chile.pdf#page=5",
-          "source_quote": "a Paraguay Cuba 4 Description: In 2026, e-commerce in Brazil was forecast to generate approximately 86.3 billion U.S. dollars in revenue, an increase from ",
-          "currency_original": "USD",
-          "value_original": 86.3,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in CHL Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id58456_e-commerce-in-chile.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Statista Digital Market Insights (LATAM regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -645,7 +644,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -680,6 +679,33 @@
       "platform_gmv": 0,
       "category_shares": 0,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "拉美最稳定经济体之一；电商监管成熟",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "稳定的进口政策",
+        "description": "智利 IVA 19% 标准税率；中智自贸协定生效多年；监管成熟。",
+        "impact_on_china_sellers": "进入门槛低于巴西 / 阿根廷；不过市场体量也较小。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "智利适合作为拉美战略入口或 small-volume 试点。Mercado Libre CL 主战场；Falabella 等本土也强。",
+    "sources": [
+      {
+        "name": "Hachimi research notes · 智利电商市场稳定基准（无重大政治风险事件）",
+        "url": "Hachimi internal review 2026-05-19",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

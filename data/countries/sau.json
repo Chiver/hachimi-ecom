@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 15000.0,
+      "gmv_total_usd_million": 9100.0,
       "cagr_2025_2030_pct": 9.0,
       "online_buyers_million": 28,
       "mobile_share_pct": 75,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/sau.json",
+          "source_name": "Statista E-commerce in SAU Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id85861_e-commerce-in-saudi-arabia.pdf#page=4",
+          "source_quote": "",
+          "publisher": "LogisticsIQ",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -704,7 +706,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -739,6 +741,72 @@
       "platform_gmv": 1,
       "category_shares": 0,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "红海航运危机 + 2026 霍尔木兹海峡危机叠加；运费暴涨、时效翻倍，行业出现'逐步放弃'声音",
+    "factors": [
+      {
+        "type": "armed_conflict",
+        "title": "胡塞武装红海/曼德海峡袭击持续",
+        "description": "2023.11 起胡塞武装对红海商船袭击至 2026 仍未结束；2026.04 多国海事预警显示曼德海峡仍处中等威胁级。胡塞警告若加沙停火破裂或伊朗局势升级将恢复全面袭击。",
+        "impact_on_china_sellers": "中国→中东海运时效从 25-30 天延长至 45-55 天（绕道好望角）；亚欧航线运费 +25-40%；集装箱附加费 +$800-$1500/40HQ。",
+        "severity": "high"
+      },
+      {
+        "type": "armed_conflict",
+        "title": "2026 霍尔木兹海峡危机（美-以-伊冲突升级）",
+        "description": "2026 年美-以-伊冲突升级导致霍尔木兹海峡部分时间封锁，中东地区航空 / 海运 / 陆运全面重构。MSC、Maersk 等承运商已启用阿拉伯半岛陆路绕道。",
+        "impact_on_china_sellers": "集装箱附加费高达 $4,000/箱；空运容量 -18%；中国→中东空运成本环比 2025-Q4 上涨 35-60%。利雅得收货时效不可预测。",
+        "severity": "critical"
+      },
+      {
+        "type": "supply_chain",
+        "title": "末端清关 / 派送时效恶化",
+        "description": "Jeddah、Khorfakkan、Fujairah 等替代港口拥堵；陆路口岸（如 Al Rawdah）开通缓解部分压力但运力远低于海运。",
+        "impact_on_china_sellers": "Amazon SA / Noon 等本地平台 FBA 入仓周期不确定，库存周转拉长压资金。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "短期（2026 H2 之前）不建议把沙特作为新拓展重点市场。已入市的卖家：1) 优先海外仓 + 本地履约（Noon FBN / Amazon SA FBA），减少跨境直发；2) 谨慎备货，把库存周转目标从 60 天延长到 90-120 天；3) 必接 Mada + STC Pay，降低订单流失。新进入卖家：等红海/霍尔木兹局势明朗（推荐密切关注 2026 Q3 节点）。",
+    "sources": [
+      {
+        "name": "Suaid Global · Red Sea Shipping Crisis 2026: Impact on Rates, Routes & Your Supply Chain",
+        "url": "https://suaidglobal.com/insights/red-sea-shipping-crisis-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Bloomberg · Shipping Firms Face Tough 2026 as Reopening of Red Sea Looms",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-04/shipping-firms-face-tough-2026-as-reopening-of-red-sea-looms",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "World Bank · The Deepening Red Sea Shipping Crisis: Impacts and Outlook",
+        "url": "https://documents1.worldbank.org/curated/en/099253002102539789/pdf/IDU10b8b59671dbc814cfc19c4a1299ff54854ba.pdf",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Business Today · How the Gulf is redrawing its logistics network to bypass Hormuz (2026-05-14)",
+        "url": "https://www.businesstoday.in/world/story/how-the-gulf-is-redrawing-its-logistics-network-to-bypass-hormuz-531417-2026-05-14",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Travel And Tour World · UAE Joins Middle East in Massive Overland Energy Push as Strait of Hormuz Crisis Reshapes 2026 Economy",
+        "url": "https://www.travelandtourworld.com/news/article/uae-joins-bahrain-saudi-arabia-iraq-kuwait-qatar-and-israel-in-massive-overland-energy-push-as-strait-of-hormuz-crisis-reshapes-middle-east-economy-and-travel-in-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Vortex Shipping · UAE Shipping Crisis 2026 Guide",
+        "url": "https://vortexshipping.ae/uae-shipping-crisis-2026/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

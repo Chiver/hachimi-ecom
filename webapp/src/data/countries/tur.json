@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 30000.0,
+      "gmv_total_usd_million": 90000.0,
       "cagr_2025_2030_pct": 7.47,
       "online_buyers_million": 50,
       "mobile_share_pct": 70,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/tur.json",
+          "source_name": "Statista E-commerce in TUR Dossier - page 6 (vision-verified)",
+          "source_url": "data/raw/statista/study_id111522_e-commerce-in-turkey.pdf#page=6",
+          "source_quote": "In 2024, the market size reached three trillion Turkish lira, having grown by 61.7 percent from the previous year. According to Ömer Faruk Ergün, Senior E-Commerce Expert at the Turkish Ministry of Trade, the market expanded by roughly 15 percent in U.S. dollar terms.",
+          "publisher": "Ministry of Trade Turkey; E-Commerce Info Platform",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "TUR",
-        "gmv_usd_million": 10500.0,
+        "gmv_usd_million": 4909.0,
         "market_share_pct": 35.0,
         "commission_rate_pct": 8.5,
         "fulfillment_fee_model": "Trendyol Smart Logistics",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in TUR Dossier - page 30 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id111522_e-commerce-in-turkey.pdf#page=30",
+            "source_quote": "trendyol.com: 4909.4 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +168,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "TUR",
-        "gmv_usd_million": 4500.0,
+        "gmv_usd_million": 1055.0,
         "market_share_pct": 15.0,
         "commission_rate_pct": 11.0,
         "fulfillment_fee_model": "HepsiJet",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in TUR Dossier - page 30 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id111522_e-commerce-in-turkey.pdf#page=30",
+            "source_quote": "hepsiburada.com: 1055.2 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -243,17 +247,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "TUR",
-        "gmv_usd_million": 1500.0,
+        "gmv_usd_million": 573.0,
         "market_share_pct": 5.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA",
         "rank_in_country": 4,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in TUR Dossier - page 30 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id111522_e-commerce-in-turkey.pdf#page=30",
+            "source_quote": "amazon.com.tr: 572.8 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -683,8 +688,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -711,6 +716,59 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/tur.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 0,
+      "platform_gmv": 3,
+      "category_shares": 0,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "2026-02-01 起取消 €30 简化清关；Temu 已全面屏蔽国际卖家",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "2026-02-01 取消快件简化清关",
+        "description": "外购快件免税额从 €150 → €30；€30-1500 必须走全套海关流程。土耳其政府公开理由：产品安全（多数中国商品不达欧盟标准）。",
+        "impact_on_china_sellers": "中国直邮土耳其的小件商品（玩具/鞋/皮具等）成本暴涨；多数 SKU 失去价格竞争力。",
+        "severity": "critical"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "Temu 全面屏蔽国际卖家",
+        "description": "Temu 在土耳其完全移除中国 / 国际卖家，转为纯本地卖家市场。这是 Temu 首次在某个国家级市场完全关闭跨境通道。",
+        "impact_on_china_sellers": "Temu 渠道丧失。AliExpress / Hepsiburada / Trendyol 仍可用但合规门槛同步上升。",
+        "severity": "critical"
+      },
+      {
+        "type": "currency_volatility",
+        "title": "里拉持续贬值 + 高通胀",
+        "description": "土耳其里拉自 2021 起累积贬值 80%+；通胀率 2024-2025 仍 40-60%；央行政策不稳定。",
+        "impact_on_china_sellers": "本地结算货款贬值快；定价需高频调整；客户购买力下降。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "**短期暂避土耳其市场。** 已有业务的卖家需立即评估：1) 直邮 SKU 全面退出，改用本地海外仓 + 当地公司架构；2) 改走 AliExpress / Hepsiburada 等仍开放的平台；3) 涉及玩具 / 鞋 / 皮具的强加强抽查品类需提前做 CE / EN71 合规。新拓展资源转向波兰、罗马尼亚等东欧替代市场。",
+    "sources": [
+      {
+        "name": "Türkiye Today · Türkiye scraps duty-free customs for online imports, affecting Chinese e-commerce",
+        "url": "https://www.turkiyetoday.com/business/turkiye-scraps-fast-track-customs-for-online-imports-affecting-chinese-e-commerce-3212517",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Türkiye Today · Temu suspends all cross-border sales in Türkiye following regulatory inspection",
+        "url": "https://www.turkiyetoday.com/business/temu-suspends-all-cross-border-sales-in-turkiye-following-regulatory-inspection-3213496",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

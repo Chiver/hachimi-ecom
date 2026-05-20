@@ -33,6 +33,9 @@ export type CountryScoreSummary = {
   traffic: TrafficSnapshot[];
   /** Lebesgue 2026 Facebook CPM — independent benchmark (third-party). */
   meta_cpm_lebesgue_usd: number | null;
+  /** Geopolitical risk level + headline for at-a-glance map / hover. */
+  geo_risk_level: "extreme" | "high" | "medium" | "low" | null;
+  geo_risk_headline: string | null;
 };
 
 export function getCountryScoreSummaries(): Record<string, CountryScoreSummary> {
@@ -65,6 +68,8 @@ export function getCountryScoreSummaries(): Record<string, CountryScoreSummary> 
       },
       traffic: pickTopTrafficChannels(data),
       meta_cpm_lebesgue_usd: getLebesgueMetaCpm(iso)?.cpm_usd ?? null,
+      geo_risk_level: data.geopolitical_risk?.overall_level ?? null,
+      geo_risk_headline: data.geopolitical_risk?.headline ?? null,
     };
   }
   return out;

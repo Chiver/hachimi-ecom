@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 6550.0,
+      "gmv_total_usd_million": 39200.0,
       "cagr_2025_2030_pct": 3.93,
       "online_buyers_million": 14,
       "mobile_share_pct": 50,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 74.26,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in NLD Dossier - page 26",
-          "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
-          "source_quote": "com is leading the e-commerce market in the Netherlands, with e-commerce net sales of approximately 6.55 billion U.S. dollars in 2025 generated in the Neth",
-          "currency_original": "USD",
-          "value_original": 6.55,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in NLD Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=3",
+          "source_quote": "In 2024, Dutch consumers spent roughly 36 billion euros on online purchases. The Netherlands is the seventh-largest e-commerce market in Europe in absolute terms.",
+          "publisher": "PostNL; Thuiswinkel.org",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -692,7 +691,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -727,6 +726,27 @@
       "platform_gmv": 4,
       "category_shares": 0,
       "payment_shares": 2
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "鹿特丹港 + Schiphol 物流中心；监管严格但稳定",
+    "factors": [
+      {
+        "type": "supply_chain",
+        "title": "EU 物流核心节点",
+        "description": "鹿特丹港 + 阿姆斯特丹 Schiphol 机场是 EU 进口主通道；Shein 因 cookie 同意被荷兰罚 €1.45 亿。",
+        "impact_on_china_sellers": "适合作为 EU 仓储 / 转运基地；GDPR 执法严。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "荷兰适合做 EU 物流仓储节点（鹿特丹仓服务 27 国）。Bol.com + Amazon NL + iDEAL 必接；当心 GDPR 执法。",
+    "sources": []
   }
 }

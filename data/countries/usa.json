@@ -72,7 +72,7 @@
         "gmv_total_usd_million": {
           "source_name": "Statista E-commerce in USA Dossier - page 4 (vision-verified)",
           "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=4",
-          "source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024. Following a continuous upward trend, the revenue has risen by 754.29 billion U.S. dollars since 2017. Between 2024 and 2029, the revenue will rise by 655.91 billion U.S. dollars, continuing its consistent upward trajectory.",
+          "source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024.",
           "publisher": "Statista Market Insights",
           "fetched_at": "2026-05-17",
           "confidence": "H",
@@ -115,7 +115,7 @@
           "source_name": "Statista E-commerce in USA Dossier - page 8 (vision-verified)",
           "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=8",
           "source_quote": "E-commerce share of total retail: 16.4%",
-          "publisher": "",
+          "publisher": "U.S. Census Bureau",
           "fetched_at": "2026-05-17",
           "confidence": "H",
           "extraction_method": "vision"
@@ -845,7 +845,54 @@
     "vision_verified_fields": [
       "ecommerce_market.gmv_total_usd_million",
       "ecommerce_market.ecom_share_of_retail_pct",
-      "category_metrics (10 fields)"
+      "category_metrics (8 fields)"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "De Minimis 时代终结 + Section 301 持续加码；直邮模型已死，必须本土仓",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "Section 321 De Minimis ($800) 已废除",
+        "description": "2025-05-02 起对中国/香港取消 $800 免税额；2025-08-29 起扩展到全球所有来源。所有 B2C 包裹必须正式报关 + 缴税。",
+        "impact_on_china_sellers": "直邮模型寿终正寝。Temu / Shein 已全面转 US 本土仓储。中小卖家直发美国成本上升 30-50%。",
+        "severity": "critical"
+      },
+      {
+        "type": "trade_policy",
+        "title": "Section 301 关税未变 + 新一轮调查启动",
+        "description": "Section 301 在 1974 贸易法下仍全面有效。USTR 2026-03-11 新发起 Section 301 调查针对中国'过剩产能'，目标含 16 个对中国转运高度依赖的贸易伙伴（含越南/马来/泰/印尼等）。",
+        "impact_on_china_sellers": "对中国直接进口的关税长期处于 +25-60% 区间；越南/马来'转运绕道'通道收紧。",
+        "severity": "high"
+      },
+      {
+        "type": "trade_policy",
+        "title": "高敏感品类清关风险",
+        "description": "包含 UFLPA（新疆强迫劳动） / Prop 65（加州） / FCC（无线产品） / FDA（食品/化妆品/医疗）等多套独立审查体系；CBP 抽查趋严。",
+        "impact_on_china_sellers": "棉制品 / 太阳能 / 电池类目高扣货风险（已扣 90,000+ 批次价值 $30B+）。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "美国市场仍是首选战略市场，但战术必须转型：1) 必转 FBA / 本土海外仓 / 自建美国实体；2) UFLPA 涉及品类（棉、电池、光伏）建立完整供应链溯源；3) 客单价 > $50 才能消化关税成本；4) 警惕 2026 H2 可能再加码的 Section 301 关税。",
+    "sources": [
+      {
+        "name": "Dutiable · Section 321 in 2026: the de minimis rules that changed everything",
+        "url": "https://dutiable.io/blog/de-minimis-section-321-changes-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Gateway Lines · Section 301 China Tariffs 2026: Current Rates, Lists 1-4A, EVs & Apparel",
+        "url": "https://gatewaylines.com/press-releases/complete-guide-to-section-301-china-tariffs-in-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "White & Case · United States Begins to Restrain Cross-Border E-commerce",
+        "url": "https://www.whitecase.com/insight-alert/united-states-begins-restrain-cross-border-e-commerce",
+        "fetched_at": "2026-05-19"
+      }
     ]
   }
 }

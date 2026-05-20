@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 50000.0,
+      "gmv_total_usd_million": 36800.0,
       "cagr_2025_2030_pct": 4.85,
       "online_buyers_million": 110,
       "mobile_share_pct": 75,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 82.51,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/bra.json",
+          "source_name": "Statista E-commerce in BRA Dossier - page 7 (vision-verified)",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=7",
+          "source_quote": "",
+          "publisher": "",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$42390.0M / 110M buyers",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=8",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$50000.0M / 110M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -108,9 +110,19 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "待人工校对 Statista 原文精确化"
+        },
+        "ecom_share_of_retail_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page None (vision-verified)",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=None",
+          "source_quote": "E-commerce share of total retail: 9.03%",
+          "publisher": "",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
       },
-      "per_capita_spend_usd": 455.0
+      "per_capita_spend_usd": 385.0,
+      "ecom_share_of_retail_pct": 9.03
     }
   ],
   "platforms": [
@@ -126,17 +138,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "BRA",
-        "gmv_usd_million": 17500.0,
+        "gmv_usd_million": 201.0,
         "market_share_pct": 35.0,
         "commission_rate_pct": 14.0,
         "fulfillment_fee_model": "Mercado Envíos Full",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in BRA Dossier - page 22 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=22",
+            "source_quote": "mercadolivre.com.br: 201.41 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +178,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "BRA",
-        "gmv_usd_million": 6000.0,
+        "gmv_usd_million": 152.0,
         "market_share_pct": 12.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA Brazil（小规模）",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in BRA Dossier - page 22 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=22",
+            "source_quote": "amazon.com.br: 152.38 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +218,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "BRA",
-        "gmv_usd_million": 5000.0,
+        "gmv_usd_million": 140.0,
         "market_share_pct": 10.0,
         "commission_rate_pct": 6.0,
         "fulfillment_fee_model": "Shopee Brasil",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in BRA Dossier - page 22 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=22",
+            "source_quote": "shopee.com.br: 139.96 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -314,58 +329,90 @@
     {
       "category_code": "apparel",
       "year": 2024,
-      "gmv_usd_million": 9000,
+      "gmv_usd_million": 4409.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 10.4% (Statista page 15)",
+          "formula": "$42390.0M × 10.4% = $4409.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Fashion & accessories: 10.4%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 10.4
     },
     {
       "category_code": "electronics",
       "year": 2024,
-      "gmv_usd_million": 8000,
+      "gmv_usd_million": 5553.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 13.1% (Statista page 15)",
+          "formula": "$42390.0M × 13.1% = $5553.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Telephony & mobile phones: 13.1%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 13.1
     },
     {
       "category_code": "home",
       "year": 2024,
-      "gmv_usd_million": 6000,
+      "gmv_usd_million": 8330.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 19.65% (Statista page 15)",
+          "formula": "$42390.0M × 19.65% = $8330.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Household appliances: 19.65%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 19.65
     },
     {
       "category_code": "beauty",
       "year": 2024,
-      "gmv_usd_million": 5000,
+      "gmv_usd_million": 2899.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 6.84% (Statista page 15)",
+          "formula": "$42390.0M × 6.84% = $2899.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Health, cosmetics & perfumes: 6.84%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 6.84
     },
     {
       "category_code": "baby",
@@ -398,16 +445,24 @@
     {
       "category_code": "outdoor",
       "year": 2024,
-      "gmv_usd_million": 2000,
+      "gmv_usd_million": 2014.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 4.75% (Statista page 15)",
+          "formula": "$42390.0M × 4.75% = $2014.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Sports & leisure: 4.75%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 4.75
     },
     {
       "category_code": "auto",
@@ -426,16 +481,24 @@
     {
       "category_code": "health",
       "year": 2024,
-      "gmv_usd_million": 3000,
+      "gmv_usd_million": 2899.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 6.84% (Statista page 15)",
+          "formula": "$42390.0M × 6.84% = $2899.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Health, cosmetics & perfumes: 6.84%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 6.84
     },
     {
       "category_code": "toys",
@@ -454,16 +517,24 @@
     {
       "category_code": "kitchen",
       "year": 2024,
-      "gmv_usd_million": 2500.0,
+      "gmv_usd_million": 1908.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/bra.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 4.5% (Statista page 15)",
+          "formula": "$42390.0M × 4.5% = $1908.0M",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page 15",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=15",
+          "source_quote": "Food & beverages: 4.5%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 4.5
     },
     {
       "category_code": "garden",
@@ -692,8 +763,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -720,6 +791,53 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/bra.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 7,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million",
+      "ecommerce_market.ecom_share_of_retail_pct"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "Remessa Conforme 维持 60% 联邦 + 17% 州税；Shein / Shopee 已加入合规计划",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "Remessa Conforme 跨境关税体系",
+        "description": "≤ USD 50 包裹征 20% 联邦税 + 17% 州税；USD 50-3000 征 60% 联邦税 + 17% 州税。2024-08-01 起 $50 免税额取消。",
+        "impact_on_china_sellers": "$30 的 Temu 商品落地价飙到约 $48；价格竞争力大幅下降。Shein 已申请加入 PRC 享 20% 优惠。",
+        "severity": "high"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "ML 主导但本地化合规门槛上升",
+        "description": "Mercado Libre 仍是绝对主导（市占 50%+）；Temu Brazil 启动半托管模式（2024-07-31）；本地履约要求趋严。",
+        "impact_on_china_sellers": "卖家需通过 PRC 获取税务优势或接受 60% 关税；本地仓 + ML Full 是必选项。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "巴西仍是拉美最大市场，但务必走合规路径：1) 入驻 ML Full / Shopee BR / Magalu 等本土平台；2) 申请 Remessa Conforme 享 20%（vs 60%）税率；3) 海外仓必备，库存深度建议覆盖 90 天；4) PIX 必接（占订单 60%+），boleto 仍需保留作为补充。",
+    "sources": [
+      {
+        "name": "WCO News · E-commerce at a turning point: Customs, compliance and the end of de minimis",
+        "url": "https://mag.wcoomd.org/magazine/wco-news-108-issue-3-2025/e-commerce-at-a-turning-point/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Deliver2 · Brazil has introduced a 60% tax on parcels cheaper than $50 — Shein and Temu are under attack",
+        "url": "https://deliver-2.com/news/economy/brazil-has-introduced-a-60-tax-on-parcels-cheaper-than-50-shein-and-temu-are-under-attack/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

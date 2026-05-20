@@ -2,94 +2,203 @@
   "_meta": "Vision-based extraction from Statista PDFs (Claude reading PDF pages as images via Read tool)",
   "extracted_at": "2026-05-17",
   "_method": "Claude reads PDF page as image, identifies chart values directly from visual bars/labels",
+  "_session_2_additions": "Added TUR, RUS, NLD, SGP, FRA, CAN, ITA, ESP, ZAF + LATAM regional (BRA/MEX/ARG/CHL) + SEA regional (IDN/THA/VNM/PHL/MYS/SGP)",
 
-  "IDN": {
-    "pdf": "study_id60342_e-commerce-in-indonesia.pdf",
-    "gmv_total_usd_b_2024": 65.0,
-    "gmv_total_usd_b_2030_forecast": 150.0,
-    "gmv_source_page": 8,
-    "gmv_source_quote": "In 2024, e-commerce contributed the largest GMV of around 65 billion U.S. dollars to Indonesia's internet economy.",
-    "gmv_publisher": "Bain & Company; Google; Temasek Holdings",
-    "yoy_growth_pct": {"2024": 11.82, "2025": 18.38, "2026": 13.99, "2027": 9.08, "2028": 5.21, "2029": 3.18},
-    "growth_source_page": 11,
-    "growth_source_publisher": "Statista Market Insights",
-    "categories_usd_b_2024": {
-      "kitchen": 12.9,
-      "electronics": 9.55,
-      "apparel": 7.72,
-      "beauty": 4.17,
-      "garden": 3.31,
-      "toys": 2.9,
-      "home": 1.56,
-      "health": 1.29
-    },
-    "categories_source_page": 12,
-    "categories_source_publisher": "DataReportal; Meltwater; Statista Digital Market Insights; We Are Social",
-    "categories_note": "Food $10.8B + Beverages $2.1B 合并为 kitchen 类目。Tobacco/Physical media/Household essentials/Eyewear 未映射到我们 12 大类。Total consumer goods = $50.16B (服务+数字+B2C = total $65B)"
+  "USA": {
+    "pdf": "study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 1180.0, "gmv_total_usd_b_2029_forecast": 1830.0,
+    "gmv_source_page": 4, "gmv_publisher": "Statista Market Insights",
+    "gmv_source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024.",
+    "ecom_share_of_retail_pct_2025": 16.4, "ecom_share_source_page": 8,
+    "ecom_share_source_publisher": "U.S. Census Bureau",
+    "categories_cagr_2017_2028": {"kitchen": 24.8, "beauty": 14.9, "toys": 12.6, "apparel": 11.6, "home": 6.8, "electronics": 6.4, "_source_page": 7, "_publisher": "Statista Market Insights"}
   },
 
   "JPN": {
     "pdf": "study_id61326_e-commerce-in-japan.pdf",
-    "gmv_total_usd_b_2024": 175.0,
-    "gmv_total_local_2024": "¥26.12 trillion JPY",
-    "gmv_fx_rate": 0.0067,
-    "gmv_source_page": 19,
-    "gmv_source_quote": "In 2024, the value of the business-to-consumer (B2C) e-commerce market in Japan amounted to around 26.1 trillion Japanese yen. The market size grew steadily in the last decade.",
-    "gmv_publisher": "METI (Japan)",
-    "gmv_breakdown_by_sector_usd_b_2024": {
-      "physical_goods": 102.0,
-      "service": 55.0,
-      "digital": 18.0,
-      "_sector_page": 20,
-      "_sector_local": "Physical ¥15.22T / Service ¥8.23T / Digital ¥2.68T"
-    },
-    "ecom_share_of_retail_pct_2024": 9.78,
-    "ecom_share_source_page": 18,
-    "ecom_share_source_publisher": "METI (Japan)",
-    "_note": "Physical goods $102B 是与中国跨境卖家最相关的 TAM；total $175B 含旅游/数字服务"
+    "gmv_total_usd_b_2024": 175.0, "gmv_total_local_2024": "¥26.12 trillion JPY",
+    "gmv_source_page": 19, "gmv_publisher": "METI (Japan)",
+    "gmv_source_quote": "In 2024, the value of the B2C e-commerce market in Japan amounted to around 26.1 trillion Japanese yen.",
+    "gmv_breakdown_by_sector_usd_b_2024": {"physical_goods": 102.0, "service": 55.0, "digital": 18.0, "_sector_page": 20},
+    "ecom_share_of_retail_pct_2024": 9.78, "ecom_share_source_page": 18, "ecom_share_source_publisher": "METI (Japan)"
+  },
+
+  "IDN": {
+    "pdf": "study_id60342_e-commerce-in-indonesia.pdf",
+    "gmv_total_usd_b_2024": 65.0, "gmv_total_usd_b_2030_forecast": 150.0,
+    "gmv_source_page": 8, "gmv_publisher": "Bain & Company; Google; Temasek Holdings",
+    "gmv_source_quote": "In 2024, e-commerce contributed the largest GMV of around 65 billion U.S. dollars to Indonesia's internet economy.",
+    "yoy_growth_pct": {"2025": 18.38, "2026": 13.99}, "growth_source_page": 11, "growth_source_publisher": "Statista Market Insights",
+    "categories_usd_b_2024": {"kitchen": 12.9, "electronics": 9.55, "apparel": 7.72, "beauty": 4.17, "garden": 3.31, "toys": 2.9, "home": 1.56, "health": 1.29},
+    "categories_source_page": 12, "categories_source_publisher": "DataReportal; Meltwater; Statista; We Are Social"
   },
 
   "IND": {
     "pdf": "study_id23773_e-commerce-in-india-statista-dossier.pdf",
-    "gmv_total_usd_b_2024": 125.0,
-    "gmv_total_usd_b_2025_forecast": 145.0,
-    "gmv_total_usd_b_2026_forecast": 163.0,
-    "gmv_total_usd_b_2030_forecast": 345.0,
-    "gmv_total_usd_b_2035_forecast": 550.0,
-    "gmv_source_page": 10,
-    "gmv_source_quote": "Owing to the increasing internet user base and favorable market conditions, India has a lot of potential in the e-commerce industry. Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024.",
-    "gmv_publisher": "India Brand Equity Foundation",
-    "redseer_gmv_2023_usd_b": 60.0,
-    "redseer_gmv_2023_source_page": 9,
-    "redseer_gmv_2023_publisher": "Business Today; Redseer",
-    "_note": "两个估算：IBEF $125B (含数字+服务) vs Redseer $60B (仅商品 GMV)。前者作为 ecommerce_market 字段，后者标记为 narrow GMV 备注。"
+    "gmv_total_usd_b_2024": 125.0, "gmv_total_usd_b_2030_forecast": 345.0,
+    "gmv_source_page": 10, "gmv_publisher": "India Brand Equity Foundation",
+    "gmv_source_quote": "Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024."
   },
 
-  "USA": {
-    "pdf": "study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf",
-    "gmv_total_usd_b_2024": 1180.0,
-    "gmv_total_usd_b_2029_forecast": 1830.0,
-    "gmv_source_page": 4,
-    "gmv_source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024. Following a continuous upward trend, the revenue has risen by 754.29 billion U.S. dollars since 2017. Between 2024 and 2029, the revenue will rise by 655.91 billion U.S. dollars, continuing its consistent upward trajectory.",
-    "gmv_publisher": "Statista Market Insights",
-    "retail_ecom_2024_usd_b": 1170.0,
-    "retail_ecom_2024_source_page": 5,
-    "retail_ecom_2024_publisher": "St. Louis Fed; Statista; U.S. Census Bureau",
-    "quarterly_q4_2025_usd_b": 316.0,
-    "quarterly_source_page": 6,
-    "ecom_share_of_retail_pct_2025": 16.4,
-    "ecom_share_source_page": 8,
-    "categories_cagr_2017_2028": {
-      "kitchen": 24.8,
-      "beauty": 14.9,
-      "toys": 12.6,
-      "apparel": 11.6,
-      "home": 6.8,
-      "electronics": 6.4,
-      "_total": 14.2,
-      "_source_page": 7,
-      "_publisher": "Statista Market Insights",
-      "_quote": "The highest CAGR for the period of 2017 and 2028 was estimated to be in the food segment, amounting to almost 25 percent growth. Beauty, health, personal & household care is estimated to have over 14 percent CAGR."
-    }
+  "KOR": {
+    "pdf": "study_id29755_e-commerce-in-south-korea-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 189.0, "gmv_total_local_2024": "₩259.41 trillion KRW",
+    "gmv_source_page": 4, "gmv_publisher": "Statistics Korea",
+    "gmv_source_quote": "The value of e-commerce sales in South Korea amounted to almost 260 trillion South Korean won in 2024."
+  },
+
+  "GBR": {
+    "pdf": "study_id22340_e-commerce-in-the-united-kingdom-uk.pdf",
+    "gmv_total_usd_b_2024": 119.9, "gmv_total_usd_b_2030_forecast": 159.31,
+    "gmv_source_page": 3, "gmv_publisher": "Statista",
+    "gmv_source_quote": "In 2030 the revenue will have increased for sixth consecutive years to 159.31 billion U.S. dollars.",
+    "yoy_growth_pct": {"2024": 4.2, "2025": 4.0}, "growth_source_page": 5, "growth_source_publisher": "eMarketer"
+  },
+
+  "DEU": {
+    "pdf": "study_id32414_e-commerce-in-germany-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 96.8, "gmv_total_local_2024": "€88.8 billion EUR",
+    "gmv_source_page": 3, "gmv_publisher": "HDE (Handelsverband Deutschland)",
+    "gmv_source_quote": "In 2024, the German B2C e-commerce sector generated around 88.8 billion euros in revenue."
+  },
+
+  "FRA": {
+    "pdf": "study_id28910_e-commerce-in-france-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 191.0, "gmv_total_local_2024": "€175.3 billion EUR",
+    "gmv_total_usd_b_2025": 214.0,
+    "gmv_source_page": 5, "gmv_publisher": "FEVAD (Fédération du e-commerce et de la vente à distance)",
+    "gmv_source_quote": "In 2025, e-commerce sales in France amounted to approximately 196.4 billion euros. The e-commerce revenue in France has grown steadily.",
+    "ecom_share_of_retail_pct_2023": 10.0, "ecom_share_source_page": 6, "ecom_share_source_publisher": "FEVAD; Insee",
+    "_note": "FEVAD 口径较广（包含服务）; Statista Market Insights 单独的零售口径约 $52B (2024)"
+  },
+
+  "ITA": {
+    "pdf": "study_id36659_e-commerce-in-italy-statista-dossier.pdf",
+    "gmv_total_usd_b_2023": 87.9, "gmv_total_local_2023": "€80.6 billion EUR",
+    "gmv_source_page": 3, "gmv_publisher": "Casaleggio Associati",
+    "gmv_source_quote": "In 2023, the revenue of the e-commerce sector in Italy hit nearly 80.6 billion euros, a significant increase from a year earlier when it amounted to roughly 75.9 billion euros.",
+    "yoy_growth_pct": {"2023": 27.14, "Q3_2024": 13}, "growth_source_page": 5, "growth_source_publisher": "Salesforce Research"
+  },
+
+  "ESP": {
+    "pdf": "study_id64376_e-commerce-in-spain.pdf",
+    "gmv_total_usd_b_2024": 32.99, "gmv_total_usd_b_2025": 37.87, "gmv_total_usd_b_2030_forecast": 50.43,
+    "gmv_source_page": 6, "gmv_publisher": "Statista Market Insights",
+    "gmv_source_quote": "The revenue in the e-commerce market in Spain was modeled to stand at 37.87 billion U.S. dollars in 2025."
+  },
+
+  "NLD": {
+    "pdf": "study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 39.2, "gmv_total_local_2024": "€36 billion EUR",
+    "gmv_source_page": 3, "gmv_publisher": "PostNL; Thuiswinkel.org",
+    "gmv_source_quote": "In 2024, Dutch consumers spent roughly 36 billion euros on online purchases. The Netherlands is the seventh-largest e-commerce market in Europe in absolute terms."
+  },
+
+  "CAN": {
+    "pdf": "study_id32356_e-commerce-in-canada-statista-dossier.pdf",
+    "gmv_total_usd_b_2024": 59.7, "gmv_total_usd_b_2025": 67.99, "gmv_total_usd_b_2030_forecast": 86.34,
+    "gmv_source_page": 3, "gmv_publisher": "Statista Digital Market Insights",
+    "gmv_source_quote": "In 2025, retail e-commerce in Canada was forecast to generate nearly 68 billion U.S. dollars in revenues.",
+    "alternate_emarketer_2024_usd_b": 87.7, "alternate_emarketer_2024_local": "C$120.2 billion"
+  },
+
+  "MEX": {
+    "pdf": "study_id56142_e-commerce-in-mexico.pdf",
+    "gmv_total_usd_b_2024": 28.0, "gmv_total_usd_b_2026_latam_chart": 49.0,
+    "gmv_source_page": 8, "gmv_publisher": "Statista Market Insights",
+    "yoy_growth_pct": {"2024": 16.57, "2025": 18.92},
+    "_note": "墨西哥 2024 单国报告 ~$28B（segments）; LATAM 跨国图表显示 2026 占 27.29% × $220B = $60B（较宽口径）"
+  },
+
+  "BRA": {
+    "pdf": "study_id56090_e-commerce-in-brazil.pdf",
+    "gmv_total_usd_b_2024_narrow": 36.8, "gmv_total_usd_b_2024_dmi": 77.9,
+    "gmv_total_local_2024": "BRL 204.27 billion",
+    "gmv_source_page": 7, "gmv_publisher_narrow": "Associação Brasileira de Comércio Eletrônico",
+    "gmv_publisher_dmi": "Statista Digital Market Insights (regional LATAM chart, p.5 of Chile dossier)",
+    "ecom_share_of_retail_pct_2024": 9.03,
+    "_note": "巴西有双口径: ABRA 单国 $36.8B（窄口径，物理商品零售）vs Statista DMI 跨国 $77.9B（广口径，含服务）"
+  },
+
+  "CHL": {
+    "pdf": "study_id58456_e-commerce-in-chile.pdf",
+    "gmv_total_usd_b_2025": 11.0, "gmv_total_usd_b_2026": 13.0,
+    "gmv_source_page": 4, "gmv_publisher": "Statista Digital Market Insights (LATAM regional)",
+    "latam_market_share_pct_2026": 7.23
+  },
+
+  "ARG": {
+    "pdf": "study_id57340_e-commerce-in-argentina.pdf",
+    "gmv_total_usd_b_2025": 18.22, "gmv_total_usd_b_2026": 18.22,
+    "gmv_source_page": 4, "gmv_publisher": "Statista Digital Market Insights (LATAM regional)",
+    "latam_market_share_pct_2026": 10.22
+  },
+
+  "AUS": {
+    "pdf": "study_id86390_e-commerce-in-australia.pdf",
+    "gmv_total_usd_b_2024": 36.97, "gmv_total_usd_b_2029_forecast": 57.77,
+    "gmv_source_page": 4, "gmv_publisher": "Statista; Statista Market Insights"
+  },
+
+  "SAU": {
+    "pdf": "study_id85861_e-commerce-in-saudi-arabia.pdf",
+    "gmv_total_usd_b_2025_forecast": 9.1, "gmv_total_usd_b_2020": 5.5,
+    "gmv_source_page": 4, "gmv_publisher": "LogisticsIQ"
+  },
+
+  "ARE": {
+    "pdf": "study_id85861_e-commerce-in-saudi-arabia.pdf",
+    "gmv_total_usd_b_2025_forecast": 8.2, "gmv_total_usd_b_2020": 4.5,
+    "gmv_source_page": 4, "gmv_publisher": "LogisticsIQ"
+  },
+
+  "TUR": {
+    "pdf": "study_id111522_e-commerce-in-turkey.pdf",
+    "gmv_total_usd_b_2024": 90.0, "gmv_total_local_2024": "₺3,000 billion TRY (3 trillion)",
+    "gmv_source_page": 6, "gmv_publisher": "Ministry of Trade Turkey; E-Commerce Info Platform",
+    "gmv_source_quote": "In 2024, the market size reached three trillion Turkish lira, having grown by 61.7 percent from the previous year. According to Ömer Faruk Ergün, Senior E-Commerce Expert at the Turkish Ministry of Trade, the market expanded by roughly 15 percent in U.S. dollar terms.",
+    "ecom_share_of_retail_pct_2023": 18.3, "ecom_share_source_page": 7,
+    "digital_commerce_usd_b_2024": 89.44, "_digital_source_page": 5
+  },
+
+  "RUS": {
+    "pdf": "study_id63976_e-commerce-in-russia.pdf",
+    "gmv_total_usd_b_2024": 123.0, "gmv_total_local_2024": "₽11.2 trillion RUB",
+    "gmv_total_local_2026_forecast": "₽16.8 trillion RUB",
+    "gmv_source_page": 4, "gmv_publisher": "Boxberry; Data Insight RU; GBS Broker; Logsis",
+    "gmv_source_quote": "In 2024, the e-commerce market size in Russia increased by 39 percent year-over-year, having exceeded 11 trillion Russian rubles. A steadily expanding market, Russian e-commerce experienced a particularly accelerated growth.",
+    "yoy_growth_pct_2024": 39.0
+  },
+
+  "THA": {
+    "pdf": "study_id116244_e-commerce-in-singapore.pdf",
+    "_note": "数据来自 SGP dossier 中的 SEA 跨国图表",
+    "gmv_total_usd_b_2024": 26.0, "gmv_total_usd_b_2030_forecast": 60.0,
+    "gmv_total_usd_b_2022": 20.0, "gmv_total_usd_b_2023": 22.0,
+    "gmv_source_page": 4, "gmv_publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)"
+  },
+
+  "VNM": {
+    "pdf": "study_id116244_e-commerce-in-singapore.pdf",
+    "gmv_total_usd_b_2024": 22.0, "gmv_total_usd_b_2030_forecast": 63.0,
+    "gmv_source_page": 4, "gmv_publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)"
+  },
+
+  "PHL": {
+    "pdf": "study_id116244_e-commerce-in-singapore.pdf",
+    "gmv_total_usd_b_2024": 21.0, "gmv_total_usd_b_2030_forecast": 60.0,
+    "gmv_source_page": 4, "gmv_publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)"
+  },
+
+  "MYS": {
+    "pdf": "study_id116244_e-commerce-in-singapore.pdf",
+    "gmv_total_usd_b_2024": 16.0, "gmv_total_usd_b_2030_forecast": 25.0,
+    "gmv_source_page": 4, "gmv_publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)"
+  },
+
+  "SGP": {
+    "pdf": "study_id116244_e-commerce-in-singapore.pdf",
+    "gmv_total_usd_b_2024": 9.0, "gmv_total_usd_b_2030_forecast": 17.0,
+    "gmv_source_page": 4, "gmv_publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)"
   }
 }

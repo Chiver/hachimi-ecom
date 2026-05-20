@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 1100000.0,
+      "gmv_total_usd_million": 1180000.0,
       "cagr_2025_2030_pct": 5.59,
       "online_buyers_million": 290,
       "mobile_share_pct": 45,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 94.95,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/usa.json",
+          "source_name": "Statista E-commerce in USA Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=4",
+          "source_quote": "The revenue in the e-commerce market in the United States was modeled to amount to 1.18 trillion U.S. dollars in 2024.",
+          "publisher": "Statista Market Insights",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$427000.0M / 290M buyers",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=21",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$1100000.0M / 290M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -108,9 +110,19 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "待人工校对 Statista 原文精确化"
+        },
+        "ecom_share_of_retail_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 8 (vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=8",
+          "source_quote": "E-commerce share of total retail: 16.4%",
+          "publisher": "U.S. Census Bureau",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
       },
-      "per_capita_spend_usd": 3793.0
+      "per_capita_spend_usd": 1472.0,
+      "ecom_share_of_retail_pct": 16.4
     }
   ],
   "platforms": [
@@ -126,17 +138,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "USA",
-        "gmv_usd_million": 425000.0,
+        "gmv_usd_million": 429726.0,
         "market_share_pct": 38.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA (主导)",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in USA Dossier - page 22 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=22",
+            "source_quote": "Amazon: 429725.7 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +178,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "USA",
-        "gmv_usd_million": 73000.0,
+        "gmv_usd_million": 197335.0,
         "market_share_pct": 6.5,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "Walmart Fulfillment Services (WFS)",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in USA Dossier - page 21 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=21",
+            "source_quote": "walmart.com: 197335.0 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +218,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "USA",
-        "gmv_usd_million": 39000.0,
+        "gmv_usd_million": 32837.0,
         "market_share_pct": 3.5,
         "commission_rate_pct": 12.0,
         "fulfillment_fee_model": "Managed Delivery",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in USA Dossier - page 22 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=22",
+            "source_quote": "eBay: 32836.6 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -322,8 +337,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "apparel CAGR 2017-2028: 11.6%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 11.6
     },
     {
       "category_code": "electronics",
@@ -336,8 +361,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "electronics CAGR 2017-2028: 6.4%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 6.4
     },
     {
       "category_code": "home",
@@ -350,8 +385,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "home CAGR 2017-2028: 6.8%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 6.8
     },
     {
       "category_code": "beauty",
@@ -364,8 +409,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "beauty CAGR 2017-2028: 14.9%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 14.9
     },
     {
       "category_code": "baby",
@@ -448,8 +503,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "toys CAGR 2017-2028: 12.6%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 12.6
     },
     {
       "category_code": "kitchen",
@@ -462,8 +527,18 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+        },
+        "yoy_growth_pct": {
+          "source_name": "Statista E-commerce in USA Dossier - page 7 (CAGR 2017-2028 vision-verified)",
+          "source_url": "data/raw/statista/study_id28028_e-commerce-in-the-united-states-statista-dossier.pdf#page=7",
+          "source_quote": "kitchen CAGR 2017-2028: 24.8%",
+          "publisher": "Statista Market Insights",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
-      }
+      },
+      "yoy_growth_pct": 24.8
     },
     {
       "category_code": "garden",
@@ -730,8 +805,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -758,6 +833,66 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/usa.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 0,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million",
+      "ecommerce_market.ecom_share_of_retail_pct",
+      "category_metrics (8 fields)"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "De Minimis 时代终结 + Section 301 持续加码；直邮模型已死，必须本土仓",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "Section 321 De Minimis ($800) 已废除",
+        "description": "2025-05-02 起对中国/香港取消 $800 免税额；2025-08-29 起扩展到全球所有来源。所有 B2C 包裹必须正式报关 + 缴税。",
+        "impact_on_china_sellers": "直邮模型寿终正寝。Temu / Shein 已全面转 US 本土仓储。中小卖家直发美国成本上升 30-50%。",
+        "severity": "critical"
+      },
+      {
+        "type": "trade_policy",
+        "title": "Section 301 关税未变 + 新一轮调查启动",
+        "description": "Section 301 在 1974 贸易法下仍全面有效。USTR 2026-03-11 新发起 Section 301 调查针对中国'过剩产能'，目标含 16 个对中国转运高度依赖的贸易伙伴（含越南/马来/泰/印尼等）。",
+        "impact_on_china_sellers": "对中国直接进口的关税长期处于 +25-60% 区间；越南/马来'转运绕道'通道收紧。",
+        "severity": "high"
+      },
+      {
+        "type": "trade_policy",
+        "title": "高敏感品类清关风险",
+        "description": "包含 UFLPA（新疆强迫劳动） / Prop 65（加州） / FCC（无线产品） / FDA（食品/化妆品/医疗）等多套独立审查体系；CBP 抽查趋严。",
+        "impact_on_china_sellers": "棉制品 / 太阳能 / 电池类目高扣货风险（已扣 90,000+ 批次价值 $30B+）。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "美国市场仍是首选战略市场，但战术必须转型：1) 必转 FBA / 本土海外仓 / 自建美国实体；2) UFLPA 涉及品类（棉、电池、光伏）建立完整供应链溯源；3) 客单价 > $50 才能消化关税成本；4) 警惕 2026 H2 可能再加码的 Section 301 关税。",
+    "sources": [
+      {
+        "name": "Dutiable · Section 321 in 2026: the de minimis rules that changed everything",
+        "url": "https://dutiable.io/blog/de-minimis-section-321-changes-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Gateway Lines · Section 301 China Tariffs 2026: Current Rates, Lists 1-4A, EVs & Apparel",
+        "url": "https://gatewaylines.com/press-releases/complete-guide-to-section-301-china-tariffs-in-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "White & Case · United States Begins to Restrain Cross-Border E-commerce",
+        "url": "https://www.whitecase.com/insight-alert/united-states-begins-restrain-cross-border-e-commerce",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

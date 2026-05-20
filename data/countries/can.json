@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 68000.0,
+      "gmv_total_usd_million": 59700.0,
       "cagr_2025_2030_pct": 4.9,
       "online_buyers_million": 28,
       "mobile_share_pct": 55,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 80.73,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in CAN Dossier - page 4",
-          "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=4",
-          "source_quote": "Description: In 2025, retail e-commerce in Canada was forecast to generate nearly 68 billion U.S. dollars in revenues. According to est",
-          "currency_original": "USD",
-          "value_original": 68.0,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in CAN Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=3",
+          "source_quote": "In 2025, retail e-commerce in Canada was forecast to generate nearly 68 billion U.S. dollars in revenues.",
+          "publisher": "Statista Digital Market Insights",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -631,7 +630,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -666,6 +665,50 @@
       "platform_gmv": 3,
       "category_shares": 0,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "稳定贸易伙伴；CUSMA 框架下但对中国 EV/钢铝有制裁",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "对中国 EV / 钢铝跟随美国制裁",
+        "description": "加拿大 2024 起对中国电动车征 100% 关税、钢铝征 25%；其余消费品仍正常。",
+        "impact_on_china_sellers": "EV / 钢铝相关行业受限；常规消费品类不受影响。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "USMCA 2026 review 关联影响",
+        "description": "USMCA 审议中加拿大相对'冷处理'；美国强化原产地规则可能间接影响经加进美的中国商品。",
+        "impact_on_china_sellers": "传统加拿大本地销售不受影响。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "加拿大是稳定可预测市场。Amazon CA + Shopify 独立站；CAD 结算汇率稳定；客单价高于美国。",
+    "sources": [
+      {
+        "name": "ASI Central · Mexico Imposes Tariffs on China To Curb 'Back Door' to U.S. Market (Jan 2026)",
+        "url": "https://members.asicentral.com/news/industry-news/january-2026/mexico-imposes-tariffs-on-china-to-curb-back-door-to-us-market/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "CSIS · USMCA Review 2026",
+        "url": "https://www.csis.org/analysis/usmca-review-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "FreightWaves · Mexico targets Asian imports with new tariffs ahead of USMCA negotiations",
+        "url": "https://www.freightwaves.com/news/mexico-targets-asian-imports-with-new-tariffs-ahead-of-usmca-negotiations",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

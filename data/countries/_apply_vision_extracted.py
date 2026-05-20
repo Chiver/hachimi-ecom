@@ -19,7 +19,12 @@ def update_country(iso, ve_data):
     pdf_file = ve_data["pdf"]
 
     # === 1. Update Total GMV (Vision-verified) ===
-    new_gmv_b = ve_data.get("gmv_total_usd_b_2024")
+    # Prefer 2024, fall back to 2025 forecast or narrow definition
+    new_gmv_b = (ve_data.get("gmv_total_usd_b_2024") or
+                 ve_data.get("gmv_total_usd_b_2024_narrow") or
+                 ve_data.get("gmv_total_usd_b_2025") or
+                 ve_data.get("gmv_total_usd_b_2025_forecast") or
+                 ve_data.get("gmv_total_usd_b_2023"))
     if new_gmv_b:
         em = d["ecommerce_market"][0]
         em["gmv_total_usd_million"] = new_gmv_b * 1000
@@ -36,12 +41,12 @@ def update_country(iso, ve_data):
 
     # === 2. Update CAGR if extracted ===
     growth = ve_data.get("yoy_growth_pct", {})
-    if growth and growth.get("2025"):
+    if growth and growth.get("2025") and ve_data.get("growth_source_page"):
         em = d["ecommerce_market"][0]
         em["gmv_yoy_pct"] = growth.get("2025")
         em["source_metadata"]["gmv_yoy_pct"] = {
-            "source_name": f"Statista E-commerce in {iso} Dossier - page {ve_data['growth_source_page']} (vision-verified)",
-            "source_url": f"data/raw/statista/{pdf_file}#page={ve_data['growth_source_page']}",
+            "source_name": f"Statista E-commerce in {iso} Dossier - page {ve_data.get('growth_source_page')} (vision-verified)",
+            "source_url": f"data/raw/statista/{pdf_file}#page={ve_data.get('growth_source_page')}",
             "source_quote": f"Annual growth rate 2025: {growth.get('2025')}%",
             "publisher": ve_data.get("growth_source_publisher", ""),
             "fetched_at": TODAY,

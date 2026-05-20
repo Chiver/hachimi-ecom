@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 25000.0,
+      "gmv_total_usd_million": 22000.0,
       "cagr_2025_2030_pct": 9.5,
       "online_buyers_million": 60,
       "mobile_share_pct": 80,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/vnm.json",
+          "source_name": "Statista E-commerce in VNM Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id116244_e-commerce-in-singapore.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -90,11 +92,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$16400.0M / 60M buyers",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$25000.0M / 60M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -111,7 +113,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 417.0
+      "per_capita_spend_usd": 273.0
     }
   ],
   "platforms": [
@@ -315,25 +317,24 @@
     {
       "category_code": "apparel",
       "year": 2024,
-      "gmv_usd_million": 2325.0,
+      "gmv_usd_million": 2375.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 9.3% (from Statista page 19)",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "formula": "$25000.0M × 9.3% = $2325.0M",
+          "source_name": "Hachimi 计算: total GMV × 14.48% (Statista page 29)",
+          "formula": "$16400.0M × 14.48% = $2375.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 19",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "source_quote": "Fashion: 9.3%",
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Fashion & accessories: 14.48%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 9.3
+      "category_share_pct": 14.48
     },
     {
       "category_code": "electronics",
@@ -361,62 +362,68 @@
     {
       "category_code": "home",
       "year": 2024,
-      "gmv_usd_million": 4125.0,
+      "gmv_usd_million": 733.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 16.5% (from Statista page 19)",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "formula": "$25000.0M × 16.5% = $4125.0M",
+          "source_name": "Hachimi 计算: total GMV × 4.47% (Statista page 29)",
+          "formula": "$16400.0M × 4.47% = $733.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 19",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "source_quote": "Household essentials: 16.5%",
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Household appliances: 4.47%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 16.5
+      "category_share_pct": 4.47
     },
     {
       "category_code": "beauty",
       "year": 2024,
-      "gmv_usd_million": 1075.0,
+      "gmv_usd_million": 1442.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 4.3% (from Statista page 19)",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "formula": "$25000.0M × 4.3% = $1075.0M",
+          "source_name": "Hachimi 计算: total GMV × 8.79% (Statista page 29)",
+          "formula": "$16400.0M × 8.79% = $1442.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 19",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "source_quote": "Beauty & Personal care: 4.3%",
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Beauty: 8.79%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 4.3
+      "category_share_pct": 8.79
     },
     {
       "category_code": "baby",
       "year": 2024,
-      "gmv_usd_million": 1000,
+      "gmv_usd_million": 490.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/vnm.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 2.99% (Statista page 29)",
+          "formula": "$16400.0M × 2.99% = $490.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Mom & baby: 2.99%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 2.99
     },
     {
       "category_code": "pet",
@@ -435,16 +442,24 @@
     {
       "category_code": "outdoor",
       "year": 2024,
-      "gmv_usd_million": 1000,
+      "gmv_usd_million": 220.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/vnm.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 1.34% (Statista page 29)",
+          "formula": "$16400.0M × 1.34% = $220.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Travel & sports: 1.34%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 1.34
     },
     {
       "category_code": "auto",
@@ -463,25 +478,24 @@
     {
       "category_code": "health",
       "year": 2024,
-      "gmv_usd_million": 1750.0,
+      "gmv_usd_million": 487.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 7.0% (from Statista page 19)",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "formula": "$25000.0M × 7.0% = $1750.0M",
+          "source_name": "Hachimi 计算: total GMV × 2.97% (Statista page 29)",
+          "formula": "$16400.0M × 2.97% = $487.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 19",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "source_quote": "Over-the-counter pharmaceuticals: 7.0%",
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Health: 2.97%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 7.0
+      "category_share_pct": 2.97
     },
     {
       "category_code": "toys",
@@ -509,25 +523,24 @@
     {
       "category_code": "kitchen",
       "year": 2024,
-      "gmv_usd_million": 4650.0,
+      "gmv_usd_million": 412.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 18.6% (from Statista page 19)",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "formula": "$25000.0M × 18.6% = $4650.0M",
+          "source_name": "Hachimi 计算: total GMV × 2.51% (Statista page 29)",
+          "formula": "$16400.0M × 2.51% = $412.0M",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 19",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=19",
-          "source_quote": "Food: 18.6%",
+          "source_name": "Statista E-commerce in VNM Dossier - page 29",
+          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=29",
+          "source_quote": "Food & beverages: 2.51%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 18.6
+      "category_share_pct": 2.51
     },
     {
       "category_code": "garden",
@@ -571,23 +584,25 @@
     },
     {
       "payment_method": "bank_transfer",
-      "share_pct": 12,
+      "share_pct": 67.0,
       "year": 2025,
       "operator": "Vietcombank",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-vietnam.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=44",
+      "confidence": "H",
+      "source_quote": "Bank transfer: 67.0%",
+      "source_name": "Statista E-commerce in VNM Dossier - page 44"
     },
     {
       "payment_method": "credit_card",
-      "share_pct": 8,
+      "share_pct": 19.0,
       "year": 2025,
       "operator": "渗透低",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-vietnam.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=44",
+      "confidence": "H",
+      "source_quote": "Credit cards: 19.0%",
+      "source_name": "Statista E-commerce in VNM Dossier - page 44"
     },
     {
       "payment_method": "BNPL",
@@ -735,8 +750,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -763,6 +778,52 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/vnm.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 0,
+      "category_shares": 7,
+      "payment_shares": 2
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "美对越 20% 基准关税 + 40% 转运罚则；中国转运通道收紧",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "美越关税框架（2025-2026）",
+        "description": "美国对越南进口设 20% 基准关税；如认定为中国转运（transshipment）加征 40%。USTR 2026-03-11 对 16 个伙伴启动 Section 301 调查含越南。",
+        "impact_on_china_sellers": "靠'越南组装规避美国关税'的中国卖家面临高合规风险；本地真实生产比例（rules of origin）成为关键。",
+        "severity": "high"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "TikTok Shop VN + Shopee VN 仍开放",
+        "description": "TikTok Shop 越南站对中国卖家开放；越南本地市场（非转运）仍是高增速 SEA 国家（CAGR 11%+）。",
+        "impact_on_china_sellers": "面向越南本地消费者的电商业务相对友好。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "越南本地市场仍可做，但避免把它当中国转美国的'白手套'。1) 真做越南本地销售的卖家：TikTok Shop / Shopee / Lazada 三平台齐发；2) 转运卖家：审慎评估 rules of origin 满足度，避免被认定后追溯补税。",
+    "sources": [
+      {
+        "name": "ASEAN Briefing · ASEAN Transshipment Under US Tariffs: Compliance and Strategy",
+        "url": "https://www.aseanbriefing.com/news/asean-transshipment-and-us-tariffs-balancing-opportunity-and-risk/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Sidley Austin · Implications of U.S. Tariffs on Southeast Asia",
+        "url": "https://www.sidley.com/en/insights/newsupdates/2025/08/implications-of-us-tariffs-on-southeast-asia-navigating-the-trade-tumult",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

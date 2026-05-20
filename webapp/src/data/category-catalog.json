@@ -1,0 +1,717 @@
+{
+  "_schema_version": "1.0",
+  "_last_updated": "2026-05-19",
+  "_notes": "团队扫盲用：16 大类 × 每类 ~10-15 个二级/三级具体产品例子。与国家详情页用的 12 Hachimi 大类不是同一套（这里更细，按选品视角划分），但通过 hachimi_category 字段映射。",
+  "categories": [
+    {
+      "id": "beauty",
+      "name_zh": "美妆护肤",
+      "name_en": "Beauty & Personal Care",
+      "icon": "💄",
+      "hachimi_category": "beauty",
+      "blurb": "护肤品 + 彩妆 + 个人清洁。客单中高、毛利高（55-70%），但合规门槛重（CPNP / FDA / ANVISA）。",
+      "subgroups": [
+        {
+          "name": "基础护肤",
+          "products": [
+            "Toner Water (爽肤水)",
+            "Essence (精华液)",
+            "Moisturizer (面霜 / 乳液)",
+            "Sunscreen (防晒霜)",
+            "Sheet Mask (面膜)"
+          ]
+        },
+        {
+          "name": "彩妆",
+          "products": [
+            "Lipstick / Lip Gloss (口红 / 唇釉)",
+            "Foundation (粉底液)",
+            "Eyeshadow Palette (眼影盘)",
+            "Mascara (睫毛膏)"
+          ]
+        },
+        {
+          "name": "个护与工具",
+          "products": [
+            "Hair Serum (护发精华)",
+            "Body Wash (沐浴露)",
+            "Beauty Sponge (美妆蛋)",
+            "Jade Roller (玉石滚轮)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jewelry_luxury",
+      "name_zh": "珠宝奢侈",
+      "name_en": "Jewelry & Luxury",
+      "icon": "💎",
+      "hachimi_category": null,
+      "blurb": "贵金属 + 高端腕表 + 设计师包袋。客单极高（$300+），但海关 / 关税严，多数走品牌官网或精品代购。",
+      "subgroups": [
+        {
+          "name": "贵金属与宝石",
+          "products": [
+            "18K Gold Necklace (18K 金项链)",
+            "Diamond Ring (钻戒)",
+            "Pearl Earrings (珍珠耳环)",
+            "Moissanite Stud (莫桑石耳钉)"
+          ]
+        },
+        {
+          "name": "银饰",
+          "products": [
+            "925 Silver Bracelet (925 银手链)",
+            "Sterling Silver Pendant (纯银吊坠)"
+          ]
+        },
+        {
+          "name": "腕表",
+          "products": [
+            "Mechanical Watch (机械手表)",
+            "Luxury Smart Watch (高端智能腕表)"
+          ]
+        },
+        {
+          "name": "名牌配件",
+          "products": [
+            "Designer Handbag (设计师手袋)",
+            "Luxury Sunglasses (奢华太阳镜)",
+            "Cashmere Scarf (羊绒围巾)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accessories_low_price",
+      "name_zh": "低价配饰",
+      "name_en": "Low-price Fashion Accessories",
+      "icon": "👜",
+      "hachimi_category": "apparel",
+      "blurb": "$1-30 的快时尚配件，Temu / Shein / TikTok Shop 主力品类。毛利 50-65%，靠 SKU 数量取胜。",
+      "subgroups": [
+        {
+          "name": "时尚饰品",
+          "products": [
+            "Resin Earrings (树脂耳环)",
+            "Beaded Bracelet (串珠手链)",
+            "Hair Clip Set (发夹套装)",
+            "Choker Necklace (Choker 项链)"
+          ]
+        },
+        {
+          "name": "包袋",
+          "products": [
+            "Crossbody Bag (单肩斜挎包)",
+            "Coin Purse (零钱包)",
+            "Canvas Tote (帆布手提袋)"
+          ]
+        },
+        {
+          "name": "帽袜围巾",
+          "products": [
+            "Bucket Hat (渔夫帽)",
+            "Beanie (针织帽)",
+            "Compression Socks (压力袜)"
+          ]
+        },
+        {
+          "name": "小皮件",
+          "products": [
+            "Phone Strap (手机挂绳)",
+            "AirTag Holder (AirTag 保护套)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footwear",
+      "name_zh": "鞋类",
+      "name_en": "Footwear",
+      "icon": "👟",
+      "hachimi_category": "apparel",
+      "blurb": "鞋的退货率全品类最高（25-35%），需 SKU 多尺码 + 准确尺码图。",
+      "subgroups": [
+        {
+          "name": "运动鞋",
+          "products": [
+            "Running Shoes (跑步鞋)",
+            "Sneakers (休闲运动鞋)",
+            "Trail Shoes (越野跑鞋)"
+          ]
+        },
+        {
+          "name": "时装鞋",
+          "products": [
+            "Heels / Pumps (高跟鞋)",
+            "Loafers (乐福鞋)",
+            "Ballet Flats (芭蕾平底鞋)"
+          ]
+        },
+        {
+          "name": "户外 / 功能鞋",
+          "products": [
+            "Hiking Boots (徒步鞋)",
+            "Snow Boots (雪地靴)",
+            "Sandals (凉鞋)",
+            "Flip Flops (人字拖)"
+          ]
+        },
+        {
+          "name": "室内鞋",
+          "products": [
+            "Slippers (拖鞋)",
+            "Clog (洞洞鞋 / Crocs 类)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apparel",
+      "name_zh": "服装",
+      "name_en": "Apparel",
+      "icon": "👕",
+      "hachimi_category": "apparel",
+      "blurb": "电商最大品类（占全球 GMV 25-30%）。退货率 25-30%（欧 + 美），需 GPSR / REACH 合规。",
+      "subgroups": [
+        {
+          "name": "上装",
+          "products": [
+            "T-Shirt (T 恤)",
+            "Hoodie (连帽卫衣)",
+            "Crop Top (短款上衣)",
+            "Blouse (女衬衫)"
+          ]
+        },
+        {
+          "name": "下装",
+          "products": [
+            "Jeans (牛仔裤)",
+            "Wide-leg Pants (阔腿裤)",
+            "Leggings (打底裤)"
+          ]
+        },
+        {
+          "name": "外套",
+          "products": [
+            "Down Jacket (羽绒服)",
+            "Trench Coat (风衣)",
+            "Cardigan (开衫)"
+          ]
+        },
+        {
+          "name": "内衣 / 泳装",
+          "products": [
+            "Bra (文胸)",
+            "Bikini (比基尼)",
+            "Shapewear (塑身衣)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name_zh": "家居",
+      "name_en": "Home Goods",
+      "icon": "🏠",
+      "hachimi_category": "home",
+      "blurb": "床品 + 浴室 + 装饰 + 收纳。客单 $20-80，复购周期长，看重产品图美感。",
+      "subgroups": [
+        {
+          "name": "床品",
+          "products": [
+            "Bedding Set (床品四件套)",
+            "Pillow (枕芯)",
+            "Duvet (被子)"
+          ]
+        },
+        {
+          "name": "浴室",
+          "products": [
+            "Bath Towel (浴巾)",
+            "Shower Curtain (浴帘)",
+            "Bath Mat (浴室垫)"
+          ]
+        },
+        {
+          "name": "装饰",
+          "products": [
+            "Throw Pillow (抱枕)",
+            "Curtain (窗帘)",
+            "Wall Art Print (装饰画)"
+          ]
+        },
+        {
+          "name": "收纳",
+          "products": [
+            "Storage Box (收纳箱)",
+            "Hanging Organizer (悬挂收纳袋)",
+            "Laundry Basket (脏衣篮)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furniture",
+      "name_zh": "家具",
+      "name_en": "Furniture",
+      "icon": "🛋️",
+      "hachimi_category": "home",
+      "blurb": "大件物流是核心壁垒，必须海外仓。客单 $80-500，毛利 35-50%。",
+      "subgroups": [
+        {
+          "name": "客厅",
+          "products": [
+            "Sofa (沙发)",
+            "Coffee Table (茶几)",
+            "TV Stand (电视柜)",
+            "Ambient Light / Floor Lamp (氛围灯 / 落地灯)"
+          ]
+        },
+        {
+          "name": "卧室",
+          "products": [
+            "Bed Frame (床架)",
+            "Nightstand (床头柜)",
+            "Wardrobe (衣柜)"
+          ]
+        },
+        {
+          "name": "办公",
+          "products": [
+            "Ergonomic Office Chair (人体工学椅)",
+            "Standing Desk (升降桌)",
+            "Bookshelf (书架)"
+          ]
+        },
+        {
+          "name": "户外 / 阳台",
+          "products": [
+            "Patio Set (户外桌椅套装)",
+            "Hammock (吊床)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name_zh": "厨房",
+      "name_en": "Kitchen",
+      "icon": "🍳",
+      "hachimi_category": "kitchen",
+      "blurb": "金属类受 CBAM 影响（2026 起）。小家电需各国电气认证（CE / FCC / PSE / INMETRO）。",
+      "subgroups": [
+        {
+          "name": "烹饪器具",
+          "products": [
+            "Air Fryer (空气炸锅)",
+            "Cast Iron Pan (铸铁煎锅)",
+            "Wok (中式炒锅)",
+            "Pressure Cooker / Instant Pot (压力锅 / 多功能锅)"
+          ]
+        },
+        {
+          "name": "餐具",
+          "products": [
+            "Ceramic Dinnerware Set (陶瓷餐具套装)",
+            "Stainless Steel Cutlery (不锈钢餐具)",
+            "Wine Glass (红酒杯)"
+          ]
+        },
+        {
+          "name": "小家电",
+          "products": [
+            "Coffee Maker (咖啡机)",
+            "Stand Mixer (厨师机)",
+            "Electric Kettle (电热水壶)"
+          ]
+        },
+        {
+          "name": "收纳",
+          "products": [
+            "Spice Rack (调料架)",
+            "Knife Block (刀架)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electronics",
+      "name_zh": "3C 数码",
+      "name_en": "Consumer Electronics",
+      "icon": "🎧",
+      "hachimi_category": "electronics",
+      "blurb": "中国卖家最强势品类（Anker / Aukey 等大卖据点）。FCC / CE / RoHS / GPSR / PSE 全套必须。",
+      "subgroups": [
+        {
+          "name": "移动配件",
+          "products": [
+            "Power Bank (充电宝)",
+            "Wireless Charger (无线充电器)",
+            "USB-C Cable (USB-C 数据线)",
+            "MagSafe Magnetic Case (MagSafe 磁吸壳)"
+          ]
+        },
+        {
+          "name": "音频",
+          "products": [
+            "Wireless Earbuds / TWS (TWS 无线耳机)",
+            "Bluetooth Speaker (蓝牙音箱)",
+            "Over-ear Headphones (头戴耳机)"
+          ]
+        },
+        {
+          "name": "拍摄 / 直播",
+          "products": [
+            "Action Camera (运动相机)",
+            "Ring Light (环形补光灯)",
+            "Tripod (三脚架)"
+          ]
+        },
+        {
+          "name": "智能家居",
+          "products": [
+            "Smart Plug (智能插座)",
+            "Wi-Fi Camera (家用摄像头)",
+            "Robot Vacuum (扫地机器人)"
+          ]
+        },
+        {
+          "name": "电脑周边",
+          "products": [
+            "Mechanical Keyboard (机械键盘)",
+            "Mouse Pad (鼠标垫)",
+            "Monitor Light Bar (屏幕挂灯)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toys",
+      "name_zh": "玩具",
+      "name_en": "Toys",
+      "icon": "🧸",
+      "hachimi_category": "toys",
+      "blurb": "EN71 / CPSIA / ASTM F963 等儿童安全标准必须。圣诞季 (Q4) 占全年 GMV 50%+。",
+      "subgroups": [
+        {
+          "name": "早教 / 益智",
+          "products": [
+            "Building Blocks (积木)",
+            "Wooden Puzzle (木质拼图)",
+            "Magnetic Tiles (磁力片)"
+          ]
+        },
+        {
+          "name": "模型 / 收藏",
+          "products": [
+            "LEGO-compatible Bricks (兼容积木)",
+            "Anime Figure (动漫手办)",
+            "Diecast Car (合金小汽车)"
+          ]
+        },
+        {
+          "name": "解压玩具",
+          "products": [
+            "Fidget Spinner (指尖陀螺)",
+            "Pop It (按按乐)",
+            "Squishy Toy (软软玩具)"
+          ]
+        },
+        {
+          "name": "户外 / 桌游",
+          "products": [
+            "RC Car (遥控车)",
+            "Foam Sword (泡沫剑)",
+            "Board Game (桌游)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "name_zh": "宠物用品",
+      "name_en": "Pet Supplies",
+      "icon": "🐾",
+      "hachimi_category": "pet",
+      "blurb": "高复购 + 高粘性，DTC 模型友好。食品类目各国进口受限严（FDA / Eurogroup for Animals 等）。",
+      "subgroups": [
+        {
+          "name": "食品",
+          "products": [
+            "Dry Dog Food (狗粮)",
+            "Wet Cat Food (猫罐头)",
+            "Treats (宠物零食 / 小零食条)"
+          ]
+        },
+        {
+          "name": "日常用品",
+          "products": [
+            "Cat Litter (猫砂)",
+            "Pet Bowl (宠物碗)",
+            "Pet Bed (宠物窝)"
+          ]
+        },
+        {
+          "name": "玩具",
+          "products": [
+            "Catnip Toy (猫薄荷玩具)",
+            "Squeaky Toy (狗咬胶 / 发声玩具)"
+          ]
+        },
+        {
+          "name": "出行",
+          "products": [
+            "Pet Harness (宠物胸背带)",
+            "Pet Carrier (宠物外出包)",
+            "Pet GPS Tracker (宠物 GPS 追踪器)"
+          ]
+        },
+        {
+          "name": "护理",
+          "products": [
+            "Pet Brush (宠物毛刷)",
+            "Tooth Brush Stick (洁齿棒)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baby",
+      "name_zh": "母婴",
+      "name_en": "Baby & Maternity",
+      "icon": "🍼",
+      "hachimi_category": "baby",
+      "blurb": "信任成本最高的品类。各国安全认证最严（CPSIA / EN 14988 / ASTM F963 等）。",
+      "subgroups": [
+        {
+          "name": "喂养",
+          "products": [
+            "Baby Bottle (奶瓶)",
+            "Bottle Sterilizer (奶瓶消毒锅)",
+            "Bib (口水巾)"
+          ]
+        },
+        {
+          "name": "出行",
+          "products": [
+            "Stroller (婴儿推车)",
+            "Baby Carrier (婴儿背带)",
+            "Car Seat (儿童安全座椅)"
+          ]
+        },
+        {
+          "name": "卫生 / 护理",
+          "products": [
+            "Diapers (尿不湿)",
+            "Baby Wipes (湿巾)",
+            "Baby Bath Tub (婴儿浴盆)"
+          ]
+        },
+        {
+          "name": "哺乳期",
+          "products": [
+            "Breast Pump (吸奶器)",
+            "Nursing Bra (哺乳文胸)"
+          ]
+        },
+        {
+          "name": "玩具 / 安抚",
+          "products": [
+            "Teether (磨牙胶)",
+            "Soft Plushie (毛绒玩偶)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "name_zh": "运动户外",
+      "name_en": "Sports & Outdoors",
+      "icon": "🎒",
+      "hachimi_category": "outdoor",
+      "blurb": "疫情后增速最快品类之一。客单 $30-300，毛利 40-55%。北美 / 北欧 / 澳洲市场最成熟。",
+      "subgroups": [
+        {
+          "name": "健身",
+          "products": [
+            "Yoga Mat (瑜伽垫)",
+            "Dumbbells (哑铃)",
+            "Resistance Bands (弹力带)",
+            "Foam Roller (泡沫轴)"
+          ]
+        },
+        {
+          "name": "露营 / 徒步",
+          "products": [
+            "Camping Tent (露营帐篷)",
+            "Sleeping Bag (睡袋)",
+            "Portable Stove (便携炉具)",
+            "Hiking Backpack (登山包)"
+          ]
+        },
+        {
+          "name": "球类 / 新兴",
+          "products": [
+            "Basketball (篮球)",
+            "Pickleball Paddle (匹克球拍 — 北美热品)"
+          ]
+        },
+        {
+          "name": "水上",
+          "products": [
+            "Stand-up Paddle Board / SUP (桨板)"
+          ]
+        },
+        {
+          "name": "自行车",
+          "products": [
+            "Bike Helmet (头盔)",
+            "Bike Light (车灯)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food_beverage",
+      "name_zh": "食品饮料",
+      "name_en": "Food & Beverages",
+      "icon": "🍫",
+      "hachimi_category": "health",
+      "blurb": "保质期 + 海关检疫双重门槛。FDA / ANVISA / FSANZ 等准入流程长（3-12 个月）。",
+      "subgroups": [
+        {
+          "name": "零食",
+          "products": [
+            "Beef Jerky (牛肉干)",
+            "Protein Bar (蛋白棒)",
+            "Trail Mix (混合坚果)"
+          ]
+        },
+        {
+          "name": "即食",
+          "products": [
+            "Instant Noodles (方便面)",
+            "Self-heating Hotpot (自热小火锅)"
+          ]
+        },
+        {
+          "name": "饮品",
+          "products": [
+            "Bubble Tea DIY Kit (奶茶 DIY 套装)",
+            "Specialty Coffee Beans (精品咖啡豆)",
+            "Energy Drink (功能饮料)"
+          ]
+        },
+        {
+          "name": "调料 / 酱料",
+          "products": [
+            "Hot Sauce (辣椒酱)",
+            "Soy Sauce (酱油)"
+          ]
+        },
+        {
+          "name": "健康食品",
+          "products": [
+            "Protein Powder (蛋白粉)",
+            "Collagen Drink (胶原蛋白饮)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auto",
+      "name_zh": "汽配",
+      "name_en": "Auto Parts & Accessories",
+      "icon": "🚗",
+      "hachimi_category": "auto",
+      "blurb": "美 / 加 / 澳 / 中东市场客单高（皮卡 / SUV 占比高）。OE 件认证严，售后配件门槛低。",
+      "subgroups": [
+        {
+          "name": "内饰",
+          "products": [
+            "Car Floor Mats (脚垫)",
+            "Steering Wheel Cover (方向盘套)",
+            "Seat Cushion (座垫)"
+          ]
+        },
+        {
+          "name": "行车安全",
+          "products": [
+            "Dash Cam (行车记录仪)",
+            "Tire Pressure Monitor / TPMS (胎压监测)",
+            "Blind Spot Mirror (盲区镜)"
+          ]
+        },
+        {
+          "name": "充电 / 电子",
+          "products": [
+            "Car Charger (车载充电器)",
+            "Car Phone Mount (车载手机支架)",
+            "Car Air Compressor (车载充气泵)"
+          ]
+        },
+        {
+          "name": "清洁 / 美容",
+          "products": [
+            "Car Vacuum (车载吸尘器)",
+            "Microfiber Cloth (洗车毛巾)"
+          ]
+        },
+        {
+          "name": "改装",
+          "products": [
+            "LED Headlight Bulbs (LED 大灯)",
+            "Roof Rack (车顶行李架)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adult",
+      "name_zh": "成人用品",
+      "name_en": "Adult / Intimate",
+      "icon": "🌹",
+      "hachimi_category": "health",
+      "blurb": "平台限制严（亚马逊 / Allegro 多类目禁售；TikTok Shop / Shopify 独立站为主）。复购率高、毛利 60-75%。",
+      "subgroups": [
+        {
+          "name": "情趣穿戴",
+          "products": [
+            "Lingerie Set (情趣内衣套装)",
+            "Costume / Roleplay Wear (角色扮演服)"
+          ]
+        },
+        {
+          "name": "保健 / 卫生",
+          "products": [
+            "Condoms (避孕套)",
+            "Personal Lubricant (润滑剂)",
+            "Pelvic Floor Trainer (盆底肌训练器)"
+          ]
+        },
+        {
+          "name": "玩具",
+          "products": [
+            "Adult Toy / Vibrator (成人玩具)",
+            "Couples Toy (情侣用具)"
+          ]
+        },
+        {
+          "name": "个人护理",
+          "products": [
+            "Hair Removal Device / IPL (家用脱毛仪)",
+            "Sensitive Care Wash (敏感部位洗液)"
+          ]
+        },
+        {
+          "name": "健康",
+          "products": [
+            "HPV Self-test Kit (HPV 自检)",
+            "Fertility Tracker (生育周期监测器)"
+          ]
+        }
+      ]
+    }
+  ]
+}

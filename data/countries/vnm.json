@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 16400.0,
+      "gmv_total_usd_million": 22000.0,
       "cagr_2025_2030_pct": 9.5,
       "online_buyers_million": 60,
       "mobile_share_pct": 80,
@@ -70,14 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in VNM Dossier - page 12",
-          "source_url": "data/raw/statista/study_id63723_e-commerce-in-vietnam.pdf#page=12",
-          "source_quote": " observed period was in 2018, reaching 30 percent. The revenue of the e-commerce sector amounted to 16.4 billion U.S. dollars in 2022. Read more Note(s): V",
-          "currency_original": "USD",
-          "value_original": 16.4,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in VNM Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id116244_e-commerce-in-singapore.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -751,7 +750,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -786,6 +785,45 @@
       "platform_gmv": 0,
       "category_shares": 7,
       "payment_shares": 2
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "美对越 20% 基准关税 + 40% 转运罚则；中国转运通道收紧",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "美越关税框架（2025-2026）",
+        "description": "美国对越南进口设 20% 基准关税；如认定为中国转运（transshipment）加征 40%。USTR 2026-03-11 对 16 个伙伴启动 Section 301 调查含越南。",
+        "impact_on_china_sellers": "靠'越南组装规避美国关税'的中国卖家面临高合规风险；本地真实生产比例（rules of origin）成为关键。",
+        "severity": "high"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "TikTok Shop VN + Shopee VN 仍开放",
+        "description": "TikTok Shop 越南站对中国卖家开放；越南本地市场（非转运）仍是高增速 SEA 国家（CAGR 11%+）。",
+        "impact_on_china_sellers": "面向越南本地消费者的电商业务相对友好。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "越南本地市场仍可做，但避免把它当中国转美国的'白手套'。1) 真做越南本地销售的卖家：TikTok Shop / Shopee / Lazada 三平台齐发；2) 转运卖家：审慎评估 rules of origin 满足度，避免被认定后追溯补税。",
+    "sources": [
+      {
+        "name": "ASEAN Briefing · ASEAN Transshipment Under US Tariffs: Compliance and Strategy",
+        "url": "https://www.aseanbriefing.com/news/asean-transshipment-and-us-tariffs-balancing-opportunity-and-risk/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Sidley Austin · Implications of U.S. Tariffs on Southeast Asia",
+        "url": "https://www.sidley.com/en/insights/newsupdates/2025/08/implications-of-us-tariffs-on-southeast-asia-navigating-the-trade-tumult",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

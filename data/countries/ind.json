@@ -72,7 +72,7 @@
         "gmv_total_usd_million": {
           "source_name": "Statista E-commerce in IND Dossier - page 10 (vision-verified)",
           "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=10",
-          "source_quote": "Owing to the increasing internet user base and favorable market conditions, India has a lot of potential in the e-commerce industry. Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024.",
+          "source_quote": "Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024.",
           "publisher": "India Brand Equity Foundation",
           "fetched_at": "2026-05-17",
           "confidence": "H",
@@ -792,6 +792,48 @@
     "vision_extraction_done_at": "2026-05-17",
     "vision_verified_fields": [
       "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "中印 2025-2026 局部解冻；Shein 已解禁；但 BIS 与投资审查仍严",
+    "factors": [
+      {
+        "type": "diplomatic_tension",
+        "title": "中印关系局部解冻（2025-2026）",
+        "description": "2025 中国部分放开稀土磁体、隧道掘进机、化肥对印度出口；印度解封 Shein 等中国应用并重新评估对华投资限制。但进展仅为局部、未来不明朗。",
+        "impact_on_china_sellers": "市场准入有所放宽，但敏感行业（国防、电信、关键基建）仍严控。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "BIS 强制注册 + 本地实体要求",
+        "description": "BIS 通过 CRS / ISI 强制注册 1,000+ 类电子产品；测试样品需运到印度本地实验室；本地代理人是硬性要求。",
+        "impact_on_china_sellers": "电子 / 玩具 / 家电品类合规周期 6-12 个月，费用 $5,000-$20,000；Xiaomi 等大厂曾被巨额罚款。",
+        "severity": "high"
+      },
+      {
+        "type": "diplomatic_tension",
+        "title": "中印边境局势仍敏感",
+        "description": "2020 加勒万冲突遗留紧张关系；2025-2026 边境降温但未根本解决；任何边境冲突会立即触发新一轮中国应用 / 商品封禁。",
+        "impact_on_china_sellers": "黑天鹅事件风险持续存在；卖家应保持本地团队 + 多平台分散风险。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "印度市场是长期价值（人口红利 + UPI 普及），但短期门槛高：1) 通过 Amazon IN / Flipkart 等大平台代办合规，避免独立站强 BIS 路径；2) 启动期专攻 BIS 不强制的品类（部分服装、美妆、家居）；3) 监控中印关系新闻，做好黑天鹅预案（应用下架、商品封禁）。",
+    "sources": [
+      {
+        "name": "The Diplomat · China-India Relations in 2026: Can the Thaw Continue?",
+        "url": "https://thediplomat.com/2026/01/china-india-relations-in-2026-can-the-thaw-continue/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Insights On India · India's Trade Deficit with China: Implications, Causes, and Economic Impact (Mar 2026)",
+        "url": "https://www.insightsonindia.com/2026/03/17/india-china-trade-deficit/",
+        "fetched_at": "2026-05-19"
+      }
     ]
   }
 }

@@ -8,6 +8,7 @@ import { Sparkles, Compass } from "lucide-react";
 import { ScoreFormulaPanel } from "./ScoreFormulaPanel";
 import { BenchmarkChart, type BenchmarkRow } from "./BenchmarkChart";
 import { getAvailableCountryIsos, getCountryData, getAllCountries } from "@/lib/data";
+import { GeopoliticalRiskSection } from "./GeopoliticalRiskSection";
 
 const ENTRY_MODE_LABEL: Record<string, { title: string; desc: string }> = {
   direct_dropship: {
@@ -68,6 +69,12 @@ export function RecommendationTab({ data }: { data: CountryData }) {
 
   return (
     <div className="space-y-6">
+      {/* Geopolitical risk — placed at the TOP because it's a kill-switch
+          consideration before any other recommendation has meaning. */}
+      {data.geopolitical_risk && (
+        <GeopoliticalRiskSection risk={data.geopolitical_risk} />
+      )}
+
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
           <div className="flex items-center justify-between">
@@ -180,7 +187,6 @@ export function RecommendationTab({ data }: { data: CountryData }) {
               highlightIso={iso}
               title="Hachimi 综合评分 (0-100)"
               format={{ decimals: 0 }}
-              height={Math.max(360, compositeBenchmark.length * 16)}
             />
           </div>
         </section>

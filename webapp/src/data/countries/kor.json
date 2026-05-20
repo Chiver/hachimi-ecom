@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 130000.0,
+      "gmv_total_usd_million": 189000.0,
       "cagr_2025_2030_pct": 4.54,
       "online_buyers_million": 42,
       "mobile_share_pct": 70,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 72.21,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/kor.json",
+          "source_name": "Statista E-commerce in KOR Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id29755_e-commerce-in-south-korea-statista-dossier.pdf#page=4",
+          "source_quote": "The value of e-commerce sales in South Korea amounted to almost 260 trillion South Korean won in 2024.",
+          "publisher": "Statistics Korea",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -487,13 +489,14 @@
   "payments": [
     {
       "payment_method": "credit_card",
-      "share_pct": 60,
+      "share_pct": 69.9,
       "year": 2025,
       "operator": "Visa/MC/本地 BC",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-south-korea.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id29755_e-commerce-in-south-korea-statista-dossier.pdf#page=14",
+      "confidence": "H",
+      "source_quote": "Credit card: 69.9%",
+      "source_name": "Statista E-commerce in KOR Dossier - page 14"
     },
     {
       "payment_method": "digital_wallet",
@@ -507,13 +510,14 @@
     },
     {
       "payment_method": "bank_transfer",
-      "share_pct": 12,
+      "share_pct": 33.5,
       "year": 2025,
       "operator": "Toss/실시간계좌이체",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-south-korea.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id29755_e-commerce-in-south-korea-statista-dossier.pdf#page=14",
+      "confidence": "H",
+      "source_quote": "Bank transfer: 33.5%",
+      "source_name": "Statista E-commerce in KOR Dossier - page 14"
     },
     {
       "payment_method": "COD",
@@ -671,8 +675,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -699,6 +703,41 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/kor.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 0,
+      "platform_gmv": 0,
+      "category_shares": 0,
+      "payment_shares": 2
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "韩国电商高度本土化（Naver / Coupang）；THAAD 遗留紧张但管控良好",
+    "factors": [
+      {
+        "type": "platform_regulation",
+        "title": "本土平台主导 + 严密保护",
+        "description": "Naver Smart Store + Coupang 占主导；中国卖家入驻需本地实体 + 韩文运营。",
+        "impact_on_china_sellers": "无本地团队的中国卖家直接进入门槛高；建议通过代运营或 Coupang Global Sale。",
+        "severity": "medium"
+      },
+      {
+        "type": "diplomatic_tension",
+        "title": "中韩关系（THAAD 遗留）",
+        "description": "2017 萨德事件遗留影响仍在；中韩文化 / 政治紧张周期性出现；但已不影响日常电商。",
+        "impact_on_china_sellers": "日常业务无影响；遇外交摩擦时韩国消费者会出现'反中'情绪潮。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "韩国市场需要深度本地化。Coupang Rocket（自营物流）或 Naver Smart Store；KakaoPay / Naver Pay 必接；韩文 listing + 本地客服。",
+    "sources": []
   }
 }

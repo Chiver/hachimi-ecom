@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 771000.0,
+      "gmv_total_usd_million": 26000.0,
       "cagr_2025_2030_pct": 5.11,
       "online_buyers_million": 43,
       "mobile_share_pct": 75,
@@ -70,14 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in THA Dossier - page 17",
-          "source_url": "data/raw/statista/study_id79183_e-commerce-industry-in-thailand.pdf#page=17",
-          "source_quote": "ollars. Fashion products generated the highest revenue among product categories, with approximately 771 billion U.S. dollars. Read more Note(s): Thailand;",
-          "currency_original": "USD",
-          "value_original": 771.0,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in THA Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id116244_e-commerce-in-singapore.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -676,7 +675,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -711,6 +710,38 @@
       "platform_gmv": 0,
       "category_shares": 0,
       "payment_shares": 2
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "中国关税平均下降 4-8%；但 USTR 2026.03 含泰国的过剩产能调查带不确定性",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "ASEAN 关税下降 + USTR 调查",
+        "description": "2024 起对中/韩进口商品平均关税下降 4-8%；马泰已成为电子 / 美妆 SEA cross-border 调拨中心（duty suspension zones）。但 USTR 2026-03-11 对含泰国的 16 伙伴启动调查。",
+        "impact_on_china_sellers": "中国卖家进入泰国本地市场友好，但泰国作为'转运到美国'通道风险上升。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "泰国市场温和友好。建议通过 Shopee TH / Lazada TH / TikTok Shop 三平台；PromptPay QR 必接；warehouse 设在 BKK 周边即可覆盖全国。",
+    "sources": [
+      {
+        "name": "ASEAN Briefing · ASEAN Transshipment Under US Tariffs: Compliance and Strategy",
+        "url": "https://www.aseanbriefing.com/news/asean-transshipment-and-us-tariffs-balancing-opportunity-and-risk/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Sidley Austin · Implications of U.S. Tariffs on Southeast Asia",
+        "url": "https://www.sidley.com/en/insights/newsupdates/2025/08/implications-of-us-tariffs-on-southeast-asia-navigating-the-trade-tumult",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

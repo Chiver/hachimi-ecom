@@ -146,7 +146,6 @@ export function ComplianceTab({ data }: { data: CountryData }) {
                     highlightIso={iso}
                     title="标准 VAT / GST / Sales Tax 税率 (%)"
                     format={{ suffix: "%", decimals: 0 }}
-                    height={Math.max(360, taxBench.length * 16)}
                   />
                 </div>
               </div>

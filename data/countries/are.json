@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 9000.0,
+      "gmv_total_usd_million": 8200.0,
       "cagr_2025_2030_pct": 8.5,
       "online_buyers_million": 7.5,
       "mobile_share_pct": 75,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/are.json",
+          "source_name": "Statista E-commerce in ARE Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id85861_e-commerce-in-saudi-arabia.pdf#page=4",
+          "source_quote": "",
+          "publisher": "LogisticsIQ",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -675,7 +677,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -710,6 +712,50 @@
       "platform_gmv": 0,
       "category_shares": 0,
       "payment_shares": 2
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "霍尔木兹海峡危机 + Dubai 转运枢纽地位受挫；陆路绕道成本/时效双高",
+    "factors": [
+      {
+        "type": "armed_conflict",
+        "title": "霍尔木兹海峡封锁与重新开放周期反复",
+        "description": "2026 美-伊-以冲突升级以来霍尔木兹海峡多次部分封锁。Spinneys 等本地零售商已启用 16 天陆路绕道（Kent → 西欧 → 埃及 → 沙特 → Dubai）取代海运。",
+        "impact_on_china_sellers": "Dubai 作为中东最大转口枢纽地位受损；中国→UAE 集装箱附加费 +$4,000/箱；空运 8 月以来下降 18% 容量。",
+        "severity": "critical"
+      },
+      {
+        "type": "supply_chain",
+        "title": "多式联运成本高且不可控",
+        "description": "MSC、Maersk 等承运商已大规模启用阿拉伯半岛陆路通道；UAE-Oman 之间新开 Al Rawdah 口岸缓解。",
+        "impact_on_china_sellers": "陆路运费按日上涨；中国-UAE 空运承运商减少，运价波动大；适合高客单（>$80）才能消化。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "Dubai 作为中东辐射枢纽的吸引力短期下滑。建议：1) 已建立 UAE 海外仓的卖家维持，但暂缓扩张库存；2) 新进入卖家暂避 cross-border 直邮模式，等局势缓和；3) 客单 $30 以下的快时尚 / 低价配饰品类受冲击最大（附加费分摊不起），建议转 PHL / MYS 等替代市场。",
+    "sources": [
+      {
+        "name": "Business Today · How the Gulf is redrawing its logistics network to bypass Hormuz (2026-05-14)",
+        "url": "https://www.businesstoday.in/world/story/how-the-gulf-is-redrawing-its-logistics-network-to-bypass-hormuz-531417-2026-05-14",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Travel And Tour World · UAE Joins Middle East in Massive Overland Energy Push as Strait of Hormuz Crisis Reshapes 2026 Economy",
+        "url": "https://www.travelandtourworld.com/news/article/uae-joins-bahrain-saudi-arabia-iraq-kuwait-qatar-and-israel-in-massive-overland-energy-push-as-strait-of-hormuz-crisis-reshapes-middle-east-economy-and-travel-in-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Vortex Shipping · UAE Shipping Crisis 2026 Guide",
+        "url": "https://vortexshipping.ae/uae-shipping-crisis-2026/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

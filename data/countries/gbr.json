@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 159310.0,
+      "gmv_total_usd_million": 119900.0,
       "cagr_2025_2030_pct": 3.93,
       "online_buyers_million": 60,
       "mobile_share_pct": 60,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 81.01,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in GBR Dossier - page 4",
-          "source_url": "data/raw/statista/study_id22340_e-commerce-in-the-united-kingdom-uk.pdf#page=4",
-          "source_quote": " According to this forecast, in 2030 the revenue will have increased for sixth consecutive years to 159.31 billion U.S. dollars. Read more Note(s): United Ki",
-          "currency_original": "USD",
-          "value_original": 159.31,
-          "fx_rate_used": 1.0,
+          "source_name": "Statista E-commerce in GBR Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id22340_e-commerce-in-the-united-kingdom-uk.pdf#page=3",
+          "source_quote": "In 2030 the revenue will have increased for sixth consecutive years to 159.31 billion U.S. dollars.",
+          "publisher": "Statista",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -111,9 +110,19 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "待人工校对 Statista 原文精确化"
+        },
+        "gmv_yoy_pct": {
+          "source_name": "Statista E-commerce in GBR Dossier - page 5 (vision-verified)",
+          "source_url": "data/raw/statista/study_id22340_e-commerce-in-the-united-kingdom-uk.pdf#page=5",
+          "source_quote": "Annual growth rate 2025: 4.0%",
+          "publisher": "eMarketer",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
       },
-      "per_capita_spend_usd": 2655.0
+      "per_capita_spend_usd": 2655.0,
+      "gmv_yoy_pct": 4.0
     }
   ],
   "platforms": [
@@ -741,7 +750,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -776,6 +785,27 @@
       "platform_gmv": 5,
       "category_shares": 0,
       "payment_shares": 3
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "脱欧后独立监管体系，但相对友好",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "UKCA / GPSR UK 独立合规",
+        "description": "脱欧后英国可继续使用 CE 标志（无须 UKCA），但 GPSR UK 仍要求 UK 责任人 (£200-1,000/年)。",
+        "impact_on_china_sellers": "合规额外成本 £200-1,000/年/品牌；其余跟欧盟差不多。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "英国是中国卖家欧洲入门首选（语言 + 监管成熟）。Amazon UK + eBay + Shopify 独立站；BNPL（Klarna）必接；GBP 结算汇率较稳定。",
+    "sources": []
   }
 }

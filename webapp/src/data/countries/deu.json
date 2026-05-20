@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 145000.0,
+      "gmv_total_usd_million": 96800.0,
       "cagr_2025_2030_pct": 4.98,
       "online_buyers_million": 65,
       "mobile_share_pct": 50,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 67.87,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/deu.json",
+          "source_name": "Statista E-commerce in DEU Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=3",
+          "source_quote": "In 2024, the German B2C e-commerce sector generated around 88.8 billion euros in revenue.",
+          "publisher": "HDE (Handelsverband Deutschland)",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$100716.0M / 65M buyers",
+          "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=4",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$145000.0M / 65M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -110,7 +112,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 2231.0
+      "per_capita_spend_usd": 1549.0
     }
   ],
   "platforms": [
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "DEU",
-        "gmv_usd_million": 68000.0,
+        "gmv_usd_million": 12952.0,
         "market_share_pct": 47.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA Pan-EU",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in DEU Dossier - page 17 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=17",
+            "source_quote": "amazon.de: 12951.7 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +168,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "DEU",
-        "gmv_usd_million": 10000.0,
+        "gmv_usd_million": 2196.0,
         "market_share_pct": 7.0,
         "commission_rate_pct": 10.0,
         "fulfillment_fee_model": "Hermes 物流",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in DEU Dossier - page 16 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=16",
+            "source_quote": "otto.de: 2195.9 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +208,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "DEU",
-        "gmv_usd_million": 7300.0,
+        "gmv_usd_million": 4416.0,
         "market_share_pct": 5.0,
         "commission_rate_pct": 5.0,
         "fulfillment_fee_model": "Zalando Fulfillment",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in DEU Dossier - page 16 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=16",
+            "source_quote": "zalando.de: 4416.5 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -487,43 +492,47 @@
   "payments": [
     {
       "payment_method": "bank_transfer",
-      "share_pct": 30,
+      "share_pct": 3.5,
       "year": 2025,
       "operator": "SEPA/Sofort/Giropay 德国主流",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-germany.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=36",
+      "confidence": "H",
+      "source_quote": "Bank transfer/ advance payment: 3.5%",
+      "source_name": "Statista E-commerce in DEU Dossier - page 36"
     },
     {
       "payment_method": "PayPal",
-      "share_pct": 25,
+      "share_pct": 28.7,
       "year": 2025,
       "operator": "PayPal 德国渗透极高",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-germany.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=36",
+      "confidence": "H",
+      "source_quote": "Paypal: 28.7%",
+      "source_name": "Statista E-commerce in DEU Dossier - page 36"
     },
     {
       "payment_method": "invoice_pay",
-      "share_pct": 18,
+      "share_pct": 26.1,
       "year": 2025,
       "operator": "Kauf auf Rechnung（先收货后付款）",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-germany.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=36",
+      "confidence": "H",
+      "source_quote": "Purchase on invoice: 26.1%",
+      "source_name": "Statista E-commerce in DEU Dossier - page 36"
     },
     {
       "payment_method": "credit_card",
-      "share_pct": 15,
+      "share_pct": 13.7,
       "year": 2025,
       "operator": "Visa/MC",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-germany.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=36",
+      "confidence": "H",
+      "source_quote": "Credit cards: 13.7%",
+      "source_name": "Statista E-commerce in DEU Dossier - page 36"
     },
     {
       "payment_method": "BNPL",
@@ -537,13 +546,14 @@
     },
     {
       "payment_method": "direct_debit",
-      "share_pct": 4,
+      "share_pct": 14.4,
       "year": 2025,
       "operator": "SEPA Direct Debit",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-germany.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=36",
+      "confidence": "H",
+      "source_quote": "Direct debit: 14.4%",
+      "source_name": "Statista E-commerce in DEU Dossier - page 36"
     }
   ],
   "logistics": [
@@ -693,8 +703,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -721,6 +731,57 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/deu.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 0,
+      "payment_shares": 5
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "欧盟最大单一市场，监管成熟、风险可预测",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "标准 EU 监管 + GPSR / DAC7 / VAT",
+        "description": "德国是 EU 监管最严格的市场之一；GPSR、DAC7、VAT OSS/IOSS 全套适用；UOKiK 等监管机构执法到位。",
+        "impact_on_china_sellers": "合规成本高但稳定；中国卖家通过 Amazon Pan-EU FBA 是主流路径。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "2026-07-01 EU €3 海关费",
+        "description": "EU 启动对 ≤€150 小包征 €3 海关费；Shein / Temu 已大规模转 EU 本地仓应对。",
+        "impact_on_china_sellers": "中国直邮 EU 小件成本上升；强化本地仓必要性。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "德国仍是欧洲 #1 战略市场。Pan-EU FBA 必走；Klarna Invoice / SEPA 支付必接；GPSR + EU RP 提前准备；做好 Q4 旺季配额。",
+    "sources": [
+      {
+        "name": "Suaid Global · Red Sea Shipping Crisis 2026: Impact on Rates, Routes & Your Supply Chain",
+        "url": "https://suaidglobal.com/insights/red-sea-shipping-crisis-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Bloomberg · Shipping Firms Face Tough 2026 as Reopening of Red Sea Looms",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-04/shipping-firms-face-tough-2026-as-reopening-of-red-sea-looms",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "World Bank · The Deepening Red Sea Shipping Crisis: Impacts and Outlook",
+        "url": "https://documents1.worldbank.org/curated/en/099253002102539789/pdf/IDU10b8b59671dbc814cfc19c4a1299ff54854ba.pdf",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

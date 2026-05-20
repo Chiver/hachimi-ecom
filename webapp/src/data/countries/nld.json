@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 35000.0,
+      "gmv_total_usd_million": 39200.0,
       "cagr_2025_2030_pct": 3.93,
       "online_buyers_million": 14,
       "mobile_share_pct": 50,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 74.26,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/nld.json",
+          "source_name": "Statista E-commerce in NLD Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=3",
+          "source_quote": "In 2024, Dutch consumers spent roughly 36 billion euros on online purchases. The Netherlands is the seventh-largest e-commerce market in Europe in absolute terms.",
+          "publisher": "PostNL; Thuiswinkel.org",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$6550.0M / 14M buyers",
+          "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$35000.0M / 14M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -110,7 +112,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 2500.0
+      "per_capita_spend_usd": 468.0
     }
   ],
   "platforms": [
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "NLD",
-        "gmv_usd_million": 11200.0,
+        "gmv_usd_million": 6553.0,
         "market_share_pct": 32.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "Bol Logistics via Plaza",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in NLD Dossier - page 26 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
+            "source_quote": "bol.com: 6553.3 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +168,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "NLD",
-        "gmv_usd_million": 3500.0,
+        "gmv_usd_million": 3736.0,
         "market_share_pct": 10.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA Pan-EU",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in NLD Dossier - page 26 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
+            "source_quote": "amazon.nl: 3736.4 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -243,17 +247,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "NLD",
-        "gmv_usd_million": 1800.0,
+        "gmv_usd_million": 1415.0,
         "market_share_pct": 5.0,
         "commission_rate_pct": 5.0,
         "fulfillment_fee_model": "Zalando Fulfillment",
         "rank_in_country": 4,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in NLD Dossier - page 26 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
+            "source_quote": "zalando.nl: 1414.8 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -282,17 +287,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "NLD",
-        "gmv_usd_million": 1100.0,
+        "gmv_usd_million": 1068.0,
         "market_share_pct": 3.0,
         "commission_rate_pct": 0,
         "fulfillment_fee_model": "二手",
         "rank_in_country": 5,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in NLD Dossier - page 26 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=26",
+            "source_quote": "vinted.nl: 1068.3 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -496,13 +502,14 @@
   "payments": [
     {
       "payment_method": "iDEAL",
-      "share_pct": 70,
+      "share_pct": 92.0,
       "year": 2025,
       "operator": "iDEAL 银行转账是荷兰国民支付（80%+ 渗透）",
       "is_local_unique": true,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-netherlands.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=34",
+      "confidence": "H",
+      "source_quote": "IDEAL: 92.0%",
+      "source_name": "Statista E-commerce in NLD Dossier - page 34"
     },
     {
       "payment_method": "credit_card",
@@ -526,13 +533,14 @@
     },
     {
       "payment_method": "PayPal",
-      "share_pct": 5,
+      "share_pct": 56.0,
       "year": 2025,
       "operator": "",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-netherlands.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id38799_e-commerce-in-the-netherlands-statista-dossier.pdf#page=34",
+      "confidence": "H",
+      "source_quote": "PayPal: 56.0%",
+      "source_name": "Statista E-commerce in NLD Dossier - page 34"
     },
     {
       "payment_method": "bank_transfer",
@@ -683,8 +691,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -711,6 +719,34 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/nld.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 4,
+      "category_shares": 0,
+      "payment_shares": 2
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "鹿特丹港 + Schiphol 物流中心；监管严格但稳定",
+    "factors": [
+      {
+        "type": "supply_chain",
+        "title": "EU 物流核心节点",
+        "description": "鹿特丹港 + 阿姆斯特丹 Schiphol 机场是 EU 进口主通道；Shein 因 cookie 同意被荷兰罚 €1.45 亿。",
+        "impact_on_china_sellers": "适合作为 EU 仓储 / 转运基地；GDPR 执法严。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "荷兰适合做 EU 物流仓储节点（鹿特丹仓服务 27 国）。Bol.com + Amazon NL + iDEAL 必接；当心 GDPR 执法。",
+    "sources": []
   }
 }

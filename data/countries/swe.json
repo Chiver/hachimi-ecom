@@ -760,5 +760,22 @@
       "category_shares": 5,
       "payment_shares": 0
     }
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "北欧高 GDP 市场，监管成熟，VAT 25% 最高",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "EU 标准 + 高 VAT",
+        "description": "瑞典 VAT 25% 是欧盟最高之一；GPSR / OSS/IOSS 标准。",
+        "impact_on_china_sellers": "高客单 / 高毛利品类适合；低价品类需考虑税后定价。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "瑞典消费力强（人均电商支出 $1,647）。Klarna 主场（Pay in 4/30 必接）；Swish 移动支付必备。",
+    "sources": []
   }
 }

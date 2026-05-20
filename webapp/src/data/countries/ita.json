@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 65000.0,
+      "gmv_total_usd_million": 87900.0,
       "cagr_2025_2030_pct": 5.33,
       "online_buyers_million": 35,
       "mobile_share_pct": 60,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 78.4,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/ita.json",
+          "source_name": "Statista E-commerce in ITA Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=3",
+          "source_quote": "In 2023, the revenue of the e-commerce sector in Italy hit nearly 80.6 billion euros, a significant increase from a year earlier when it amounted to roughly 75.9 billion euros.",
+          "publisher": "Casaleggio Associati",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$87854.0M / 35M buyers",
+          "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=4",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$65000.0M / 35M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -110,7 +112,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 1857.0
+      "per_capita_spend_usd": 2510.0
     }
   ],
   "platforms": [
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "ITA",
-        "gmv_usd_million": 19500.0,
+        "gmv_usd_million": 27637.0,
         "market_share_pct": 30.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA Pan-EU",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in ITA Dossier - page 24 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=24",
+            "source_quote": "amazon.it: 27637.1 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +168,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "ITA",
-        "gmv_usd_million": 3900.0,
+        "gmv_usd_million": 3563.0,
         "market_share_pct": 6.0,
         "commission_rate_pct": 12.0,
         "fulfillment_fee_model": "FBM",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in ITA Dossier - page 24 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=24",
+            "source_quote": "ebay.it: 3562.8 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +208,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "ITA",
-        "gmv_usd_million": 2600.0,
+        "gmv_usd_million": 1054.0,
         "market_share_pct": 4.0,
         "commission_rate_pct": 5.0,
         "fulfillment_fee_model": "Zalando Fulfillment",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in ITA Dossier - page 24 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=24",
+            "source_quote": "zalando.it: 1054.2 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -282,17 +287,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "ITA",
-        "gmv_usd_million": 1300.0,
+        "gmv_usd_million": 1058.0,
         "market_share_pct": 2.0,
         "commission_rate_pct": 0,
         "fulfillment_fee_model": "二手",
         "rank_in_country": 5,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in ITA Dossier - page 24 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=24",
+            "source_quote": "vinted.it: 1058.2 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -524,13 +530,14 @@
     },
     {
       "payment_method": "PayPal",
-      "share_pct": 25,
+      "share_pct": 86.0,
       "year": 2025,
       "operator": "PayPal 强",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-italy.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=37",
+      "confidence": "H",
+      "source_quote": "PayPal: 86.0%",
+      "source_name": "Statista E-commerce in ITA Dossier - page 37"
     },
     {
       "payment_method": "digital_wallet",
@@ -544,13 +551,14 @@
     },
     {
       "payment_method": "bank_transfer",
-      "share_pct": 12,
+      "share_pct": 3.0,
       "year": 2025,
       "operator": "SEPA / MyBank",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-italy.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=37",
+      "confidence": "H",
+      "source_quote": "MyBank: 3.0%",
+      "source_name": "Statista E-commerce in ITA Dossier - page 37"
     },
     {
       "payment_method": "BNPL",
@@ -699,8 +707,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -727,6 +735,34 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/ita.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 4,
+      "category_shares": 0,
+      "payment_shares": 2
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "意大利温和监管，标准 EU",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "标准 EU 监管",
+        "description": "意大利 IVA 22%；Pan-EU FBA 覆盖；时尚品类活跃。",
+        "impact_on_china_sellers": "标准 EU 路径；当地 PSP（Nexi）接入降低费率。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "意大利时尚品类强势市场，毛利空间高。Amazon IT + Subito 二手平台；本地 BNPL (Scalapay) 接入。",
+    "sources": []
   }
 }

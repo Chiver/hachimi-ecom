@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 87854.0,
+      "gmv_total_usd_million": 87900.0,
       "cagr_2025_2030_pct": 5.33,
       "online_buyers_million": 35,
       "mobile_share_pct": 60,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 78.4,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in ITA Dossier - page 4",
-          "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=4",
-          "source_quote": "Description: In 2023, the revenue of the e-commerce sector in Italy hit nearly 80.6 billion euros, a significant increase from ",
-          "currency_original": "EUR",
-          "value_original": 80.6,
-          "fx_rate_used": 1.09,
+          "source_name": "Statista E-commerce in ITA Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id36659_e-commerce-in-italy-statista-dossier.pdf#page=3",
+          "source_quote": "In 2023, the revenue of the e-commerce sector in Italy hit nearly 80.6 billion euros, a significant increase from a year earlier when it amounted to roughly 75.9 billion euros.",
+          "publisher": "Casaleggio Associati",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -708,7 +707,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -743,6 +742,27 @@
       "platform_gmv": 4,
       "category_shares": 0,
       "payment_shares": 2
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "意大利温和监管，标准 EU",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "标准 EU 监管",
+        "description": "意大利 IVA 22%；Pan-EU FBA 覆盖；时尚品类活跃。",
+        "impact_on_china_sellers": "标准 EU 路径；当地 PSP（Nexi）接入降低费率。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "意大利时尚品类强势市场，毛利空间高。Amazon IT + Subito 二手平台；本地 BNPL (Scalapay) 接入。",
+    "sources": []
   }
 }

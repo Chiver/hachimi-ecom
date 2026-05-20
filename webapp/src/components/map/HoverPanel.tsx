@@ -64,6 +64,42 @@ export function HoverPanel({ country, summary, activeMetric }: Props) {
         {country.region} · {country.is_eu ? "欧盟" : "非欧盟"} · {country.currency_code}
       </div>
 
+      {summary?.geo_risk_level && (
+        <div
+          className={cn(
+            "mt-2 rounded-md border px-2 py-1.5",
+            summary.geo_risk_level === "extreme" && "border-red-400/50 bg-red-500/15",
+            summary.geo_risk_level === "high" && "border-red-400/30 bg-red-500/10",
+            summary.geo_risk_level === "medium" && "border-amber-400/30 bg-amber-500/10",
+            summary.geo_risk_level === "low" && "border-emerald-400/30 bg-emerald-500/10",
+          )}
+        >
+          <div
+            className={cn(
+              "text-[9px] uppercase tracking-wider font-semibold",
+              summary.geo_risk_level === "extreme" && "text-red-200",
+              summary.geo_risk_level === "high" && "text-red-300",
+              summary.geo_risk_level === "medium" && "text-amber-300",
+              summary.geo_risk_level === "low" && "text-emerald-300",
+            )}
+          >
+            地缘政治：
+            {summary.geo_risk_level === "extreme"
+              ? "极端风险"
+              : summary.geo_risk_level === "high"
+                ? "高风险"
+                : summary.geo_risk_level === "medium"
+                  ? "中等风险"
+                  : "低风险"}
+          </div>
+          {summary.geo_risk_headline && (
+            <div className="mt-0.5 text-[10px] leading-tight">
+              {summary.geo_risk_headline}
+            </div>
+          )}
+        </div>
+      )}
+
       {hasData ? (
         <>
           <div

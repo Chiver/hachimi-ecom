@@ -198,7 +198,6 @@ export function TrafficTab({ data }: { data: CountryData }) {
               highlightIso={iso}
               title="Lebesgue Meta CPM 横向对比 (USD)"
               format={{ prefix: "$", decimals: 2 }}
-              height={Math.max(360, lebesgueBenchmark.length * 16)}
             />
           </div>
         </div>

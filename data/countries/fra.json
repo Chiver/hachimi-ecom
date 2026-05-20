@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 214076.0,
+      "gmv_total_usd_million": 191000.0,
       "cagr_2025_2030_pct": 3.76,
       "online_buyers_million": 47,
       "mobile_share_pct": 55,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 76.23,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in FRA Dossier - page 6",
-          "source_url": "data/raw/statista/study_id28910_e-commerce-in-france-statista-dossier.pdf#page=6",
-          "source_quote": "Description: In 2025, e-commerce sales in France amounted to approximately 196.4 billion euros. The e-commerce revenue in Fr",
-          "currency_original": "EUR",
-          "value_original": 196.4,
-          "fx_rate_used": 1.09,
+          "source_name": "Statista E-commerce in FRA Dossier - page 5 (vision-verified)",
+          "source_url": "data/raw/statista/study_id28910_e-commerce-in-france-statista-dossier.pdf#page=5",
+          "source_quote": "In 2025, e-commerce sales in France amounted to approximately 196.4 billion euros. The e-commerce revenue in France has grown steadily.",
+          "publisher": "FEVAD (Fédération du e-commerce et de la vente à distance)",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -736,7 +735,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -771,6 +770,27 @@
       "platform_gmv": 3,
       "category_shares": 0,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "西欧主流市场，标准监管环境",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "DGCCRF 执法 + GPSR / DAC7",
+        "description": "法国 DGCCRF 监管对中国卖家玩具 / 化妆品 / 电子品类抽查较严。",
+        "impact_on_china_sellers": "玩具 / 美妆类目需提前完整 CE / CPNP 备案。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "标准 Pan-EU FBA 通路。Cdiscount + Fnac + Amazon FR 平台组合；Klarna + Bizum 非主流但可补充。",
+    "sources": []
   }
 }

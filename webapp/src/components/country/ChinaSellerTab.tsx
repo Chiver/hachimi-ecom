@@ -186,14 +186,12 @@ function Benchmark32({
           highlightIso={iso}
           title="Top 100 卖家中的中国卖家数"
           format={{ decimals: 0 }}
-          height={Math.max(360, top100Rows.length * 16)}
         />
         <BenchmarkChart
           rows={top1000Rows}
           highlightIso={iso}
           title="Top 1000 卖家中的中国卖家数"
           format={{ decimals: 0 }}
-          height={Math.max(360, top1000Rows.length * 16)}
         />
       </div>
     </section>

@@ -702,5 +702,22 @@
       "category_shares": 0,
       "payment_shares": 0
     }
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "毗邻乌克兰但电商稳定；东欧增速市场",
+    "factors": [
+      {
+        "type": "armed_conflict",
+        "title": "乌克兰战争邻接无直接冲击",
+        "description": "罗马尼亚是 NATO 成员国，与乌克兰边境共有 600 公里；战争对本国电商无直接影响。",
+        "impact_on_china_sellers": "电商业务正常；中国-罗马尼亚直邮通道仍开放。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "罗马尼亚作为东欧增长市场可关注。eMag 是本土主导平台；EU 标准合规。",
+    "sources": []
   }
 }

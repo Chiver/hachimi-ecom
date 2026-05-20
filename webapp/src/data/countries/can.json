@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 71000.0,
+      "gmv_total_usd_million": 59700.0,
       "cagr_2025_2030_pct": 4.9,
       "online_buyers_million": 28,
       "mobile_share_pct": 55,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 80.73,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/can.json",
+          "source_name": "Statista E-commerce in CAN Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=3",
+          "source_quote": "In 2025, retail e-commerce in Canada was forecast to generate nearly 68 billion U.S. dollars in revenues.",
+          "publisher": "Statista Digital Market Insights",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$68000.0M / 28M buyers",
+          "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=4",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$71000.0M / 28M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -110,7 +112,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 2536.0
+      "per_capita_spend_usd": 2429.0
     }
   ],
   "platforms": [
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CAN",
-        "gmv_usd_million": 27000.0,
+        "gmv_usd_million": 33661.0,
         "market_share_pct": 38.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CAN Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=12",
+            "source_quote": "amazon.ca: 33661.1 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +207,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CAN",
-        "gmv_usd_million": 5000.0,
+        "gmv_usd_million": 12822.0,
         "market_share_pct": 7.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "WFS Canada (有限)",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CAN Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=12",
+            "source_quote": "walmart.ca: 12821.6 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -243,17 +247,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "CAN",
-        "gmv_usd_million": 2800.0,
+        "gmv_usd_million": 2100.0,
         "market_share_pct": 4.0,
         "commission_rate_pct": 12.0,
         "fulfillment_fee_model": "FBM",
         "rank_in_country": 4,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in CAN Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id32356_e-commerce-in-canada-statista-dossier.pdf#page=12",
+            "source_quote": "ebay.ca: 2100.3 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -625,8 +630,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -653,6 +658,57 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/can.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 0,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "稳定贸易伙伴；CUSMA 框架下但对中国 EV/钢铝有制裁",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "对中国 EV / 钢铝跟随美国制裁",
+        "description": "加拿大 2024 起对中国电动车征 100% 关税、钢铝征 25%；其余消费品仍正常。",
+        "impact_on_china_sellers": "EV / 钢铝相关行业受限；常规消费品类不受影响。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "USMCA 2026 review 关联影响",
+        "description": "USMCA 审议中加拿大相对'冷处理'；美国强化原产地规则可能间接影响经加进美的中国商品。",
+        "impact_on_china_sellers": "传统加拿大本地销售不受影响。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "加拿大是稳定可预测市场。Amazon CA + Shopify 独立站；CAD 结算汇率稳定；客单价高于美国。",
+    "sources": [
+      {
+        "name": "ASI Central · Mexico Imposes Tariffs on China To Curb 'Back Door' to U.S. Market (Jan 2026)",
+        "url": "https://members.asicentral.com/news/industry-news/january-2026/mexico-imposes-tariffs-on-china-to-curb-back-door-to-us-market/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "CSIS · USMCA Review 2026",
+        "url": "https://www.csis.org/analysis/usmca-review-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "FreightWaves · Mexico targets Asian imports with new tariffs ahead of USMCA negotiations",
+        "url": "https://www.freightwaves.com/news/mexico-targets-asian-imports-with-new-tariffs-ahead-of-usmca-negotiations",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

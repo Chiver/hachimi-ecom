@@ -48,7 +48,6 @@ export function PlatformsTab({ data }: { data: CountryData }) {
           rows={gmvRows}
           title="平台 GMV 2024 (M USD)"
           format={{ millionsToBillions: true, decimals: 2 }}
-          height={Math.max(220, gmvRows.length * 32)}
         />
       </section>
     )}

@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 42390.0,
+      "gmv_total_usd_million": 36800.0,
       "cagr_2025_2030_pct": 4.85,
       "online_buyers_million": 110,
       "mobile_share_pct": 75,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 82.51,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in BRA Dossier - page 8",
-          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=8",
-          "source_quote": "Description: In 2025, e-commerce in Brazil generated around 235.5 billion Brazilian reals in revenue, marking a 15.3 pe",
-          "currency_original": "BRL",
-          "value_original": 235.5,
-          "fx_rate_used": 0.18,
+          "source_name": "Statista E-commerce in BRA Dossier - page 7 (vision-verified)",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=7",
+          "source_quote": "",
+          "publisher": "",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -111,9 +110,19 @@
           "fetched_at": "2026-05-17",
           "confidence": "L",
           "warning": "待人工校对 Statista 原文精确化"
+        },
+        "ecom_share_of_retail_pct": {
+          "source_name": "Statista E-commerce in BRA Dossier - page None (vision-verified)",
+          "source_url": "data/raw/statista/study_id56090_e-commerce-in-brazil.pdf#page=None",
+          "source_quote": "E-commerce share of total retail: 9.03%",
+          "publisher": "",
+          "fetched_at": "2026-05-17",
+          "confidence": "H",
+          "extraction_method": "vision"
         }
       },
-      "per_capita_spend_usd": 385.0
+      "per_capita_spend_usd": 385.0,
+      "ecom_share_of_retail_pct": 9.03
     }
   ],
   "platforms": [
@@ -754,7 +763,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -789,6 +798,46 @@
       "platform_gmv": 3,
       "category_shares": 7,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million",
+      "ecommerce_market.ecom_share_of_retail_pct"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "Remessa Conforme 维持 60% 联邦 + 17% 州税；Shein / Shopee 已加入合规计划",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "Remessa Conforme 跨境关税体系",
+        "description": "≤ USD 50 包裹征 20% 联邦税 + 17% 州税；USD 50-3000 征 60% 联邦税 + 17% 州税。2024-08-01 起 $50 免税额取消。",
+        "impact_on_china_sellers": "$30 的 Temu 商品落地价飙到约 $48；价格竞争力大幅下降。Shein 已申请加入 PRC 享 20% 优惠。",
+        "severity": "high"
+      },
+      {
+        "type": "platform_regulation",
+        "title": "ML 主导但本地化合规门槛上升",
+        "description": "Mercado Libre 仍是绝对主导（市占 50%+）；Temu Brazil 启动半托管模式（2024-07-31）；本地履约要求趋严。",
+        "impact_on_china_sellers": "卖家需通过 PRC 获取税务优势或接受 60% 关税；本地仓 + ML Full 是必选项。",
+        "severity": "high"
+      }
+    ],
+    "entry_recommendation_adjustment": "巴西仍是拉美最大市场，但务必走合规路径：1) 入驻 ML Full / Shopee BR / Magalu 等本土平台；2) 申请 Remessa Conforme 享 20%（vs 60%）税率；3) 海外仓必备，库存深度建议覆盖 90 天；4) PIX 必接（占订单 60%+），boleto 仍需保留作为补充。",
+    "sources": [
+      {
+        "name": "WCO News · E-commerce at a turning point: Customs, compliance and the end of de minimis",
+        "url": "https://mag.wcoomd.org/magazine/wco-news-108-issue-3-2025/e-commerce-at-a-turning-point/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Deliver2 · Brazil has introduced a 60% tax on parcels cheaper than $50 — Shein and Temu are under attack",
+        "url": "https://deliver-2.com/news/economy/brazil-has-introduced-a-60-tax-on-parcels-cheaper-than-50-shein-and-temu-are-under-attack/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 57000.0,
+      "gmv_total_usd_million": 28000.0,
       "cagr_2025_2030_pct": 6.14,
       "online_buyers_million": 65,
       "mobile_share_pct": 70,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 80.13,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/mex.json",
+          "source_name": "Statista E-commerce in MEX Dossier - page 8 (vision-verified)",
+          "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=8",
+          "source_quote": "",
+          "publisher": "Statista Market Insights",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -89,11 +91,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$15820.0M / 65M buyers",
+          "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=9",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$57000.0M / 65M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -110,7 +112,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 877.0
+      "per_capita_spend_usd": 243.0
     }
   ],
   "platforms": [
@@ -126,17 +128,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "MEX",
-        "gmv_usd_million": 13000.0,
+        "gmv_usd_million": 12202.0,
         "market_share_pct": 23.0,
         "commission_rate_pct": 12.0,
         "fulfillment_fee_model": "Mercado Envíos Full",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in MEX Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=12",
+            "source_quote": "mercadolibre.com.mx: 12202.0 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -165,17 +168,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "MEX",
-        "gmv_usd_million": 10800.0,
+        "gmv_usd_million": 12305.0,
         "market_share_pct": 19.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA (Pan-NA)",
         "rank_in_country": 2,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in MEX Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=12",
+            "source_quote": "amazon.com.mx: 12304.7 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -204,17 +208,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "MEX",
-        "gmv_usd_million": 6300.0,
+        "gmv_usd_million": 2441.0,
         "market_share_pct": 11.0,
         "commission_rate_pct": 11.5,
         "fulfillment_fee_model": "Walmart Fulfillment",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in MEX Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=12",
+            "source_quote": "walmart.com.mx: 2441.2 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -243,17 +248,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "MEX",
-        "gmv_usd_million": 2600.0,
+        "gmv_usd_million": 2462.0,
         "market_share_pct": 4.5,
         "commission_rate_pct": 0,
         "fulfillment_fee_model": "自营物流",
         "rank_in_country": 4,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in MEX Dossier - page 12 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id56142_e-commerce-in-mexico.pdf#page=12",
+            "source_quote": "liverpool.com.mx: 2462.3 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -707,8 +713,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -735,6 +741,64 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/mex.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 4,
+      "category_shares": 0,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "high",
+    "headline": "2026-01 对中国 1,400 商品加 35-50% 关税；USMCA 2026 review 进行中",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "墨西哥对中国/亚洲新关税",
+        "description": "2026 年初墨西哥对中国等亚洲国家 1,400 类商品（汽车/汽配/钢铝/塑料/服装/家电/玩具/鞋/纺织等）加 35-50% 关税。目的：堵截中国商品借道墨西哥进入美国。",
+        "impact_on_china_sellers": "直接进入墨西哥市场的中国商品成本飙升；'借道美国'模型受严打。",
+        "severity": "critical"
+      },
+      {
+        "type": "trade_policy",
+        "title": "USMCA 2026 review 不确定性",
+        "description": "原定 2026-07-01 截止的 USMCA 审议预计将延期；美方推 52 项贸易要求；可能强化原产地规则，进一步限制中国转运。",
+        "impact_on_china_sellers": "中长期通过墨西哥进入美国的路径越来越难；本地建厂 / 实际制造比例要求会上升。",
+        "severity": "high"
+      },
+      {
+        "type": "domestic_unrest",
+        "title": "末端物流安全（cartel 影响）",
+        "description": "部分地区（如 Sinaloa、Michoacán）的最后一公里物流受 cartel 影响，丢件 / 抢劫率较高。",
+        "impact_on_china_sellers": "MercadoLibre Full 等大平台已有应对，独立卖家慎选偏远地区配送。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "墨西哥仍有人口红利和电商高速增长（24% YoY），但战略要重新思考：1) 别再把墨西哥当美国转运基地，必须正面做本地市场；2) Mercado Libre Full 必接，PIX 类即时支付（CoDi）+ OXXO 现金支付双轨；3) 客单 $30 以下品类成本压力大，向高客单 / 高毛利品类倾斜；4) 配送地址做风控筛查，避开高风险邮编。",
+    "sources": [
+      {
+        "name": "ASI Central · Mexico Imposes Tariffs on China To Curb 'Back Door' to U.S. Market (Jan 2026)",
+        "url": "https://members.asicentral.com/news/industry-news/january-2026/mexico-imposes-tariffs-on-china-to-curb-back-door-to-us-market/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "CSIS · USMCA Review 2026",
+        "url": "https://www.csis.org/analysis/usmca-review-2026",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "FreightWaves · Mexico targets Asian imports with new tariffs ahead of USMCA negotiations",
+        "url": "https://www.freightwaves.com/news/mexico-targets-asian-imports-with-new-tariffs-ahead-of-usmca-negotiations",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

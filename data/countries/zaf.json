@@ -711,5 +711,52 @@
     "raw_pdf_extract_path": "data/raw/statista_extracted/zaf.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
     "audited_at": "2026-05-17"
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "政局过渡 + 2026.11 大选 + 海关零起征点；监管复杂度高",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "De Minimis 零 + 复杂关税",
+        "description": "南非 de minimis = 0，所有进口包裹都要缴税；SARS 严格审查 HS 编码；中南贸易方案 2026-05-01 生效。",
+        "impact_on_china_sellers": "低价跨境直邮模型不可行；本地履约或与有 ICS（Importer of Record）服务的代理合作。",
+        "severity": "high"
+      },
+      {
+        "type": "domestic_unrest",
+        "title": "2026-11 大选 + 国民团结政府试金石",
+        "description": "南非 2024 大选 ANC 失去绝对多数；2026-11 地方选举是国民团结政府（GNU）的第一次大考。",
+        "impact_on_china_sellers": "选举周围社会不稳定风险上升；但电商业务可继续运营。",
+        "severity": "medium"
+      },
+      {
+        "type": "currency_volatility",
+        "title": "兰特持续波动 + 治安",
+        "description": "南非兰特对美元长期贬值；约堡 / 开普敦部分地区治安差，影响 last-mile 派送。",
+        "impact_on_china_sellers": "定价 / 提现汇率风险；部分高风险邮编建议谨慎配送。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "南非是 SADC 区域跳板但门槛高。Takealot 是本土主导平台；建议通过 Takealot 1P / 3P 直发模式，避免独立站直邮；EFT instant 支付必接。",
+    "sources": [
+      {
+        "name": "Chatham House · Africa in 2026: Global uncertainty demands regional leadership",
+        "url": "https://www.chathamhouse.org/2026/01/africa-2026-global-uncertainty-demands-regional-leadership",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Voice of the Cape · South Africa's Political Landscape Faces Tests in 2026",
+        "url": "https://vocfm.co.za/south-africas-political-landscape-faces-tests-in-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "JLog · Import Duty South Africa 2026: SARS Rates & Tariffs (de minimis = 0)",
+        "url": "https://jlog.co.za/guides/import-duty-guide-south-africa-2026/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

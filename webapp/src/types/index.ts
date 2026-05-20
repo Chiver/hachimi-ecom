@@ -76,6 +76,14 @@ export const SourceMetaSchema = z.object({
   source_url: z.string().optional(),
   fetched_at: z.string().optional(),
   confidence: ConfidenceEnum.optional(),
+  /** Verbatim quote from the source PDF / page (when vision-verified). */
+  source_quote: z.string().optional(),
+  /** Publisher of the source (e.g. "Statista Market Insights"). */
+  publisher: z.string().optional(),
+  /** How the value was extracted: "vision (Claude read PDF page as image)" | "text" | etc. */
+  extraction_method: z.string().optional(),
+  /** Free-form caveat the data team wants to surface in tooltips. */
+  warning: z.string().optional(),
 }).passthrough();
 
 export const SourceMetadataMapSchema = z.record(z.string(), SourceMetaSchema);
@@ -319,6 +327,48 @@ export type ChinaSellerDensity = z.infer<typeof ChinaSellerDensitySchema>;
 // 13. Hachimi Scores
 // ============================================================
 
+// ============================================================
+// Geopolitical risk assessment (per country)
+// ============================================================
+
+export const RiskLevelEnum = z.enum(["extreme", "high", "medium", "low"]);
+
+export const RiskFactorTypeEnum = z.enum([
+  "armed_conflict",
+  "sanctions",
+  "trade_policy",
+  "platform_regulation",
+  "currency_volatility",
+  "domestic_unrest",
+  "diplomatic_tension",
+  "supply_chain",
+]);
+
+export const RiskFactorSchema = z.object({
+  type: RiskFactorTypeEnum,
+  title: z.string(),
+  description: z.string(),
+  impact_on_china_sellers: z.string(),
+  severity: SeverityEnum,
+});
+
+export const RiskSourceSchema = z.object({
+  name: z.string(),
+  url: z.string(),
+  fetched_at: z.string(),
+});
+
+export const GeopoliticalRiskSchema = z.object({
+  _assessed_at: z.string(),
+  _assessed_by: z.string(),
+  overall_level: RiskLevelEnum,
+  headline: z.string(),
+  factors: z.array(RiskFactorSchema),
+  entry_recommendation_adjustment: z.string(),
+  sources: z.array(RiskSourceSchema),
+});
+export type GeopoliticalRisk = z.infer<typeof GeopoliticalRiskSchema>;
+
 export const HachimiScoresSchema = z.object({
   _version: z.string(),
   _notes: z.string().optional(),
@@ -381,6 +431,7 @@ export const CountryDataSchema = z.object({
   hachimi_scores: HachimiScoresSchema,
   ai_adaptation_notes: z.object({}).passthrough().optional(),
   cross_border_specific: z.object({}).passthrough().optional(),
+  geopolitical_risk: GeopoliticalRiskSchema.optional(),
   _data_completeness: z.record(z.string(), z.string()).optional(),
 });
 export type CountryData = z.infer<typeof CountryDataSchema>;
@@ -466,3 +517,105 @@ export const LebesgueCpmSchema = z.object({
   by_country: z.record(z.string(), z.number()),
 }).passthrough();
 export type LebesgueCpm = z.infer<typeof LebesgueCpmSchema>;
+
+// ============================================================
+// Category catalog — team alignment / scan-and-learn page
+// ============================================================
+
+export const CatalogSubgroupSchema = z.object({
+  name: z.string(),
+  products: z.array(z.string()),
+});
+
+export const CatalogCategorySchema = z.object({
+  id: z.string(),
+  name_zh: z.string(),
+  name_en: z.string(),
+  icon: z.string().optional(),
+  /** Maps to the 12 Hachimi country-data categories (apparel/beauty/electronics/...) when applicable. */
+  hachimi_category: z.string().nullable().optional(),
+  blurb: z.string().optional(),
+  subgroups: z.array(CatalogSubgroupSchema),
+});
+
+export const CategoryCatalogSchema = z.object({
+  _schema_version: z.string(),
+  _last_updated: z.string(),
+  _notes: z.string().optional(),
+  categories: z.array(CatalogCategorySchema),
+});
+export type CategoryCatalog = z.infer<typeof CategoryCatalogSchema>;
+export type CatalogCategory = z.infer<typeof CatalogCategorySchema>;
+
+// ============================================================
+// ROI calculator benchmarks
+// ============================================================
+
+const TripleSchema = z.object({
+  low: z.number(),
+  median: z.number(),
+  high: z.number(),
+});
+
+export const RoiModeIdEnum = z.enum(["meta_to_dtc", "tiktok_to_dtc", "tiktok_to_shop"]);
+
+export const RoiModeSchema = z.object({
+  id: RoiModeIdEnum,
+  name_zh: z.string(),
+  name_en: z.string(),
+  kind: z.enum(["dtc", "shop"]),
+});
+
+export const RoiRegionSchema = z.object({
+  id: z.string(),
+  name_zh: z.string(),
+  name_en: z.string(),
+  countries: z.array(z.string()),
+  default_vat_pct: z.number(),
+  default_cpm: z.record(z.string(), z.number()),
+  cvr_multiplier: z.number(),
+  ctr_multiplier: z.number(),
+  notes: z.string().optional(),
+});
+
+export const RoiCategorySchema = z.object({
+  id: z.string(),
+  name_zh: z.string(),
+  name_en: z.string(),
+  default_rr_pct: z.number(),
+  confidence: z.string().optional(),
+  cvr: z.record(z.string(), TripleSchema),
+  ctr: z.record(z.string(), TripleSchema),
+});
+
+export const RoiBenchmarksSchema = z.object({
+  _schema_version: z.string(),
+  _last_updated: z.string(),
+  _source_name: z.string(),
+  _source_url: z.string(),
+  _notes: z.string().optional(),
+  modes: z.array(RoiModeSchema),
+  regions: z.array(RoiRegionSchema),
+  categories: z.array(RoiCategorySchema),
+  platform_defaults: z.record(
+    z.string(),
+    z.object({
+      platform_fee_pct: z.number(),
+      platform_fee_label: z.string(),
+      affiliate_pct: z.number(),
+      stripe_fee_usd: z.number(),
+    }),
+  ),
+  health_thresholds: z.object({
+    roi_marginal: z.object({ excellent: z.number(), healthy: z.number(), warning: z.number() }),
+    net_profit_margin: z.object({ excellent: z.number(), healthy: z.number(), warning: z.number() }),
+    roas: z.object({ excellent: z.number(), healthy: z.number(), warning: z.number() }),
+    gross_margin: z.object({ excellent: z.number(), healthy: z.number(), warning: z.number() }),
+    contribution_margin: z.object({ excellent: z.number(), healthy: z.number(), warning: z.number() }),
+  }),
+});
+export type RoiBenchmarks = z.infer<typeof RoiBenchmarksSchema>;
+export type RoiMode = z.infer<typeof RoiModeSchema>;
+export type RoiRegion = z.infer<typeof RoiRegionSchema>;
+export type RoiCategory = z.infer<typeof RoiCategorySchema>;
+export type RoiModeId = z.infer<typeof RoiModeIdEnum>;

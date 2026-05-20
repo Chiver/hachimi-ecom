@@ -1,15 +1,22 @@
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
-import type { Country } from "@/types";
+import type { Country, GeopoliticalRisk } from "@/types";
 import { formatNumber } from "@/lib/utils";
+import { GeopoliticalRiskBadge } from "./GeopoliticalRiskBadge";
 
 type Props = {
   country: Country;
   population?: number | null;
   gdp_usd_billion?: number | null;
+  geopoliticalRisk?: GeopoliticalRisk;
 };
 
-export function CountryHeader({ country, population, gdp_usd_billion }: Props) {
+export function CountryHeader({
+  country,
+  population,
+  gdp_usd_billion,
+  geopoliticalRisk,
+}: Props) {
   return (
     <header className="border-b border-[var(--color-border)] pb-6">
       <Link
@@ -41,6 +48,15 @@ export function CountryHeader({ country, population, gdp_usd_billion }: Props) {
               </span>
             )}
           </div>
+          {geopoliticalRisk && (
+            <div className="mt-2">
+              <GeopoliticalRiskBadge
+                level={geopoliticalRisk.overall_level}
+                headline={geopoliticalRisk.headline}
+                size="md"
+              />
+            </div>
+          )}
         </div>
         <div className="flex gap-2">
           <Link

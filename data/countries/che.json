@@ -684,5 +684,22 @@
       "category_shares": 0,
       "payment_shares": 4
     }
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "非欧盟 + 跨境申报独立；高客单市场",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "VAT 8.1% 欧洲最低之一",
+        "description": "瑞士 VAT 8.1%（欧洲最低之一），跨境申报独立体系；非欧盟成员需单独流程。",
+        "impact_on_china_sellers": "低 VAT 优势 + 高消费力，适合高客单品类；但需单独清关流程。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "瑞士高客单市场（人均 $2,154 电商支出）。Digitec Galaxus + Amazon DE 跨境；TWINT 移动支付必接（瑞士 65% 用户使用）。",
+    "sources": []
   }
 }

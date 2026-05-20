@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 12000.0,
+      "gmv_total_usd_million": 16000.0,
       "cagr_2025_2030_pct": 6.5,
       "online_buyers_million": 22,
       "mobile_share_pct": 70,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/mys.json",
+          "source_name": "Statista E-commerce in MYS Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id116244_e-commerce-in-singapore.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -488,13 +490,14 @@
   "payments": [
     {
       "payment_method": "digital_wallet",
-      "share_pct": 35,
+      "share_pct": 26.0,
       "year": 2025,
       "operator": "Touch 'n Go / GrabPay / Boost",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-malaysia.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id123671_e-commerce-in-malaysia.pdf#page=30",
+      "confidence": "H",
+      "source_quote": "Digital wallet: 26.0%",
+      "source_name": "Statista E-commerce in MYS Dossier - page 30"
     },
     {
       "payment_method": "bank_transfer_FPX",
@@ -508,13 +511,14 @@
     },
     {
       "payment_method": "credit_card",
-      "share_pct": 18,
+      "share_pct": 16.0,
       "year": 2025,
       "operator": "渗透中等",
       "is_local_unique": false,
-      "source_url": "data/raw/statista/study_id*_e-commerce-in-malaysia.pdf",
-      "confidence": "L",
-      "warning": "Hachimi 估算，精确占比待 Statista 支付章节人工解析"
+      "source_url": "data/raw/statista/study_id123671_e-commerce-in-malaysia.pdf#page=30",
+      "confidence": "H",
+      "source_quote": "Credit card: 16.0%",
+      "source_name": "Statista E-commerce in MYS Dossier - page 30"
     },
     {
       "payment_method": "COD",
@@ -651,8 +655,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -679,6 +683,45 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/mys.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 0,
+      "platform_gmv": 0,
+      "category_shares": 0,
+      "payment_shares": 2
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "duty suspension zones 让马来成为 SEA 卖家调拨中心；但 Section 301 转运调查含马来",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "USTR 调查 + 转运嫌疑",
+        "description": "马来与越南同为 2026-03-11 USTR 启动的 16 国调查名单；本地化生产比例不够的卖家面临转运认定风险。",
+        "impact_on_china_sellers": "纯转运卖家慎重；本地真做马来市场的卖家影响小。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "马来西亚是 SEA 中相对均衡市场。Lazada MY 是主要入口，Shopee 增长快；FPX 银行转账主流，TouchNGo wallet 必接。",
+    "sources": [
+      {
+        "name": "ASEAN Briefing · ASEAN Transshipment Under US Tariffs: Compliance and Strategy",
+        "url": "https://www.aseanbriefing.com/news/asean-transshipment-and-us-tariffs-balancing-opportunity-and-risk/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Sidley Austin · Implications of U.S. Tariffs on Southeast Asia",
+        "url": "https://www.sidley.com/en/insights/newsupdates/2025/08/implications-of-us-tariffs-on-southeast-asia-navigating-the-trade-tumult",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

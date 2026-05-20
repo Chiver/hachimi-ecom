@@ -13,6 +13,8 @@ import {
   GlossaryEntrySchema,
   DecisionKnowledgeSchema,
   LebesgueCpmSchema,
+  CategoryCatalogSchema,
+  RoiBenchmarksSchema,
 } from "../src/types";
 
 const ROOT = join(__dirname, "..", "src", "data");
@@ -79,6 +81,30 @@ if (leb) {
   const d = leb as { by_country?: Record<string, unknown> };
   const count = Object.keys(d.by_country ?? {}).length;
   check(`lebesgue-cpm.json (${count} countries)`, LebesgueCpmSchema, leb);
+}
+
+// 5. category-catalog.json
+const catPath = join(ROOT, "category-catalog.json");
+const cat = parseJson(catPath);
+if (cat) {
+  const d = cat as { categories?: unknown[] };
+  check(
+    `category-catalog.json (${d.categories?.length ?? 0} categories)`,
+    CategoryCatalogSchema,
+    cat,
+  );
+}
+
+// 6. roi-benchmarks.json
+const roiPath = join(ROOT, "roi-benchmarks.json");
+const roi = parseJson(roiPath);
+if (roi) {
+  const d = roi as { modes?: unknown[]; regions?: unknown[]; categories?: unknown[] };
+  check(
+    `roi-benchmarks.json (${d.modes?.length ?? 0} modes / ${d.regions?.length ?? 0} regions / ${d.categories?.length ?? 0} categories)`,
+    RoiBenchmarksSchema,
+    roi,
+  );
 }
 
 // 3. countries/*.json

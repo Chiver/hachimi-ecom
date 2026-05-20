@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 100716.0,
+      "gmv_total_usd_million": 96800.0,
       "cagr_2025_2030_pct": 4.98,
       "online_buyers_million": 65,
       "mobile_share_pct": 50,
@@ -70,14 +70,13 @@
       "domestic_share_pct": 67.87,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Statista E-commerce in DEU Dossier - page 4",
-          "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=4",
-          "source_quote": "n B2C e-commerce sector generated around 88.8 billion euros in revenue. For 2025, forecasts predict 92.4 billion euros. As is evident in the timelin",
-          "currency_original": "EUR",
-          "value_original": 92.4,
-          "fx_rate_used": 1.09,
+          "source_name": "Statista E-commerce in DEU Dossier - page 3 (vision-verified)",
+          "source_url": "data/raw/statista/study_id32414_e-commerce-in-germany-statista-dossier.pdf#page=3",
+          "source_quote": "In 2024, the German B2C e-commerce sector generated around 88.8 billion euros in revenue.",
+          "publisher": "HDE (Handelsverband Deutschland)",
           "fetched_at": "2026-05-17",
-          "confidence": "H"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -704,7 +703,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -739,6 +738,50 @@
       "platform_gmv": 3,
       "category_shares": 0,
       "payment_shares": 5
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "欧盟最大单一市场，监管成熟、风险可预测",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "标准 EU 监管 + GPSR / DAC7 / VAT",
+        "description": "德国是 EU 监管最严格的市场之一；GPSR、DAC7、VAT OSS/IOSS 全套适用；UOKiK 等监管机构执法到位。",
+        "impact_on_china_sellers": "合规成本高但稳定；中国卖家通过 Amazon Pan-EU FBA 是主流路径。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "2026-07-01 EU €3 海关费",
+        "description": "EU 启动对 ≤€150 小包征 €3 海关费；Shein / Temu 已大规模转 EU 本地仓应对。",
+        "impact_on_china_sellers": "中国直邮 EU 小件成本上升；强化本地仓必要性。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "德国仍是欧洲 #1 战略市场。Pan-EU FBA 必走；Klarna Invoice / SEPA 支付必接；GPSR + EU RP 提前准备；做好 Q4 旺季配额。",
+    "sources": [
+      {
+        "name": "Suaid Global · Red Sea Shipping Crisis 2026: Impact on Rates, Routes & Your Supply Chain",
+        "url": "https://suaidglobal.com/insights/red-sea-shipping-crisis-2026/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Bloomberg · Shipping Firms Face Tough 2026 as Reopening of Red Sea Looms",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-04/shipping-firms-face-tough-2026-as-reopening-of-red-sea-looms",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "World Bank · The Deepening Red Sea Shipping Crisis: Impacts and Outlook",
+        "url": "https://documents1.worldbank.org/curated/en/099253002102539789/pdf/IDU10b8b59671dbc814cfc19c4a1299ff54854ba.pdf",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

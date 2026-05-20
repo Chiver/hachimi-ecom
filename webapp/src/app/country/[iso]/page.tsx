@@ -73,6 +73,7 @@ export default async function CountryPage({ params }: Props) {
         country={data.country}
         population={macro?.population}
         gdp_usd_billion={macro?.gdp_usd_billion}
+        geopoliticalRisk={data.geopolitical_risk}
       />
 
       <Tabs defaultValue="overview" className="mt-6">

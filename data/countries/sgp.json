@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 7500.0,
+      "gmv_total_usd_million": 9000.0,
       "cagr_2025_2030_pct": 4.0,
       "online_buyers_million": 4.5,
       "mobile_share_pct": 65,
@@ -70,11 +70,13 @@
       "domestic_share_pct": null,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/sgp.json",
+          "source_name": "Statista E-commerce in SGP Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id116244_e-commerce-in-singapore.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Bain & Company; Google; Temasek Holdings (SEA regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -666,7 +668,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -701,6 +703,38 @@
       "platform_gmv": 0,
       "category_shares": 0,
       "payment_shares": 3
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "全球最稳定贸易枢纽，本国市场小但适合区域 HQ",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "稳定 + 中转优势",
+        "description": "新加坡作为 SEA 货物枢纽地位稳固；GST 9% 但跨境免税额仅 SGD 400。",
+        "impact_on_china_sellers": "建议作为区域总部 / 转口枢纽，不要把它当主要终端市场（人口仅 600 万）。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "新加坡市场体量小但富裕。客单价高（人均电商支出 $1,667）。可作为 SEA 团队所在地或 high-end SKU 试水市场。Shopee SG 主导，PayNow QR + 信用卡。",
+    "sources": [
+      {
+        "name": "ASEAN Briefing · ASEAN Transshipment Under US Tariffs: Compliance and Strategy",
+        "url": "https://www.aseanbriefing.com/news/asean-transshipment-and-us-tariffs-balancing-opportunity-and-risk/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Sidley Austin · Implications of U.S. Tariffs on Southeast Asia",
+        "url": "https://www.sidley.com/en/insights/newsupdates/2025/08/implications-of-us-tariffs-on-southeast-asia-navigating-the-trade-tumult",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

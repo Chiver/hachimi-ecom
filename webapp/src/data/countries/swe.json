@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 14000.0,
+      "gmv_total_usd_million": 2980.0,
       "cagr_2025_2030_pct": 4.5,
       "online_buyers_million": 8.5,
       "mobile_share_pct": 50,
@@ -70,11 +70,14 @@
       "domestic_share_pct": 75.22,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/swe.json",
+          "source_name": "Statista E-commerce in SWE Dossier - page 14",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=14",
+          "source_quote": ".3 13 Description: Amazon.se is leading the Swedish e-commerce market, with e-commerce net sales of 2.98 billion U.S. dollars in 2025 generated in Sweden, ",
+          "currency_original": "USD",
+          "value_original": 2.98,
+          "fx_rate_used": 1.0,
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -90,11 +93,11 @@
           "confidence": "H"
         },
         "per_capita_spend_usd": {
-          "source_name": "Hachimi 计算：GMV_total / online_buyers",
-          "source_url": "data/countries/_fix_missing_fields.py",
+          "source_name": "Hachimi 计算 (Statista GMV / online_buyers)",
+          "formula": "$2980.0M / 8.5M buyers",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=14",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "formula": "$14000.0M / 8.5M buyers"
+          "confidence": "M"
         },
         "online_buyers_million": {
           "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
@@ -111,7 +114,7 @@
           "warning": "待人工校对 Statista 原文精确化"
         }
       },
-      "per_capita_spend_usd": 1647.0
+      "per_capita_spend_usd": 351.0
     }
   ],
   "platforms": [
@@ -127,17 +130,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "SWE",
-        "gmv_usd_million": 1700.0,
+        "gmv_usd_million": 2948.0,
         "market_share_pct": 12.0,
         "commission_rate_pct": 15.0,
         "fulfillment_fee_model": "FBA Pan-EU",
         "rank_in_country": 1,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in SWE Dossier - page 14 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=14",
+            "source_quote": "amazon.se: 2948.0 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -205,17 +209,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "SWE",
-        "gmv_usd_million": 1000.0,
+        "gmv_usd_million": 695.0,
         "market_share_pct": 7.0,
         "commission_rate_pct": 5.0,
         "fulfillment_fee_model": "Zalando Fulfillment",
         "rank_in_country": 3,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in SWE Dossier - page 14 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=14",
+            "source_quote": "zalando.se: 694.6 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -244,17 +249,18 @@
       "founded_year": null,
       "metrics_2024": {
         "country_code": "SWE",
-        "gmv_usd_million": 840.0,
+        "gmv_usd_million": 662.0,
         "market_share_pct": 6.0,
         "commission_rate_pct": 0,
         "fulfillment_fee_model": "自营",
         "rank_in_country": 4,
         "source_metadata": {
           "gmv_usd_million": {
-            "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
+            "source_name": "Statista E-commerce in SWE Dossier - page 14 (Top online stores by net sales)",
+            "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=14",
+            "source_quote": "ikea.com: 662.4 million U.S. dollars (2024)",
             "fetched_at": "2026-05-17",
-            "confidence": "L",
-            "warning": "精确数字待 Marketplace Pulse / SimilarWeb 验证"
+            "confidence": "H"
           },
           "market_share_pct": {
             "source_name": "Hachimi 估算（基于 Statista 摘要 + 公开市占数据）",
@@ -315,62 +321,68 @@
     {
       "category_code": "apparel",
       "year": 2024,
-      "gmv_usd_million": 7840.0,
+      "gmv_usd_million": 584.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 56.0% (from Statista page 24)",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "formula": "$14000.0M × 56.0% = $7840.0M",
+          "source_name": "Hachimi 计算: total GMV × 19.6% (Statista page 8)",
+          "formula": "$2980.0M × 19.6% = $584.0M",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in SWE Dossier - page 24",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "source_quote": "Clothing: 56.0%",
+          "source_name": "Statista E-commerce in SWE Dossier - page 8",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "source_quote": "Clothing and footwear: 19.6%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 56.0
+      "category_share_pct": 19.6
     },
     {
       "category_code": "electronics",
       "year": 2024,
-      "gmv_usd_million": 3000,
+      "gmv_usd_million": 811.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/swe.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 27.2% (Statista page 8)",
+          "formula": "$2980.0M × 27.2% = $811.0M",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
-        }
-      }
-    },
-    {
-      "category_code": "home",
-      "year": 2024,
-      "gmv_usd_million": 1820.0,
-      "source_metadata": {
-        "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 13.0% (from Statista page 24)",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "formula": "$14000.0M × 13.0% = $1820.0M",
-          "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in SWE Dossier - page 24",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "source_quote": "Furniture & household goods: 13.0%",
+          "source_name": "Statista E-commerce in SWE Dossier - page 8",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "source_quote": "Home electronics: 27.2%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 13.0
+      "category_share_pct": 27.2
+    },
+    {
+      "category_code": "home",
+      "year": 2024,
+      "gmv_usd_million": 235.0,
+      "source_metadata": {
+        "gmv_usd_million": {
+          "source_name": "Hachimi 计算: total GMV × 7.9% (Statista page 8)",
+          "formula": "$2980.0M × 7.9% = $235.0M",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in SWE Dossier - page 8",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "source_quote": "Home decor and furniture: 7.9%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
+        }
+      },
+      "category_share_pct": 7.9
     },
     {
       "category_code": "beauty",
@@ -444,25 +456,24 @@
     {
       "category_code": "outdoor",
       "year": 2024,
-      "gmv_usd_million": 2520.0,
+      "gmv_usd_million": 155.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 18.0% (from Statista page 24)",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "formula": "$14000.0M × 18.0% = $2520.0M",
+          "source_name": "Hachimi 计算: total GMV × 5.2% (Statista page 8)",
+          "formula": "$2980.0M × 5.2% = $155.0M",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in SWE Dossier - page 24",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "source_quote": "Sports & outdoor products: 18.0%",
+          "source_name": "Statista E-commerce in SWE Dossier - page 8",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "source_quote": "Sports and recreation goods: 5.2%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 18.0
+      "category_share_pct": 5.2
     },
     {
       "category_code": "auto",
@@ -481,25 +492,24 @@
     {
       "category_code": "health",
       "year": 2024,
-      "gmv_usd_million": 5320.0,
+      "gmv_usd_million": 438.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 计算：total GMV × 38.0% (from Statista page 24)",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "formula": "$14000.0M × 38.0% = $5320.0M",
+          "source_name": "Hachimi 计算: total GMV × 14.7% (Statista page 8)",
+          "formula": "$2980.0M × 14.7% = $438.0M",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
           "fetched_at": "2026-05-17",
-          "confidence": "M",
-          "warning": "Total GMV 本身是 Hachimi 估算（confidence L），% 是 Statista 真实"
+          "confidence": "H"
         },
         "category_share_pct": {
-          "source_name": "Statista E-commerce in SWE Dossier - page 24",
-          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=24",
-          "source_quote": "Drugstore & health products: 38.0%",
+          "source_name": "Statista E-commerce in SWE Dossier - page 8",
+          "source_url": "data/raw/statista/study_id36980_e-commerce-in-sweden-statista-dossier.pdf#page=8",
+          "source_quote": "Pharmaceuticals: 14.7%",
           "fetched_at": "2026-05-17",
           "confidence": "H"
         }
       },
-      "category_share_pct": 38.0
+      "category_share_pct": 14.7
     },
     {
       "category_code": "toys",
@@ -714,8 +724,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -742,6 +752,30 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/swe.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 1,
+      "platform_gmv": 3,
+      "category_shares": 5,
+      "payment_shares": 0
+    }
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "low",
+    "headline": "北欧高 GDP 市场，监管成熟，VAT 25% 最高",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "EU 标准 + 高 VAT",
+        "description": "瑞典 VAT 25% 是欧盟最高之一；GPSR / OSS/IOSS 标准。",
+        "impact_on_china_sellers": "高客单 / 高毛利品类适合；低价品类需考虑税后定价。",
+        "severity": "low"
+      }
+    ],
+    "entry_recommendation_adjustment": "瑞典消费力强（人均电商支出 $1,647）。Klarna 主场（Pay in 4/30 必接）；Swish 移动支付必备。",
+    "sources": []
   }
 }

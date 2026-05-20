@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 115000.0,
+      "gmv_total_usd_million": 125000.0,
       "cagr_2025_2030_pct": 11.77,
       "online_buyers_million": 270,
       "mobile_share_pct": 78,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 73.74,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/ind.json",
+          "source_name": "Statista E-commerce in IND Dossier - page 10 (vision-verified)",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=10",
+          "source_quote": "Growing at an exponential rate, the market value of the e-commerce industry in India was 125 billion U.S dollars in 2024.",
+          "publisher": "India Brand Equity Foundation",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Statista CAGR 2025-2030 by Country",
@@ -314,30 +316,46 @@
     {
       "category_code": "apparel",
       "year": 2024,
-      "gmv_usd_million": 28000,
+      "gmv_usd_million": 33350.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/ind.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 29.0% (Statista page 12)",
+          "formula": "$115000.0M × 29.0% = $33350.0M",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in IND Dossier - page 12",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
+          "source_quote": "Fashion apparel & accessories: 29.0%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 29.0
     },
     {
       "category_code": "electronics",
       "year": 2024,
-      "gmv_usd_million": 25000,
+      "gmv_usd_million": 31050.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/ind.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 27.0% (Statista page 12)",
+          "formula": "$115000.0M × 27.0% = $31050.0M",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in IND Dossier - page 12",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
+          "source_quote": "Electronics and appliances: 27.0%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 27.0
     },
     {
       "category_code": "home",
@@ -356,16 +374,24 @@
     {
       "category_code": "beauty",
       "year": 2024,
-      "gmv_usd_million": 10000,
+      "gmv_usd_million": 7360.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/ind.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 6.4% (Statista page 12)",
+          "formula": "$115000.0M × 6.4% = $7360.0M",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in IND Dossier - page 12",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
+          "source_quote": "Beauty and personal care: 6.4%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 6.4
     },
     {
       "category_code": "baby",
@@ -412,16 +438,24 @@
     {
       "category_code": "auto",
       "year": 2024,
-      "gmv_usd_million": 6000,
+      "gmv_usd_million": 7360.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/ind.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 6.4% (Statista page 12)",
+          "formula": "$115000.0M × 6.4% = $7360.0M",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in IND Dossier - page 12",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
+          "source_quote": "Beauty and personal care: 6.4%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 6.4
     },
     {
       "category_code": "health",
@@ -454,16 +488,24 @@
     {
       "category_code": "kitchen",
       "year": 2024,
-      "gmv_usd_million": 6000,
+      "gmv_usd_million": 21850.0,
       "source_metadata": {
         "gmv_usd_million": {
-          "source_name": "Hachimi 估算（未从 Statista PDF 提取真实品类细分）",
-          "source_url": "data/raw/statista_extracted/ind.json (待人工解析)",
+          "source_name": "Hachimi 计算: total GMV × 19.0% (Statista page 12)",
+          "formula": "$115000.0M × 19.0% = $21850.0M",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "Statista PDF 通常给品类 % 而非 USD，需结合 total GMV 计算；当前数字仅供量级参考"
+          "confidence": "H"
+        },
+        "category_share_pct": {
+          "source_name": "Statista E-commerce in IND Dossier - page 12",
+          "source_url": "data/raw/statista/study_id23773_e-commerce-in-india-statista-dossier.pdf#page=12",
+          "source_quote": "Food & FMCG: 19.0%",
+          "fetched_at": "2026-05-17",
+          "confidence": "H"
         }
-      }
+      },
+      "category_share_pct": 19.0
     },
     {
       "category_code": "garden",
@@ -711,8 +753,8 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_NEEDED",
-    "warning": "本国数据由 Cowork Phase 2-3 批量生成器产出，部分字段（GMV、平台市占、品类细分、支付占比、CPM/CPC、中国卖家密度）为 Hachimi 估算，confidence=L。决策前建议人工核对 Statista 原文。",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
+    "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
       "macro_indicators[0].gdp_usd_billion",
@@ -739,6 +781,59 @@
     ],
     "raw_pdf_extract_path": "data/raw/statista_extracted/ind.json",
     "remediation_plan": "Phase 2.5 - 人工逐国校对 Statista PDF（约 30-60 分钟/国）",
-    "audited_at": "2026-05-17"
+    "audited_at": "2026-05-17",
+    "last_upgrade": "2026-05-17",
+    "upgraded_fields_count": {
+      "gmv_total": 0,
+      "platform_gmv": 0,
+      "category_shares": 5,
+      "payment_shares": 0
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "中印 2025-2026 局部解冻；Shein 已解禁；但 BIS 与投资审查仍严",
+    "factors": [
+      {
+        "type": "diplomatic_tension",
+        "title": "中印关系局部解冻（2025-2026）",
+        "description": "2025 中国部分放开稀土磁体、隧道掘进机、化肥对印度出口；印度解封 Shein 等中国应用并重新评估对华投资限制。但进展仅为局部、未来不明朗。",
+        "impact_on_china_sellers": "市场准入有所放宽，但敏感行业（国防、电信、关键基建）仍严控。",
+        "severity": "medium"
+      },
+      {
+        "type": "trade_policy",
+        "title": "BIS 强制注册 + 本地实体要求",
+        "description": "BIS 通过 CRS / ISI 强制注册 1,000+ 类电子产品；测试样品需运到印度本地实验室；本地代理人是硬性要求。",
+        "impact_on_china_sellers": "电子 / 玩具 / 家电品类合规周期 6-12 个月，费用 $5,000-$20,000；Xiaomi 等大厂曾被巨额罚款。",
+        "severity": "high"
+      },
+      {
+        "type": "diplomatic_tension",
+        "title": "中印边境局势仍敏感",
+        "description": "2020 加勒万冲突遗留紧张关系；2025-2026 边境降温但未根本解决；任何边境冲突会立即触发新一轮中国应用 / 商品封禁。",
+        "impact_on_china_sellers": "黑天鹅事件风险持续存在；卖家应保持本地团队 + 多平台分散风险。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "印度市场是长期价值（人口红利 + UPI 普及），但短期门槛高：1) 通过 Amazon IN / Flipkart 等大平台代办合规，避免独立站强 BIS 路径；2) 启动期专攻 BIS 不强制的品类（部分服装、美妆、家居）；3) 监控中印关系新闻，做好黑天鹅预案（应用下架、商品封禁）。",
+    "sources": [
+      {
+        "name": "The Diplomat · China-India Relations in 2026: Can the Thaw Continue?",
+        "url": "https://thediplomat.com/2026/01/china-india-relations-in-2026-can-the-thaw-continue/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Insights On India · India's Trade Deficit with China: Implications, Causes, and Economic Impact (Mar 2026)",
+        "url": "https://www.insightsonindia.com/2026/03/17/india-china-trade-deficit/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

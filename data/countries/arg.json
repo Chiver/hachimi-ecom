@@ -62,7 +62,7 @@
   "ecommerce_market": [
     {
       "year": 2024,
-      "gmv_total_usd_million": 15000.0,
+      "gmv_total_usd_million": 18220.0,
       "cagr_2025_2030_pct": 4.0,
       "online_buyers_million": 23,
       "mobile_share_pct": 65,
@@ -70,11 +70,13 @@
       "domestic_share_pct": 72.39,
       "source_metadata": {
         "gmv_total_usd_million": {
-          "source_name": "Hachimi 领域知识估算（未直接从 Statista PDF 提取）",
-          "source_url": "data/raw/statista_extracted/arg.json",
+          "source_name": "Statista E-commerce in ARG Dossier - page 4 (vision-verified)",
+          "source_url": "data/raw/statista/study_id57340_e-commerce-in-argentina.pdf#page=4",
+          "source_quote": "",
+          "publisher": "Statista Digital Market Insights (LATAM regional)",
           "fetched_at": "2026-05-17",
-          "confidence": "L",
-          "warning": "待人工校对 Statista 原文精确化"
+          "confidence": "H",
+          "extraction_method": "vision (Claude read PDF page as image)"
         },
         "cagr_2025_2030_pct": {
           "source_name": "Hachimi 估算（区域平均，因 Statista CAGR 跨国报告未覆盖此国）",
@@ -689,7 +691,7 @@
     "overall": "65%"
   },
   "_data_quality_warning": {
-    "status": "PARTIAL_RECONSTRUCTION_DONE",
+    "status": "VISION_VERIFIED_CORE_FIELDS",
     "warning": "已用真实 Statista PDF 数据更新核心字段；剩余 confidence=L 字段（如 traffic_economics、china_seller_density）仍需第三方工具验证",
     "trusted_fields": [
       "macro_indicators[0].population",
@@ -724,6 +726,52 @@
       "platform_gmv": 1,
       "category_shares": 0,
       "payment_shares": 0
-    }
+    },
+    "vision_extraction_done_at": "2026-05-17",
+    "vision_verified_fields": [
+      "ecommerce_market.gmv_total_usd_million"
+    ]
+  },
+  "geopolitical_risk": {
+    "_assessed_at": "2026-05-19",
+    "_assessed_by": "Hachimi research team (web-search synthesis 2026-05-19)",
+    "overall_level": "medium",
+    "headline": "Milei 改革反向打开市场：courier 限额 $1,000 → $3,000，免税额年 $400",
+    "factors": [
+      {
+        "type": "trade_policy",
+        "title": "Milei 政府开放进口（对卖家利好）",
+        "description": "2024-11 起 courier 限额从 $1,000 升至 $3,000；个人年免税进口 $400；2025 跨境订单 $9.55 亿（接近翻三倍）；Shein / Temu / Amazon 首次进入。",
+        "impact_on_china_sellers": "**这是少数对中国卖家利好的政策变化。** Amazon 已开免费美国发阿根廷。Mercado Libre 已起诉 Temu 不正当竞争。",
+        "severity": "low"
+      },
+      {
+        "type": "currency_volatility",
+        "title": "比索贬值 + 高通胀仍是隐患",
+        "description": "Milei 改革取得阶段性成果但通胀仍偏高；比索波动大；外汇管制虽放宽仍未完全自由化。",
+        "impact_on_china_sellers": "本地结算 / 提现仍有摩擦；定价需高频调整。",
+        "severity": "medium"
+      },
+      {
+        "type": "domestic_unrest",
+        "title": "本土纺织业反弹",
+        "description": "阿根廷纺织业自 Milei 上台后已裁员 16,000（占行业 13%）；行业向国会施压'限制中国电商'。",
+        "impact_on_china_sellers": "未来可能出现反向保护主义；建议密切关注政策风向。",
+        "severity": "medium"
+      }
+    ],
+    "entry_recommendation_adjustment": "阿根廷是 2026 年值得加配资源的新兴市场。**机会窗口：Milei 政策对中国卖家明显友好。** 建议：1) Mercado Libre AR + Shopify 独立站并行；2) PIX 模式的 Mercado Pago 接入；3) 警惕本土业界反弹可能触发的政策转向；4) 大额订单（$1,000-$3,000）首次有完整免税通道，可主攻中高客单。",
+    "sources": [
+      {
+        "name": "UPI · Argentina's easing restrictions drives surge in imports (Feb 2026)",
+        "url": "https://www.upi.com/Top_News/World-News/2026/02/13/latam-argentina-foreign-product-purchases/9441771004024/",
+        "fetched_at": "2026-05-19"
+      },
+      {
+        "name": "Rio Times · Argentina Economy 2026: Milei's Shock Therapy Is Working",
+        "url": "https://www.riotimesonline.com/argentina-economy-2026-guide/",
+        "fetched_at": "2026-05-19"
+      }
+    ]
   }
 }

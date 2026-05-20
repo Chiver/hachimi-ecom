@@ -5,12 +5,16 @@ import {
   GlossaryEntrySchema,
   DecisionKnowledgeSchema,
   LebesgueCpmSchema,
+  CategoryCatalogSchema,
+  RoiBenchmarksSchema,
   type Country,
   type CountryData,
   type GlossaryEntry,
   type PolicyEvent,
   type DecisionKnowledge,
   type LebesgueCpm,
+  type CategoryCatalog,
+  type RoiBenchmarks,
   type PaymentInfo,
   type CarrierInfo,
   type WarehouseInfo,
@@ -20,6 +24,8 @@ import countriesMetaRaw from "@/data/countries-meta.json";
 import glossaryRaw from "@/data/glossary.json";
 import decisionKnowledgeRaw from "@/data/decision-knowledge.json";
 import lebesgueCpmRaw from "@/data/lebesgue-cpm.json";
+import categoryCatalogRaw from "@/data/category-catalog.json";
+import roiBenchmarksRaw from "@/data/roi-benchmarks.json";
 
 // Statically import every country JSON. Add a line per country as data ships.
 // 32 countries (Phase 1 batch — May 2026).
@@ -230,6 +236,32 @@ export function getLebesgueMetaCpm(iso: string): LebesgueCpmEntry | null {
 
 export function getLebesgueMetadata(): LebesgueCpm {
   return loadLebesgueCpm();
+}
+
+let _validatedRoi: RoiBenchmarks | null = null;
+export function getRoiBenchmarks(): RoiBenchmarks {
+  if (_validatedRoi) return _validatedRoi;
+  try {
+    _validatedRoi = RoiBenchmarksSchema.parse(roiBenchmarksRaw);
+    return _validatedRoi;
+  } catch (err) {
+    throw new Error(
+      `[data] roi-benchmarks.json failed Zod validation: ${err instanceof Error ? err.message : String(err)}`,
+    );
+  }
+}
+
+let _validatedCatalog: CategoryCatalog | null = null;
+export function getCategoryCatalog(): CategoryCatalog {
+  if (_validatedCatalog) return _validatedCatalog;
+  try {
+    _validatedCatalog = CategoryCatalogSchema.parse(categoryCatalogRaw);
+    return _validatedCatalog;
+  } catch (err) {
+    throw new Error(
+      `[data] category-catalog.json failed Zod validation: ${err instanceof Error ? err.message : String(err)}`,
+    );
+  }
 }
 
 export type PolicyEventWithCountry = PolicyEvent & { source_country: string };
