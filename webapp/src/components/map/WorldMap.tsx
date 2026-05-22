@@ -38,6 +38,9 @@ const LABEL_POINT_OVERRIDES: Record<string, [number, number]> = {
   ARE: [55.5, 23.0], // UAE → nudged off the Gulf coast
 };
 
+/** 主攻/优先国家 — 在其数值标签位置上方打金色星号标记。 */
+const STAR_ISOS = ["USA", "CAN", "GBR", "AUS", "JPN", "SGP"];
+
 type Props = {
   countries: Country[];
   scores: Record<string, CountryScoreSummary>;
@@ -261,6 +264,37 @@ export function WorldMap({ countries, scores }: Props) {
                 "text-halo-color": "rgba(8,12,24,0.92)",
                 "text-halo-width": 1.3,
                 "text-halo-blur": 0.3,
+              }}
+            />
+            {/* 主攻国家金色星号 — 固定显示在数值标签正上方 */}
+            <Layer
+              id="country-star"
+              type="symbol"
+              filter={["in", ["get", "iso_a3"], ["literal", STAR_ISOS]]}
+              layout={{
+                "symbol-placement": "point",
+                "text-field": "★",
+                "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+                "text-size": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  1,
+                  10,
+                  3,
+                  14,
+                  5,
+                  18,
+                ] as unknown as number,
+                "text-offset": [0, -1.1],
+                "text-allow-overlap": true,
+                "text-ignore-placement": true,
+                "text-padding": 0,
+              }}
+              paint={{
+                "text-color": "#fbbf24",
+                "text-halo-color": "rgba(8,12,24,0.92)",
+                "text-halo-width": 1.2,
               }}
             />
           </Source>

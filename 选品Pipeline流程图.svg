@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1700 1300" xmlns="http://www.w3.org/2000/svg"
+     style="font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'Noto Sans CJK SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6"
+            markerUnits="strokeWidth" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M 0,0 L 12,6 L 0,12 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="9" refY="5"
+            markerUnits="strokeWidth" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0,0 L 10,5 L 0,10 z" fill="#94A3B8"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1700" height="1300" fill="#FAFBFC"/>
+
+  <!-- =============== TITLE =============== -->
+  <text x="850" y="50" text-anchor="middle" font-size="32" font-weight="700" fill="#0F3354">Hachimi 选品 Pipeline</text>
+  <text x="850" y="78" text-anchor="middle" font-size="14" fill="#64748B">数据驱动的品牌化选品流程 — 从流量信号到 ROI 测算的端到端 Agent 链路</text>
+
+  <!-- Pipeline phase labels (top of columns) -->
+  <text x="175"  y="115" text-anchor="middle" font-size="11" fill="#94A3B8" font-weight="600">— PHASE 1 —</text>
+  <text x="495"  y="115" text-anchor="middle" font-size="11" fill="#94A3B8" font-weight="600">— PHASE 2 —</text>
+  <text x="815"  y="115" text-anchor="middle" font-size="11" fill="#94A3B8" font-weight="600">— PHASE 3 —</text>
+  <text x="1135" y="115" text-anchor="middle" font-size="11" fill="#94A3B8" font-weight="600">— PHASE 4 —</text>
+  <text x="1455" y="115" text-anchor="middle" font-size="11" fill="#94A3B8" font-weight="600">— PHASE 5 —</text>
+
+  <!-- =============== STAGE 1: 市场扫描 =============== -->
+  <g transform="translate(30, 130)" filter="url(#shadow)">
+    <rect width="290" height="620" rx="14" fill="#EBF5FF" stroke="#3B82F6" stroke-width="2"/>
+    <circle cx="40" cy="42" r="22" fill="#3B82F6"/>
+    <text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="white">1</text>
+    <text x="78" y="40" font-size="20" font-weight="700" fill="#1E40AF">市场扫描</text>
+    <text x="78" y="60" font-size="12" fill="#64748B">初步评估热推产品</text>
+
+    <!-- Step 1a -->
+    <rect x="18" y="92" width="254" height="105" rx="8" fill="white" stroke="#93C5FD" stroke-width="1.2"/>
+    <text x="30" y="115" font-size="13" font-weight="700" fill="#1E40AF">a) Agent 大批量扫描</text>
+    <text x="30" y="138" font-size="11" fill="#475569">▸ TikTok Ads Library</text>
+    <text x="30" y="158" font-size="11" fill="#475569">▸ Meta Ad Library</text>
+    <text x="30" y="178" font-size="11" fill="#475569">▸ 视频 / 文案 / 落地页</text>
+
+    <!-- Step 1b -->
+    <rect x="18" y="210" width="254" height="135" rx="8" fill="white" stroke="#93C5FD" stroke-width="1.2"/>
+    <text x="30" y="233" font-size="13" font-weight="700" fill="#1E40AF">b) 核心评估维度</text>
+    <text x="30" y="256" font-size="11" fill="#475569">▸ 投放时长 (Duration)</text>
+    <text x="30" y="276" font-size="11" fill="#475569">▸ 变种数量 (Variants)</text>
+    <text x="30" y="296" font-size="11" fill="#475569">▸ Engagement (互动率)</text>
+    <text x="30" y="316" font-size="11" fill="#475569">▸ 估算销售额</text>
+    <text x="30" y="336" font-size="10" fill="#94A3B8" font-style="italic">⤷ 切片分析 + 自动打分</text>
+
+    <!-- Insight callout -->
+    <rect x="18" y="370" width="254" height="115" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="30" y="393" font-size="12" font-weight="700" fill="#92400E">💡 信号读取逻辑</text>
+    <text x="30" y="416" font-size="11" fill="#78350F">长投放 + 多变种 + 高互动</text>
+    <text x="30" y="436" font-size="11" fill="#78350F" font-weight="700">= 这个广告一定在赚钱</text>
+    <text x="30" y="459" font-size="10" fill="#92400E" font-style="italic">广告不赚就不会持续投放</text>
+    <text x="30" y="473" font-size="10" fill="#92400E" font-style="italic">→ 这是最可靠的市场信号</text>
+
+    <!-- Output label -->
+    <rect x="18" y="510" width="254" height="90" rx="8" fill="#3B82F6"/>
+    <text x="30" y="533" font-size="12" font-weight="700" fill="white">OUTPUT</text>
+    <text x="30" y="557" font-size="11" fill="white">→ 候选品池 (1000+ SKU)</text>
+    <text x="30" y="577" font-size="11" fill="white">→ 每个品附带原始投放数据</text>
+    <text x="30" y="592" font-size="10" fill="#DBEAFE" font-style="italic">含视频素材/文案/落地页</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="324" y1="440" x2="346" y2="440" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- =============== STAGE 2: 趋势分析 =============== -->
+  <g transform="translate(350, 130)" filter="url(#shadow)">
+    <rect width="290" height="620" rx="14" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+    <circle cx="40" cy="42" r="22" fill="#6366F1"/>
+    <text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="white">2</text>
+    <text x="78" y="40" font-size="20" font-weight="700" fill="#3730A3">趋势分析</text>
+    <text x="78" y="60" font-size="12" fill="#64748B">数据建模与销售估算</text>
+
+    <!-- Step 2a -->
+    <rect x="18" y="92" width="254" height="105" rx="8" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="30" y="115" font-size="13" font-weight="700" fill="#3730A3">a) DTC 网站流量分析</text>
+    <text x="30" y="138" font-size="11" fill="#475569">▸ SimilarWeb / 自爬流量</text>
+    <text x="30" y="158" font-size="11" fill="#475569">▸ × 行业 CVR Benchmark</text>
+    <text x="30" y="178" font-size="11" fill="#475569" font-weight="700">→ 估算月销售额</text>
+
+    <!-- Step 2b -->
+    <rect x="18" y="210" width="254" height="115" rx="8" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="30" y="233" font-size="13" font-weight="700" fill="#3730A3">b) Amazon 销量对标</text>
+    <text x="30" y="256" font-size="11" fill="#475569">▸ 有同款 → 直接拉销量</text>
+    <text x="30" y="276" font-size="11" fill="#475569">▸ 无同款 → 同类竞品</text>
+    <text x="30" y="296" font-size="11" fill="#475569">  (价格 + 销量 + 评论)</text>
+    <text x="30" y="316" font-size="10" fill="#94A3B8" font-style="italic">⤷ 卖家精灵作为辅助校验</text>
+
+    <!-- Step 2c -->
+    <rect x="18" y="338" width="254" height="100" rx="8" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="30" y="361" font-size="13" font-weight="700" fill="#3730A3">c) ROI 测算与筛选</text>
+    <text x="30" y="384" font-size="11" fill="#475569">▸ 综合投产比</text>
+    <text x="30" y="404" font-size="11" fill="#475569">▸ 趋势性评分</text>
+    <text x="30" y="424" font-size="11" fill="#475569">▸ 差异化潜质评分</text>
+
+    <!-- Insight callout -->
+    <rect x="18" y="453" width="254" height="100" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="30" y="475" font-size="12" font-weight="700" fill="#92400E">💡 因果 vs 顺势</text>
+    <text x="30" y="498" font-size="11" fill="#78350F">▸ 因果：研究为什么爆</text>
+    <text x="30" y="514" font-size="10" fill="#78350F" font-style="italic">  (Labubu 效应？营销事件？)</text>
+    <text x="30" y="531" font-size="11" fill="#78350F">▸ 顺势：直接跟流量</text>
+    <text x="30" y="547" font-size="10" fill="#78350F" font-style="italic">  (赚快钱，但红利期短)</text>
+
+    <!-- Output -->
+    <rect x="18" y="568" width="254" height="40" rx="8" fill="#6366F1"/>
+    <text x="30" y="588" font-size="11" font-weight="700" fill="white">OUTPUT  →  入库候选品 (~100 SKU)</text>
+    <text x="30" y="601" font-size="10" fill="#C7D2FE">附带销量预估 + 趋势评分</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="644" y1="440" x2="666" y2="440" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- =============== STAGE 3: 品牌化定制 =============== -->
+  <g transform="translate(670, 130)" filter="url(#shadow)">
+    <rect width="290" height="620" rx="14" fill="#F3E8FF" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="40" cy="42" r="22" fill="#A855F7"/>
+    <text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="white">3</text>
+    <text x="78" y="40" font-size="20" font-weight="700" fill="#6B21A8">品牌化定制</text>
+    <text x="78" y="60" font-size="12" fill="#64748B">变种开发 + 视觉资产</text>
+
+    <!-- Step 3a -->
+    <rect x="18" y="92" width="254" height="95" rx="8" fill="white" stroke="#D8B4FE" stroke-width="1.2"/>
+    <text x="30" y="115" font-size="13" font-weight="700" fill="#6B21A8">a) Agent 思考变种</text>
+    <text x="30" y="138" font-size="11" fill="#475569">基于核心原则：</text>
+    <text x="30" y="158" font-size="11" fill="#475569">▸ 不可复制 (Uncopyable)</text>
+    <text x="30" y="178" font-size="11" fill="#475569">▸ 品牌壁垒 (Brand Moat)</text>
+
+    <!-- Step 3b - case study -->
+    <rect x="18" y="200" width="254" height="115" rx="8" fill="#FAF5FF" stroke="#A855F7" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="30" y="222" font-size="13" font-weight="700" fill="#6B21A8">b) 案例：氛围灯</text>
+    <text x="30" y="245" font-size="11" fill="#475569">原品：纸质外壳 (标品)</text>
+    <text x="142" y="262" text-anchor="middle" font-size="14" fill="#A855F7" font-weight="700">↓</text>
+    <text x="30" y="282" font-size="11" fill="#6B21A8" font-weight="700">改造：玻璃质感外壳</text>
+    <text x="30" y="300" font-size="10" fill="#94A3B8" font-style="italic">提升溢价 + 爆品潜质</text>
+
+    <!-- Step 3c -->
+    <rect x="18" y="330" width="254" height="105" rx="8" fill="white" stroke="#D8B4FE" stroke-width="1.2"/>
+    <text x="30" y="353" font-size="13" font-weight="700" fill="#6B21A8">c) Agent 生成视觉</text>
+    <text x="30" y="376" font-size="11" fill="#475569">▸ AI 效果图 (Renders)</text>
+    <text x="30" y="396" font-size="11" fill="#475569">▸ 白底图 (Product shots)</text>
+    <text x="30" y="416" font-size="11" fill="#475569">▸ 多变种 (Variations)</text>
+
+    <!-- Step 3d -->
+    <rect x="18" y="448" width="254" height="105" rx="8" fill="white" stroke="#D8B4FE" stroke-width="1.2"/>
+    <text x="30" y="471" font-size="13" font-weight="700" fill="#6B21A8">d) 团队迭代交付</text>
+    <text x="30" y="492" font-size="11" fill="#475569">完整方案包括：</text>
+    <text x="30" y="510" font-size="11" fill="#475569">▸ 品牌叙事</text>
+    <text x="30" y="528" font-size="11" fill="#475569">▸ 数据支持</text>
+    <text x="30" y="546" font-size="11" fill="#475569">▸ 视觉呈现</text>
+
+    <!-- Output -->
+    <rect x="18" y="568" width="254" height="40" rx="8" fill="#A855F7"/>
+    <text x="30" y="588" font-size="11" font-weight="700" fill="white">OUTPUT  →  完整产品方案</text>
+    <text x="30" y="601" font-size="10" fill="#F3E8FF">差异化变种 + 视觉 + 叙事</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="964" y1="440" x2="986" y2="440" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- =============== STAGE 4: 决策与供应链 =============== -->
+  <g transform="translate(990, 130)" filter="url(#shadow)">
+    <rect width="290" height="620" rx="14" fill="#FCE7F3" stroke="#EC4899" stroke-width="2"/>
+    <circle cx="40" cy="42" r="22" fill="#EC4899"/>
+    <text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="white">4</text>
+    <text x="78" y="40" font-size="20" font-weight="700" fill="#9F1239">决策 + 供应链</text>
+    <text x="78" y="60" font-size="12" fill="#64748B">模块化拆解 + 寻源</text>
+
+    <!-- Decision diamond -->
+    <polygon points="145,90 215,130 145,170 75,130" fill="white" stroke="#EC4899" stroke-width="1.5"/>
+    <text x="145" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#9F1239">决策团队</text>
+    <text x="145" y="143" text-anchor="middle" font-size="12" font-weight="700" fill="#9F1239">评估</text>
+
+    <!-- Pass arrow -->
+    <text x="225" y="135" font-size="11" fill="#10B981" font-weight="700">通过 ↓</text>
+
+    <!-- Step 4b -->
+    <rect x="18" y="190" width="254" height="120" rx="8" fill="white" stroke="#F9A8D4" stroke-width="1.2"/>
+    <text x="30" y="213" font-size="13" font-weight="700" fill="#9F1239">b) 模块化拆解</text>
+    <text x="30" y="234" font-size="11" fill="#475569">以氛围灯为例：</text>
+    <text x="30" y="252" font-size="11" fill="#475569">▸ 底座 (木材厂切)</text>
+    <text x="30" y="270" font-size="11" fill="#475569">▸ 支柱 (金属/塑料)</text>
+    <text x="30" y="288" font-size="11" fill="#475569">▸ 玻璃板 (玻璃厂切)</text>
+    <text x="30" y="306" font-size="11" fill="#475569">▸ 灯泡 (标品)</text>
+
+    <!-- Step 4c -->
+    <rect x="18" y="324" width="254" height="95" rx="8" fill="white" stroke="#F9A8D4" stroke-width="1.2"/>
+    <text x="30" y="347" font-size="13" font-weight="700" fill="#9F1239">c) 自动化寻源</text>
+    <text x="30" y="368" font-size="11" fill="#475569">▸ Agent 搜 1688/阿里巴巴</text>
+    <text x="30" y="388" font-size="11" fill="#475569">▸ 按 MOQ 100 件核算</text>
+    <text x="30" y="408" font-size="11" fill="#475569">▸ 原材料 + 组装 + 包装</text>
+
+    <!-- Insight callout: 组装模式 -->
+    <rect x="18" y="437" width="254" height="115" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="30" y="459" font-size="12" font-weight="700" fill="#92400E">💡 组装模式 (关键创新)</text>
+    <text x="30" y="481" font-size="11" fill="#78350F">弃用开模 (10万+ 重资产)</text>
+    <text x="30" y="499" font-size="11" fill="#78350F">改用零配件组装</text>
+    <text x="30" y="519" font-size="11" fill="#78350F" font-weight="700">→ 成本 +5元</text>
+    <text x="30" y="537" font-size="11" fill="#78350F" font-weight="700">→ 差异化 +∞</text>
+
+    <!-- Output -->
+    <rect x="18" y="568" width="254" height="40" rx="8" fill="#EC4899"/>
+    <text x="30" y="588" font-size="11" font-weight="700" fill="white">OUTPUT  →  完整 BOM 表</text>
+    <text x="30" y="601" font-size="10" fill="#FCE7F3">含每模块供应商 + 单价</text>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <line x1="1284" y1="440" x2="1306" y2="440" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- =============== STAGE 5: 财务预测 =============== -->
+  <g transform="translate(1310, 130)" filter="url(#shadow)">
+    <rect width="290" height="620" rx="14" fill="#FFEDD5" stroke="#F97316" stroke-width="2"/>
+    <circle cx="40" cy="42" r="22" fill="#F97316"/>
+    <text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="white">5</text>
+    <text x="78" y="40" font-size="20" font-weight="700" fill="#9A3412">财务预测</text>
+    <text x="78" y="60" font-size="12" fill="#64748B">盈利分析与决策</text>
+
+    <!-- Step 5a -->
+    <rect x="18" y="92" width="254" height="125" rx="8" fill="white" stroke="#FDBA74" stroke-width="1.2"/>
+    <text x="30" y="115" font-size="13" font-weight="700" fill="#9A3412">a) 出厂价 + 物流</text>
+    <text x="30" y="138" font-size="11" fill="#475569">▸ Stage 4 BOM 累加</text>
+    <text x="30" y="158" font-size="11" fill="#475569">▸ 海运 / 空运 / 快递</text>
+    <text x="30" y="178" font-size="11" fill="#475569">▸ 关税 + VAT (按目的国)</text>
+    <text x="30" y="198" font-size="11" fill="#475569">▸ 退货损耗 (按目的国)</text>
+
+    <!-- Step 5b -->
+    <rect x="18" y="230" width="254" height="170" rx="8" fill="white" stroke="#FDBA74" stroke-width="1.2"/>
+    <text x="30" y="253" font-size="13" font-weight="700" fill="#9A3412">b) 全链路 ROI 模型</text>
+    <text x="30" y="276" font-size="11" fill="#475569">前端 (Stage 1-2):</text>
+    <text x="40" y="294" font-size="11" fill="#475569">CPM × CTR × CVR × AOV</text>
+    <text x="30" y="316" font-size="11" fill="#475569">后端 (Stage 4):</text>
+    <text x="40" y="334" font-size="11" fill="#475569">出厂价 + 物流 + 仓储</text>
+    <text x="30" y="358" font-size="11" fill="#9A3412" font-weight="700">毛利 = 售价 − 后端 − 流量成本</text>
+    <text x="30" y="380" font-size="10" fill="#94A3B8" font-style="italic">→ 是否值得量产？</text>
+
+    <!-- Delta callout -->
+    <rect x="18" y="418" width="254" height="135" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="30" y="441" font-size="12" font-weight="700" fill="#92400E">💡 Delta 价差 (核心公式)</text>
+    <text x="30" y="464" font-size="11" fill="#78350F">Delta = 独立站品牌价</text>
+    <text x="42" y="481" font-size="11" fill="#78350F">         − Amazon 同类价</text>
+    <text x="30" y="503" font-size="11" fill="#78350F" font-weight="700">→ 我们要赚的就是 Delta</text>
+    <text x="30" y="521" font-size="11" fill="#78350F">▸ 选 Delta 最高的品</text>
+    <text x="30" y="539" font-size="10" fill="#92400E" font-style="italic">30-40% 是黄金区间</text>
+
+    <!-- Output -->
+    <rect x="18" y="568" width="254" height="40" rx="8" fill="#F97316"/>
+    <text x="30" y="588" font-size="11" font-weight="700" fill="white">OUTPUT  →  量产 GO/NO-GO</text>
+    <text x="30" y="601" font-size="10" fill="#FFEDD5">含完整 P&amp;L + 风险评估</text>
+  </g>
+
+  <!-- =============== ANNOTATIONS ROW =============== -->
+  <text x="30" y="800" font-size="18" font-weight="700" fill="#0F3354">背后的核心算法与思考</text>
+  <line x1="30" y1="810" x2="1670" y2="810" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Annotation 1: 选品三信号 -->
+  <g transform="translate(30, 830)">
+    <rect width="395" height="170" rx="10" fill="#1E293B"/>
+    <rect x="0" y="0" width="6" height="170" fill="#F59E0B"/>
+    <text x="22" y="32" font-size="14" font-weight="700" fill="#FBBF24">① 选品三信号</text>
+    <text x="22" y="52" font-size="11" fill="#94A3B8">作用于 Stage 1-2</text>
+    <text x="22" y="80" font-size="13" font-weight="700" fill="white">长 + 多 + 火 = 赚钱</text>
+    <text x="22" y="103" font-size="11" fill="#CBD5E1">▸ 长投放：投得久说明 ROI 健康</text>
+    <text x="22" y="121" font-size="11" fill="#CBD5E1">▸ 多变种：A/B 测过的成熟创意</text>
+    <text x="22" y="139" font-size="11" fill="#CBD5E1">▸ 高 Engagement：用户真的爱看</text>
+    <text x="22" y="157" font-size="10" fill="#64748B" font-style="italic">广告不赚就不会持续投放 → 最可靠信号</text>
+  </g>
+
+  <!-- Annotation 2: Delta 价差 -->
+  <g transform="translate(445, 830)">
+    <rect width="395" height="170" rx="10" fill="#1E293B"/>
+    <rect x="0" y="0" width="6" height="170" fill="#F59E0B"/>
+    <text x="22" y="32" font-size="14" font-weight="700" fill="#FBBF24">② Delta 价差公式</text>
+    <text x="22" y="52" font-size="11" fill="#94A3B8">作用于 Stage 2 选品 + Stage 5 定价</text>
+    <text x="22" y="82" font-size="13" font-weight="700" fill="white">Delta = 独立站价 − Amazon 同类价</text>
+    <text x="22" y="105" font-size="11" fill="#CBD5E1">▸ 高净值用户在 Amazon 比价</text>
+    <text x="22" y="123" font-size="11" fill="#CBD5E1">▸ 愿为精美 listing 付 30-40% 溢价</text>
+    <text x="22" y="141" font-size="11" fill="#CBD5E1">▸ 选品要选 Delta 最高的</text>
+    <text x="22" y="159" font-size="10" fill="#64748B" font-style="italic">$20 标品 → $35 品牌价：用户愿付</text>
+  </g>
+
+  <!-- Annotation 3: 组装模式 -->
+  <g transform="translate(860, 830)">
+    <rect width="395" height="170" rx="10" fill="#1E293B"/>
+    <rect x="0" y="0" width="6" height="170" fill="#F59E0B"/>
+    <text x="22" y="32" font-size="14" font-weight="700" fill="#FBBF24">③ 组装模式 (核心创新)</text>
+    <text x="22" y="52" font-size="11" fill="#94A3B8">作用于 Stage 3-4 产品开发</text>
+    <text x="22" y="82" font-size="13" font-weight="700" fill="white">弃开模 → 用标品零件组合</text>
+    <text x="22" y="105" font-size="11" fill="#CBD5E1">▸ 塑料件开模 10万+ → 重资产</text>
+    <text x="22" y="123" font-size="11" fill="#CBD5E1">▸ 玻璃厂切玻璃 + 木材厂切木</text>
+    <text x="22" y="141" font-size="11" fill="#CBD5E1">▸ 标品 + 设计 = 品牌差异化</text>
+    <text x="22" y="159" font-size="10" fill="#FBBF24" font-style="italic">参考电动滑板车"组装厂"模式</text>
+  </g>
+
+  <!-- Annotation 4: 终极愿景 -->
+  <g transform="translate(1275, 830)">
+    <rect width="395" height="170" rx="10" fill="#1E293B"/>
+    <rect x="0" y="0" width="6" height="170" fill="#10B981"/>
+    <text x="22" y="32" font-size="14" font-weight="700" fill="#34D399">★ 终极愿景</text>
+    <text x="22" y="52" font-size="11" fill="#94A3B8">整个 Pipeline 全自动化</text>
+    <text x="22" y="82" font-size="13" font-weight="700" fill="white">流量趋势 → 变种 idea → 效果图 → ROI</text>
+    <text x="22" y="105" font-size="11" fill="#CBD5E1">▸ Agent 端到端跑完前 4 步</text>
+    <text x="22" y="123" font-size="11" fill="#CBD5E1">▸ 人只负责"决策与判断"</text>
+    <text x="22" y="141" font-size="11" fill="#34D399" font-weight="700">▸ 这是我们的护城河</text>
+    <text x="22" y="159" font-size="10" fill="#64748B" font-style="italic">从前端反推设计 = 数据闭环</text>
+  </g>
+
+  <!-- =============== GLOSSARY FOOTER =============== -->
+  <rect x="30" y="1030" width="1640" height="80" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="50" y="1056" font-size="13" font-weight="700" fill="#0F3354">关键术语</text>
+
+  <text x="50" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">Delta</tspan> = 独立站品牌价 − Amazon 同类价</text>
+  <text x="370" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">CVR</tspan> = 转化率 (Conversion Rate)</text>
+  <text x="640" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">ROAS</tspan> = 广告投产比</text>
+  <text x="900" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">BOM</tspan> = 物料清单</text>
+  <text x="1130" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">MOQ</tspan> = 最小起订量</text>
+  <text x="1380" y="1085" font-size="11" fill="#475569"><tspan font-weight="700" fill="#0F3354">Engagement</tspan> = 互动率</text>
+
+  <text x="50" y="1102" font-size="10" fill="#94A3B8" font-style="italic">▸ Phase 1-2 是"找货"逻辑 (信号识别)  ▸ Phase 3 是"造品"逻辑 (差异化创造)  ▸ Phase 4-5 是"算账"逻辑 (盈利校验)</text>
+
+  <!-- =============== FOOTER STAMP =============== -->
+  <text x="1670" y="1180" text-anchor="end" font-size="11" fill="#94A3B8" font-style="italic">Hachimi E-commerce  ·  Product Selection Pipeline v1.0  ·  2026</text>
+
+  <!-- Iterative loop indicator -->
+  <path d="M 1455 760 Q 850 1200 245 760" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arrow-dashed)"/>
+  <rect x="780" y="1140" width="140" height="22" rx="11" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1"/>
+  <text x="850" y="1156" text-anchor="middle" font-size="11" fill="#64748B" font-style="italic">数据反哺下一轮选品</text>
+</svg>

@@ -207,6 +207,50 @@ export function HoverPanel({ country, summary, activeMetric }: Props) {
             </div>
           )}
 
+          {/* 品牌化适配指标（选国决策表派生） */}
+          <div className="mt-3">
+            <div className="text-[11px] text-[var(--color-text-dim)]">
+              品牌化适配 · 选国决策表
+            </div>
+            <dl className="mt-1 space-y-1.5">
+              <Row
+                label="DTC / 独立站占比"
+                value={summary?.dtc_pct != null ? `${summary.dtc_pct.toFixed(0)}%` : "—"}
+                active={activeMetric === "dtc_pct"}
+              />
+              <Row
+                label="Direct & Brand Search"
+                value={
+                  summary?.direct_brand_search_pct != null
+                    ? `${summary.direct_brand_search_pct.toFixed(0)}%`
+                    : "—"
+                }
+                active={activeMetric === "direct_brand_search_pct"}
+              />
+              <Row
+                label="Luxury 规模 / 占比"
+                value={
+                  summary?.luxury_share_pct != null
+                    ? `${summary.luxury_size_usd_b != null ? `$${summary.luxury_size_usd_b}B · ` : ""}${summary.luxury_share_pct.toFixed(0)}%`
+                    : "—"
+                }
+                active={activeMetric === "luxury_share_pct"}
+              />
+              <Row
+                label="TikTok Shop"
+                value={
+                  summary?.tiktok_shop == null
+                    ? "—"
+                    : summary.tiktok_shop === 1
+                      ? "✓ 已上线"
+                      : "✗ 未上线"
+                }
+                accent={summary?.tiktok_shop === 1 ? "var(--color-primary)" : undefined}
+                active={activeMetric === "tiktok_shop"}
+              />
+            </dl>
+          </div>
+
           {summary?.traffic && summary.traffic.length > 0 && (
             <div className="mt-3">
               <div className="flex items-baseline justify-between text-[11px]">

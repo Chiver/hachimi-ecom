@@ -519,6 +519,43 @@ export const LebesgueCpmSchema = z.object({
 export type LebesgueCpm = z.infer<typeof LebesgueCpmSchema>;
 
 // ============================================================
+// Brand-fit raw metrics — 选国决策表 派生 (DTC% / Direct&Brand /
+// Luxury / TikTok Shop / AOV)，喂给运行时品牌化适配评分模型。
+// ============================================================
+
+export const BrandFitEntrySchema = z.object({
+  dtc_pct: z.number().nullable().optional(),
+  direct_brand_search_pct: z.number().nullable().optional(),
+  luxury_size_usd_b: z.number().nullable().optional(),
+  luxury_share_pct: z.number().nullable().optional(),
+  aov_usd: z.number().nullable().optional(),
+  /** TikTok Shop 上线状态 one-hot：1=已上线，0=未上线（全覆盖）。 */
+  tiktok_shop: z.union([z.literal(0), z.literal(1)]),
+  // ---- 选国决策表的人工品牌化适配评级与理由（缺失=决策表未覆盖） ----
+  /** 品牌化适配度评级 1-5（决策表人工评定）。 */
+  adaptation_rating: z.number().nullable().optional(),
+  /** 资源分层：P0 主战场 / P1 扩展 / P2 测试 / 谨慎 / 特殊策略 / 暂缓 等。 */
+  tier: z.string().optional(),
+  /** 推荐打法（决策表）。 */
+  play: z.string().optional(),
+  /** 一句话核心理由（决策表）。 */
+  reason: z.string().optional(),
+});
+export type BrandFitEntry = z.infer<typeof BrandFitEntrySchema>;
+
+export const BrandFitSchema = z.object({
+  _schema_version: z.string(),
+  _source_name: z.string(),
+  _source_file: z.string().optional(),
+  _period: z.string().optional(),
+  _fetched_at: z.string(),
+  _confidence: ConfidenceEnum,
+  _notes: z.string().optional(),
+  by_country: z.record(z.string(), BrandFitEntrySchema),
+}).passthrough();
+export type BrandFit = z.infer<typeof BrandFitSchema>;
+
+// ============================================================
 // Category catalog — team alignment / scan-and-learn page
 // ============================================================
 

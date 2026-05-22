@@ -55,25 +55,38 @@ export function MetricFilter({ value, onChange, domain, metric }: Props) {
         <div className="text-[10px] text-[var(--color-text-dim)]">
           {metric.label}
         </div>
-        <div className="mt-1.5 flex items-center gap-2">
-          <span className="text-[10px] tabular-nums text-[var(--color-text-dim)]">
-            {metric.format(lo)}
-          </span>
-          <div
-            className="h-2 flex-1 rounded"
-            style={{
-              background:
-                metric.key === "composite_score"
-                  ? COMPOSITE_LEGEND_GRADIENT
-                  : metric.key === "meta_cpm_usd"
-                    ? CPM_LEGEND_GRADIENT
-                    : "linear-gradient(90deg, rgb(35,46,68) 0%, rgb(16,185,129) 100%)",
-            }}
-          />
-          <span className="text-[10px] tabular-nums text-[var(--color-text-dim)]">
-            {metric.format(hi)}
-          </span>
-        </div>
+        {metric.binary ? (
+          <div className="mt-1.5 flex items-center gap-3">
+            <span className="flex items-center gap-1.5 text-[10px] text-[var(--color-text-dim)]">
+              <span className="size-2.5 rounded-sm" style={{ background: "rgb(16,185,129)" }} />
+              已上线
+            </span>
+            <span className="flex items-center gap-1.5 text-[10px] text-[var(--color-text-dim)]">
+              <span className="size-2.5 rounded-sm" style={{ background: "rgb(71,85,105)" }} />
+              未上线
+            </span>
+          </div>
+        ) : (
+          <div className="mt-1.5 flex items-center gap-2">
+            <span className="text-[10px] tabular-nums text-[var(--color-text-dim)]">
+              {metric.format(lo)}
+            </span>
+            <div
+              className="h-2 flex-1 rounded"
+              style={{
+                background:
+                  metric.key === "composite_score"
+                    ? COMPOSITE_LEGEND_GRADIENT
+                    : metric.key === "meta_cpm_usd"
+                      ? CPM_LEGEND_GRADIENT
+                      : "linear-gradient(90deg, rgb(35,46,68) 0%, rgb(16,185,129) 100%)",
+              }}
+            />
+            <span className="text-[10px] tabular-nums text-[var(--color-text-dim)]">
+              {metric.format(hi)}
+            </span>
+          </div>
+        )}
         {metric.log && (
           <div className="mt-1 text-[10px] text-[var(--color-text-dim)]">
             * 对数刻度（跨越多数量级）

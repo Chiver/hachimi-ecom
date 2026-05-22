@@ -7,7 +7,11 @@ export type MetricKey =
   | "per_capita_spend_usd"
   | "online_buyers_million"
   | "cross_border_share_pct"
-  | "meta_cpm_usd";
+  | "meta_cpm_usd"
+  | "dtc_pct"
+  | "direct_brand_search_pct"
+  | "luxury_share_pct"
+  | "tiktok_shop";
 
 export type MetricDef = {
   key: MetricKey;
@@ -29,6 +33,8 @@ export type MetricDef = {
   log?: boolean;
   /** If true, a lower value is better (e.g. CPM traffic cost). */
   lowerIsBetter?: boolean;
+  /** If true, the metric is a 0/1 one-hot (legend shows two swatches, not a ramp). */
+  binary?: boolean;
 };
 
 export const METRICS: MetricDef[] = [
@@ -92,6 +98,40 @@ export const METRICS: MetricDef[] = [
     format: (v) => `$${v.toFixed(2)}`,
     labelFormat: (v) => `$${v.toFixed(1)}`,
     lowerIsBetter: true,
+  },
+  {
+    key: "dtc_pct",
+    label: "DTC / 独立站占比",
+    short: "DTC",
+    accessor: (s) => s.dtc_pct,
+    format: (v) => `${v.toFixed(0)}%`,
+    labelFormat: (v) => `${v.toFixed(0)}%`,
+  },
+  {
+    key: "direct_brand_search_pct",
+    label: "Direct & Brand Search 占比",
+    short: "品牌流量",
+    accessor: (s) => s.direct_brand_search_pct,
+    format: (v) => `${v.toFixed(0)}%`,
+    labelFormat: (v) => `${v.toFixed(0)}%`,
+  },
+  {
+    key: "luxury_share_pct",
+    label: "Luxury 占电商比例",
+    short: "奢侈品",
+    accessor: (s) => s.luxury_share_pct,
+    format: (v) => `${v.toFixed(0)}%`,
+    labelFormat: (v) => `${v.toFixed(0)}%`,
+  },
+  {
+    key: "tiktok_shop",
+    label: "TikTok Shop 入驻",
+    short: "TT Shop",
+    accessor: (s) => s.tiktok_shop,
+    format: (v) => (v >= 1 ? "已上线" : "未上线"),
+    labelFormat: (v) => (v >= 1 ? "✓" : "✗"),
+    fixedDomain: [0, 1],
+    binary: true,
   },
 ];
 
@@ -184,6 +224,11 @@ export function valueToColor(
 ): string {
   if (value === null || value === undefined || !Number.isFinite(value))
     return "#1e293b";
+
+  if (metric.binary) {
+    // 1 = 已上线 (emerald) · 0 = 未上线 (slate, distinct from missing #1e293b)
+    return value >= 1 ? "rgb(16, 185, 129)" : "rgb(71, 85, 105)";
+  }
 
   if (metric.key === "composite_score") {
     return compositeScoreColor(value);

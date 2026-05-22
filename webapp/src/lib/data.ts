@@ -5,6 +5,7 @@ import {
   GlossaryEntrySchema,
   DecisionKnowledgeSchema,
   LebesgueCpmSchema,
+  BrandFitSchema,
   CategoryCatalogSchema,
   RoiBenchmarksSchema,
   type Country,
@@ -13,6 +14,8 @@ import {
   type PolicyEvent,
   type DecisionKnowledge,
   type LebesgueCpm,
+  type BrandFit,
+  type BrandFitEntry,
   type CategoryCatalog,
   type RoiBenchmarks,
   type PaymentInfo,
@@ -24,6 +27,7 @@ import countriesMetaRaw from "@/data/countries-meta.json";
 import glossaryRaw from "@/data/glossary.json";
 import decisionKnowledgeRaw from "@/data/decision-knowledge.json";
 import lebesgueCpmRaw from "@/data/lebesgue-cpm.json";
+import brandFitRaw from "@/data/brand-fit.json";
 import categoryCatalogRaw from "@/data/category-catalog.json";
 import roiBenchmarksRaw from "@/data/roi-benchmarks.json";
 
@@ -236,6 +240,28 @@ export function getLebesgueMetaCpm(iso: string): LebesgueCpmEntry | null {
 
 export function getLebesgueMetadata(): LebesgueCpm {
   return loadLebesgueCpm();
+}
+
+let _validatedBrandFit: BrandFit | null = null;
+function loadBrandFit(): BrandFit {
+  if (_validatedBrandFit) return _validatedBrandFit;
+  try {
+    _validatedBrandFit = BrandFitSchema.parse(brandFitRaw);
+    return _validatedBrandFit;
+  } catch (err) {
+    throw new Error(
+      `[data] brand-fit.json failed Zod validation: ${err instanceof Error ? err.message : String(err)}`,
+    );
+  }
+}
+
+/** Brand-fit raw metrics for a country (DTC% / Direct&Brand / Luxury / AOV / TikTok Shop). */
+export function getBrandFit(iso: string): BrandFitEntry | null {
+  return loadBrandFit().by_country[iso.toUpperCase()] ?? null;
+}
+
+export function getBrandFitMetadata(): BrandFit {
+  return loadBrandFit();
 }
 
 let _validatedRoi: RoiBenchmarks | null = null;

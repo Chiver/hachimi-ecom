@@ -1,4 +1,9 @@
-import { getAvailableCountryIsos, getCountryData, getLebesgueMetaCpm } from "./data";
+import {
+  getAvailableCountryIsos,
+  getCountryData,
+  getLebesgueMetaCpm,
+  getBrandFit,
+} from "./data";
 
 /** Confidence level of each KPI we show on the hover card. */
 export type ConfidenceMap = {
@@ -36,6 +41,19 @@ export type CountryScoreSummary = {
   /** Geopolitical risk level + headline for at-a-glance map / hover. */
   geo_risk_level: "extreme" | "high" | "medium" | "low" | null;
   geo_risk_headline: string | null;
+  // ---- 选国决策表派生：品牌化适配原始指标（缺失=null→置灰） ----
+  /** DTC / 独立站占电商比例 (%). */
+  dtc_pct: number | null;
+  /** Direct + Brand Search 流量占比中值 (%). */
+  direct_brand_search_pct: number | null;
+  /** 奢侈品市场规模 (USD B). */
+  luxury_size_usd_b: number | null;
+  /** 奢侈品规模 / 电商总规模 (%). */
+  luxury_share_pct: number | null;
+  /** 客单价 AOV (USD). */
+  aov_usd: number | null;
+  /** TikTok Shop 是否上线 one-hot：1=已上线，0=未上线。 */
+  tiktok_shop: 0 | 1 | null;
 };
 
 export function getCountryScoreSummaries(): Record<string, CountryScoreSummary> {
@@ -47,6 +65,7 @@ export function getCountryScoreSummaries(): Record<string, CountryScoreSummary> 
     const sm = market?.source_metadata ?? {};
     const conf = (key: string): "H" | "M" | "L" | undefined =>
       sm[key]?.confidence as "H" | "M" | "L" | undefined;
+    const bf = getBrandFit(iso);
     out[iso] = {
       iso_alpha3: iso,
       composite_score: data.hachimi_scores.composite_score ?? null,
@@ -70,6 +89,12 @@ export function getCountryScoreSummaries(): Record<string, CountryScoreSummary> 
       meta_cpm_lebesgue_usd: getLebesgueMetaCpm(iso)?.cpm_usd ?? null,
       geo_risk_level: data.geopolitical_risk?.overall_level ?? null,
       geo_risk_headline: data.geopolitical_risk?.headline ?? null,
+      dtc_pct: bf?.dtc_pct ?? null,
+      direct_brand_search_pct: bf?.direct_brand_search_pct ?? null,
+      luxury_size_usd_b: bf?.luxury_size_usd_b ?? null,
+      luxury_share_pct: bf?.luxury_share_pct ?? null,
+      aov_usd: bf?.aov_usd ?? null,
+      tiktok_shop: bf?.tiktok_shop ?? null,
     };
   }
   return out;
